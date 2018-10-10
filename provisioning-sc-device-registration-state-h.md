@@ -1,0 +1,67 @@
+# provisioning_sc_device_registration_state.h 
+
+Stub comment for brief. Please update this comment.
+
+## Includes
+
+\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_c_shared_utility/macro_utils.h"  
+\#include "parson.h"  
+
+## Detailed Description
+
+Stub comment for details. Please update this comment.
+
+## Functions
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[REGISTRATION_STATUSStrings](./provisioning-sc-device-registration-state-h/registration-statusstrings.md)            | 
+[REGISTRATION_STATUS_FromString](./provisioning-sc-device-registration-state-h/registration-status-fromstring.md)            | 
+[deviceRegistrationState_getRegistrationId](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getregistrationid.md)            | 
+[deviceRegistrationState_getCreatedDateTime](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getcreateddatetime.md)            | 
+[deviceRegistrationState_getDeviceId](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getdeviceid.md)            | 
+[deviceRegistrationState_getRegistrationStatus](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getregistrationstatus.md)            | 
+[deviceRegistrationState_getUpdatedDateTime](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getupdateddatetime.md)            | 
+[deviceRegistrationState_getErrorCode](./provisioning-sc-device-registration-state-h/deviceregistrationstate-geterrorcode.md)            | 
+[deviceRegistrationState_getErrorMessage](./provisioning-sc-device-registration-state-h/deviceregistrationstate-geterrormessage.md)            | 
+[deviceRegistrationState_getEtag](./provisioning-sc-device-registration-state-h/deviceregistrationstate-getetag.md)            | 
+[deviceRegistrationState_destroy](./provisioning-sc-device-registration-state-h/deviceregistrationstate-destroy.md)            | 
+
+## Macro definitions
+
+#### REGISTRATION_STATUS_VALUES
+
+```C
+#define REGISTRATION_STATUS_VALUES \
+        REGISTRATION_STATUS_ERROR, \
+        REGISTRATION_STATUS_UNASSIGNED, \
+        REGISTRATION_STATUS_ASSIGNING, \
+        REGISTRATION_STATUS_ASSIGNED, \
+        REGISTRATION_STATUS_FAILED, \
+        REGISTRATION_STATUS_DISABLED 
+```
+
+## Enumeration types
+
+#### REGISTRATION_STATUS
+
+```C
+enum REGISTRATION_STATUS {
+  REGISTRATION_STATUS_ERROR,
+  REGISTRATION_STATUS_UNASSIGNED,
+  REGISTRATION_STATUS_ASSIGNING,
+  REGISTRATION_STATUS_ASSIGNED,
+  REGISTRATION_STATUS_FAILED,
+  REGISTRATION_STATUS_DISABLED
+}
+```
+
+## Type definitions
+
+#### DEVICE_REGISTRATION_STATE_HANDLE
+
+```C
+typedef struct DEVICE_REGISTRATION_STATE_TAG* DEVICE_REGISTRATION_STATE_HANDLE;
+```
+

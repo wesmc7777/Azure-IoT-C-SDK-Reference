@@ -1,0 +1,45 @@
+# uniqueid.h 
+
+Stub comment for brief. Please update this comment.
+
+## Includes
+
+\#include "azure_c_shared_utility/macro_utils.h"  
+\#include <stddef.h>  
+\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+
+## Detailed Description
+
+Stub comment for details. Please update this comment.
+
+## Functions
+
+Function Name                  | Description                                
+--------------------------------|---------------------------------------------
+[UNIQUEID_RESULTStrings](./uniqueid-h/uniqueid-resultstrings.md)            | 
+[UNIQUEID_RESULT_FromString](./uniqueid-h/uniqueid-result-fromstring.md)            | 
+[UniqueId_Generate](./uniqueid-h/uniqueid-generate.md)            | 
+
+## Macro definitions
+
+#### UNIQUEID_RESULT_VALUES
+
+```C
+#define UNIQUEID_RESULT_VALUES \
+        UNIQUEID_OK, \
+        UNIQUEID_INVALID_ARG, \
+        UNIQUEID_ERROR 
+```
+
+## Enumeration types
+
+#### UNIQUEID_RESULT
+
+```C
+enum UNIQUEID_RESULT {
+  UNIQUEID_OK,
+  UNIQUEID_INVALID_ARG,
+  UNIQUEID_ERROR
+}
+```
+
