@@ -1,3 +1,15 @@
+---                             
+title: "iothub_client.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # IoTHubClient_UploadMultipleBlocksToBlobAsync()
 
 Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.

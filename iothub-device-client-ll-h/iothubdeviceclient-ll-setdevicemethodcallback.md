@@ -1,3 +1,15 @@
+---                             
+title: "iothub_device_client_ll.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # IoTHubDeviceClient_LL_SetDeviceMethodCallback()
 
 This API sets the callback for async cloud to device method calls.

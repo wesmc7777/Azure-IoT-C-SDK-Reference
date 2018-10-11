@@ -1,3 +1,15 @@
+---                             
+title: "iothub_module_client_ll.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # IoTHubModuleClient_LL_DoWork()
 
 This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubClient.
