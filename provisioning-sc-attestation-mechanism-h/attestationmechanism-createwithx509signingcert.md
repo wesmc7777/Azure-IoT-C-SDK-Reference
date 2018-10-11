@@ -1,3 +1,15 @@
+---                             
+title: "provisioning_sc_attestation_mechanism.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # attestationMechanism_createWithX509SigningCert()
 
 Creates an Attestation Mechanism handle that uses an x509 Attestation with signing certificate(s) for use in consequent APIs. Please note that an x509 Attestation with a signing certificate is NOT VALID when attached to an individual enrollment.

@@ -1,3 +1,15 @@
+---                             
+title: "provisioning_sc_enrollment.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # enrollmentGroup_create()
 
 Creates an Enrollment Group handle with an X509 Attestation for use in consequent APIs.

@@ -1,3 +1,15 @@
+---                             
+title: "iothub_client_ll.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # IoTHubClient_LL_GetRetryPolicy()
 
 Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.

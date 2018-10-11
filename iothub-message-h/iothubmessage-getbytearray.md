@@ -1,3 +1,15 @@
+---                             
+title: "iothub_message.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # IoTHubMessage_GetByteArray()
 
 Fetches a pointer and size for the data associated with the IoT hub message handle. If the content type of the message is not IOTHUBMESSAGE_BYTEARRAY then the function returns IOTHUB_MESSAGE_INVALID_ARG.

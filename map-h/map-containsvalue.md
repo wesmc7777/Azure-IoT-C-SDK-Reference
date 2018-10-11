@@ -1,3 +1,15 @@
+---                             
+title: "map.h header file reference | Microsoft Docs" 
+titleSuffix: "Azure IoT C SDK"            
+manager: timlt                 
+author: wesmc7777              
+ms.author: wesmc               
+ms.date: 10/11/2018                    
+ms.service: "iot-hub"             
+ms.custom: ""                
+ms.topic: "reference"        
+---                            
+
 # Map_ContainsValue()
 
 This function returns true in valueExists if at least one <key,value> pair exists in the map where the entry's value is equal to the parameter value.
