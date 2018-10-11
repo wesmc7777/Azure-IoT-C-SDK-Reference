@@ -1,7 +1,7 @@
 ---                             
 title: "xio.h header file reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
-description: "This is the header file reference page for xio.h in the Azure IoT C SDK. This SDK is used with the Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
+description: "This is the header file reference page for xio.h in the Azure IoT C SDK. This SDK is used with Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
