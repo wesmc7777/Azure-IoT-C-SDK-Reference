@@ -1,6 +1,7 @@
 ---                             
-title: "provisioning_service_client.h header file reference | Microsoft Docs" 
+title: "prov_sc_delete_individual_enrollment function reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
+description: "This is the function reference page for the prov_sc_delete_individual_enrollment() function in the Azure IoT C SDK. This SDK is used with Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               

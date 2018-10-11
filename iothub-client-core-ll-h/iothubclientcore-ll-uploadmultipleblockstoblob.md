@@ -1,6 +1,7 @@
 ---                             
-title: "iothub_client_core_ll.h header file reference | Microsoft Docs" 
+title: "IoTHubClientCore_LL_UploadMultipleBlocksToBlob function reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
+description: "This is the function reference page for the IoTHubClientCore_LL_UploadMultipleBlocksToBlob() function in the Azure IoT C SDK. This SDK is used with Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
