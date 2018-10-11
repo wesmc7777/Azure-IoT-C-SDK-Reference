@@ -1,5 +1,5 @@
 ---                             
-title: "Azure IoT C SDK reference documentation | Microsoft Docs" 
+title: "index.md header file reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
 manager: timlt                 
 author: wesmc7777              
