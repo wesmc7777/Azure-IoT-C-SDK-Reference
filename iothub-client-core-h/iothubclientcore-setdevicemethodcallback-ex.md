@@ -1,6 +1,7 @@
 ---                             
-title: "iothub_client_core.h header file reference | Microsoft Docs" 
+title: "IoTHubClientCore_SetDeviceMethodCallback_Ex function reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
+description: "This is the function reference page for IoTHubClientCore_SetDeviceMethodCallback_Ex() in the Azure IoT C SDK. This SDK is used with the Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               

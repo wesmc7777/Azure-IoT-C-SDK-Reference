@@ -1,6 +1,7 @@
 ---                             
 title: "Azure IoT C SDK reference documentation | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
+description: "This is the overview page for the Azure IoT C SDK reference documentation. This SDK is used with the Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               

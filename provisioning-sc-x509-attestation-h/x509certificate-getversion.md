@@ -1,6 +1,7 @@
 ---                             
-title: "provisioning_sc_x509_attestation.h header file reference | Microsoft Docs" 
+title: "x509Certificate_getVersion function reference | Microsoft Docs" 
 titleSuffix: "Azure IoT C SDK"            
+description: "This is the function reference page for x509Certificate_getVersion() in the Azure IoT C SDK. This SDK is used with the Azure IoT Hub and Azure IoT Hub Device Provisioning Service"            
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
