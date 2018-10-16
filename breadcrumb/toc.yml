@@ -1,3 +1,15 @@
-- name: Docs
-  tocHref: /
-  topicHref: /
+- name: Azure
+  tocHref: /azure/
+  topicHref: /azure/index
+  items:
+  - name: Internet of Things
+    tocHref: /azure/iot-fundamentals/
+    topicHref: /azure/iot-fundamentals/
+    items:
+    - name: IoT Hub
+      tocHref: /azure/iot-hub/
+      topicHref: /azure/iot-hub/
+      items:
+      - name: Azure IoT C SDK Reference
+        tocHref: /azure/iot-hub/iot-c-reference/
+        topicHref: /azure/iot-hub/iot-c-reference/
