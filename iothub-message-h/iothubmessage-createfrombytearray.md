@@ -20,8 +20,7 @@ Creates a new IoT hub message from a byte array. The type of the message will be
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromByteArray(
-  const unsigned char *byteArray   C2
-);
+  const unsigned char *byteArray   C2);
 ```
 
 ## Parameters

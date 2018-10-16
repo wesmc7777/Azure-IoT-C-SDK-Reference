@@ -20,8 +20,7 @@ The condition instance is deinitialized.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
 void Condition_Deinit(
-  COND_HANDLE  C2
-);
+  COND_HANDLE  C2);
 ```
 
 ## Parameters

@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h](../optionhandler-h.md)"  
 ```C
 OPTIONHANDLER_HANDLE OptionHandler_Create(
-  pfCloneOption  C2
-);
+  pfCloneOption  C2);
 ```
 

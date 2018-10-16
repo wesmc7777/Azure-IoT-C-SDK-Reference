@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core_ll.h](../iothub-client-core-ll-h.md)"  
 ```C
 IOTHUB_CLIENT_CORE_LL_HANDLE IoTHubClientCore_LL_CreateFromConnectionString(
-  const char *connectionString   C2
-);
+  const char *connectionString   C2);
 ```
 

@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
 STRING_HANDLE STRING_new_with_memory(
-  const char *memory   C2
-);
+  const char *memory   C2);
 ```
 

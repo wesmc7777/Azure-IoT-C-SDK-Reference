@@ -19,8 +19,7 @@ Returns a pointer to a null terminated string containing the current IoT Hub Ser
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_sc_version.h](../iothub-sc-version-h.md)"  
 ```C
-const char* IoTHubServiceClient_GetVersionString(void
-);
+const char* IoTHubServiceClient_GetVersionString(void);
 ```
 
 ## Return Value

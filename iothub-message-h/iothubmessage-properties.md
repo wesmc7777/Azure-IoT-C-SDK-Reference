@@ -20,8 +20,7 @@ Gets a handle to the message's properties map. Note that when sending messages v
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 MAP_HANDLE IoTHubMessage_Properties(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 DEPRECATED: Use IoTHubMessage_SetProperty and IoTHubMessage_GetProperty instead. ** 

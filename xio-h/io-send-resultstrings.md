@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
 const char* IO_SEND_RESULTStrings(
-  IO_SEND_RESULT  value
-);
+  IO_SEND_RESULT  value);
 ```
 

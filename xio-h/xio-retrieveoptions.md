@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
 OPTIONHANDLER_HANDLE xio_retrieveoptions(
-  XIO_HANDLE  C2
-);
+  XIO_HANDLE  C2);
 ```
 

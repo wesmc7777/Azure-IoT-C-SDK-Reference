@@ -20,8 +20,7 @@ Sets output for named queues. CAUTION: SDK user should not call it directly, it 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetOutputName(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core_common.h](../iothub-client-core-common-h.md)"  
 ```C
 const char* IOTHUB_CLIENT_RESULTStrings(
-  IOTHUB_CLIENT_RESULT  value
-);
+  IOTHUB_CLIENT_RESULT  value);
 ```
 

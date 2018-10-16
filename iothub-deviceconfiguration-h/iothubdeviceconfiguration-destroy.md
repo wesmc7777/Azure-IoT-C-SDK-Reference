@@ -20,8 +20,7 @@ Disposes of resources allocated by the IoT Hub IoTHubDeviceConfiguration_Create.
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_deviceconfiguration.h](../iothub-deviceconfiguration-h.md)"  
 ```C
 void IoTHubDeviceConfiguration_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  C2
-);
+  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  C2);
 ```
 
 ## Parameters

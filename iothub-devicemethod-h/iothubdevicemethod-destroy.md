@@ -20,8 +20,7 @@ Disposes of resources allocated by the IoT Hub IoTHubDeviceMethod_Create.
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h](../iothub-devicemethod-h.md)"  
 ```C
 void IoTHubDeviceMethod_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  C2
-);
+  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  C2);
 ```
 
 ## Parameters

@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
 X509_ATTESTATION_HANDLE attestationMechanism_getX509Attestation(
-  ATTESTATION_MECHANISM_HANDLE  C2
-);
+  ATTESTATION_MECHANISM_HANDLE  C2);
 ```
 

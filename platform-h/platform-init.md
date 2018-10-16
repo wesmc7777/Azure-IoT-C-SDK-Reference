@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/platform.h](../platform-h.md)"  
 ```C
-int platform_init(void
-);
+int platform_init(void);
 ```
 

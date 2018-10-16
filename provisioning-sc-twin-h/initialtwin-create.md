@@ -20,8 +20,7 @@ Creates an Initial Twin handle for use in consequent APIs.
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
 INITIAL_TWIN_HANDLE initialTwin_create(
-  const char *tags   C2
-);
+  const char *tags   C2);
 ```
 
 ## Parameters

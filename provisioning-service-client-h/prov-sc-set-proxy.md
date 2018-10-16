@@ -20,8 +20,7 @@ Set the proxy options for HTTP communication with the Provisioning Service.
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
 int prov_sc_set_proxy(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  C2
-);
+  PROVISIONING_SERVICE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

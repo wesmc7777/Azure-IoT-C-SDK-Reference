@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 const char* IOTHUBMESSAGE_CONTENT_TYPEStrings(
-  IOTHUBMESSAGE_CONTENT_TYPE  value
-);
+  IOTHUBMESSAGE_CONTENT_TYPE  value);
 ```
 

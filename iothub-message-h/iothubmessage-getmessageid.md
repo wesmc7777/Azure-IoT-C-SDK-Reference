@@ -20,8 +20,7 @@ Gets the MessageId from the IOTHUB_MESSAGE_HANDLE.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 const char* IoTHubMessage_GetMessageId(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

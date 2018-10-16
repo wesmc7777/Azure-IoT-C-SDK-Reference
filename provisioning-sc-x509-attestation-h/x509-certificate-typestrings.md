@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_x509_attestation.h](../provisioning-sc-x509-attestation-h.md)"  
 ```C
 const char* X509_CERTIFICATE_TYPEStrings(
-  X509_CERTIFICATE_TYPE  value
-);
+  X509_CERTIFICATE_TYPE  value);
 ```
 

@@ -20,8 +20,7 @@ Removes a key and its associated value from the map.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MAP_RESULT Map_Delete(
-  MAP_HANDLE  C2
-);
+  MAP_HANDLE  C2);
 ```
 
 ## Parameters

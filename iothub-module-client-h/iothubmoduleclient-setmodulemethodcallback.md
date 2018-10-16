@@ -20,8 +20,7 @@ This API sets callback for async cloud to module method call.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetModuleMethodCallback(
-  IOTHUB_MODULE_CLIENT_HANDLE  C2
-);
+  IOTHUB_MODULE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

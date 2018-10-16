@@ -20,8 +20,7 @@ block on the condition handle unti the thread is signalled or until the timeout_
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
 COND_RESULT Condition_Wait(
-  COND_HANDLE  C2
-);
+  COND_HANDLE  C2);
 ```
 
 ## Parameters

@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
 const char* IOTHUB_DEVICE_TWIN_RESULTStrings(
-  IOTHUB_DEVICE_TWIN_RESULT  value
-);
+  IOTHUB_DEVICE_TWIN_RESULT  value);
 ```
 

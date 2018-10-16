@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/singlylinkedlist.h](../singlylinkedlist-h.md)"  
 ```C
 void singlylinkedlist_destroy(
-  SINGLYLINKEDLIST_HANDLE  C2
-);
+  SINGLYLINKEDLIST_HANDLE  C2);
 ```
 

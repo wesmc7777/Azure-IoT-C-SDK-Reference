@@ -18,7 +18,6 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xlogging.h](../xlogging-h.md)"  
 ```C
 void xlogging_set_log_function(
-  LOGGER_LOG  log_function
-);
+  LOGGER_LOG  log_function);
 ```
 

@@ -20,8 +20,7 @@ This API specifies a call back to be used when the module receives a state updat
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetModuleTwinCallback(
-  IOTHUB_MODULE_CLIENT_HANDLE  C2
-);
+  IOTHUB_MODULE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

@@ -20,8 +20,7 @@ Retrieves the complete list of keys and values from the map in values and keys. 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MAP_RESULT Map_GetInternals(
-  MAP_HANDLE  C2
-);
+  MAP_HANDLE  C2);
 ```
 
 ## Parameters

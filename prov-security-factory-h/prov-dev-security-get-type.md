@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_security_factory.h](../prov-security-factory-h.md)"  
 ```C
-SECURE_DEVICE_TYPE prov_dev_security_get_type(void
-);
+SECURE_DEVICE_TYPE prov_dev_security_get_type(void);
 ```
 

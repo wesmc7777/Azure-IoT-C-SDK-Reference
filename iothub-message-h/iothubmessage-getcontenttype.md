@@ -20,8 +20,7 @@ Returns the content type of the message given by parameter iotHubMessageHandle.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUBMESSAGE_CONTENT_TYPE IoTHubMessage_GetContentType(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

@@ -20,8 +20,7 @@ Creates a IoT Hub Service Client DeviceMethod handle for use it in consequent AP
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h](../iothub-devicemethod-h.md)"  
 ```C
 IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE IoTHubDeviceMethod_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2
-);
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2);
 ```
 
 ## Parameters

@@ -20,8 +20,7 @@ Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_ll.h](../iothub-client-ll-h.md)"  
 ```C
 void IoTHubClient_LL_Destroy(
-  IOTHUB_CLIENT_LL_HANDLE  C2
-);
+  IOTHUB_CLIENT_LL_HANDLE  C2);
 ```
 
 ## Parameters

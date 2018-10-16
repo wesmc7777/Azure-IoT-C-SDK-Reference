@@ -20,8 +20,7 @@ Creates an Attestation Mechanism handle that uses an x509 Attestation with clien
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
 ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509ClientCert(
-  const char *primary_cert   C2
-);
+  const char *primary_cert   C2);
 ```
 
 ## Parameters
