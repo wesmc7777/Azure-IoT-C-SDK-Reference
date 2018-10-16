@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
-int initialTwin_setTags(  INITIAL_TWIN_HANDLE  C2);
+int initialTwin_setTags(INITIAL_TWIN_HANDLE  C2);
 ```
 

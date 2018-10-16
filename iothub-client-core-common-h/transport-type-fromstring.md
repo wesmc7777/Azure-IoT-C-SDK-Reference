@@ -20,6 +20,6 @@ ms.topic: "reference"
 int TRANSPORT_TYPE_FromString(
   const char *    enumAsString,
   TRANSPORT_TYPE  destination
-);
+  );
 ```
 

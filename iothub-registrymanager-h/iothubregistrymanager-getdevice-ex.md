@@ -23,7 +23,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetDevice_Ex(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const char *                   deviceId,
   IOTHUB_DEVICE_EX               device
-);
+  );
 ```
 
 ## Parameters

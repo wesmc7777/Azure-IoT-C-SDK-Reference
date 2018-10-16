@@ -19,7 +19,7 @@ Clones the option named optionName bearing the value value into the pointer save
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_CloneOption(  const char *optionName   C2);
+HTTPAPI_RESULT HTTPAPI_CloneOption(const char *optionName   C2);
 ```
 
 ## Parameters

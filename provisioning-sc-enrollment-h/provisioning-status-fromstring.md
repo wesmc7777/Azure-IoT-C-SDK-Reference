@@ -20,6 +20,6 @@ ms.topic: "reference"
 int PROVISIONING_STATUS_FromString(
   const char *         enumAsString,
   PROVISIONING_STATUS  destination
-);
+  );
 ```
 

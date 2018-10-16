@@ -20,6 +20,6 @@ ms.topic: "reference"
 int SECURE_DEVICE_TYPE_FromString(
   const char *        enumAsString,
   SECURE_DEVICE_TYPE  destination
-);
+  );
 ```
 

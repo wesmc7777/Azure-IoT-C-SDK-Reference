@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_query.h](../provisioning-sc-query-h.md)"  
 ```C
-void queryResponse_free(  PROVISIONING_QUERY_RESPONSE  C2);
+void queryResponse_free(PROVISIONING_QUERY_RESPONSE  C2);
 ```
 

@@ -20,6 +20,6 @@ ms.topic: "reference"
 int NECESSITY_FromString(
   const char *  enumAsString,
   NECESSITY     destination
-);
+  );
 ```
 

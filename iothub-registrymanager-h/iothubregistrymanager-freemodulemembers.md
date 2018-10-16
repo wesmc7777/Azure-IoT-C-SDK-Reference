@@ -19,7 +19,7 @@ Free members of the [IOTHUB_MODULE](../iothub-registrymanager-h.md#iothub_module
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iothub-registrymanager-h.md)"  
 ```C
-void IoTHubRegistryManager_FreeModuleMembers(  IOTHUB_MODULE  moduleInfo);
+void IoTHubRegistryManager_FreeModuleMembers(IOTHUB_MODULE  moduleInfo);
 ```
 
 ## Parameters

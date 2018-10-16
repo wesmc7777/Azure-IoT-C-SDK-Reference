@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h](../prov-device-client-h.md)"  
 ```C
-void Prov_Device_Destroy(  PROV_DEVICE_HANDLE  C2);
+void Prov_Device_Destroy(PROV_DEVICE_HANDLE  C2);
 ```
 

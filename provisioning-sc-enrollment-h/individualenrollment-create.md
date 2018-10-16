@@ -19,7 +19,7 @@ Creates an Individual Enrollment handle with a TPM Attestation for use in conseq
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(  const char *reg_id   C2);
+INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(const char *reg_id   C2);
 ```
 
 ## Parameters

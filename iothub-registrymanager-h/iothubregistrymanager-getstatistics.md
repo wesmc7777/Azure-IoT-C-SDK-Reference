@@ -22,7 +22,7 @@ Gets the registry statistic info.
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetStatistics(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   IOTHUB_REGISTRY_STATISTICS     registryStatistics
-);
+  );
 ```
 
 ## Parameters

@@ -23,7 +23,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const                          deviceCreate,
   IOTHUB_DEVICE                  device
-);
+  );
 ```
 
 DEPRECATED:: Use IoTHubRegistryManager_CreateDevice_Ex instead 

@@ -19,7 +19,7 @@ Creates a IoT Hub Registry Manager handle for use it in consequent APIs.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iothub-registrymanager-h.md)"  
 ```C
-IOTHUB_REGISTRYMANAGER_HANDLE IoTHubRegistryManager_Create(  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle);
+IOTHUB_REGISTRYMANAGER_HANDLE IoTHubRegistryManager_Create(IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle);
 ```
 
 ## Parameters

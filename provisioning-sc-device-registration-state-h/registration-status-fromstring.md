@@ -20,6 +20,6 @@ ms.topic: "reference"
 int REGISTRATION_STATUS_FromString(
   const char *         enumAsString,
   REGISTRATION_STATUS  destination
-);
+  );
 ```
 

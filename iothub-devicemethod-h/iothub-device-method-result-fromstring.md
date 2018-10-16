@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_DEVICE_METHOD_RESULT_FromString(
   const char *                 enumAsString,
   IOTHUB_DEVICE_METHOD_RESULT  destination
-);
+  );
 ```
 

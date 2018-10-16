@@ -19,7 +19,7 @@ Creates an HTTPS connection to the host specified by the hostName parameter.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTP_HANDLE HTTPAPI_CreateConnection(  const char *hostName   C2);
+HTTP_HANDLE HTTPAPI_CreateConnection(const char *hostName   C2);
 ```
 
 ## Parameters

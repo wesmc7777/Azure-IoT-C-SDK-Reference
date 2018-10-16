@@ -24,7 +24,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetModuleList(
   const char *                   deviceId,
   SINGLYLINKEDLIST_HANDLE        moduleList,
   int                            module_version
-);
+  );
 ```
 
 ## Parameters

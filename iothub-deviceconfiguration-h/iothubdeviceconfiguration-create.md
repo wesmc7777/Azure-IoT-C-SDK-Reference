@@ -19,7 +19,7 @@ Creates a IoT Hub Service Client DeviceConfiguration handle for use it in conseq
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_deviceconfiguration.h](../iothub-deviceconfiguration-h.md)"  
 ```C
-IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE IoTHubDeviceConfiguration_Create(  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2);
+IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE IoTHubDeviceConfiguration_Create(IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2);
 ```
 
 ## Parameters

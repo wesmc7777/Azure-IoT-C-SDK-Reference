@@ -19,7 +19,7 @@ This API specifies a callback to be used when the device receives a desired stat
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetDeviceTwinCallback(  IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetDeviceTwinCallback(IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2);
 ```
 
 ## Parameters

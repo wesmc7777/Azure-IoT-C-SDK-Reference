@@ -20,6 +20,6 @@ ms.topic: "reference"
 int HTTPAPI_RESULT_FromString(
   const char *    enumAsString,
   HTTPAPI_RESULT  destination
-);
+  );
 ```
 

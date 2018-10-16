@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-const char* individualEnrollment_getIotHubHostName(  INDIVIDUAL_ENROLLMENT_HANDLE  C2);
+const char* individualEnrollment_getIotHubHostName(INDIVIDUAL_ENROLLMENT_HANDLE  C2);
 ```
 

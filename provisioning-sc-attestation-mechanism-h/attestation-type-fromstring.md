@@ -20,6 +20,6 @@ ms.topic: "reference"
 int ATTESTATION_TYPE_FromString(
   const char *      enumAsString,
   ATTESTATION_TYPE  destination
-);
+  );
 ```
 

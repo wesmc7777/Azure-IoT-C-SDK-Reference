@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_transport.h](../prov-transport-h.md)"  
 ```C
-const char* TRANSPORT_HSM_TYPEStrings(  TRANSPORT_HSM_TYPE  value);
+const char* TRANSPORT_HSM_TYPEStrings(TRANSPORT_HSM_TYPE  value);
 ```
 

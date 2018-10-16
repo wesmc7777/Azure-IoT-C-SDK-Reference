@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_deviceconfiguration.h](../iothub-deviceconfiguration-h.md)"  
 ```C
-const char* IOTHUB_DEVICE_CONFIGURATION_RESULTStrings(  IOTHUB_DEVICE_CONFIGURATION_RESULT  value);
+const char* IOTHUB_DEVICE_CONFIGURATION_RESULTStrings(IOTHUB_DEVICE_CONFIGURATION_RESULT  value);
 ```
 

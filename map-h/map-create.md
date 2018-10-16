@@ -19,7 +19,7 @@ Creates a new, empty map.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_HANDLE Map_Create(  MAP_FILTER_CALLBACK  C2);
+MAP_HANDLE Map_Create(MAP_FILTER_CALLBACK  C2);
 ```
 
 ## Parameters

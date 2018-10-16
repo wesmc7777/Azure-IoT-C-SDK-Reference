@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-const char* MAP_RESULTStrings(  MAP_RESULT  value);
+const char* MAP_RESULTStrings(MAP_RESULT  value);
 ```
 

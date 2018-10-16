@@ -19,7 +19,7 @@ Creates an Attestation Mechanism handle that uses a TPM Attestation for use in c
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
-ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithTpm(  const char *endorsement_key   C2);
+ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithTpm(const char *endorsement_key   C2);
 ```
 
 ## Parameters

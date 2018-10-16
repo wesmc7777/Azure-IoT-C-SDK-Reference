@@ -19,7 +19,7 @@ Creates an Enrollment Group handle with an X509 Attestation for use in consequen
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-ENROLLMENT_GROUP_HANDLE enrollmentGroup_create(  const char *group_id   C2);
+ENROLLMENT_GROUP_HANDLE enrollmentGroup_create(const char *group_id   C2);
 ```
 
 ## Parameters

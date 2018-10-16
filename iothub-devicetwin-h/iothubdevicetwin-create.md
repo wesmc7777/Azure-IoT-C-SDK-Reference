@@ -19,7 +19,7 @@ Creates a IoT Hub Service Client DeviceTwin handle for use it in consequent APIs
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
-IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE IoTHubDeviceTwin_Create(  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2);
+IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE IoTHubDeviceTwin_Create(IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2);
 ```
 
 ## Parameters

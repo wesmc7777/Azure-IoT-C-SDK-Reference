@@ -19,7 +19,7 @@ Asynchronous call to send the message to a specified device.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging.h](../iothub-messaging-h.md)"  
 ```C
-IOTHUB_MESSAGING_RESULT IoTHubMessaging_SendAsync(  IOTHUB_MESSAGING_CLIENT_HANDLE  C2);
+IOTHUB_MESSAGING_RESULT IoTHubMessaging_SendAsync(IOTHUB_MESSAGING_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

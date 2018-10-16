@@ -19,7 +19,7 @@ Destorys an Enrollment Group handle, freeing all associated memory. Please note 
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-void enrollmentGroup_destroy(  ENROLLMENT_GROUP_HANDLE  C2);
+void enrollmentGroup_destroy(ENROLLMENT_GROUP_HANDLE  C2);
 ```
 
 ## Parameters
