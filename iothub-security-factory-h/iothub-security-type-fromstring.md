@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_SECURITY_TYPE_FromString(
   const char *          enumAsString,
   IOTHUB_SECURITY_TYPE  destination
-  );
+);
 ```
 

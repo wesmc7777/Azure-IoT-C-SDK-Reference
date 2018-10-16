@@ -22,7 +22,7 @@ Updates a device on IoT Hub.
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_UpdateDevice_Ex(
   IOTHUB_REGISTRYMANAGER_HANDLE     registryManagerHandle,
   IOTHUB_REGISTRY_DEVICE_UPDATE_EX  deviceUpdate
-  );
+);
 ```
 
 ## Parameters

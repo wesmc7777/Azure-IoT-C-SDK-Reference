@@ -20,6 +20,6 @@ ms.topic: "reference"
 int COND_RESULT_FromString(
   const char *  enumAsString,
   COND_RESULT   destination
-  );
+);
 ```
 

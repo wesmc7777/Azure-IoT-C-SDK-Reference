@@ -20,6 +20,6 @@ ms.topic: "reference"
 int TRACING_STATUS_FromString(
   const char *    enumAsString,
   TRACING_STATUS  destination
-  );
+);
 ```
 

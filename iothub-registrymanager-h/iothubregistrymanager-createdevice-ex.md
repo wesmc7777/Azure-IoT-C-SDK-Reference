@@ -23,7 +23,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateDevice_Ex(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const                          deviceCreate,
   IOTHUB_DEVICE_EX               device
-  );
+);
 ```
 
 ## Parameters

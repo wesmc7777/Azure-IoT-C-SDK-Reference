@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IO_OPEN_RESULT_FromString(
   const char *    enumAsString,
   IO_OPEN_RESULT  destination
-  );
+);
 ```
 

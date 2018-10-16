@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_MESSAGE_SEND_STATE_FromString(
   const char *               enumAsString,
   IOTHUB_MESSAGE_SEND_STATE  destination
-  );
+);
 ```
 

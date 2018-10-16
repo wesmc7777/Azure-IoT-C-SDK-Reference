@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_IDENTITY_TYPE_FromString(
   const char *          enumAsString,
   IOTHUB_IDENTITY_TYPE  destination
-  );
+);
 ```
 

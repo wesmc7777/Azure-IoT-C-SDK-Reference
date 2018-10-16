@@ -20,6 +20,6 @@ ms.topic: "reference"
 int PROVISIONING_QUERY_TYPE_FromString(
   const char *             enumAsString,
   PROVISIONING_QUERY_TYPE  destination
-  );
+);
 ```
 

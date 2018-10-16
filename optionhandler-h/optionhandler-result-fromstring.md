@@ -20,6 +20,6 @@ ms.topic: "reference"
 int OPTIONHANDLER_RESULT_FromString(
   const char *          enumAsString,
   OPTIONHANDLER_RESULT  destination
-  );
+);
 ```
 

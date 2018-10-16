@@ -20,6 +20,6 @@ ms.topic: "reference"
 int UNIQUEID_RESULT_FromString(
   const char *     enumAsString,
   UNIQUEID_RESULT  destination
-  );
+);
 ```
 

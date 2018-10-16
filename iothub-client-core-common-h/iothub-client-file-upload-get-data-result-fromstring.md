@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT_FromString(
   const char *                               enumAsString,
   IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT  destination
-  );
+);
 ```
 

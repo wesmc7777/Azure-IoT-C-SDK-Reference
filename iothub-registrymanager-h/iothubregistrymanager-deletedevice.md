@@ -22,7 +22,7 @@ Deletes a given device.
 IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_DeleteDevice(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const char *                   deviceId
-  );
+);
 ```
 
 ## Parameters

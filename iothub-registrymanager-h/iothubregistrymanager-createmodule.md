@@ -23,7 +23,7 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_CreateModule(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   const                          moduleCreate,
   IOTHUB_MODULE                  module
-  );
+);
 ```
 
 ## Parameters

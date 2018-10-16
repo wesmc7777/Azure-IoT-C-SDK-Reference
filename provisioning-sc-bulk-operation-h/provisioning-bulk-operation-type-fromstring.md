@@ -20,6 +20,6 @@ ms.topic: "reference"
 int PROVISIONING_BULK_OPERATION_TYPE_FromString(
   const char *                      enumAsString,
   PROVISIONING_BULK_OPERATION_TYPE  destination
-  );
+);
 ```
 

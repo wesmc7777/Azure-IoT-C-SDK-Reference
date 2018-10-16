@@ -20,6 +20,6 @@ ms.topic: "reference"
 STRING_HANDLE STRING_construct_sprintf(
   const char *  format,
   ...
-  );
+);
 ```
 

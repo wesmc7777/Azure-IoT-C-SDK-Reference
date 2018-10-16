@@ -20,6 +20,6 @@ ms.topic: "reference"
 int LOCK_RESULT_FromString(
   const char *  enumAsString,
   LOCK_RESULT   destination
-  );
+);
 ```
 

@@ -21,6 +21,6 @@ IOTHUB_REGISTRYMANAGER_RESULT IoTHubRegistryManager_GetDeviceList(
   IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle,
   size_t                         numberOfDevices,
   SINGLYLINKEDLIST_HANDLE        deviceList
-  );
+);
 ```
 

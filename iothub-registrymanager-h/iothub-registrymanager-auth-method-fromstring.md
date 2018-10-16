@@ -20,6 +20,6 @@ ms.topic: "reference"
 int IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString(
   const char *                        enumAsString,
   IOTHUB_REGISTRYMANAGER_AUTH_METHOD  destination
-  );
+);
 ```
 
