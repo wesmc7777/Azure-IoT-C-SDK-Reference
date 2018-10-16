@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceTwin_Creat
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Creates a IoT Hub Service Client DeviceTwin handle for use it in consequent APIs
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
 IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE IoTHubDeviceTwin_Create(
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  serviceClientHandle
+  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  C2
 );
 ```
 

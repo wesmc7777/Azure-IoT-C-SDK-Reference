@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_Destroy() function
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Release all resources associated with the map.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 void Map_Destroy(
-  MAP_HANDLE  handle
+  MAP_HANDLE  C2
 );
 ```
 

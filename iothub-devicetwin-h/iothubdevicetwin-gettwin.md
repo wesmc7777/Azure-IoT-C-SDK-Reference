@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceTwin_GetTw
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ Retrieves the given device's twin info.
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
 char* IoTHubDeviceTwin_GetTwin(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
-  const char *                              deviceId
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2
 );
 ```
 

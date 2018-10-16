@@ -5,7 +5,7 @@ description: "This is the function reference page for the STRING_new_with_memory
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,7 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
 STRING_HANDLE STRING_new_with_memory(
-  const char *  memory
+  const char *memory   C2
 );
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the initialTwin_getDesired
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,7 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
 const char* initialTwin_getDesiredProperties(
-  INITIAL_TWIN_HANDLE  twin
+  INITIAL_TWIN_HANDLE  C2
 );
 ```
 

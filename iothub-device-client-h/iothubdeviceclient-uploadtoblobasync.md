@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_Upl
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,12 +20,7 @@ IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadToBlobAsync(
-  IOTHUB_DEVICE_CLIENT_HANDLE         iotHubClientHandle,
-  const char *                        destinationFileName,
-  const unsigned char *               source,
-  size_t                              size,
-  IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  iotHubClientFileUploadCallback,
-  void *                              context
+  IOTHUB_DEVICE_CLIENT_HANDLE  C2
 );
 ```
 

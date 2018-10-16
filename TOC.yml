@@ -160,6 +160,8 @@
               href: singlylinkedlist-h/singlylinkedlist-destroy.md
             - name: singlylinkedlist_add
               href: singlylinkedlist-h/singlylinkedlist-add.md
+            - name: singlylinkedlist_add_head
+              href: singlylinkedlist-h/singlylinkedlist-add-head.md
             - name: singlylinkedlist_remove
               href: singlylinkedlist-h/singlylinkedlist-remove.md
             - name: singlylinkedlist_get_head_item

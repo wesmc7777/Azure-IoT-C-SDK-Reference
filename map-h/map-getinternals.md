@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_GetInternals() fun
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,10 +20,7 @@ Retrieves the complete list of keys and values from the map in values and keys. 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MAP_RESULT Map_GetInternals(
-  MAP_HANDLE            handle,
-  const char *const **  keys,
-  const char *const **  values,
-  size_t *              count
+  MAP_HANDLE  C2
 );
 ```
 

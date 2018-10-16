@@ -5,7 +5,7 @@ description: "This is the function reference page for the enrollmentGroup_getIni
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,7 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
 INITIAL_TWIN_HANDLE enrollmentGroup_getInitialTwin(
-  ENROLLMENT_GROUP_HANDLE  enrollment
+  ENROLLMENT_GROUP_HANDLE  C2
 );
 ```
 

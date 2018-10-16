@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_Delete() function 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ Removes a key and its associated value from the map.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MAP_RESULT Map_Delete(
-  MAP_HANDLE    handle,
-  const char *  key
+  MAP_HANDLE  C2
 );
 ```
 

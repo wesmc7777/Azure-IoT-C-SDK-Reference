@@ -5,7 +5,7 @@ description: "This is the function reference page for the individualEnrollment_s
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,8 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
 int individualEnrollment_setDeviceId(
-  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
-  const char *                  device_id
+  INDIVIDUAL_ENROLLMENT_HANDLE  C2
 );
 ```
 

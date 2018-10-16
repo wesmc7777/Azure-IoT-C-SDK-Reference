@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_sc_query_individu
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,10 +20,7 @@ Queries individual device enrollment records from the Provisioning Service.
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
 int prov_sc_query_individual_enrollment(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  PROVISIONING_QUERY_SPECIFICATION    query_spec,
-  char **                             cont_token_ptr,
-  PROVISIONING_QUERY_RESPONSE         query_resp_ptr
+  PROVISIONING_SERVICE_CLIENT_HANDLE  C2
 );
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_CreateConnecti
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Creates an HTTPS connection to the host specified by the hostName parameter.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
 HTTP_HANDLE HTTPAPI_CreateConnection(
-  const char *  hostName
+  const char *hostName   C2
 );
 ```
 

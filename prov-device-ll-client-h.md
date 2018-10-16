@@ -5,15 +5,13 @@ description: "This is the header file reference page for prov_device_ll_client.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # prov_device_ll_client.h 
-
-Stub comment for brief. Please update this comment.
 
 ## Includes
 
@@ -22,8 +20,6 @@ Stub comment for brief. Please update this comment.
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
 ## Detailed Description
-
-Stub comment for details. Please update this comment.
 
 ## Functions
 

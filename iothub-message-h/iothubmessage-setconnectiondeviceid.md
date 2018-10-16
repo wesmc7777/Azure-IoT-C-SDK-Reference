@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetConne
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ Sets connection device Id. CAUTION: SDK user should not call it directly, it is 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetConnectionDeviceId(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           connectionDeviceId
+  IOTHUB_MESSAGE_HANDLE  C2
 );
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_Destroy(
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Frees all resources associated with the given message handle.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 void IoTHubMessage_Destroy(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  C2
 );
 ```
 
