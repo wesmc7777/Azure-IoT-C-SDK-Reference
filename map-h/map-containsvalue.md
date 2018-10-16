@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_ContainsValue() fu
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ This function returns true in valueExists if at least one <key,value> pair exist
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MAP_RESULT Map_ContainsValue(
-  MAP_HANDLE    handle,
-  const char *  value,
-  bool *        valueExists
+  MAP_HANDLE  C2
 );
 ```
 

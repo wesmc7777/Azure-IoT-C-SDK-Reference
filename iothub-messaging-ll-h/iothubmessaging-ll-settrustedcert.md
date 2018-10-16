@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessaging_LL_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ This function is meant to be called by the user when to set the trusted certific
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetTrustedCert(
-  IOTHUB_MESSAGING_HANDLE  messagingHandle,
-  const char *             trusted_cert
+  IOTHUB_MESSAGING_HANDLE  C2
 );
 ```
 

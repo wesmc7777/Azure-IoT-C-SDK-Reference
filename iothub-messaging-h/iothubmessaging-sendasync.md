@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessaging_SendAs
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,11 +20,7 @@ Asynchronous call to send the message to a specified device.
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging.h](../iothub-messaging-h.md)"  
 ```C
 IOTHUB_MESSAGING_RESULT IoTHubMessaging_SendAsync(
-  IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle,
-  const char *                    deviceId,
-  IOTHUB_MESSAGE_HANDLE           message,
-  IOTHUB_SEND_COMPLETE_CALLBACK   sendCompleteCallback,
-  void *                          userContextCallback
+  IOTHUB_MESSAGING_CLIENT_HANDLE  C2
 );
 ```
 

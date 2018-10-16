@@ -5,7 +5,7 @@ description: "This is the function reference page for the querySpecification_ser
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Serializes a Query Specification into a JSON String.
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_models_serializer.h](../provisioning-sc-models-serializer-h.md)"  
 ```C
 char* querySpecification_serializeToJson(
-  const   query_spec
+  const   C2
 );
 ```
 

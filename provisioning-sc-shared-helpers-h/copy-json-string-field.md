@@ -5,7 +5,7 @@ description: "This is the function reference page for the copy_json_string_field
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,9 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_shared_helpers.h](../provisioning-sc-shared-helpers-h.md)"  
 ```C
 int copy_json_string_field(
-  char **        dest,
-  JSON_Object *  root_object,
-  const char *   json_key
+  char **dest   C2
 );
 ```
 

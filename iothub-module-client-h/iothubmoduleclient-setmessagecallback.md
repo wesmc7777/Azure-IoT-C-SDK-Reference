@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ Sets up the message callback to be invoked when IoT Hub issues a message to the 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetMessageCallback(
-  IOTHUB_MODULE_CLIENT_HANDLE           iotHubModuleClientHandle,
-  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  messageCallback,
-  void *                                userContextCallback
+  IOTHUB_MODULE_CLIENT_HANDLE  C2
 );
 ```
 

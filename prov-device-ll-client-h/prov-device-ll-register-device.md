@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_LL_Registe
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,11 +20,7 @@ Asynchronous call initiates the registration of a device.
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
 PROV_DEVICE_RESULT Prov_Device_LL_Register_Device(
-  PROV_DEVICE_LL_HANDLE                        handle,
-  PROV_DEVICE_CLIENT_REGISTER_DEVICE_CALLBACK  register_callback,
-  void *                                       user_context,
-  PROV_DEVICE_CLIENT_REGISTER_STATUS_CALLBACK  reg_status_cb,
-  void *                                       status_user_ctext
+  PROV_DEVICE_LL_HANDLE  C2
 );
 ```
 

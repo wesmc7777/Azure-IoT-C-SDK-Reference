@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iothub-module-client-ll-h.md)"  
 ```C
 void IoTHubModuleClient_LL_Destroy(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle
+  IOTHUB_MODULE_CLIENT_LL_HANDLE  C2
 );
 ```
 

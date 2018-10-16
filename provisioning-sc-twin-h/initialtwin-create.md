@@ -5,7 +5,7 @@ description: "This is the function reference page for the initialTwin_create() f
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ Creates an Initial Twin handle for use in consequent APIs.
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
 INITIAL_TWIN_HANDLE initialTwin_create(
-  const char *  tags,
-  const char *  desired_properties
+  const char *tags   C2
 );
 ```
 

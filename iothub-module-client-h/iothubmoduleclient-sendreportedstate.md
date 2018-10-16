@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Sen
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,11 +20,7 @@ This API sends a report of the module's properties and their current values.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubModuleClient_SendReportedState(
-  IOTHUB_MODULE_CLIENT_HANDLE            iotHubModuleClientHandle,
-  const unsigned char *                  reportedState,
-  size_t                                 size,
-  IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
-  void *                                 userContextCallback
+  IOTHUB_MODULE_CLIENT_HANDLE  C2
 );
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetByteA
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ Fetches a pointer and size for the data associated with the IoT hub message hand
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_GetByteArray(
-  IOTHUB_MESSAGE_HANDLE   iotHubMessageHandle,
-  const unsigned char **  buffer,
-  size_t *                size
+  IOTHUB_MESSAGE_HANDLE  C2
 );
 ```
 

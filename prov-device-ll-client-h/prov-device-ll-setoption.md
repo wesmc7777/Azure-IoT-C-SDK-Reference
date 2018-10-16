@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_LL_SetOpti
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ API sets a runtime option identified by parameter optionName to a value pointed 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
 PROV_DEVICE_RESULT Prov_Device_LL_SetOption(
-  PROV_DEVICE_LL_HANDLE  handle,
-  const char *           optionName,
-  const void *           value
+  PROV_DEVICE_LL_HANDLE  C2
 );
 ```
 

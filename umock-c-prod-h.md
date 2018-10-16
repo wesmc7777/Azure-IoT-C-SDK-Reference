@@ -5,7 +5,7 @@ description: "This is the header file reference page for umock_c_prod.h in the A
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,22 +13,18 @@ ms.topic: "reference"
 
 # umock_c_prod.h 
 
-Stub comment for brief. Please update this comment.
-
 ## Includes
 
 \#include "azure_c_shared_utility/macro_utils.h"  
 
 ## Detailed Description
 
-Stub comment for details. Please update this comment.
-
 ## Macro definitions
 
 #### UMOCK_C_PROD_ARG_IN_SIGNATURE
 
 ```C
-#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name IFCOMMA_##count 
+#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name IFCOMMA(count) 
 ```
 
 #### MOCKABLE_FUNCTION

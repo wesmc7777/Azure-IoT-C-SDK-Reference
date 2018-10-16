@@ -5,7 +5,7 @@ description: "This is the function reference page for the attestationMechanism_d
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Destroys an Attestation Mechanism handle, freeing all allocated memory. Please n
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
 void attestationMechanism_destroy(
-  ATTESTATION_MECHANISM_HANDLE  att_mech
+  ATTESTATION_MECHANISM_HANDLE  C2
 );
 ```
 

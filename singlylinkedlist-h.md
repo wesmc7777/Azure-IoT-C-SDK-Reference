@@ -5,15 +5,13 @@ description: "This is the header file reference page for singlylinkedlist.h in t
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # singlylinkedlist.h 
-
-Stub comment for brief. Please update this comment.
 
 ## Includes
 
@@ -22,8 +20,6 @@ Stub comment for brief. Please update this comment.
 
 ## Detailed Description
 
-Stub comment for details. Please update this comment.
-
 ## Functions
 
 Function Name                  | Description                                
@@ -31,6 +27,7 @@ Function Name                  | Description
 [singlylinkedlist_create](./singlylinkedlist-h/singlylinkedlist-create.md)            | 
 [singlylinkedlist_destroy](./singlylinkedlist-h/singlylinkedlist-destroy.md)            | 
 [singlylinkedlist_add](./singlylinkedlist-h/singlylinkedlist-add.md)            | 
+[singlylinkedlist_add_head](./singlylinkedlist-h/singlylinkedlist-add-head.md)            | 
 [singlylinkedlist_remove](./singlylinkedlist-h/singlylinkedlist-remove.md)            | 
 [singlylinkedlist_get_head_item](./singlylinkedlist-h/singlylinkedlist-get-head-item.md)            | 
 [singlylinkedlist_get_next_item](./singlylinkedlist-h/singlylinkedlist-get-next-item.md)            | 

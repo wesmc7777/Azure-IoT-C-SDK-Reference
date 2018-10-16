@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ Sets up the connection status callback to be invoked representing the status of 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetRetryPolicy(
-  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle,
-  IOTHUB_CLIENT_RETRY_POLICY      retryPolicy,
-  size_t                          retryTimeoutLimitInSeconds
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2
 );
 ```
 

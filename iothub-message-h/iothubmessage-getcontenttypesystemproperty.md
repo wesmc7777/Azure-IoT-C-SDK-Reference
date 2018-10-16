@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetConte
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Returns the content-type of the message payload, if defined.
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 const char* IoTHubMessage_GetContentTypeSystemProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle
+  IOTHUB_MESSAGE_HANDLE  C2
 );
 ```
 

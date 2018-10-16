@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_Get
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ This function returns in the out parameter lastMessageReceiveTime what was the v
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetLastMessageReceiveTime(
-  IOTHUB_DEVICE_CLIENT_HANDLE  iotHubClientHandle,
-  time_t *                     lastMessageReceiveTime
+  IOTHUB_DEVICE_CLIENT_HANDLE  C2
 );
 ```
 

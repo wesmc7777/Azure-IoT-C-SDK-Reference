@@ -5,15 +5,13 @@ description: "This is the header file reference page for provisioning_sc_models.
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # provisioning_sc_models.h 
-
-Stub comment for brief. Please update this comment.
 
 ## Includes
 
@@ -25,6 +23,4 @@ Stub comment for brief. Please update this comment.
 \#include "[provisioning_sc_twin.h](provisioning-sc-twin-h.md)"  
 
 ## Detailed Description
-
-Stub comment for details. Please update this comment.
 

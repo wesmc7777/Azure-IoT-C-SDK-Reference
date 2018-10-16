@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceTwin_Destr
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ Disposes of resources allocated by the IoT Hub IoTHubDeviceTwin_Create.
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
 void IoTHubDeviceTwin_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2
 );
 ```
 

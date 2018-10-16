@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetInput
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,7 @@ Sets input for named queues. CAUTION: SDK user should not call it directly, it i
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 IOTHUB_MESSAGE_RESULT IoTHubMessage_SetInputName(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           inputName
+  IOTHUB_MESSAGE_HANDLE  C2
 );
 ```
 

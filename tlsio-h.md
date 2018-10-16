@@ -5,7 +5,7 @@ description: "This is the header file reference page for tlsio.h in the Azure Io
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,15 +13,11 @@ ms.topic: "reference"
 
 # tlsio.h 
 
-Stub comment for brief. Please update this comment.
-
 ## Includes
 
 \#include "[xio.h](xio-h.md)"  
 
 ## Detailed Description
-
-Stub comment for details. Please update this comment.
 
 ## Structures
 

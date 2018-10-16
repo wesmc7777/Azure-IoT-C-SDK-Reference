@@ -5,7 +5,7 @@ description: "This is the header file reference page for refcount.h in the Azure
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,19 +13,15 @@ ms.topic: "reference"
 
 # refcount.h 
 
-Stub comment for brief. Please update this comment.
-
 ## Includes
 
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[azure_c_shared_utility/gballoc.h](gballoc-h.md)"  
+\#include "azure_c_shared_utility/macro_utils.h"  
 \#include <stdlib.h>  
 \#include <stdint.h>  
 \#include "refcount_os.h"  
 
 ## Detailed Description
-
-Stub comment for details. Please update this comment.
 
 ## Macro definitions
 
@@ -61,6 +57,25 @@ Stub comment for details. Please update this comment.
         REFCOUNT_TYPE_DECLARE_CREATE, \
         REFCOUNT_TYPE, \
         REFCOUNT_TYPE, \
-        REFCOUNT_TYPE 
+        REFCOUNT_TYPE, \
+        INIT_REF 
+```
+
+#### INC_REF
+
+```C
+#define INC_REF        REFCOUNT_TYPE 
+```
+
+#### DEC_REF
+
+```C
+#define DEC_REF        REFCOUNT_TYPE 
+```
+
+#### INIT_REF
+
+```C
+#define INIT_REF        REFCOUNT_TYPE 
 ```
 

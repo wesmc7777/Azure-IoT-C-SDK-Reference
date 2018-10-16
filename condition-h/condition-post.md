@@ -5,7 +5,7 @@ description: "This is the function reference page for the Condition_Post() funct
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,7 +20,7 @@ unblock all currently working condition.
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
 COND_RESULT Condition_Post(
-  COND_HANDLE  handle
+  COND_HANDLE  C2
 );
 ```
 

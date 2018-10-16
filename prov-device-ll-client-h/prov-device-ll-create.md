@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_LL_Create(
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ Creates a Provisioning Client for communications with the Device Provisioning Cl
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
 PROV_DEVICE_LL_HANDLE Prov_Device_LL_Create(
-  const char *                             uri,
-  const char *                             scope_id,
-  PROV_DEVICE_TRANSPORT_PROVIDER_FUNCTION  protocol
+  const char *uri   C2
 );
 ```
 

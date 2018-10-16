@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ This API specifies a callback to be used when the device receives a state update
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
 IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceTwinCallback(
-  IOTHUB_DEVICE_CLIENT_HANDLE         iotHubClientHandle,
-  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  deviceTwinCallback,
-  void *                              userContextCallback
+  IOTHUB_DEVICE_CLIENT_HANDLE  C2
 );
 ```
 

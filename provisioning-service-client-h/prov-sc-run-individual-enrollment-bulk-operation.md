@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_sc_run_individual
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,9 +20,7 @@ Performs a bulk operation on individual device enrollment records from the provi
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
 int prov_sc_run_individual_enrollment_bulk_operation(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  PROVISIONING_BULK_OPERATION         bulk_op,
-  PROVISIONING_BULK_OPERATION_RESULT  bulk_res_ptr
+  PROVISIONING_SERVICE_CLIENT_HANDLE  C2
 );
 ```
 

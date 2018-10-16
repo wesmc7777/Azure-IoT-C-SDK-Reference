@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubClientCore_Creat
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/11/2018                    
+ms.date: 10/16/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,9 +18,7 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core.h](../iothub-client-core-h.md)"  
 ```C
 IOTHUB_CLIENT_CORE_HANDLE IoTHubClientCore_CreateFromDeviceAuth(
-  const char *                      iothub_uri,
-  const char *                      device_id,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
+  const char *iothub_uri   C2
 );
 ```
 
