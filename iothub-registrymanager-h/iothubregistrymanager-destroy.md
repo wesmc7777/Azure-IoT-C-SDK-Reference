@@ -19,9 +19,7 @@ Disposes of resources allocated by the IoT Hub Registry Manager.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iothub-registrymanager-h.md)"  
 ```C
-void IoTHubRegistryManager_Destroy(
-  IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle
-);
+void IoTHubRegistryManager_Destroy(IOTHUB_REGISTRYMANAGER_HANDLE  registryManagerHandle);
 ```
 
 ## Parameters

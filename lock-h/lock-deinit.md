@@ -19,9 +19,7 @@ The lock instance is destroyed.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/lock.h](../lock-h.md)"  
 ```C
-LOCK_RESULT Lock_Deinit(
-  LOCK_HANDLE  C2
-);
+LOCK_RESULT Lock_Deinit(LOCK_HANDLE  C2);
 ```
 
 ## Parameters

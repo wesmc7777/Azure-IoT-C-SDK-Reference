@@ -19,7 +19,6 @@ Free resources allocated in [HTTPAPI_Init](../httpapi-h/httpapi-init.md).
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-void HTTPAPI_Deinit(void
-);
+void HTTPAPI_Deinit(void);
 ```
 

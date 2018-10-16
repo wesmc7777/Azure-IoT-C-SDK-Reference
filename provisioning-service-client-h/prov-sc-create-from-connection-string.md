@@ -19,9 +19,7 @@ Creates a Provisioning Service Client handle for use in consequent APIs.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-PROVISIONING_SERVICE_CLIENT_HANDLE prov_sc_create_from_connection_string(
-  const char *conn_string   C2
-);
+PROVISIONING_SERVICE_CLIENT_HANDLE prov_sc_create_from_connection_string(const char *conn_string   C2);
 ```
 
 ## Parameters

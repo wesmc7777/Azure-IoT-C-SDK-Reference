@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_query.h](../provisioning-sc-query-h.md)"  
 ```C
-const char* PROVISIONING_QUERY_TYPEStrings(
-  PROVISIONING_QUERY_TYPE  value
-);
+const char* PROVISIONING_QUERY_TYPEStrings(PROVISIONING_QUERY_TYPE  value);
 ```
 

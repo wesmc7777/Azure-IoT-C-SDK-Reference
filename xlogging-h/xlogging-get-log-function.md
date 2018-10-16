@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xlogging.h](../xlogging-h.md)"  
 ```C
-LOGGER_LOG xlogging_get_log_function(void
-);
+LOGGER_LOG xlogging_get_log_function(void);
 ```
 

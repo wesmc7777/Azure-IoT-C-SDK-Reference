@@ -19,9 +19,7 @@ Uploads a file to a Blob storage in chunks, fed through the callback function pr
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync(
-  IOTHUB_DEVICE_CLIENT_HANDLE  C2
-);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync(IOTHUB_DEVICE_CLIENT_HANDLE  C2);
 ```
 
 ## Remarks

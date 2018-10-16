@@ -19,9 +19,7 @@ Retreives a device enrollment group record from the Provisioning Service.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_get_enrollment_group(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  C2
-);
+int prov_sc_get_enrollment_group(PROVISIONING_SERVICE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

@@ -11,7 +11,7 @@ ms.custom: ""
 ms.topic: "reference"        
 ---                            
 
-# Microsoft Azure IoT SDK for C
+# Microsoft Azure IoT Device SDK for C
 
 ## Introduction
 

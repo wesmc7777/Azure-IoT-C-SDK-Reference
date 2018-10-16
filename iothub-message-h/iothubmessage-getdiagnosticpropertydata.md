@@ -19,9 +19,7 @@ Gets the DiagnosticData from the IOTHUB_MESSAGE_HANDLE. CAUTION: SDK user should
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA* IoTHubMessage_GetDiagnosticPropertyData(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+const IOTHUB_MESSAGE_DIAGNOSTIC_PROPERTY_DATA* IoTHubMessage_GetDiagnosticPropertyData(IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

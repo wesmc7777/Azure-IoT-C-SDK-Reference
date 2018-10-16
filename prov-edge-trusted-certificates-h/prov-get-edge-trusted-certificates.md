@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_edge_trusted_certificates.h](../prov-edge-trusted-certificates-h.md)"  
 ```C
-const char* prov_get_edge_trusted_certificates(void
-);
+const char* prov_get_edge_trusted_certificates(void);
 ```
 

@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
-void xio_destroy(
-  XIO_HANDLE  C2
-);
+void xio_destroy(XIO_HANDLE  C2);
 ```
 

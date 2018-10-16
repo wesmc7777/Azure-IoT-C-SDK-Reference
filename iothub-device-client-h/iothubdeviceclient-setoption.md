@@ -19,9 +19,7 @@ This API sets a runtime option identified by parameter optionName to a value poi
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetOption(
-  IOTHUB_DEVICE_CLIENT_HANDLE  C2
-);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetOption(IOTHUB_DEVICE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

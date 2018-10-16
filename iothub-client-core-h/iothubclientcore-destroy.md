@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core.h](../iothub-client-core-h.md)"  
 ```C
-void IoTHubClientCore_Destroy(
-  IOTHUB_CLIENT_CORE_HANDLE  C2
-);
+void IoTHubClientCore_Destroy(IOTHUB_CLIENT_CORE_HANDLE  C2);
 ```
 

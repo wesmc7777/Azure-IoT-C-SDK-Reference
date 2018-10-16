@@ -19,9 +19,7 @@ Sets up the message callback to be invoked when IoT Hub issues a message to the 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_SetMessageCallback(
-  IOTHUB_CLIENT_HANDLE  C2
-);
+IOTHUB_CLIENT_RESULT IoTHubClient_SetMessageCallback(IOTHUB_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

@@ -19,9 +19,7 @@ This function is meant to be called by the user when to set the trusted certific
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetTrustedCert(
-  IOTHUB_MESSAGING_HANDLE  C2
-);
+IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetTrustedCert(IOTHUB_MESSAGING_HANDLE  C2);
 ```
 
 ## Parameters

@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iothub-registrymanager-h.md)"  
 ```C
-const char* IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings(
-  IOTHUB_REGISTRYMANAGER_AUTH_METHOD  value
-);
+const char* IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings(IOTHUB_REGISTRYMANAGER_AUTH_METHOD  value);
 ```
 

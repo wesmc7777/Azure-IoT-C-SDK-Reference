@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
-STRING_HANDLE STRING_construct_n(
-  const char *psz   C2
-);
+STRING_HANDLE STRING_construct_n(const char *psz   C2);
 ```
 

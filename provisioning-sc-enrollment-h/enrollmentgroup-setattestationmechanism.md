@@ -17,8 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-int enrollmentGroup_setAttestationMechanism(
-  ENROLLMENT_GROUP_HANDLE  C2
-);
+int enrollmentGroup_setAttestationMechanism(ENROLLMENT_GROUP_HANDLE  C2);
 ```
 

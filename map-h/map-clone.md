@@ -19,9 +19,7 @@ Creates a copy of the map indicated by handle and returns a handle to it.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_HANDLE Map_Clone(
-  MAP_HANDLE  C2
-);
+MAP_HANDLE Map_Clone(MAP_HANDLE  C2);
 ```
 
 ## Parameters

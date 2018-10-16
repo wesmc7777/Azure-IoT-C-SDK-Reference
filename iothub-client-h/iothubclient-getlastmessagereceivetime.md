@@ -19,9 +19,7 @@ This function returns in the out parameter lastMessageReceiveTime what was the v
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_GetLastMessageReceiveTime(
-  IOTHUB_CLIENT_HANDLE  C2
-);
+IOTHUB_CLIENT_RESULT IoTHubClient_GetLastMessageReceiveTime(IOTHUB_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

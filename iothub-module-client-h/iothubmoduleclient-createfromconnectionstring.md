@@ -19,9 +19,7 @@ Creates a IoT Hub client for communication with an existing IoT Hub using the sp
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
-IOTHUB_MODULE_CLIENT_HANDLE IoTHubModuleClient_CreateFromConnectionString(
-  const char *connectionString   C2
-);
+IOTHUB_MODULE_CLIENT_HANDLE IoTHubModuleClient_CreateFromConnectionString(const char *connectionString   C2);
 ```
 
 ## Parameters

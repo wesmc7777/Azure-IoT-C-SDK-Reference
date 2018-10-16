@@ -19,7 +19,6 @@ IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init functio
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub.h](../iothub-h.md)"  
 ```C
-void IoTHub_Deinit(void
-);
+void IoTHub_Deinit(void);
 ```
 

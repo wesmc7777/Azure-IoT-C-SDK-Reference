@@ -19,9 +19,7 @@ Sets a property on a Iothub Message.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
-  IOTHUB_MESSAGE_HANDLE  C2
-);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

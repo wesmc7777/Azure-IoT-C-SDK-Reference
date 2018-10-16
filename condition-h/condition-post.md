@@ -19,9 +19,7 @@ unblock all currently working condition.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
-COND_RESULT Condition_Post(
-  COND_HANDLE  C2
-);
+COND_RESULT Condition_Post(COND_HANDLE  C2);
 ```
 
 ## Parameters
