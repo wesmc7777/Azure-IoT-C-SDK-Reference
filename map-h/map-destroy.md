@@ -19,8 +19,7 @@ Release all resources associated with the map.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-void Map_Destroy(
-  MAP_HANDLE  C2);
+void Map_Destroy(  MAP_HANDLE  C2);
 ```
 
 ## Parameters

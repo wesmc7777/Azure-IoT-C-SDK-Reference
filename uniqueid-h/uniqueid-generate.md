@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/uniqueid.h](../uniqueid-h.md)"  
 ```C
-UNIQUEID_RESULT UniqueId_Generate(
-  char *uid   C2);
+UNIQUEID_RESULT UniqueId_Generate(  char *uid   C2);
 ```
 

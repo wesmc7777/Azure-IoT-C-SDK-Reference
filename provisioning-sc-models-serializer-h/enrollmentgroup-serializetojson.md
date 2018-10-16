@@ -19,8 +19,7 @@ Serializes an Enrollment Group into a JSON String.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_models_serializer.h](../provisioning-sc-models-serializer-h.md)"  
 ```C
-char* enrollmentGroup_serializeToJson(
-  const   C2);
+char* enrollmentGroup_serializeToJson(  const   C2);
 ```
 
 ## Parameters

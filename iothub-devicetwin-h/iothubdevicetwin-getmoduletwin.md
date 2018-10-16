@@ -19,8 +19,7 @@ Retrieves the given module's twin info.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
-char* IoTHubDeviceTwin_GetModuleTwin(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2);
+char* IoTHubDeviceTwin_GetModuleTwin(  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2);
 ```
 
 ## Parameters

@@ -19,8 +19,7 @@ Gets the output name from the IOTHUB_MESSAGE_HANDLE.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetOutputName(
-  IOTHUB_MESSAGE_HANDLE  C2);
+const char* IoTHubMessage_GetOutputName(  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

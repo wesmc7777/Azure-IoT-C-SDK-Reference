@@ -19,8 +19,7 @@ Sets the option named optionName bearing the value value for the HTTP_HANDLE han
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_SetOption(
-  HTTP_HANDLE  C2);
+HTTPAPI_RESULT HTTPAPI_SetOption(  HTTP_HANDLE  C2);
 ```
 
 ## Parameters

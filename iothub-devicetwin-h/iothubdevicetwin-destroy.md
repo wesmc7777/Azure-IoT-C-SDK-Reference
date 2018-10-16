@@ -19,8 +19,7 @@ Disposes of resources allocated by the IoT Hub IoTHubDeviceTwin_Create.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
-void IoTHubDeviceTwin_Destroy(
-  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2);
+void IoTHubDeviceTwin_Destroy(  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2);
 ```
 
 ## Parameters

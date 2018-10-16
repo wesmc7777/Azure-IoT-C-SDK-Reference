@@ -19,8 +19,7 @@ Creates a new IoT hub message with the content identical to that of the iotHubMe
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(
-  IOTHUB_MESSAGE_HANDLE  C2);
+IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

@@ -19,8 +19,7 @@ This function is meant to be called by the user when work (sending/receiving) ca
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-void IoTHubDeviceClient_LL_DoWork(
-  IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2);
+void IoTHubDeviceClient_LL_DoWork(  IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2);
 ```
 
 ## Parameters

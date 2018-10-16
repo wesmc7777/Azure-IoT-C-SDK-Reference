@@ -19,8 +19,7 @@ Creates a new IoT hub message from a null terminated string. The type of the mes
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromString(
-  const char *source   C2);
+IOTHUB_MESSAGE_HANDLE IoTHubMessage_CreateFromString(  const char *source   C2);
 ```
 
 ## Parameters

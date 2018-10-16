@@ -19,8 +19,7 @@ Frees all resources associated with the given message handle.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-void IoTHubMessage_Destroy(
-  IOTHUB_MESSAGE_HANDLE  C2);
+void IoTHubMessage_Destroy(  IOTHUB_MESSAGE_HANDLE  C2);
 ```
 
 ## Parameters

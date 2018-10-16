@@ -19,8 +19,7 @@ Closes connection to IoTHub.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-void IoTHubMessaging_LL_Close(
-  IOTHUB_MESSAGING_HANDLE  C2);
+void IoTHubMessaging_LL_Close(  IOTHUB_MESSAGING_HANDLE  C2);
 ```
 
 ## Parameters

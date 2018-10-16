@@ -19,8 +19,7 @@ Free members of the [IOTHUB_DEVICE_CONFIGURATION](../iothub-deviceconfiguration-
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_deviceconfiguration.h](../iothub-deviceconfiguration-h.md)"  
 ```C
-void IoTHubDeviceConfiguration_FreeConfigurationMembers(
-  IOTHUB_DEVICE_CONFIGURATION  configuration);
+void IoTHubDeviceConfiguration_FreeConfigurationMembers(  IOTHUB_DEVICE_CONFIGURATION  configuration);
 ```
 
 ## Parameters

@@ -19,8 +19,7 @@ This API specifies a call back to be used when the module receives a desired sta
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iothub-module-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleTwinCallback(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE  C2);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleTwinCallback(  IOTHUB_MODULE_CLIENT_LL_HANDLE  C2);
 ```
 
 ## Parameters

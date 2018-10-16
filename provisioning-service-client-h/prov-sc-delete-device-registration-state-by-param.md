@@ -19,8 +19,7 @@ Deletes a device registration state on the Provisioning Service.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_delete_device_registration_state_by_param(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  C2);
+int prov_sc_delete_device_registration_state_by_param(  PROVISIONING_SERVICE_CLIENT_HANDLE  C2);
 ```
 
 ## Parameters

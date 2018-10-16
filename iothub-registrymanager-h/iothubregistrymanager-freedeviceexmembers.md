@@ -19,8 +19,7 @@ Free members of the [IOTHUB_DEVICE_EX](../iothub-registrymanager-h.md#iothub_dev
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_registrymanager.h](../iothub-registrymanager-h.md)"  
 ```C
-void IoTHubRegistryManager_FreeDeviceExMembers(
-  IOTHUB_DEVICE_EX  deviceInfo);
+void IoTHubRegistryManager_FreeDeviceExMembers(  IOTHUB_DEVICE_EX  deviceInfo);
 ```
 
 ## Parameters

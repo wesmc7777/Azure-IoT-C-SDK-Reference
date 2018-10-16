@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IOTHUB_MESSAGE_RESULTStrings(
-  IOTHUB_MESSAGE_RESULT  value);
+const char* IOTHUB_MESSAGE_RESULTStrings(  IOTHUB_MESSAGE_RESULT  value);
 ```
 

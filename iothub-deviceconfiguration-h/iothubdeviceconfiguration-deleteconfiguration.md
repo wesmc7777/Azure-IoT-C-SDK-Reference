@@ -19,8 +19,7 @@ Deletes the given Configuration from IoT Hub.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_deviceconfiguration.h](../iothub-deviceconfiguration-h.md)"  
 ```C
-IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_DeleteConfiguration(
-  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  C2);
+IOTHUB_DEVICE_CONFIGURATION_RESULT IoTHubDeviceConfiguration_DeleteConfiguration(  IOTHUB_SERVICE_CLIENT_DEVICE_CONFIGURATION_HANDLE  C2);
 ```
 
 ## Parameters

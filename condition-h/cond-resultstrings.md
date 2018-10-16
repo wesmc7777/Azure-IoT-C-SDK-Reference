@@ -17,7 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
-const char* COND_RESULTStrings(
-  COND_RESULT  value);
+const char* COND_RESULTStrings(  COND_RESULT  value);
 ```
 
