@@ -38,7 +38,7 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
-      "breadcrumb_path": "/Azure-IoT-C-SDK-Reference/breadcrumb/toc.yml",
+      "breadcrumb_path": "/Azure-IoT-C-SDK-Reference/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "feedback_system": "None"
     },
