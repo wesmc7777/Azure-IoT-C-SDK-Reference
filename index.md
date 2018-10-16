@@ -11,9 +11,11 @@ ms.custom: ""
 ms.topic: "reference"        
 ---                            
 
-# Microsoft Azure IoT Device SDK for C
+# Microsoft Azure IoT SDK for C
 
 ## Introduction
+
+This is the reference documentation for the [Azure IoT C SDKs](https://github.com/Azure/azure-iot-sdk-c).
 
 The Microsoft Azure IoT device libraries for C contain code that facilitates building devices and applications that connect to and are managed by Azure IoT Hub services.
 
