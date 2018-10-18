@@ -47,5 +47,7 @@ For information on the platforms supported by the Azure IoT SDK, please see the 
 
 * The libraries avoid compiler extensions.
 
-* The libraries expose a platform abstraction layer (PAL) to isolate OS dependencies (HTTPAPI, Lock, Threads). Refer to the https://github.com/Azure/azure-c-shared-utility/blob/master/devdoc/porting_guide.md "porting guide" for more information.
+* The libraries expose a platform abstraction layer (PAL) to isolate OS dependencies (HTTPAPI, Lock, Threads).
+
+For more information on the platform abstraction layer (PAL), refer to the https://github.com/Azure/azure-c-shared-utility/blob/master/devdoc/porting_guide.md "porting guide".
 
