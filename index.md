@@ -5,7 +5,7 @@ description: "This is the overview page for the Azure IoT C SDK reference docume
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/16/2018                    
+ms.date: 10/18/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -37,29 +37,15 @@ To meet the wide range of device requirements in the Internet of Things space, t
 
 * Supports pluggable serialization methods. JSON is available now, with more coming soon.
 
-## Tested platforms
+## Supported platforms
 
-The following platforms have been tested against this library:
+For information on the platforms supported by the Azure IoT SDK, please see the [Azure IoT SDKs platform support page](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support) in our main documentation set.
 
-* Windows 7
+## The library code
 
-* Windows 8.1
+* These libraries are written in ANSI C (C99) to maximize code portability.
 
-* Ubuntu 14.04 LTS
+* The libraries avoid compiler extensions.
 
-* Debian 7.5
-
-* Fedora 20
-
-* Raspbian
-
-* Mbed
-
-The library code:
-
-* Is written in ANSI C (C99) to maximize code portability.
-
-* Avoids compiler extensions.
-
-* Exposes a platform abstraction layer to isolate OS dependencies (HTTPAPI, Lock, Threads). Refer to the porting guide for more information.
+* The libraries expose a platform abstraction layer (PAL) to isolate OS dependencies (HTTPAPI, Lock, Threads). For more information using the PAL, see the [porting guide](https://goo.gl/mw6Typ).
 
