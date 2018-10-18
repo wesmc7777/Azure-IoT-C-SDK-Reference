@@ -41,11 +41,11 @@ To meet the wide range of device requirements in the Internet of Things space, t
 
 For information on the platforms supported by the Azure IoT SDK, please see the [Azure IoT SDKs platform support page](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support) in our main documentation set.
 
-The library code:
+## The library code
 
-* Is written in ANSI C (C99) to maximize code portability.
+* These libraries are written in ANSI C (C99) to maximize code portability.
 
-* Avoids compiler extensions.
+* The libraries avoid compiler extensions.
 
-* Exposes a platform abstraction layer to isolate OS dependencies (HTTPAPI, Lock, Threads). Refer to the porting guide for more information.
+* The libraries expose a platform abstraction layer (PAL) to isolate OS dependencies (HTTPAPI, Lock, Threads). Refer to the https://github.com/Azure/azure-c-shared-utility/blob/master/devdoc/porting_guide.md "porting guide" for more information.
 
