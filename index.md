@@ -5,7 +5,7 @@ description: "This is the overview page for the Azure IoT C SDK reference docume
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/16/2018                    
+ms.date: 10/18/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -37,23 +37,9 @@ To meet the wide range of device requirements in the Internet of Things space, t
 
 * Supports pluggable serialization methods. JSON is available now, with more coming soon.
 
-## Tested platforms
+## Supported platforms
 
-The following platforms have been tested against this library:
-
-* Windows 7
-
-* Windows 8.1
-
-* Ubuntu 14.04 LTS
-
-* Debian 7.5
-
-* Fedora 20
-
-* Raspbian
-
-* Mbed
+For information on the platforms supported by the Azure IoT SDK, please see the [Azure IoT SDKs platform support page](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support) in our main documentation set.
 
 The library code:
 

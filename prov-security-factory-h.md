@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_security_factory.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/16/2018                    
+ms.date: 10/18/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
