@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_SetOption(
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,10 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h](../prov-device-client-h.md)"  
 ```C
-PROV_DEVICE_RESULT Prov_Device_SetOption(PROV_DEVICE_HANDLE  C2);
+PROV_DEVICE_RESULT Prov_Device_SetOption(
+  PROV_DEVICE_HANDLE  prov_device_handle,
+  const char *        optionName,
+  const void *        value
+);
 ```
 

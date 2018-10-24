@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_Properti
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Gets a handle to the message's properties map. Note that when sending messages v
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-MAP_HANDLE IoTHubMessage_Properties(IOTHUB_MESSAGE_HANDLE  C2);
+MAP_HANDLE IoTHubMessage_Properties(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 DEPRECATED: Use IoTHubMessage_SetProperty and IoTHubMessage_GetProperty instead. ** 

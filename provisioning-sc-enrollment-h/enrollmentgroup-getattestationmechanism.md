@@ -5,7 +5,7 @@ description: "This is the function reference page for the enrollmentGroup_getAtt
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-ATTESTATION_MECHANISM_HANDLE enrollmentGroup_getAttestationMechanism(ENROLLMENT_GROUP_HANDLE  C2);
+ATTESTATION_MECHANISM_HANDLE enrollmentGroup_getAttestationMechanism(ENROLLMENT_GROUP_HANDLE  enrollment);
 ```
 

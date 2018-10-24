@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetConne
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Gets the connection device ID from the IOTHUB_MESSAGE_HANDLE.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetConnectionDeviceId(IOTHUB_MESSAGE_HANDLE  C2);
+const char* IoTHubMessage_GetConnectionDeviceId(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 ## Parameters

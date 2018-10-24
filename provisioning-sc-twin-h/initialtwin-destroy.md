@@ -5,7 +5,7 @@ description: "This is the function reference page for the initialTwin_destroy() 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Destroys an Initial Twin handle, freeing all associated memory. Please note that
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
-void initialTwin_destroy(INITIAL_TWIN_HANDLE  C2);
+void initialTwin_destroy(INITIAL_TWIN_HANDLE  twin);
 ```
 
 ## Parameters

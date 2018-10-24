@@ -5,7 +5,7 @@ description: "This is the header file reference page for umock_c_prod.h in the A
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -24,7 +24,7 @@ ms.topic: "reference"
 #### UMOCK_C_PROD_ARG_IN_SIGNATURE
 
 ```C
-#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name IFCOMMA(count) 
+#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name IFCOMMA_##count 
 ```
 
 #### MOCKABLE_FUNCTION

@@ -5,7 +5,7 @@ description: "This is the function reference page for the individualEnrollment_s
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,9 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-int individualEnrollment_setInitialTwin(INDIVIDUAL_ENROLLMENT_HANDLE  C2);
+int individualEnrollment_setInitialTwin(
+  INDIVIDUAL_ENROLLMENT_HANDLE  enrollment,
+  INITIAL_TWIN_HANDLE           twin
+);
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the tickcounter_get_curren
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,9 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/tickcounter.h](../tickcounter-h.md)"  
 ```C
-int tickcounter_get_current_ms(TICK_COUNTER_HANDLE  C2);
+int tickcounter_get_current_ms(
+  TICK_COUNTER_HANDLE  tick_counter,
+  tickcounter_ms_t     current_ms
+);
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_sc_delete_individ
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,10 @@ Deletes a individual device enrollment record on the Provisioning Service.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_delete_individual_enrollment(PROVISIONING_SERVICE_CLIENT_HANDLE  C2);
+int prov_sc_delete_individual_enrollment(
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  INDIVIDUAL_ENROLLMENT_HANDLE        enrollment
+);
 ```
 
 ## Parameters
