@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_CloseConnectio
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Closes a connection created with [HTTPAPI_CreateConnection](../httpapi-h/httpapi
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-void HTTPAPI_CloseConnection(HTTP_HANDLE  C2);
+void HTTPAPI_CloseConnection(HTTP_HANDLE  handle);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the queryResponse_free() f
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_query.h](../provisioning-sc-query-h.md)"  
 ```C
-void queryResponse_free(PROVISIONING_QUERY_RESPONSE  C2);
+void queryResponse_free(PROVISIONING_QUERY_RESPONSE  query_resp);
 ```
 

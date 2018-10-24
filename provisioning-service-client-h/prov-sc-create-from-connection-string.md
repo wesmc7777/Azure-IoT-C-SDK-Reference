@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_sc_create_from_co
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Creates a Provisioning Service Client handle for use in consequent APIs.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-PROVISIONING_SERVICE_CLIENT_HANDLE prov_sc_create_from_connection_string(const char *conn_string   C2);
+PROVISIONING_SERVICE_CLIENT_HANDLE prov_sc_create_from_connection_string(const char *  conn_string);
 ```
 
 ## Parameters

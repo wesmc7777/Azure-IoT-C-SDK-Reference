@@ -5,7 +5,7 @@ description: "This is the function reference page for the attestationMechanism_c
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,10 @@ Creates an Attestation Mechanism handle that uses an x509 Attestation with clien
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
-ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509ClientCert(const char *primary_cert   C2);
+ATTESTATION_MECHANISM_HANDLE attestationMechanism_createWithX509ClientCert(
+  const char *  primary_cert,
+  const char *  secondary_cert
+);
 ```
 
 ## Parameters

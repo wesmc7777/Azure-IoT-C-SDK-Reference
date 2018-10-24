@@ -5,7 +5,7 @@ description: "This is the function reference page for the ThreadAPI_Sleep() func
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Sleeps the current thread for the given number of milliseconds.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-void ThreadAPI_Sleep(unsigned int milliseconds   C2);
+void ThreadAPI_Sleep(unsigned int  milliseconds);
 ```
 
 ## Parameters

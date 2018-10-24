@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,11 @@ This API sets a runtime option identified by parameter optionName to a value poi
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetOption(IOTHUB_MODULE_CLIENT_HANDLE  C2);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetOption(
+  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle,
+  const char *                 optionName,
+  const void *                 value
+);
 ```
 
 ## Parameters

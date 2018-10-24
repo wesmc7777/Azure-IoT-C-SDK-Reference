@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceTwin_Updat
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,12 @@ Updates (partial update) the given module's twin info.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
-char* IoTHubDeviceTwin_UpdateModuleTwin(IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  C2);
+char* IoTHubDeviceTwin_UpdateModuleTwin(
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
+  const char *                              deviceId,
+  const char *                              moduleId,
+  const char *                              moduleTwinJson
+);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_dev_security_init
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_security_factory.h](../prov-security-factory-h.md)"  
 ```C
-int prov_dev_security_init(SECURE_DEVICE_TYPE  C2);
+int prov_dev_security_init(SECURE_DEVICE_TYPE  hsm_type);
 ```
 

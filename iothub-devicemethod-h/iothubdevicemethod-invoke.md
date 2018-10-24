@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceMethod_Inv
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,16 @@ Call a method on device with a given payload.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h](../iothub-devicemethod-h.md)"  
 ```C
-IOTHUB_DEVICE_METHOD_RESULT IoTHubDeviceMethod_Invoke(IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  C2);
+IOTHUB_DEVICE_METHOD_RESULT IoTHubDeviceMethod_Invoke(
+  IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE  serviceClientDeviceMethodHandle,
+  const char *                                deviceId,
+  const char *                                methodName,
+  const char *                                methodPayload,
+  unsigned int                                timeout,
+  int *                                       responseStatus,
+  unsigned char **                            responsePayload,
+  size_t *                                    responsePayloadSize
+);
 ```
 
 ## Parameters

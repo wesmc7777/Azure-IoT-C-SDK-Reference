@@ -5,7 +5,7 @@ description: "This is the function reference page for the ThreadAPI_Create() fun
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,11 @@ Creates a thread with the entry point specified by the func argument.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-THREADAPI_RESULT ThreadAPI_Create(THREAD_HANDLE  C2);
+THREADAPI_RESULT ThreadAPI_Create(
+  THREAD_HANDLE      threadHandle,
+  THREAD_START_FUNC  func,
+  void *             arg
+);
 ```
 
 ## Parameters

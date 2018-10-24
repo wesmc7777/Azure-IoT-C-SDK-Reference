@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetConte
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,10 @@ Sets the content-type of the message payload, as per supported values on RFC 204
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(IOTHUB_MESSAGE_HANDLE  C2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const char *           contentType
+);
 ```
 
 ## Parameters

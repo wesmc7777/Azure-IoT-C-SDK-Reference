@@ -5,7 +5,7 @@ description: "This is the function reference page for the UniqueId_Generate() fu
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,9 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/uniqueid.h](../uniqueid-h.md)"  
 ```C
-UNIQUEID_RESULT UniqueId_Generate(char *uid   C2);
+UNIQUEID_RESULT UniqueId_Generate(
+  char *  uid,
+  size_t  bufferSize
+);
 ```
 

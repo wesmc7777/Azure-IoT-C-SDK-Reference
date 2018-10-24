@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,10 @@ This function returns the current sending status for IoTHubClient.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_GetSendStatus(IOTHUB_DEVICE_CLIENT_LL_HANDLE  C2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_GetSendStatus(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle,
+  IOTHUB_CLIENT_STATUS            iotHubClientStatus
+);
 ```
 
 ## Parameters

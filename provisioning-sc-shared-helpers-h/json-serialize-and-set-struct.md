@@ -5,7 +5,7 @@ description: "This is the function reference page for the json_serialize_and_set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,12 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_shared_helpers.h](../provisioning-sc-shared-helpers-h.md)"  
 ```C
-int json_serialize_and_set_struct(JSON_Object *root_object   C2);
+int json_serialize_and_set_struct(
+  JSON_Object *     root_object,
+  const char *      json_key,
+  void *            structure,
+  TO_JSON_FUNCTION  toJson,
+  NECESSITY         necessity
+);
 ```
 

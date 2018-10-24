@@ -5,7 +5,7 @@ description: "This is the function reference page for the singlylinkedlist_item_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/18/2018                    
+ms.date: 10/24/2018                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/singlylinkedlist.h](../singlylinkedlist-h.md)"  
 ```C
-const void* singlylinkedlist_item_get_value(LIST_ITEM_HANDLE  C2);
+const void* singlylinkedlist_item_get_value(LIST_ITEM_HANDLE  item_handle);
 ```
 
