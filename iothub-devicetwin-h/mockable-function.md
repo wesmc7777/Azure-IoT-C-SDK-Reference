@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Retrieves the given module's twin info.
+Updates (partial update) the given module's twin info.
 
 ## Syntax
 
@@ -21,27 +21,26 @@ Retrieves the given module's twin info.
 ```C
 MOCKABLE_FUNCTION(
   char *,
-  IoTHubDeviceTwin_GetModuleTwin,
+  IoTHubDeviceTwin_UpdateModuleTwin,
   IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE,
   serviceClientDeviceTwinHandle,
   const char *,
   deviceId,
   const char *,
-  moduleId
+  moduleId,
+  const char *,
+  moduleTwinJson
 );
 ```
 
 ## Parameters
 * `serviceClientDeviceTwinHandle` The handle created by a call to the create function. 
 
-* `deviceId` The device name (id) containing the module to retrieve the twin info for. 
+* `deviceId` The device name (id) containing the module to update. 
 
-* `moduleId` The module name (id) to retrieve twin info for.
+* `moduleId` The module name (id) to update the twin info for. 
 
-## Return Value
-A non-NULL char* containing module twin info upon success or NULL upon failure.
-
-tags, desired properties) to update. All well-known read-only members are ignored. Properties provided with value of null are removed from twin's document.
+* `moduleTwinJson` ModuleTwin JSon string containing the info (tags, desired properties) to update. All well-known read-only members are ignored. Properties provided with value of null are removed from twin's document.
 
 ## Return Value
 A non-NULL char* containing updated module twin info upon success or NULL upon failure.

@@ -13,26 +13,27 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-block on the condition handle unti the thread is signalled or until the timeout_milliseconds is reached.
+The condition instance is deinitialized.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  COND_RESULT,
-  Condition_Wait,
+  void,
+  Condition_Deinit,
   COND_HANDLE,
-  handle,
-  LOCK_HANDLE,
-  lock,
-  int,
-  timeout_milliseconds
+  handle
 );
 ```
 
 ## Parameters
-* `handle` A valid handle to the lock.
+* `handle` A valid handle to the condition.
+
+## Return Value
+Returns COND_OK when the condition object has been destroyed and COND_ERROR when an error occurs.
+
+
 
 ## Return Value
 Returns COND_OK when the condition object has been destroyed and COND_ERROR when an error occurs and COND_TIMEOUT when the handle times out.

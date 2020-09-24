@@ -13,24 +13,24 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Disposes of resources allocated by the IoT Hub IoTHubDeviceMethod_Create.
+Call a method on device and a module with a given payload.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h](../iothub-devicemethod-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  IoTHubDeviceMethod_Destroy,
+  IOTHUB_DEVICE_METHOD_RESULT,
+  IoTHubDeviceMethod_InvokeModule,
   IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE,
-  serviceClientDeviceMethodHandle
-);
-```
-
-## Parameters
-* `serviceClientDeviceMethodHandle` The handle created by a call to the create function.
-
-
+  serviceClientDeviceMethodHandle,
+  const char *,
+  deviceId,
+  const char *,
+  moduleId,
+  const char *,
+  methodName,
+  const char *,
   methodPayload,
   unsigned                                    int,
   timeout,

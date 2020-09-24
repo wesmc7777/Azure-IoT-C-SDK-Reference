@@ -13,15 +13,28 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Returns result indicating if an attestation mechanism is valid to be attached to an Individual Enrollment.
-
 ## Syntax
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  bool,
-  attestationMechanism_isValidForIndividualEnrollment,
+  JSON_Value *,
+  attestationMechanism_toJson,
+  const ,
+  att_mech
+);
+```
+
+ *,
+  root_object
+);
+```
+
+t_mech
+);
+```
+
+Mechanism_isValidForEnrollmentGroup,
   ATTESTATION_MECHANISM_HANDLE,
   att_mech
 );
@@ -29,6 +42,8 @@ MOCKABLE_FUNCTION(
 
 ## Parameters
 * `att_mech` The handle of the Attestation Mechanism
+
+chanism
 
 e_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C

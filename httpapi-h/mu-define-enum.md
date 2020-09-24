@@ -13,24 +13,21 @@ ms.topic: "reference"
 
 # MU_DEFINE_ENUM()
 
-Enumeration specifying the HTTP request verbs accepted by the HTTPAPI module.
+Enumeration specifying the possible return values for the APIs in this module.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
 MU_DEFINE_ENUM(
-  HTTPAPI_REQUEST_TYPE,
-  HTTPAPI_REQUEST_GET,
-  HTTPAPI_REQUEST_POST,
-  HTTPAPI_REQUEST_PUT,
-  HTTPAPI_REQUEST_DELETE,
-  HTTPAPI_REQUEST_PATCH,
-  HTTPAPI_REQUEST_HEAD
-);
-```
-
-IVE_RESPONSE_FAILED,
+  HTTPAPI_RESULT,
+  HTTPAPI_OK,
+  HTTPAPI_INVALID_ARG,
+  HTTPAPI_ERROR,
+  HTTPAPI_OPEN_REQUEST_FAILED,
+  HTTPAPI_SET_OPTION_FAILED,
+  HTTPAPI_SEND_REQUEST_FAILED,
+  HTTPAPI_RECEIVE_RESPONSE_FAILED,
   HTTPAPI_QUERY_HEADERS_FAILED,
   HTTPAPI_QUERY_DATA_AVAILABLE_FAILED,
   HTTPAPI_READ_DATA_FAILED,

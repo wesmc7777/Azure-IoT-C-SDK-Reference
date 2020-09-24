@@ -13,18 +13,17 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-IoTHubClient_Init Initializes the IoTHub Client System.
+IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init function call.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub.h](../iothub-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  IoTHub_Init
+  void,
+  IoTHub_Deinit
 );
 ```
 
-## Return Value
-int zero upon success, any other value upon failure.
+ss, any other value upon failure.
 

@@ -18,14 +18,14 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_tpm_attestation.h](../provisioning-sc-tpm-attestation-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  tpmAttestation_destroy,
-  TPM_ATTESTATION_HANDLE,
+  JSON_Value *,
+  tpmAttestation_toJson,
+  const ,
   tpm_att
 );
 ```
 
-ect
+ root_object
 );
 ```
 

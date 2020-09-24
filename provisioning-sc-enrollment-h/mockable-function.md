@@ -28,10 +28,8 @@ MOCKABLE_FUNCTION(
 );
 ```
 
-
-```
-
-prov_status
+ATUS,
+  prov_status
 );
 ```
 
@@ -54,9 +52,7 @@ _FUNCTION(
 ## Parameters
 * `enrollment` A handle for the Enrollment Group to be destroyed.
 
- to be destroyed.
-
-ed by the Enrollment Group. Note: only valid with type: X509
+n Mechanism to be used by the Enrollment Group. Note: only valid with type: X509
 
 ## Return Value
 A non-NULL handle representing an Enrollment Group for use with the Provisioning Service, and NULL on failure.

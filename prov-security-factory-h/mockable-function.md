@@ -19,11 +19,8 @@ ms.topic: "reference"
 ```C
 MOCKABLE_FUNCTION(
   const char *,
-  prov_dev_get_symmetric_key
+  prov_dev_get_symm_registration_name
 );
-```
-
-;
 ```
 
 stration_name,
