@@ -17,6 +17,10 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core.h](../iothub-client-core-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClientCore_SetOption(IOTHUB_CLIENT_CORE_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubClientCore_SetOption(
+  IOTHUB_CLIENT_CORE_HANDLE  iotHubClientHandle,
+  const char *               optionName,
+  const void *               value
+);
 ```
 

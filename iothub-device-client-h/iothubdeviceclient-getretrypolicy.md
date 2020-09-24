@@ -19,7 +19,11 @@ Sets up the connection status callback to be invoked representing the status of 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetRetryPolicy(IOTHUB_DEVICE_CLIENT_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetRetryPolicy(
+  IOTHUB_DEVICE_CLIENT_HANDLE  iotHubClientHandle,
+  IOTHUB_CLIENT_RETRY_POLICY   retryPolicy,
+  size_t *                     retryTimeoutLimitInSeconds
+);
 ```
 
 ## Parameters

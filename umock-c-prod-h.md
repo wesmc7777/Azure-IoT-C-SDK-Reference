@@ -42,7 +42,7 @@ ms.topic: "reference"
 #### UMOCK_C_PROD_ARG_IN_SIGNATURE
 
 ```C
-#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name MU_IFCOMMA(count) 
+#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name MU_IFCOMMA_##count 
 ```
 
 #### MOCKABLE_FUNCTION_SIGNATURE

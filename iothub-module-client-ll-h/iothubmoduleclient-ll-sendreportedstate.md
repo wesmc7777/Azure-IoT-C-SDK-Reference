@@ -19,7 +19,13 @@ This API sneds a report of the module's properties and their current values.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iothub-module-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SendReportedState(IOTHUB_MODULE_CLIENT_LL_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SendReportedState(
+  IOTHUB_MODULE_CLIENT_LL_HANDLE         iotHubModuleClientHandle,
+  const unsigned char *                  reportedState,
+  size_t                                 size,
+  IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
+  void *                                 userContextCallback
+);
 ```
 
 ## Parameters

@@ -19,7 +19,11 @@ This API sets a runtime option identified by parameter optionName to a value poi
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetOption(IOTHUB_MODULE_CLIENT_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetOption(
+  IOTHUB_MODULE_CLIENT_HANDLE  iotHubModuleClientHandle,
+  const char *                 optionName,
+  const void *                 value
+);
 ```
 
 ## Parameters

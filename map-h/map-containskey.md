@@ -19,7 +19,11 @@ This function returns a boolean value in keyExists if the map contains a key wit
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_RESULT Map_ContainsKey(MAP_HANDLE  MU_C2);
+MAP_RESULT Map_ContainsKey(
+  MAP_HANDLE    handle,
+  const char *  key,
+  bool *        keyExists
+);
 ```
 
 ## Parameters

@@ -19,7 +19,10 @@ Sets the content-type of the message payload, as per supported values on RFC 204
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentTypeSystemProperty(
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const char *           contentType
+);
 ```
 
 ## Parameters

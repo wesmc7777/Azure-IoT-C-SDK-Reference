@@ -19,7 +19,7 @@ Returns result indicating if an attestation mechanism is valid to be attached to
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
-bool attestationMechanism_isValidForIndividualEnrollment(ATTESTATION_MECHANISM_HANDLE  MU_C2);
+bool attestationMechanism_isValidForIndividualEnrollment(ATTESTATION_MECHANISM_HANDLE  att_mech);
 ```
 
 ## Parameters

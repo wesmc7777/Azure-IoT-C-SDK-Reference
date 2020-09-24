@@ -19,7 +19,7 @@ Returns the content-encoding of the message payload, if defined. No new memory i
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetContentEncodingSystemProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
+const char* IoTHubMessage_GetContentEncodingSystemProperty(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 ## Parameters

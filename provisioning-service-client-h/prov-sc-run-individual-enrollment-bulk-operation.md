@@ -19,7 +19,11 @@ Performs a bulk operation on individual device enrollment records from the provi
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_run_individual_enrollment_bulk_operation(PROVISIONING_SERVICE_CLIENT_HANDLE  MU_C2);
+int prov_sc_run_individual_enrollment_bulk_operation(
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  PROVISIONING_BULK_OPERATION         bulk_op,
+  PROVISIONING_BULK_OPERATION_RESULT  bulk_res_ptr
+);
 ```
 
 ## Parameters

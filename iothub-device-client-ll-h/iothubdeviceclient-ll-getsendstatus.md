@@ -19,7 +19,10 @@ This function returns the current sending status for IoTHubClient.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_GetSendStatus(IOTHUB_DEVICE_CLIENT_LL_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_GetSendStatus(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle,
+  IOTHUB_CLIENT_STATUS            iotHubClientStatus
+);
 ```
 
 ## Parameters

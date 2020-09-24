@@ -19,7 +19,11 @@ This API specifies a call back to be used when the device receives a state updat
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_SetDeviceTwinCallback(IOTHUB_CLIENT_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubClient_SetDeviceTwinCallback(
+  IOTHUB_CLIENT_HANDLE                iotHubClientHandle,
+  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK  deviceTwinCallback,
+  void *                              userContextCallback
+);
 ```
 
 ## Parameters

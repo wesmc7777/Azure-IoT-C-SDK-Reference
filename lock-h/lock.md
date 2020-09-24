@@ -19,7 +19,7 @@ Acquires a lock on the given lock handle. Uses platform specific mutex primitive
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/lock.h](../lock-h.md)"  
 ```C
-LOCK_RESULT Lock(LOCK_HANDLE  MU_C2);
+LOCK_RESULT Lock(LOCK_HANDLE  handle);
 ```
 
 ## Parameters

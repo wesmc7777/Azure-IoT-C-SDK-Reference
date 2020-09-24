@@ -19,7 +19,10 @@ Sets input for named queues. CAUTION: SDK user should not call it directly, it i
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetInputName(IOTHUB_MESSAGE_HANDLE  MU_C2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetInputName(
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const char *           inputName
+);
 ```
 
 ## Parameters

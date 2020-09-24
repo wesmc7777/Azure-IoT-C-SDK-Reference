@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/iothub_security_factory.h](../iothub-security-factory-h.md)"  
 ```C
-int iothub_security_init(IOTHUB_SECURITY_TYPE  MU_C2);
+int iothub_security_init(IOTHUB_SECURITY_TYPE  sec_type);
 ```
 

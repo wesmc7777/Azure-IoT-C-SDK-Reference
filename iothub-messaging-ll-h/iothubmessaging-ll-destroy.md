@@ -19,7 +19,7 @@ Disposes of resources allocated by the IoT Hub Service Client Messaging.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-void IoTHubMessaging_LL_Destroy(IOTHUB_MESSAGING_HANDLE  MU_C2);
+void IoTHubMessaging_LL_Destroy(IOTHUB_MESSAGING_HANDLE  messagingHandle);
 ```
 
 ## Parameters

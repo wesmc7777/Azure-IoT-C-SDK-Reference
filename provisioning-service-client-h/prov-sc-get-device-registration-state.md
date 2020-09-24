@@ -19,7 +19,11 @@ Retreives a device registration state from the Provisioning Service.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_get_device_registration_state(PROVISIONING_SERVICE_CLIENT_HANDLE  MU_C2);
+int prov_sc_get_device_registration_state(
+  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
+  const char *                        reg_id,
+  DEVICE_REGISTRATION_STATE_HANDLE    reg_state_ptr
+);
 ```
 
 ## Parameters
