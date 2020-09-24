@@ -13,26 +13,27 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Deserializes a JSON String representation of an Enrollment Group.
+Deserializes a JSON String representation of a Query Response.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_models_serializer.h](../provisioning-sc-models-serializer-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  ENROLLMENT_GROUP_HANDLE,
-  enrollmentGroup_deserializeFromJson,
+  PROVISIONING_QUERY_RESPONSE,
+  queryResponse_deserializeFromJson,
   const char *,
-  json_string
+  json_string,
+  PROVISIONING_QUERY_TYPE,
+  type
 );
 ```
 
 ## Parameters
-* `json_string` A JSON String representing an Enrollment Group.
+* `json_string` A JSON String representing a Query Response. 
+
+* `type` The type of model the query is being done upon
 
 ## Return Value
-A non-NULL handle representing an Enrollment Group, and NULL on failure.
-
- Return Value
 A non-NULL pointer to a Query Response and NULL on failure.
 

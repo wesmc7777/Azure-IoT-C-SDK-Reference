@@ -28,10 +28,8 @@ MOCKABLE_FUNCTION(
 );
 ```
 
-
-```
-
-prov_status
+ATUS,
+  prov_status
 );
 ```
 

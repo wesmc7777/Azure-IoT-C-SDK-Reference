@@ -18,12 +18,10 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_query.h](../provisioning-sc-query-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  queryResponse_free,
-  PROVISIONING_QUERY_RESPONSE,
-  query_resp
+  PROVISIONING_QUERY_TYPE,
+  queryType_stringToEnum,
+  const char *,
+  string
 );
 ```
-
-`
 

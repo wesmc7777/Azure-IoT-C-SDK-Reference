@@ -89,7 +89,7 @@ Member name                 | Description
 #### MU_C2
 
 ```C
-#define MU_C2        MU_C2_ 
+#define MU_C2  x##y 
 ```
 
 #### MU_C3

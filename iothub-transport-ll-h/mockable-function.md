@@ -18,10 +18,14 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_transport_ll.h](../iothub-transport-ll-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  TRANSPORT_LL_HANDLE,
-  IoTHubTransport_GetLLTransport,
+  void,
+  IoTHubTransport_Destroy,
   TRANSPORT_HANDLE,
   transportHandle
+);
+```
+
+sportHandle
 );
 ```
 

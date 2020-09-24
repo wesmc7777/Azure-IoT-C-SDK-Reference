@@ -18,13 +18,10 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_bulk_operation.h](../provisioning-sc-bulk-operation-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  bulkOperationResult_free,
-  PROVISIONING_BULK_OPERATION_RESULT,
-  bulk_op_result
+  PROVISIONING_BULK_OPERATION_ERROR,
+  bulkOperationError_fromJson,
+  JSON_Object *,
+  root_object
 );
-```
-
-
 ```
 

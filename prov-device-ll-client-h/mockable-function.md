@@ -13,31 +13,34 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Sets the Provisioning Data that is sent to the Provisioning service.
+Retrieves the Provisioning Data that is sent from the Provisioning service.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  PROV_DEVICE_RESULT,
-  Prov_Device_LL_Set_Provisioning_Payload,
-  PROV_DEVICE_LL_HANDLE,
-  handle,
   const char *,
-  json
+  Prov_Device_LL_Get_Provisioning_Payload,
+  PROV_DEVICE_LL_HANDLE,
+  handle
 );
 ```
 
 ## Parameters
-* `handle` The handle created by a call to the create function. 
+* `handle` The handle created by a call to the create function.
 
-* `json` The data field that is sent to the service. Setting json to NULL will unset the value previously set
+## Return Value
+The data that was specified by the service
+
+to the service. Setting json to NULL will unset the value previously set
 
 ## Return Value
 PROV_DEVICE_RESULT_OK upon success or an error code upon failure
 
-ed on registration or if an error is encountered 
+cess or an error code upon failure
+
+encountered 
 
 * `user_context` User specified context that will be provided to the callback 
 

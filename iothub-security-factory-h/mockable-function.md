@@ -19,13 +19,9 @@ ms.topic: "reference"
 ```C
 MOCKABLE_FUNCTION(
   int,
-  iothub_security_init,
-  IOTHUB_SECURITY_TYPE,
-  sec_type
-);
-```
-
-ion_name,
+  iothub_security_set_symmetric_key_info,
+  const char *,
+  registration_name,
   const char *,
   symmetric_key
 );
