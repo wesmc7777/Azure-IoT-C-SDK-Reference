@@ -18,18 +18,20 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  xio_close,
+  OPTIONHANDLER_HANDLE,
+  xio_retrieveoptions,
   XIO_HANDLE,
-  xio,
-  ON_IO_CLOSE_COMPLETE,
-  on_io_close_complete,
-  void *,
-  callback_context
+  xio
 );
 ```
 
-id *,
+const void *,
+  value
+);
+```
+
+send_complete,
+  void *,
   callback_context
 );
 ```

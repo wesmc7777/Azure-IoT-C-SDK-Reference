@@ -18,12 +18,14 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/singlylinkedlist.h](../singlylinkedlist-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  singlylinkedlist_foreach,
-  SINGLYLINKEDLIST_HANDLE,
-  list,
-  LIST_ACTION_FUNCTION,
-  action_function,
+  const void *,
+  singlylinkedlist_item_get_value,
+  LIST_ITEM_HANDLE,
+  item_handle
+);
+```
+
+ action_function,
   const void *,
   action_context
 );

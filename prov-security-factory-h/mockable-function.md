@@ -18,14 +18,12 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_security_factory.h](../prov-security-factory-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  prov_dev_security_init,
-  SECURE_DEVICE_TYPE,
-  hsm_type
+  const char *,
+  prov_dev_get_symm_registration_name
 );
 ```
 
-e,
+stration_name,
   const char *,
   symmetric_key
 );

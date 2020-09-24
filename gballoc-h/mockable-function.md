@@ -18,15 +18,10 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/gballoc.h](../gballoc-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  gballoc_resetMetrics
+  size_t,
+  gballoc_getCurrentMemoryUsed
 );
 ```
-
-
-```
-
-
 
 e_t,
   size
