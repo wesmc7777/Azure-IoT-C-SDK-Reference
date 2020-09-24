@@ -19,7 +19,7 @@ This API sets a runtime option identified by parameter optionName to a value poi
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_SetOption(IOTHUB_CLIENT_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubClient_SetOption(IOTHUB_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters
@@ -31,7 +31,7 @@ IOTHUB_CLIENT_RESULT IoTHubClient_SetOption(IOTHUB_CLIENT_HANDLE  MU_IFCOMMA2);
 
 The options that can be set via this API are:
 
-* **timeout** - the maximum time in milliseconds a communication is allowed to use. value is a pointer to an unsignedint with the timeout value in milliseconds. This is only supported for the HTTP protocol as of now. When the HTTP protocol uses CURL, the meaning of the parameter is *total request time*. When the HTTP protocol uses winhttp, the meaning is the same as the dwSendTimeout and dwReceiveTimeout parameters of the [WinHttpSetTimeouts](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384116(v=vs.85).aspx) API.
+* **timeout** - the maximum time in milliseconds a communication is allowed to use. value is a pointer to an unsignedint with the timeout value in milliseconds. This is only supported for the HTTP protocol as of now. When the HTTP protocol uses CURL, the meaning of the parameter is *total request time*. When the HTTP protocol uses winhttp, the meaning is the same as the dwSendTimeout and dwReceiveTimeout parameters of the [WinHttpSetTimeouts](https://msdn.microsoft.com/library/windows/desktop/aa384116(v=vs.85).aspx) API.
 
 * **CURLOPT_LOW_SPEED_LIMIT** - only available for HTTP protocol and only when CURL is used. It has the same meaning as CURL's option with the same name. value is pointer to a long.
 

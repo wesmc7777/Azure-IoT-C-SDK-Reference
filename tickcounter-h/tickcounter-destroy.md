@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/tickcounter.h](../tickcounter-h.md)"  
 ```C
-void tickcounter_destroy(TICK_COUNTER_HANDLE  MU_IFCOMMA2);
+void tickcounter_destroy(TICK_COUNTER_HANDLE  MU_C2);
 ```
 

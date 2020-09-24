@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
-int xio_close(XIO_HANDLE  MU_IFCOMMA2);
+int xio_close(XIO_HANDLE  MU_C2);
 ```
 

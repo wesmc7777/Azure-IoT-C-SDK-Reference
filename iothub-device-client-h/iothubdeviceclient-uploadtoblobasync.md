@@ -19,7 +19,7 @@ IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadToBlobAsync(IOTHUB_DEVICE_CLIENT_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_UploadToBlobAsync(IOTHUB_DEVICE_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

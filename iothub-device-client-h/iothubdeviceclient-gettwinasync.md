@@ -19,7 +19,7 @@ This API provides a way to retrieve the complete device Twin properties on-deman
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetTwinAsync(IOTHUB_DEVICE_CLIENT_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_GetTwinAsync(IOTHUB_DEVICE_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

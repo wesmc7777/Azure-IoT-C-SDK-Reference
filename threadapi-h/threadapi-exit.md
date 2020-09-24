@@ -19,7 +19,7 @@ This function is called by a thread when the thread exits.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-void ThreadAPI_Exit(int res  MU_IFCOMMA2);
+void ThreadAPI_Exit(int res   MU_C2);
 ```
 
 ## Parameters

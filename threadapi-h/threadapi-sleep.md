@@ -19,7 +19,7 @@ Sleeps the current thread for the given number of milliseconds.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-void ThreadAPI_Sleep(unsigned int milliseconds  MU_IFCOMMA2);
+void ThreadAPI_Sleep(unsigned int milliseconds   MU_C2);
 ```
 
 ## Parameters

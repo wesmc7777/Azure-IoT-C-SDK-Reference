@@ -19,7 +19,7 @@ Serializes a Bulk Operation into a JSON String.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_models_serializer.h](../provisioning-sc-models-serializer-h.md)"  
 ```C
-char* bulkOperation_serializeToJson(const   MU_IFCOMMA2);
+char* bulkOperation_serializeToJson(const   MU_C2);
 ```
 
 ## Parameters

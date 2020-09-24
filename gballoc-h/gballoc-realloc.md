@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/gballoc.h](../gballoc-h.md)"  
 ```C
-void* gballoc_realloc(void *ptr MU_IFCOMMA4 size_t size  MU_IFCOMMA2);
+void* gballoc_realloc(void *ptr   MU_C2);
 ```
 

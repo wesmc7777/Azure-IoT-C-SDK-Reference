@@ -19,7 +19,7 @@ Blocks the calling thread by waiting on the thread identified by the threadHandl
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-THREADAPI_RESULT ThreadAPI_Join(THREAD_HANDLE  MU_IFCOMMA2);
+THREADAPI_RESULT ThreadAPI_Join(THREAD_HANDLE  MU_C2);
 ```
 
 ## Parameters
