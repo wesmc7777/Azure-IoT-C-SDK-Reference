@@ -18,23 +18,15 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  JSON_Value *,
-  initialTwin_toJson,
-  const ,
-  twin
+  INITIAL_TWIN_HANDLE,
+  initialTwin_fromJson,
+  JSON_Object *,
+  root_object
 );
 ```
 
-win
-);
-```
-
-;
-```
-
-```
-
-siredProperties
+,
+  desiredProperties
 );
 ```
 

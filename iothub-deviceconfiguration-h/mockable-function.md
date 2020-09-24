@@ -41,7 +41,7 @@ MOCKABLE_FUNCTION(
 ## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.
 
-cess or an error code upon failure.
+created configuration info structure
 
 ## Return Value
 IOTHUB_DEVICE_CONFIGURATION_RESULT upon success or an error code upon failure.

@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
+Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
 
 ## Syntax
 
@@ -21,27 +21,25 @@ Creates a IoT Hub client for communication with an existing IoT Hub using the de
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_DEVICE_CLIENT_HANDLE,
-  IoTHubDeviceClient_CreateFromDeviceAuth,
-  const char *,
-  iothub_uri,
-  const char *,
-  device_id,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER,
-  protocol
+  IoTHubDeviceClient_CreateWithTransport,
+  TRANSPORT_HANDLE,
+  transportHandle,
+  const ,
+  config
 );
 ```
 
 ## Parameters
-* `iothub_uri` Pointer to an ioThub hostname received in the registration process 
+* `transportHandle` TRANSPORT_HANDLE which represents a connection. 
 
-* `device_id` Pointer to the device Id of the device 
+* `config` Pointer to an [IOTHUB_CLIENT_CONFIG](../iothub-client-core-common-h.md#iothub_client_config) structure
 
-* `protocol` Function pointer for protocol implementation
+The API allows sharing of a connection across multiple devices. This is a blocking call.
 
 ## Return Value
 A non-NULL IOTHUB_DEVICE_CLIENT_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
 
-me of the file to be created in Azure Blob Storage. 
+n Azure Blob Storage. 
 
 * `getDataCallbackEx` A callback to be invoked to acquire the file chunks to be uploaded, as well as to indicate the status of the upload of the previous block. 
 

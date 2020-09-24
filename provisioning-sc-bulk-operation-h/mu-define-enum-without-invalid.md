@@ -18,10 +18,12 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_bulk_operation.h](../provisioning-sc-bulk-operation-h.md)"  
 ```C
 MU_DEFINE_ENUM_WITHOUT_INVALID(
-  PROVISIONING_BULK_OPERATION_MODE,
-  BULK_OP_CREATE,
-  BULK_OP_UPDATE,
-  BULK_OP_UPDATE_IF_MATCH_ETAG,
+  PROVISIONING_BULK_OPERATION_TYPE,
+  BULK_OP_INDIVIDUAL_ENROLLMENT
+);
+```
+
+_OP_UPDATE_IF_MATCH_ETAG,
   BULK_OP_DELETE
 );
 ```

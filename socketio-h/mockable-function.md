@@ -18,21 +18,25 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/socketio.h](../socketio-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  const ,
-  socketio_get_interface_description
+  void,
+  socketio_destroy,
+  CONCRETE_IO_HANDLE,
+  socket_io
 );
 ```
 
-et_io,
-  const char *,
+char *,
   optionName,
   const void *,
   value
 );
 ```
 
-send_complete,
-  void *,
+_context
+);
+```
+
+id *,
   callback_context
 );
 ```

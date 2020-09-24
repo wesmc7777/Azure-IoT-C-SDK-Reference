@@ -18,13 +18,13 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  STRING_replace,
   STRING_HANDLE,
-  handle,
-  char,
-  target,
-  char,
+  STRING_new_with_memory,
+  const char *,
+  memory
+);
+```
+
   replace
 );
 ```

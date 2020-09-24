@@ -19,11 +19,14 @@ ms.topic: "reference"
 ```C
 MOCKABLE_FUNCTION(
   int,
-  singlylinkedlist_foreach,
+  singlylinkedlist_remove,
   SINGLYLINKEDLIST_HANDLE,
   list,
-  LIST_ACTION_FUNCTION,
-  action_function,
+  LIST_ITEM_HANDLE,
+  item_handle
+);
+```
+
   const void *,
   action_context
 );

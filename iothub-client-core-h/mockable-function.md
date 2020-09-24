@@ -18,20 +18,21 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_core.h](../iothub-client-core-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  IOTHUB_CLIENT_RESULT,
-  IoTHubClientCore_SetInputMessageCallback,
   IOTHUB_CLIENT_CORE_HANDLE,
-  iotHubClientHandle,
-  const char *,
-  inputName,
-  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC,
-  eventHandlerCallback,
-  void *,
-  userContextCallback
+  IoTHubClientCore_CreateWithTransport,
+  TRANSPORT_HANDLE,
+  transportHandle,
+  const ,
+  config
 );
 ```
 
-ationCallback,
+NDLE,
+  eventMessageHandle,
+  const char *,
+  outputName,
+  IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK,
+  eventConfirmationCallback,
   void *,
   userContextCallback
 );

@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Sets the message creation time in UTC.
+Sets the message user id. CAUTION: SDK user should not call it directly, it is for internal use only.
 
 ## Syntax
 
@@ -21,21 +21,21 @@ Sets the message creation time in UTC.
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_MESSAGE_RESULT,
-  IoTHubMessage_SetMessageCreationTimeUtcSystemProperty,
+  IoTHubMessage_SetMessageUserIdSystemProperty,
   IOTHUB_MESSAGE_HANDLE,
   iotHubMessageHandle,
   const char *,
-  messageCreationTimeUtc
+  userId
 );
 ```
 
 ## Parameters
 * `iotHubMessageHandle` Handle to the message. 
 
-* `messageCreationTimeUtc` Pointer to the message creation time as null-terminated string
+* `userId` Pointer to the message user id as null-terminated string
 
 ## Return Value
-Returns IOTHUB_MESSAGE_OK if the messageCreationTimeUtc was set successfully or an error code otherwise.
+Returns IOTHUB_MESSAGE_OK if the userId was set successfully or an error code otherwise.
 
 e.
 

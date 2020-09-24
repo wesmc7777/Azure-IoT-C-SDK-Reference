@@ -13,28 +13,32 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-This API specifies a callback to be used when the device receives the message.
+Disposes of resources allocated by the IoT Hub Service Client Messaging.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging.h](../iothub-messaging-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  IOTHUB_MESSAGING_RESULT,
-  IoTHubMessaging_SetFeedbackMessageCallback,
+  void,
+  IoTHubMessaging_Destroy,
   IOTHUB_MESSAGING_CLIENT_HANDLE,
-  messagingClientHandle,
-  IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK,
-  feedbackMessageReceivedCallback,
-  void *,
-  userContextCallback
+  messagingClientHandle
 );
 ```
 
 ## Parameters
-* `messagingClientHandle` The handle created by a call to the create function. 
+* `messagingClientHandle` The handle created by a call to the create function.
 
-* `feedbackMessageReceivedCallback` The callback specified by the user to be used for receiveng confirmation feedback from the deice about the recevied message.
+Parameters
+* `messagingHandle` The handle created by a call to the create function. 
+
+* `trusted_cert` The trusted certificate that will be set.
+
+## Return Value
+IOTHUB_CLIENT_OK upon success or an error code upon failure.
+
+er to be used for receiveng confirmation feedback from the deice about the recevied message.
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
