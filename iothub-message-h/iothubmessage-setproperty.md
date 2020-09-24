@@ -19,7 +19,7 @@ Sets a property on a Iothub Message.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters
@@ -29,7 +29,7 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
 
 * `value` of the property to set.
 
-**NOTE:** Property names and values can only contain ASCII alphanumeric characters, plus {'!', '#', '$', '%, '&', ''', '*', '+', '-', '.', '^', '_', '`', '|', '~'}.
+**NOTE:** Property names and values must not contain spaces and can only contain ASCII alphanumeric characters, plus {'!', '#', '$', '%, '&', ''', '*', '+', '-', '.', '^', '_', '`', '|', '~'}.
 
 ## Return Value
 An IOTHUB_MESSAGE_RESULT value indicating the result of setting the property.

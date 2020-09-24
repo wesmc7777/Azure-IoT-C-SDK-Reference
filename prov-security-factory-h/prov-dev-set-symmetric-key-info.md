@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_security_factory.h](../prov-security-factory-h.md)"  
 ```C
-int prov_dev_set_symmetric_key_info(const char *registration_name   MU_C2);
+int prov_dev_set_symmetric_key_info(const char *registration_name MU_IFCOMMA4 const char *symmetric_key  MU_IFCOMMA2);
 ```
 

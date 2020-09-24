@@ -19,7 +19,7 @@ Creates an Initial Twin handle for use in consequent APIs.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
-INITIAL_TWIN_HANDLE initialTwin_create(const char *tags   MU_C2);
+INITIAL_TWIN_HANDLE initialTwin_create(const char *tags MU_IFCOMMA4 const char *desired_properties  MU_IFCOMMA2);
 ```
 
 ## Parameters

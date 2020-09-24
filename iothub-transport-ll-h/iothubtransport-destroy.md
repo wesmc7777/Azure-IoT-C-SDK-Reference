@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_transport_ll.h](../iothub-transport-ll-h.md)"  
 ```C
-void IoTHubTransport_Destroy(TRANSPORT_HANDLE  MU_C2);
+void IoTHubTransport_Destroy(TRANSPORT_HANDLE  MU_IFCOMMA2);
 ```
 

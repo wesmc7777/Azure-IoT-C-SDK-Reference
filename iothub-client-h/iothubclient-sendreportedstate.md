@@ -19,7 +19,7 @@ This API sends a report of the device's properties and their current values.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_SendReportedState(IOTHUB_CLIENT_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubClient_SendReportedState(IOTHUB_CLIENT_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

@@ -19,7 +19,7 @@ returns if this message is a IoTHub security message or not
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-bool IoTHubMessage_IsSecurityMessage(IOTHUB_MESSAGE_HANDLE  MU_C2);
+bool IoTHubMessage_IsSecurityMessage(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

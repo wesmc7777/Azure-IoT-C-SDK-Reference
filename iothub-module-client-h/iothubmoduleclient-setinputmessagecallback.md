@@ -19,7 +19,7 @@ This API sets callback for method call that is directed to specified 'inputName'
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client.h](../iothub-module-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetInputMessageCallback(IOTHUB_MODULE_CLIENT_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetInputMessageCallback(IOTHUB_MODULE_CLIENT_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

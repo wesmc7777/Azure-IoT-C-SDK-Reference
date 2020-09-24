@@ -19,7 +19,7 @@ Disposes of resources allocated by the provisioning Client.
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
-void Prov_Device_LL_Destroy(PROV_DEVICE_LL_HANDLE  MU_C2);
+void Prov_Device_LL_Destroy(PROV_DEVICE_LL_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

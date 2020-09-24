@@ -19,7 +19,7 @@ Destroys an Initial Twin handle, freeing all associated memory. Please note that
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_twin.h](../provisioning-sc-twin-h.md)"  
 ```C
-void initialTwin_destroy(INITIAL_TWIN_HANDLE  MU_C2);
+void initialTwin_destroy(INITIAL_TWIN_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

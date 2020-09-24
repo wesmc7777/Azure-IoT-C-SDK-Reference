@@ -19,7 +19,7 @@ Sets up the connection status callback to be invoked representing the status of 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client_ll.h](../iothub-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_LL_SetConnectionStatusCallback(IOTHUB_CLIENT_LL_HANDLE  MU_C2);
+IOTHUB_CLIENT_RESULT IoTHubClient_LL_SetConnectionStatusCallback(IOTHUB_CLIENT_LL_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

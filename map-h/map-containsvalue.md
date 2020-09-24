@@ -19,7 +19,7 @@ This function returns true in valueExists if at least one <key,value> pair exist
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_RESULT Map_ContainsValue(MAP_HANDLE  MU_C2);
+MAP_RESULT Map_ContainsValue(MAP_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

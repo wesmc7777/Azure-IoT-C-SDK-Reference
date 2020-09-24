@@ -19,7 +19,7 @@ Retrieves the Provisioning Data that is sent from the Provisioning service.
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h](../prov-device-client-h.md)"  
 ```C
-const char* Prov_Device_Get_Provisioning_Payload(PROV_DEVICE_HANDLE  MU_C2);
+const char* Prov_Device_Get_Provisioning_Payload(PROV_DEVICE_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

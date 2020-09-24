@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_shared_helpers.h](../provisioning-sc-shared-helpers-h.md)"  
 ```C
-int json_serialize_and_set_struct_array(JSON_Object *root_object   MU_C2);
+int json_serialize_and_set_struct_array(JSON_Object *root_object MU_IFCOMMA10 const char *json_key MU_IFCOMMA8 void **arr MU_IFCOMMA6 size_t len MU_IFCOMMA4   MU_IFCOMMA2);
 ```
 

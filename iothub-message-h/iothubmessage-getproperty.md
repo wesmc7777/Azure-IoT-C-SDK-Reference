@@ -19,7 +19,7 @@ Gets a IotHub Message's properties item. No new memory is allocated, the caller 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
+const char* IoTHubMessage_GetProperty(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

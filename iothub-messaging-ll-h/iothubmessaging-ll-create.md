@@ -19,7 +19,7 @@ Creates a IoT Hub Service Client Messaging handle for use it in consequent APIs.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-IOTHUB_MESSAGING_HANDLE IoTHubMessaging_LL_Create(IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  MU_C2);
+IOTHUB_MESSAGING_HANDLE IoTHubMessaging_LL_Create(IOTHUB_SERVICE_CLIENT_AUTH_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

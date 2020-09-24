@@ -19,7 +19,7 @@ Creates a thread with the entry point specified by the func argument.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-THREADAPI_RESULT ThreadAPI_Create(THREAD_HANDLE  MU_C2);
+THREADAPI_RESULT ThreadAPI_Create(THREAD_HANDLE  MU_IFCOMMA2);
 ```
 
 ## Parameters

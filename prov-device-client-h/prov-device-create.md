@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_client.h](../prov-device-client-h.md)"  
 ```C
-PROV_DEVICE_HANDLE Prov_Device_Create(const char *uri   MU_C2);
+PROV_DEVICE_HANDLE Prov_Device_Create(const char *uri MU_IFCOMMA6 const char *scope_id MU_IFCOMMA4   MU_IFCOMMA2);
 ```
 
