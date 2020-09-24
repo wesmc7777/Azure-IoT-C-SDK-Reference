@@ -1,0 +1,468 @@
+  - name: Azure IoT C SDK Reference
+    href: index.md
+    items:
+    - name: c-utility
+      items:
+      - name: inc
+        items:
+        - name: azure_c_shared_utility
+          items:
+          - name: condition.h
+            href: condition-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: condition-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: condition-h/mockable-function.md
+          - name: gballoc.h
+            href: gballoc-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: gballoc-h/mockable-function.md
+          - name: http_proxy_io.h
+            href: http-proxy-io-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: http-proxy-io-h/mockable-function.md
+          - name: httpapi.h
+            href: httpapi-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: httpapi-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: httpapi-h/mockable-function.md
+          - name: lock.h
+            href: lock-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: lock-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: lock-h/mockable-function.md
+          - name: map.h
+            href: map-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: map-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: map-h/mockable-function.md
+          - name: optionhandler.h
+            href: optionhandler-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: optionhandler-h/mockable-function.md
+          - name: platform.h
+            href: platform-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: platform-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: platform-h/mockable-function.md
+          - name: refcount.h
+            href: refcount-h.md
+          - name: shared_util_options.h
+            href: shared-util-options-h.md
+          - name: singlylinkedlist.h
+            href: singlylinkedlist-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: singlylinkedlist-h/mockable-function.md
+          - name: socketio.h
+            href: socketio-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: socketio-h/mockable-function.md
+          - name: strings.h
+            href: strings-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: strings-h/mockable-function.md
+            - name: STRING_construct_sprintf
+              href: strings-h/string-construct-sprintf.md
+            - name: STRING_sprintf
+              href: strings-h/string-sprintf.md
+          - name: strings_types.h
+            href: strings-types-h.md
+          - name: threadapi.h
+            href: threadapi-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: threadapi-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: threadapi-h/mockable-function.md
+          - name: tickcounter.h
+            href: tickcounter-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: tickcounter-h/mockable-function.md
+          - name: tlsio.h
+            href: tlsio-h.md
+          - name: uniqueid.h
+            href: uniqueid-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: uniqueid-h/mockable-function.md
+          - name: xio.h
+            href: xio-h.md
+            items:
+            - name: MU_DEFINE_ENUM
+              href: xio-h/mu-define-enum.md
+            - name: MOCKABLE_FUNCTION
+              href: xio-h/mockable-function.md
+          - name: xlogging.h
+            href: xlogging-h.md
+            items:
+            - name: LogBinary
+              href: xlogging-h/logbinary.md
+            - name: xlogging_set_log_function
+              href: xlogging-h/xlogging-set-log-function.md
+            - name: xlogging_get_log_function
+              href: xlogging-h/xlogging-get-log-function.md
+    - name: iothub_client
+      items:
+      - name: inc
+        items:
+        - name: iothub.h
+          href: iothub-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-h/mockable-function.md
+        - name: iothub_client.h
+          href: iothub-client-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-client-h/mockable-function.md
+        - name: iothub_client_core.h
+          href: iothub-client-core-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-client-core-h/mockable-function.md
+        - name: iothub_client_core_common.h
+          href: iothub-client-core-common-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-client-core-common-h/mu-define-enum-without-invalid.md
+        - name: iothub_client_core_ll.h
+          href: iothub-client-core-ll-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-client-core-ll-h/mockable-function.md
+        - name: iothub_client_ll.h
+          href: iothub-client-ll-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-client-ll-h/mockable-function.md
+        - name: iothub_client_options.h
+          href: iothub-client-options-h.md
+        - name: iothub_client_version.h
+          href: iothub-client-version-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-client-version-h/mockable-function.md
+        - name: iothub_device_client.h
+          href: iothub-device-client-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-device-client-h/mockable-function.md
+        - name: iothub_device_client_ll.h
+          href: iothub-device-client-ll-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-device-client-ll-h/mockable-function.md
+        - name: iothub_message.h
+          href: iothub-message-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-message-h/mu-define-enum-without-invalid.md
+          - name: MOCKABLE_FUNCTION
+            href: iothub-message-h/mockable-function.md
+        - name: iothub_module_client.h
+          href: iothub-module-client-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-module-client-h/mockable-function.md
+        - name: iothub_module_client_ll.h
+          href: iothub-module-client-ll-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-module-client-ll-h/mockable-function.md
+        - name: iothub_transport_ll.h
+          href: iothub-transport-ll-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-transport-ll-h/mockable-function.md
+        - name: iothubtransportamqp.h
+          href: iothubtransportamqp-h.md
+          items:
+          - name: AMQP_Protocol
+            href: iothubtransportamqp-h/amqp-protocol.md
+        - name: iothubtransportamqp_websockets.h
+          href: iothubtransportamqp-websockets-h.md
+          items:
+          - name: AMQP_Protocol_over_WebSocketsTls
+            href: iothubtransportamqp-websockets-h/amqp-protocol-over-websocketstls.md
+        - name: iothubtransporthttp.h
+          href: iothubtransporthttp-h.md
+          items:
+          - name: HTTP_Protocol
+            href: iothubtransporthttp-h/http-protocol.md
+        - name: iothubtransportmqtt.h
+          href: iothubtransportmqtt-h.md
+          items:
+          - name: MQTT_Protocol
+            href: iothubtransportmqtt-h/mqtt-protocol.md
+        - name: iothubtransportmqtt_websockets.h
+          href: iothubtransportmqtt-websockets-h.md
+          items:
+          - name: MQTT_WebSocket_Protocol
+            href: iothubtransportmqtt-websockets-h/mqtt-websocket-protocol.md
+    - name: iothub_service_client
+      items:
+      - name: inc
+        items:
+        - name: iothub_deviceconfiguration.h
+          href: iothub-deviceconfiguration-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-deviceconfiguration-h/mu-define-enum-without-invalid.md
+          - name: MOCKABLE_FUNCTION
+            href: iothub-deviceconfiguration-h/mockable-function.md
+          - name: IoTHubDeviceConfiguration_FreeConfigurationMembers
+            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md
+        - name: iothub_devicemethod.h
+          href: iothub-devicemethod-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-devicemethod-h/mu-define-enum-without-invalid.md
+          - name: MOCKABLE_FUNCTION
+            href: iothub-devicemethod-h/mockable-function.md
+        - name: iothub_devicetwin.h
+          href: iothub-devicetwin-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-devicetwin-h/mu-define-enum-without-invalid.md
+          - name: MOCKABLE_FUNCTION
+            href: iothub-devicetwin-h/mockable-function.md
+        - name: iothub_messaging.h
+          href: iothub-messaging-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-messaging-h/mockable-function.md
+        - name: iothub_messaging_ll.h
+          href: iothub-messaging-ll-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-messaging-ll-h/mu-define-enum-without-invalid.md
+          - name: MOCKABLE_FUNCTION
+            href: iothub-messaging-ll-h/mockable-function.md
+        - name: iothub_registrymanager.h
+          href: iothub-registrymanager-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-registrymanager-h/mu-define-enum-without-invalid.md
+          - name: IoTHubRegistryManager_FreeDeviceExMembers
+            href: iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md
+          - name: IoTHubRegistryManager_FreeModuleMembers
+            href: iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md
+          - name: IoTHubRegistryManager_Create
+            href: iothub-registrymanager-h/iothubregistrymanager-create.md
+          - name: IoTHubRegistryManager_Destroy
+            href: iothub-registrymanager-h/iothubregistrymanager-destroy.md
+          - name: IoTHubRegistryManager_CreateDevice_Ex
+            href: iothub-registrymanager-h/iothubregistrymanager-createdevice-ex.md
+          - name: IoTHubRegistryManager_GetDevice_Ex
+            href: iothub-registrymanager-h/iothubregistrymanager-getdevice-ex.md
+          - name: IoTHubRegistryManager_UpdateDevice_Ex
+            href: iothub-registrymanager-h/iothubregistrymanager-updatedevice-ex.md
+          - name: IoTHubRegistryManager_DeleteDevice
+            href: iothub-registrymanager-h/iothubregistrymanager-deletedevice.md
+          - name: IoTHubRegistryManager_GetStatistics
+            href: iothub-registrymanager-h/iothubregistrymanager-getstatistics.md
+          - name: IoTHubRegistryManager_CreateModule
+            href: iothub-registrymanager-h/iothubregistrymanager-createmodule.md
+          - name: IoTHubRegistryManager_GetModule
+            href: iothub-registrymanager-h/iothubregistrymanager-getmodule.md
+          - name: IoTHubRegistryManager_UpdateModule
+            href: iothub-registrymanager-h/iothubregistrymanager-updatemodule.md
+          - name: IoTHubRegistryManager_DeleteModule
+            href: iothub-registrymanager-h/iothubregistrymanager-deletemodule.md
+          - name: IoTHubRegistryManager_GetModuleList
+            href: iothub-registrymanager-h/iothubregistrymanager-getmodulelist.md
+          - name: IoTHubRegistryManager_CreateDevice
+            href: iothub-registrymanager-h/iothubregistrymanager-createdevice.md
+          - name: IoTHubRegistryManager_GetDevice
+            href: iothub-registrymanager-h/iothubregistrymanager-getdevice.md
+          - name: IoTHubRegistryManager_UpdateDevice
+            href: iothub-registrymanager-h/iothubregistrymanager-updatedevice.md
+          - name: IoTHubRegistryManager_GetDeviceList
+            href: iothub-registrymanager-h/iothubregistrymanager-getdevicelist.md
+        - name: iothub_sc_version.h
+          href: iothub-sc-version-h.md
+          items:
+          - name: MOCKABLE_FUNCTION
+            href: iothub-sc-version-h/mockable-function.md
+        - name: iothub_service_client_auth.h
+          href: iothub-service-client-auth-h.md
+          items:
+          - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+            href: iothub-service-client-auth-h/mu-define-enum-without-invalid.md
+          - name: IoTHubServiceClientAuth_CreateFromConnectionString
+            href: iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md
+          - name: IoTHubServiceClientAuth_CreateFromSharedAccessSignature
+            href: iothub-service-client-auth-h/iothubserviceclientauth-createfromsharedaccesssignature.md
+          - name: IoTHubServiceClientAuth_Destroy
+            href: iothub-service-client-auth-h/iothubserviceclientauth-destroy.md
+    - name: provisioning_client
+      items:
+      - name: inc
+        items:
+        - name: azure_prov_client
+          items:
+          - name: iothub_security_factory.h
+            href: iothub-security-factory-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: iothub-security-factory-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: iothub-security-factory-h/mockable-function.md
+          - name: prov_client_const.h
+            href: prov-client-const-h.md
+          - name: prov_device_client.h
+            href: prov-device-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-device-client-h/mockable-function.md
+          - name: prov_device_ll_client.h
+            href: prov-device-ll-client-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: prov-device-ll-client-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: prov-device-ll-client-h/mockable-function.md
+          - name: prov_edge_trusted_certificates.h
+            href: prov-edge-trusted-certificates-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-edge-trusted-certificates-h/mockable-function.md
+          - name: prov_security_factory.h
+            href: prov-security-factory-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: prov-security-factory-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: prov-security-factory-h/mockable-function.md
+          - name: prov_transport.h
+            href: prov-transport-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: prov-transport-h/mu-define-enum-without-invalid.md
+            - name: parse_retry_after_value
+              href: prov-transport-h/parse-retry-after-value.md
+          - name: prov_transport_amqp_client.h
+            href: prov-transport-amqp-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-transport-amqp-client-h/mockable-function.md
+          - name: prov_transport_amqp_ws_client.h
+            href: prov-transport-amqp-ws-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-transport-amqp-ws-client-h/mockable-function.md
+          - name: prov_transport_http_client.h
+            href: prov-transport-http-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-transport-http-client-h/mockable-function.md
+          - name: prov_transport_mqtt_client.h
+            href: prov-transport-mqtt-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-transport-mqtt-client-h/mockable-function.md
+          - name: prov_transport_mqtt_ws_client.h
+            href: prov-transport-mqtt-ws-client-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: prov-transport-mqtt-ws-client-h/mockable-function.md
+    - name: provisioning_service_client
+      items:
+      - name: inc
+        items:
+        - name: prov_service_client
+          items:
+          - name: provisioning_sc_attestation_mechanism.h
+            href: provisioning-sc-attestation-mechanism-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-attestation-mechanism-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-attestation-mechanism-h/mockable-function.md
+          - name: provisioning_sc_bulk_operation.h
+            href: provisioning-sc-bulk-operation-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-bulk-operation-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-bulk-operation-h/mockable-function.md
+          - name: provisioning_sc_device_capabilities.h
+            href: provisioning-sc-device-capabilities-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-device-capabilities-h/mockable-function.md
+          - name: provisioning_sc_device_registration_state.h
+            href: provisioning-sc-device-registration-state-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-device-registration-state-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-device-registration-state-h/mockable-function.md
+          - name: provisioning_sc_enrollment.h
+            href: provisioning-sc-enrollment-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-enrollment-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-enrollment-h/mockable-function.md
+          - name: provisioning_sc_json_const.h
+            href: provisioning-sc-json-const-h.md
+          - name: provisioning_sc_models.h
+            href: provisioning-sc-models-h.md
+          - name: provisioning_sc_models_serializer.h
+            href: provisioning-sc-models-serializer-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-models-serializer-h/mockable-function.md
+          - name: provisioning_sc_query.h
+            href: provisioning-sc-query-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-query-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-query-h/mockable-function.md
+          - name: provisioning_sc_shared_helpers.h
+            href: provisioning-sc-shared-helpers-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-shared-helpers-h/mockable-function.md
+          - name: provisioning_sc_tpm_attestation.h
+            href: provisioning-sc-tpm-attestation-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-tpm-attestation-h/mockable-function.md
+          - name: provisioning_sc_twin.h
+            href: provisioning-sc-twin-h.md
+            items:
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-twin-h/mockable-function.md
+          - name: provisioning_sc_x509_attestation.h
+            href: provisioning-sc-x509-attestation-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-sc-x509-attestation-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-sc-x509-attestation-h/mockable-function.md
+          - name: provisioning_service_client.h
+            href: provisioning-service-client-h.md
+            items:
+            - name: MU_DEFINE_ENUM_WITHOUT_INVALID
+              href: provisioning-service-client-h/mu-define-enum-without-invalid.md
+            - name: MOCKABLE_FUNCTION
+              href: provisioning-service-client-h/mockable-function.md
