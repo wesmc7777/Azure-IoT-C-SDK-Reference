@@ -20,7 +20,7 @@ ms.topic: "reference"
 \#include "[azure_c_shared_utility/map.h](map-h.md)"  
 \#include <time.h>  
 \#include "[iothub_service_client_auth.h](iothub-service-client-auth-h.md)"  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

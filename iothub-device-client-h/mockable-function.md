@@ -13,33 +13,35 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
+Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  IOTHUB_CLIENT_RESULT,
-  IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync,
   IOTHUB_DEVICE_CLIENT_HANDLE,
-  iotHubClientHandle,
+  IoTHubDeviceClient_CreateFromDeviceAuth,
   const char *,
-  destinationFileName,
-  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX,
-  getDataCallbackEx,
-  void *,
-  context
+  iothub_uri,
+  const char *,
+  device_id,
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER,
+  protocol
 );
 ```
 
-## Remarks
-This function allows users to upload large files in chunks, not requiring the whole file content to be passed in memory. 
-
 ## Parameters
-* `iotHubClientHandle` The handle created by a call to the IoTHubDeviceClient_Create function. 
+* `iothub_uri` Pointer to an ioThub hostname received in the registration process 
 
-* `destinationFileName` The name of the file to be created in Azure Blob Storage. 
+* `device_id` Pointer to the device Id of the device 
+
+* `protocol` Function pointer for protocol implementation
+
+## Return Value
+A non-NULL IOTHUB_DEVICE_CLIENT_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+
+me of the file to be created in Azure Blob Storage. 
 
 * `getDataCallbackEx` A callback to be invoked to acquire the file chunks to be uploaded, as well as to indicate the status of the upload of the previous block. 
 

@@ -17,7 +17,7 @@ ms.topic: "reference"
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

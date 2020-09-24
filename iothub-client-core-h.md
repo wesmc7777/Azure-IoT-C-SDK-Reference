@@ -19,7 +19,7 @@ Extends the IoTHubClientCore_LL module with additional features.
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_client_core_ll.h](iothub-client-core-ll-h.md)"  
 
 ## Detailed Description

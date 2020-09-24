@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_messaging_ll.h](iothub-messaging-ll-h.md)"  
 
 ## Detailed Description

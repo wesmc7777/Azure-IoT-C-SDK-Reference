@@ -20,7 +20,7 @@ APIs that allow a user (usually a device) to communicate with an Azure IoTHub.
 \#include <stddef.h>  
 \#include <stdint.h>  
 \#include <time.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_client_core_common.h](iothub-client-core-common-h.md)"  
 
 ## Detailed Description

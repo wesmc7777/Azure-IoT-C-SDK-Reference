@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stdlib.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[provisioning_sc_models.h](provisioning-sc-models-h.md)"  
 \#include "parson.h"  

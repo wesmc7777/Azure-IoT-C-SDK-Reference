@@ -117,6 +117,16 @@
               href: xlogging-h/xlogging-set-log-function.md
             - name: xlogging_get_log_function
               href: xlogging-h/xlogging-get-log-function.md
+    - name: deps
+      items:
+      - name: umock-c
+        items:
+        - name: inc
+          items:
+          - name: umock_c
+            items:
+            - name: umock_c_prod.h
+              href: umock-c-prod-h.md
     - name: iothub_client
       items:
       - name: inc

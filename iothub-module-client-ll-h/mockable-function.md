@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
+This API sets callback for method call that is directed to specified 'inputName' queue (e.g. messages from IoTHubClient_SendEventToOutputAsync)
 
 ## Syntax
 
@@ -21,31 +21,31 @@ Sets up the connection status callback to be invoked representing the status of 
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_CLIENT_RESULT,
-  IoTHubModuleClient_LL_SetRetryPolicy,
+  IoTHubModuleClient_LL_SetInputMessageCallback,
   IOTHUB_MODULE_CLIENT_LL_HANDLE,
   iotHubModuleClientHandle,
-  IOTHUB_CLIENT_RETRY_POLICY,
-  retryPolicy,
-  size_t,
-  retryTimeoutLimitInSeconds
+  const char *,
+  inputName,
+  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC,
+  eventHandlerCallback,
+  void *,
+  userContextCallback
 );
 ```
 
 ## Parameters
 * `iotHubModuleClientHandle` The handle created by a call to the create function. 
 
-* `retryPolicy` The policy to use to reconnect to IoT Hub when a connection drops. 
+* `inputName` The name of the queue to listen on for this moduleMethodCallback/userContextCallback. 
 
-* `retryTimeoutLimitInSeconds` Maximum amount of time(seconds) to attempt reconnection when a connection drops to IOT Hub.
+* `eventHandlerCallback` The callback which will be called by IoTHub. 
 
-**NOTE:** The application behavior is undefined if the user calls the ::IoTHubModuleClient_LL_Destroy function from within any callback.
+* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.
 
-lure.
-
-nding a failing message. The user can specify a NULL value here to indicate that no callback is required. 
+pt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 

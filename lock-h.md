@@ -18,7 +18,7 @@ A minimalistic platform agnostic lock abstraction for thread synchronization.
 ## Includes
 
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

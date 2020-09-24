@@ -29,13 +29,16 @@ MOCKABLE_FUNCTION(
 );
 ```
 
-LITIES_HANDLE,
-  deviceCapabilities_create
+s-h.md)"  
+```C
+MOCKABLE_FUNCTION(
+  void,
+  deviceCapabilities_destroy,
+  DEVICE_CAPABILITIES_HANDLE,
+  capabilities
 );
 ```
 
-## Return Value
-A non-NULL handle representing Device Capabilities for use with the Provisioning Service, and NULL on failure.
-
-ice Capabilities to be destroyed
+## Parameters
+* `capabilities` The handle of the Device Capabilities to be destroyed
 

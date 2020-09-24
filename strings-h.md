@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stddef.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[azure_c_shared_utility/strings_types.h](strings-types-h.md)"  
 
 ## Detailed Description

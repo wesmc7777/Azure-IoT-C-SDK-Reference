@@ -13,34 +13,31 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Frees all resources associated with the given message handle.
+Sets the message creation time in UTC.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  IoTHubMessage_Destroy,
+  IOTHUB_MESSAGE_RESULT,
+  IoTHubMessage_SetMessageCreationTimeUtcSystemProperty,
   IOTHUB_MESSAGE_HANDLE,
-  iotHubMessageHandle
+  iotHubMessageHandle,
+  const char *,
+  messageCreationTimeUtc
 );
 ```
 
 ## Parameters
-* `iotHubMessageHandle` Handle to the message.
+* `iotHubMessageHandle` Handle to the message. 
 
-sage.
+* `messageCreationTimeUtc` Pointer to the message creation time as null-terminated string
 
 ## Return Value
-Returns true if the Message is a security message false otherwise.
+Returns IOTHUB_MESSAGE_OK if the messageCreationTimeUtc was set successfully or an error code otherwise.
 
 e.
-
-## Return Value
-Returns IOTHUB_MESSAGE_OK if the Security Message was set successfully or an error code otherwise.
-
- if the DiagnosticData was set successfully or an error code otherwise.
 
 .
 

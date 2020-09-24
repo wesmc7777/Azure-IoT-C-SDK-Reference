@@ -19,13 +19,17 @@ ms.topic: "reference"
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_CLIENT_RESULT,
-  IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx,
+  IoTHubClientCore_LL_SetDeviceTwinCallback,
   IOTHUB_CLIENT_CORE_LL_HANDLE,
   iotHubClientHandle,
-  const char *,
-  destinationFileName,
-  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK_EX,
-  getDataCallbackEx,
+  IOTHUB_CLIENT_DEVICE_TWIN_CALLBACK,
+  deviceTwinCallback,
+  void *,
+  userContextCallback
+);
+```
+
+ataCallbackEx,
   void *,
   context
 );

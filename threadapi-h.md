@@ -18,7 +18,7 @@ This module implements support for creating new threads, terminating threads and
 ## Includes
 
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

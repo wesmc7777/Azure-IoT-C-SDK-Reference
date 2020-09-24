@@ -17,7 +17,7 @@ Functions for managing the client SDK version.
 
 ## Includes
 
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

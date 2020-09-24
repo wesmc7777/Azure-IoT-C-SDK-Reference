@@ -19,7 +19,7 @@ APIs that allow a user (usually a module) to communicate with an Azure IoTHub.
 
 \#include <time.h>  
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
 \#include "[iothub_client_core_common.h](iothub-client-core-common-h.md)"  
 \#include <stddef.h>  

@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-This function is meant to be called by the user when to set the trusted certificate on the tls connection.
+Opens connection to IoTHub.
 
 ## Syntax
 
@@ -21,28 +21,27 @@ This function is meant to be called by the user when to set the trusted certific
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_MESSAGING_RESULT,
-  IoTHubMessaging_LL_SetTrustedCert,
+  IoTHubMessaging_LL_Open,
   IOTHUB_MESSAGING_HANDLE,
   messagingHandle,
-  const char *,
-  trusted_cert
+  IOTHUB_OPEN_COMPLETE_CALLBACK,
+  openCompleteCallback,
+  void *,
+  userContextCallback
 );
 ```
 
 ## Parameters
-* `messagingHandle` The handle created by a call to the create function. 
+* `messagingClientHandle` The handle created by a call to the create function. 
 
-* `trusted_cert` The trusted certificate that will be set.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
-
-
-r to be used for receiveng confirmation feedback from the deice about the recevied message.
+* `openCompleteCallback` The callback specified by the user for receiving confirmation of the connection opened. The user can specify a NULL value here to indicate that no callback is required. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the ::IoTHubMessaging_Destroy or IoTHubMessaging_Close function from within any callback.
+## Return Value
+IOTHUB_MESSAGING_OK upon success or an error code upon failure.
+
+ation behavior is undefined if the user calls the ::IoTHubMessaging_Destroy or IoTHubMessaging_Close function from within any callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

@@ -18,14 +18,10 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_device_registration_state.h](../provisioning-sc-device-registration-state-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
+  REGISTRATION_STATUS,
+  deviceRegistrationState_getRegistrationStatus,
   DEVICE_REGISTRATION_STATE_HANDLE,
-  deviceRegistrationState_fromJson,
-  JSON_Object *,
-  root_object
-);
-```
-
-
+  drs
 );
 ```
 

@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stdbool.h>  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[provisioning_sc_tpm_attestation.h](provisioning-sc-tpm-attestation-h.md)"  
 \#include "[provisioning_sc_x509_attestation.h](provisioning-sc-x509-attestation-h.md)"  

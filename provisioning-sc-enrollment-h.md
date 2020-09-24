@@ -17,7 +17,7 @@ ms.topic: "reference"
 
 \#include "azure_c_shared_utility/agenttime.h"  
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "umock_c/umock_c_prod.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[provisioning_sc_attestation_mechanism.h](provisioning-sc-attestation-mechanism-h.md)"  
 \#include "[provisioning_sc_device_registration_state.h](provisioning-sc-device-registration-state-h.md)"  
 \#include "[provisioning_sc_device_capabilities.h](provisioning-sc-device-capabilities-h.md)"  

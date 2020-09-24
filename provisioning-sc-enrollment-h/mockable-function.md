@@ -13,46 +13,24 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
+Destroys an Individual Enrollment handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
+
 ## Syntax
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  ENROLLMENT_GROUP_HANDLE,
-  enrollmentGroup_fromJson,
-  JSON_Object *,
-  root_object
-);
-```
-
-);
-```
-
-ATUS,
-  prov_status
-);
-```
-
-
-```
-
-
-
-
-```
-
-_FUNCTION(
   void,
-  enrollmentGroup_destroy,
-  ENROLLMENT_GROUP_HANDLE,
+  individualEnrollment_destroy,
+  INDIVIDUAL_ENROLLMENT_HANDLE,
   enrollment
 );
 ```
 
 ## Parameters
-* `enrollment` A handle for the Enrollment Group to be destroyed.
+* `enrollment` A handle for the Individual Enrollment to be destroyed.
 
-n Mechanism to be used by the Enrollment Group. Note: only valid with type: X509
+ed by the Enrollment Group. Note: only valid with type: X509
 
 ## Return Value
 A non-NULL handle representing an Enrollment Group for use with the Provisioning Service, and NULL on failure.

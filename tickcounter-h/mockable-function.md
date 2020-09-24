@@ -18,11 +18,14 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/tickcounter.h](../tickcounter-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  int,
-  tickcounter_get_current_ms,
+  void,
+  tickcounter_destroy,
   TICK_COUNTER_HANDLE,
-  tick_counter,
-  tickcounter_ms_t,
+  tick_counter
+);
+```
+
+ickcounter_ms_t,
   current_ms
 );
 ```

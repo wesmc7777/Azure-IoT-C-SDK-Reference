@@ -25,12 +25,16 @@ MOCKABLE_FUNCTION(
 );
 ```
 
- root_object
+win
 );
 ```
 
-,
-  desiredProperties
+;
+```
+
+```
+
+siredProperties
 );
 ```
 

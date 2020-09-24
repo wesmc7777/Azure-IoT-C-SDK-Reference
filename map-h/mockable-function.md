@@ -53,7 +53,8 @@ MOCKABLE_FUNCTION(
 ## Return Value
 Returns MAP_OK if the keys and values are retrieved and written successfully or an error code otherwise.
 
-the key already exists in the map then MAP_KEYEXISTS is returned. If the filter function associated with the map rejects the entry then MAP_FILTER_REJECT is returned. In case an error occurs when the new key is added to the map the function returns MAP_ERROR. If everything goes well then MAP_OK is returned.
+pdated and if the callback returns a non-zero value then the function cancels the add/update operation and returns MAP_FILTER_REJECT.
 
-LTER_REJECT is returned. In case an error occurs when the new key is added/updated in the map the function returns MAP_ERROR. If everything goes well then MAP_OK is returned.
+## Return Value
+If any of the input parameters are NULL then this function returns MAP_INVALID_ARG. If the filter function associated with the map rejects the entry then MAP_FILTER_REJECT is returned. In case an error occurs when the new key is added/updated in the map the function returns MAP_ERROR. If everything goes well then MAP_OK is returned.
 
