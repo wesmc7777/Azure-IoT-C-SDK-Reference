@@ -19,7 +19,11 @@ Creates a IoT Hub client for communication with an existing IoT Hub using the de
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromDeviceAuth(const char *iothub_uri MU_IFCOMMA6 const char *device_id MU_IFCOMMA4   MU_IFCOMMA2);
+IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromDeviceAuth(
+  const char *                      iothub_uri,
+  const char *                      device_id,
+  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
+);
 ```
 
 ## Parameters

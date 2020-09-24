@@ -19,7 +19,7 @@ Gets the module name from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated,
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetConnectionModuleId(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
+const char* IoTHubMessage_GetConnectionModuleId(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 ## Parameters

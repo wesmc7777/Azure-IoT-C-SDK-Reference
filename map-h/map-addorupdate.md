@@ -19,7 +19,11 @@ Adds/updates a key/value pair to the map.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_RESULT Map_AddOrUpdate(MAP_HANDLE  MU_IFCOMMA2);
+MAP_RESULT Map_AddOrUpdate(
+  MAP_HANDLE    handle,
+  const char *  key,
+  const char *  value
+);
 ```
 
 ## Parameters

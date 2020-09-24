@@ -19,7 +19,11 @@ This API specifies a callback to be used when the device receives the message.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetFeedbackMessageCallback(IOTHUB_MESSAGING_HANDLE  MU_IFCOMMA2);
+IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_SetFeedbackMessageCallback(
+  IOTHUB_MESSAGING_HANDLE                    messagingHandle,
+  IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK  feedbackMessageReceivedCallback,
+  void *                                     userContextCallback
+);
 ```
 
 ## Parameters

@@ -19,7 +19,13 @@ This API responds to an asnyc method callback identified the methodId.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_DeviceMethodResponse(IOTHUB_DEVICE_CLIENT_LL_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_DeviceMethodResponse(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle,
+  METHOD_HANDLE                   methodId,
+  const unsigned char *           response,
+  size_t                          respSize,
+  int                             statusCode
+);
 ```
 
 ## Parameters

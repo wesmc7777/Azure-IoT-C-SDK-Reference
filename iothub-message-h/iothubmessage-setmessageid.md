@@ -19,7 +19,10 @@ Sets the MessageId for the IOTHUB_MESSAGE_HANDLE.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageId(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageId(
+  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
+  const char *           messageId
+);
 ```
 
 ## Parameters

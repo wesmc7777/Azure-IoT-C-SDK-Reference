@@ -19,7 +19,7 @@ Closes a connection created with [HTTPAPI_CreateConnection](../httpapi-h/httpapi
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-void HTTPAPI_CloseConnection(HTTP_HANDLE  MU_IFCOMMA2);
+void HTTPAPI_CloseConnection(HTTP_HANDLE  handle);
 ```
 
 ## Parameters

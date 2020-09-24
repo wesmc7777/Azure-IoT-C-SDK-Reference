@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
-size_t STRING_length(STRING_HANDLE  MU_IFCOMMA2);
+size_t STRING_length(STRING_HANDLE  handle);
 ```
 

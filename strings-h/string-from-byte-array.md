@@ -17,6 +17,9 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/strings.h](../strings-h.md)"  
 ```C
-STRING_HANDLE STRING_from_byte_array(const unsigned char *source MU_IFCOMMA4 size_t size  MU_IFCOMMA2);
+STRING_HANDLE STRING_from_byte_array(
+  const unsigned char *  source,
+  size_t                 size
+);
 ```
 

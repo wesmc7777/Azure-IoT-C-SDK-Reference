@@ -19,7 +19,12 @@ Asynchronous call to send the message specified by eventMessageHandle.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(IOTHUB_DEVICE_CLIENT_LL_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE             iotHubClientHandle,
+  IOTHUB_MESSAGE_HANDLE                      eventMessageHandle,
+  IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK  eventConfirmationCallback,
+  void *                                     userContextCallback
+);
 ```
 
 ## Parameters

@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/socketio.h](../socketio-h.md)"  
 ```C
-CONCRETE_IO_HANDLE socketio_create(void *io_create_parameters  MU_IFCOMMA2);
+CONCRETE_IO_HANDLE socketio_create(void *  io_create_parameters);
 ```
 

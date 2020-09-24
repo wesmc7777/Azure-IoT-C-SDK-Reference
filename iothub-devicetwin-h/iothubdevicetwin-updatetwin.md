@@ -19,7 +19,11 @@ Updates (partial update) the given device's twin info.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicetwin.h](../iothub-devicetwin-h.md)"  
 ```C
-char* IoTHubDeviceTwin_UpdateTwin(IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  MU_IFCOMMA2);
+char* IoTHubDeviceTwin_UpdateTwin(
+  IOTHUB_SERVICE_CLIENT_DEVICE_TWIN_HANDLE  serviceClientDeviceTwinHandle,
+  const char *                              deviceId,
+  const char *                              deviceTwinJson
+);
 ```
 
 ## Parameters

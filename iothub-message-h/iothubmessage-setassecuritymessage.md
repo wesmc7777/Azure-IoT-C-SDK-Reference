@@ -19,7 +19,7 @@ Marks a IoTHub message as a security message. CAUTION: Security messages are spe
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetAsSecurityMessage(IOTHUB_MESSAGE_HANDLE  MU_IFCOMMA2);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetAsSecurityMessage(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
 ```
 
 ## Parameters

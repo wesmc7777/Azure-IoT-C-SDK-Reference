@@ -19,7 +19,7 @@ Api to be called by user when work (registering device) can be done.
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
-void Prov_Device_LL_DoWork(PROV_DEVICE_LL_HANDLE  MU_IFCOMMA2);
+void Prov_Device_LL_DoWork(PROV_DEVICE_LL_HANDLE  handle);
 ```
 
 ## Parameters

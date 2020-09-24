@@ -19,7 +19,12 @@ This API uploads to Azure Storage the content pointed to by source having the si
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_UploadToBlob(IOTHUB_DEVICE_CLIENT_LL_HANDLE  MU_IFCOMMA2);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_UploadToBlob(
+  IOTHUB_DEVICE_CLIENT_LL_HANDLE  iotHubClientHandle,
+  const char *                    destinationFileName,
+  const unsigned char *           source,
+  size_t                          size
+);
 ```
 
 ## Parameters
