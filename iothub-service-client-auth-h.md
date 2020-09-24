@@ -17,7 +17,7 @@ APIs that allow a user (usually a device) to create and destroy a handle for use
 
 ## Includes
 
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description

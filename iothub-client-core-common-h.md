@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
 \#include "[iothub_message.h](iothub-message-h.md)"  

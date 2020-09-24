@@ -13,42 +13,27 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
+Creates a new, empty map.
+
 ## Syntax
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  STRING_HANDLE,
-  Map_ToJSON,
   MAP_HANDLE,
-  handle
-);
-```
-
-d_utility/map.h](../map-h.md)"  
-```C
-MOCKABLE_FUNCTION(
-  MAP_RESULT,
-  Map_GetInternals,
-  MAP_HANDLE,
-  handle,
-  const char *const **,
-  keys,
-  const char *const **,
-  values,
-  size_t *,
-  count
+  Map_Create,
+  MAP_FILTER_CALLBACK,
+  mapFilterFunc
 );
 ```
 
 ## Parameters
-* `handle` The handle to an existing map. 
+* `mapFilterFunc` A callback function supplied by the caller that is invoked during calls to ::Map_Add and ::Map_AddOrUpdate to provide the caller an opportunity to indicate whether the new entry or the update to an existing entry can be made or not. The callback function can request that the operation be canceled by returning a non-zero value from the callback.
 
-* `keys` The location where the list of keys is to be written. 
+## Return Value
+A valid MAP_HANDLE or NULL in case an error occurs.
 
-* `values` The location where the list of values is to be written. 
-
-* `count` The number of stored keys and values is written at the location indicated by this pointer.
+by this pointer.
 
 ## Return Value
 Returns MAP_OK if the keys and values are retrieved and written successfully or an error code otherwise.

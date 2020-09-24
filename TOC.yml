@@ -119,6 +119,16 @@
               href: xlogging-h/xlogging-get-log-function.md
     - name: deps
       items:
+      - name: azure-macro-utils-c
+        items:
+        - name: inc
+          items:
+          - name: azure_macro_utils
+            items:
+            - name: macro_utils.h
+              href: macro-utils-h.md
+            - name: macro_utils_generated.h
+              href: macro-utils-generated-h.md
       - name: umock-c
         items:
         - name: inc

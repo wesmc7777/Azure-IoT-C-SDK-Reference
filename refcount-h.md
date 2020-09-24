@@ -18,7 +18,7 @@ ms.topic: "reference"
 \#include <stdlib.h>  
 \#include <stdint.h>  
 \#include "[azure_c_shared_utility/gballoc.h](gballoc-h.md)"  
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "refcount_os.h"  
 
 ## Detailed Description
@@ -28,49 +28,63 @@ ms.topic: "reference"
 #### REFCOUNT_TYPE
 
 ```C
-#define REFCOUNT_TYPE  struct MU_C2(MU_C2(REFCOUNT_, type), _TAG) 
+#define REFCOUNT_TYPE \
+        MU_C2, \
+        MU_C2 
 ```
 
 #### REFCOUNT_SHORT_TYPE
 
 ```C
-#define REFCOUNT_SHORT_TYPE  MU_C2(REFCOUNT_, type) 
+#define REFCOUNT_SHORT_TYPE        MU_C2 
 ```
 
 #### REFCOUNT_TYPE_DECLARE_CREATE
 
 ```C
-#define REFCOUNT_TYPE_DECLARE_CREATE        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_DECLARE_CREATE \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### REFCOUNT_TYPE_DECLARE_CREATE_WITH_EXTRA_SIZE
 
 ```C
-#define REFCOUNT_TYPE_DECLARE_CREATE_WITH_EXTRA_SIZE        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_DECLARE_CREATE_WITH_EXTRA_SIZE \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### REFCOUNT_TYPE_CREATE
 
 ```C
-#define REFCOUNT_TYPE_CREATE        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_CREATE \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### REFCOUNT_TYPE_CREATE_WITH_EXTRA_SIZE
 
 ```C
-#define REFCOUNT_TYPE_CREATE_WITH_EXTRA_SIZE        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_CREATE_WITH_EXTRA_SIZE \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### REFCOUNT_TYPE_DECLARE_DESTROY
 
 ```C
-#define REFCOUNT_TYPE_DECLARE_DESTROY        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_DECLARE_DESTROY \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### REFCOUNT_TYPE_DESTROY
 
 ```C
-#define REFCOUNT_TYPE_DESTROY        REFCOUNT_SHORT_TYPE 
+#define REFCOUNT_TYPE_DESTROY \
+        MU_C2, \
+        REFCOUNT_SHORT_TYPE 
 ```
 
 #### DEFINE_CREATE_WITH_EXTRA_SIZE

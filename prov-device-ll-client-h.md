@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
 ## Detailed Description

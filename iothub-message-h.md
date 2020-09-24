@@ -17,7 +17,7 @@ The IoTHub_Message component encapsulates one message that can be transferred by
 
 ## Includes
 
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[azure_c_shared_utility/map.h](map-h.md)"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include <stddef.h>  

@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[provisioning_sc_enrollment.h](provisioning-sc-enrollment-h.md)"  
 \#include "[provisioning_sc_query.h](provisioning-sc-query-h.md)"  
 \#include "[provisioning_sc_bulk_operation.h](provisioning-sc-bulk-operation-h.md)"  

@@ -25,11 +25,8 @@ MOCKABLE_FUNCTION(
 );
 ```
 
- root_object
-);
-```
-
-char *,
+dorsement_key,
+  const char *,
   storage_root_key
 );
 ```

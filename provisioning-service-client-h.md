@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[azure_c_shared_utility/shared_util_options.h](shared-util-options-h.md)"  
 \#include "[provisioning_sc_models.h](provisioning-sc-models-h.md)"  

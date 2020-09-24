@@ -13,33 +13,27 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Creates a thread with the entry point specified by the func argument.
+Sleeps the current thread for the given number of milliseconds.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  THREADAPI_RESULT,
-  ThreadAPI_Create,
-  THREAD_HANDLE,
-  threadHandle,
-  THREAD_START_FUNC,
-  func,
-  void *,
-  arg
+  void,
+  ThreadAPI_Sleep,
+  unsigned         int,
+  milliseconds
 );
 ```
 
 ## Parameters
-* `threadHandle` The handle to the new thread is returned in this pointer. 
+* `milliseconds` The number of milliseconds to sleep.
 
-* `func` A function pointer that indicates the entry point to the new thread. 
+ed by a thread when the thread exits in order to return a result value to the caller of the ::ThreadAPI_Join function. The res value must be copied into the res out argument passed to the ::ThreadAPI_Join function.
 
-* `arg` A void pointer that must be passed to the function pointed to by func.
+s associated with the thread must be released and the thread handle will no longer be valid.
 
 ## Return Value
 THREADAPI_OK if the API call is successful or an error code in case it fails.
-
-I_OK if the API call is successful or an error code in case it fails.
 

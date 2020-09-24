@@ -18,7 +18,7 @@ Map is a module that implements a dictionary of STRING_HANDLE keys to STRING_HAN
 ## Includes
 
 \#include <stddef.h>  
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 \#include "[azure_c_shared_utility/strings.h](strings-h.md)"  
 \#include "azure_c_shared_utility/crt_abstractions.h"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  

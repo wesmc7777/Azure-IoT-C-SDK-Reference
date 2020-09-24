@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "azure_macro_utils/macro_utils.h"  
+\#include "[azure_macro_utils/macro_utils.h](macro-utils-h.md)"  
 
 ## Detailed Description
 
@@ -36,19 +36,25 @@ ms.topic: "reference"
 #### UMOCK_C_PROD_IS_NOT_VOID
 
 ```C
-#define UMOCK_C_PROD_IS_NOT_VOID  MU_IF(MU_C2(UMOCK_C_PROD_TEST_,x), 1, 0) 
+#define UMOCK_C_PROD_IS_NOT_VOID \
+        MU_IF, \
+        MU_C2 
 ```
 
 #### UMOCK_C_PROD_ARG_IN_SIGNATURE
 
 ```C
-#define UMOCK_C_PROD_ARG_IN_SIGNATURE  arg_type arg_name MU_IFCOMMA(count) 
+#define UMOCK_C_PROD_ARG_IN_SIGNATURE        MU_IFCOMMA 
 ```
 
 #### MOCKABLE_FUNCTION_SIGNATURE
 
 ```C
-#define MOCKABLE_FUNCTION_SIGNATURE        UMOCK_C_PROD_ARG_IN_SIGNATURE 
+#define MOCKABLE_FUNCTION_SIGNATURE \
+        MU_IF, \
+        MU_COUNT_ARG, \
+        MU_FOR_EACH_2_COUNTED, \
+        UMOCK_C_PROD_ARG_IN_SIGNATURE 
 ```
 
 #### MOCKABLE_FUNCTION
@@ -61,7 +67,11 @@ ms.topic: "reference"
 
 ```C
 #define MOCKABLE_FUNCTION_WITH_RETURNS \
+        MU_IF, \
+        MU_COUNT_ARG, \
+        MU_FOR_EACH_2_COUNTED, \
         UMOCK_C_PROD_ARG_IN_SIGNATURE, \
+        MU_IF, \
         UMOCK_C_PROD_IS_NOT_VOID, \
         DO_NOTHING_WITH_RETURN_VALUES 
 ```
@@ -93,7 +103,9 @@ ms.topic: "reference"
 #### MOCKABLE_INTERFACE
 
 ```C
-#define MOCKABLE_INTERFACE        EXPAND_PROD_ENTRY 
+#define MOCKABLE_INTERFACE \
+        MU_FOR_EACH_1, \
+        EXPAND_PROD_ENTRY 
 ```
 
 #### MOCKABLE_FUNCTION_WITH_CODE_END
