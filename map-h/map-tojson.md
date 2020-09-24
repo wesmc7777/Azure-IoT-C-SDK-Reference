@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_ToJSON() function 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-STRING_HANDLE Map_ToJSON(MAP_HANDLE  handle);
+STRING_HANDLE Map_ToJSON(MAP_HANDLE  MU_C2);
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ This function is meant to be called by the user when work (sending/receiving) ca
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iothub-module-client-ll-h.md)"  
 ```C
-void IoTHubModuleClient_LL_DoWork(IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleClientHandle);
+void IoTHubModuleClient_LL_DoWork(IOTHUB_MODULE_CLIENT_LL_HANDLE  MU_C2);
 ```
 
 ## Parameters

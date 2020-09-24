@@ -5,7 +5,7 @@ description: "This is the function reference page for the OptionHandler_FeedOpti
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,9 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/optionhandler.h](../optionhandler-h.md)"  
 ```C
-OPTIONHANDLER_RESULT OptionHandler_FeedOptions(
-  OPTIONHANDLER_HANDLE  handle,
-  void *                destinationHandle
-);
+OPTIONHANDLER_RESULT OptionHandler_FeedOptions(OPTIONHANDLER_HANDLE  MU_C2);
 ```
 

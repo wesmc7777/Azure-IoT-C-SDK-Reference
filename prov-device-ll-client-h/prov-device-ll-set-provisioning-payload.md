@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_LL_Set_Pro
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ Sets the Provisioning Data that is sent to the Provisioning service.
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
-PROV_DEVICE_RESULT Prov_Device_LL_Set_Provisioning_Payload(
-  PROV_DEVICE_LL_HANDLE  handle,
-  const char *           json
-);
+PROV_DEVICE_RESULT Prov_Device_LL_Set_Provisioning_Payload(PROV_DEVICE_LL_HANDLE  MU_C2);
 ```
 
 ## Parameters

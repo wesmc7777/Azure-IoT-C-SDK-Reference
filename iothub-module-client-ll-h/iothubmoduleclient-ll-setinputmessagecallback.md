@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,12 +19,7 @@ This API sets callback for method call that is directed to specified 'inputName'
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_module_client_ll.h](../iothub-module-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetInputMessageCallback(
-  IOTHUB_MODULE_CLIENT_LL_HANDLE        iotHubModuleClientHandle,
-  const char *                          inputName,
-  IOTHUB_CLIENT_MESSAGE_CALLBACK_ASYNC  eventHandlerCallback,
-  void *                                userContextCallback
-);
+IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetInputMessageCallback(IOTHUB_MODULE_CLIENT_LL_HANDLE  MU_C2);
 ```
 
 ## Parameters

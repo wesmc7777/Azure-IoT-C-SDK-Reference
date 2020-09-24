@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_SetOption() fu
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Sets the option named optionName bearing the value value for the HTTP_HANDLE han
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_SetOption(
-  HTTP_HANDLE   handle,
-  const char *  optionName,
-  const void *  value
-);
+HTTPAPI_RESULT HTTPAPI_SetOption(HTTP_HANDLE  MU_C2);
 ```
 
 ## Parameters

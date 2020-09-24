@@ -5,7 +5,7 @@ description: "This is the function reference page for the xio_close() function i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,10 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/xio.h](../xio-h.md)"  
 ```C
-int xio_close(
-  XIO_HANDLE            xio,
-  ON_IO_CLOSE_COMPLETE  on_io_close_complete,
-  void *                callback_context
-);
+int xio_close(XIO_HANDLE  MU_C2);
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,13 +19,7 @@ This API sends a report of the device's properties and their current values.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client_ll.h](../iothub-device-client-ll-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendReportedState(
-  IOTHUB_DEVICE_CLIENT_LL_HANDLE         iotHubClientHandle,
-  const unsigned char *                  reportedState,
-  size_t                                 size,
-  IOTHUB_CLIENT_REPORTED_STATE_CALLBACK  reportedStateCallback,
-  void *                                 userContextCallback
-);
+IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendReportedState(IOTHUB_DEVICE_CLIENT_LL_HANDLE  MU_C2);
 ```
 
 ## Parameters

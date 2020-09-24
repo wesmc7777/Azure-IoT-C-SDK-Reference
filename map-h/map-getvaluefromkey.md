@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_GetValueFromKey() 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ Retrieves the value of a stored key.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-const char* Map_GetValueFromKey(
-  MAP_HANDLE    handle,
-  const char *  key
-);
+const char* Map_GetValueFromKey(MAP_HANDLE  MU_C2);
 ```
 
 ## Parameters

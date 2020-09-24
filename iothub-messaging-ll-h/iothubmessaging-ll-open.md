@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessaging_LL_Ope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Opens connection to IoTHub.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging_ll.h](../iothub-messaging-ll-h.md)"  
 ```C
-IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Open(
-  IOTHUB_MESSAGING_HANDLE        messagingHandle,
-  IOTHUB_OPEN_COMPLETE_CALLBACK  openCompleteCallback,
-  void *                         userContextCallback
-);
+IOTHUB_MESSAGING_RESULT IoTHubMessaging_LL_Open(IOTHUB_MESSAGING_HANDLE  MU_C2);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the Condition_Wait() funct
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ block on the condition handle unti the thread is signalled or until the timeout_
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
-COND_RESULT Condition_Wait(
-  COND_HANDLE  handle,
-  LOCK_HANDLE  lock,
-  int          timeout_milliseconds
-);
+COND_RESULT Condition_Wait(COND_HANDLE  MU_C2);
 ```
 
 ## Parameters

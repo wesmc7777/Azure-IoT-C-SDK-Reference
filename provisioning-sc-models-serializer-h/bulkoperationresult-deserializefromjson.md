@@ -5,7 +5,7 @@ description: "This is the function reference page for the bulkOperationResult_de
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Deserializes a JSON String representation of a Bulk Operation Result.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_models_serializer.h](../provisioning-sc-models-serializer-h.md)"  
 ```C
-PROVISIONING_BULK_OPERATION_RESULT* bulkOperationResult_deserializeFromJson(const char *  json_string);
+PROVISIONING_BULK_OPERATION_RESULT* bulkOperationResult_deserializeFromJson(const char *json_string   MU_C2);
 ```
 
 ## Parameters

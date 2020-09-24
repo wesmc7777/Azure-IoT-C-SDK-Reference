@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetStrin
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Returns the null terminated string stored in the message. If the content type of
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetString(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle);
+const char* IoTHubMessage_GetString(IOTHUB_MESSAGE_HANDLE  MU_C2);
 ```
 
 ## Parameters

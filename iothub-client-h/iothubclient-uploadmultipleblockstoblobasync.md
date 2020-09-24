@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubClient_UploadMul
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,12 +19,7 @@ Uploads a file to a Blob storage in chunks, fed through the callback function pr
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_UploadMultipleBlocksToBlobAsync(
-  IOTHUB_CLIENT_HANDLE                         iotHubClientHandle,
-  const char *                                 destinationFileName,
-  IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_CALLBACK  getDataCallback,
-  void *                                       context
-);
+IOTHUB_CLIENT_RESULT IoTHubClient_UploadMultipleBlocksToBlobAsync(IOTHUB_CLIENT_HANDLE  MU_C2);
 ```
 
 DEPRECATED: Use IoTHubClient_UploadMultipleBlocksToBlobAsyncEx instead ** 

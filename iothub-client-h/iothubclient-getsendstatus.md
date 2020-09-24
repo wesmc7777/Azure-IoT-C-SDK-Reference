@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubClient_GetSendSt
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ This function returns the current sending status for IoTHubClient.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_GetSendStatus(
-  IOTHUB_CLIENT_HANDLE  iotHubClientHandle,
-  IOTHUB_CLIENT_STATUS  iotHubClientStatus
-);
+IOTHUB_CLIENT_RESULT IoTHubClient_GetSendStatus(IOTHUB_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

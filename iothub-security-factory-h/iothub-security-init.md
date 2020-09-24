@@ -5,7 +5,7 @@ description: "This is the function reference page for the iothub_security_init()
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/iothub_security_factory.h](../iothub-security-factory-h.md)"  
 ```C
-int iothub_security_init(IOTHUB_SECURITY_TYPE  sec_type);
+int iothub_security_init(IOTHUB_SECURITY_TYPE  MU_C2);
 ```
 

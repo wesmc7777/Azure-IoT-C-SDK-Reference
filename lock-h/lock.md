@@ -5,7 +5,7 @@ description: "This is the function reference page for the Lock() function in the
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Acquires a lock on the given lock handle. Uses platform specific mutex primitive
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/lock.h](../lock-h.md)"  
 ```C
-LOCK_RESULT Lock(LOCK_HANDLE  handle);
+LOCK_RESULT Lock(LOCK_HANDLE  MU_C2);
 ```
 
 ## Parameters

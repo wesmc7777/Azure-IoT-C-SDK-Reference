@@ -5,7 +5,7 @@ description: "This is the function reference page for the socketio_destroy() fun
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,6 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/socketio.h](../socketio-h.md)"  
 ```C
-void socketio_destroy(CONCRETE_IO_HANDLE  socket_io);
+void socketio_destroy(CONCRETE_IO_HANDLE  MU_C2);
 ```
 

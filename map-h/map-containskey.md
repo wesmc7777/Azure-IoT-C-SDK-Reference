@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_ContainsKey() func
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ This function returns a boolean value in keyExists if the map contains a key wit
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_RESULT Map_ContainsKey(
-  MAP_HANDLE    handle,
-  const char *  key,
-  bool *        keyExists
-);
+MAP_RESULT Map_ContainsKey(MAP_HANDLE  MU_C2);
 ```
 
 ## Parameters

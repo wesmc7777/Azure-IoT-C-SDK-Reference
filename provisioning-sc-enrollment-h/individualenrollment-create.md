@@ -5,7 +5,7 @@ description: "This is the function reference page for the individualEnrollment_c
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ Creates an Individual Enrollment handle with a TPM Attestation for use in conseq
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_enrollment.h](../provisioning-sc-enrollment-h.md)"  
 ```C
-INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(
-  const char *                  reg_id,
-  ATTESTATION_MECHANISM_HANDLE  att_mech
-);
+INDIVIDUAL_ENROLLMENT_HANDLE individualEnrollment_create(const char *reg_id   MU_C2);
 ```
 
 ## Parameters

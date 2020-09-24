@@ -5,7 +5,7 @@ description: "This is the function reference page for the Condition_Deinit() fun
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ The condition instance is deinitialized.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/condition.h](../condition-h.md)"  
 ```C
-void Condition_Deinit(COND_HANDLE  handle);
+void Condition_Deinit(COND_HANDLE  MU_C2);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetMessa
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ Sets the message user id. CAUTION: SDK user should not call it directly, it is f
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageUserIdSystemProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           userId
-);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetMessageUserIdSystemProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_sc_delete_device_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Deletes a device registration state on the Provisioning Service.
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_service_client.h](../provisioning-service-client-h.md)"  
 ```C
-int prov_sc_delete_device_registration_state_by_param(
-  PROVISIONING_SERVICE_CLIENT_HANDLE  prov_client,
-  const char *                        reg_id,
-  const char *                        etag
-);
+int prov_sc_delete_device_registration_state_by_param(PROVISIONING_SERVICE_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

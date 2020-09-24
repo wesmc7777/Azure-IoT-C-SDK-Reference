@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_CloneOption() 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Clones the option named optionName bearing the value value into the pointer save
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_CloneOption(
-  const char *   optionName,
-  const void *   value,
-  const void **  savedValue
-);
+HTTPAPI_RESULT HTTPAPI_CloneOption(const char *optionName   MU_C2);
 ```
 
 ## Parameters

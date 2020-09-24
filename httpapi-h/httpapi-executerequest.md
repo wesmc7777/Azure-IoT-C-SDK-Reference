@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_ExecuteRequest
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,17 +19,7 @@ Sends the HTTP request to the host and handles the response for the HTTP call.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/httpapi.h](../httpapi-h.md)"  
 ```C
-HTTPAPI_RESULT HTTPAPI_ExecuteRequest(
-  HTTP_HANDLE            handle,
-  HTTPAPI_REQUEST_TYPE   requestType,
-  const char *           relativePath,
-  HTTP_HEADERS_HANDLE    httpHeadersHandle,
-  const unsigned char *  content,
-  size_t                 contentLength,
-  unsigned int *         statusCode,
-  HTTP_HEADERS_HANDLE    responseHeadersHandle,
-  BUFFER_HANDLE          responseContent
-);
+HTTPAPI_RESULT HTTPAPI_ExecuteRequest(HTTP_HANDLE  MU_C2);
 ```
 
 ## Parameters

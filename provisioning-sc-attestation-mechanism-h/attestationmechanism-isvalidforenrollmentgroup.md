@@ -5,7 +5,7 @@ description: "This is the function reference page for the attestationMechanism_i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Returns result indicating if an attestation mechanism is valid to be attached to
 
 \#include "[azure-iot-sdk-c/provisioning_service_client/inc/prov_service_client/provisioning_sc_attestation_mechanism.h](../provisioning-sc-attestation-mechanism-h.md)"  
 ```C
-bool attestationMechanism_isValidForEnrollmentGroup(ATTESTATION_MECHANISM_HANDLE  att_mech);
+bool attestationMechanism_isValidForEnrollmentGroup(ATTESTATION_MECHANISM_HANDLE  MU_C2);
 ```
 
 ## Parameters

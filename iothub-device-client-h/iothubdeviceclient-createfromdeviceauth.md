@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_Cre
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Creates a IoT Hub client for communication with an existing IoT Hub using the de
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_device_client.h](../iothub-device-client-h.md)"  
 ```C
-IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_CreateFromDeviceAuth(
-  const char *                      iothub_uri,
-  const char *                      device_id,
-  IOTHUB_CLIENT_TRANSPORT_PROVIDER  protocol
-);
+IOTHUB_DEVICE_CLIENT_HANDLE IoTHubDeviceClient_CreateFromDeviceAuth(const char *iothub_uri   MU_C2);
 ```
 
 ## Parameters

@@ -5,7 +5,7 @@ description: "This is the function reference page for the Prov_Device_LL_Destroy
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Disposes of resources allocated by the provisioning Client.
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_device_ll_client.h](../prov-device-ll-client-h.md)"  
 ```C
-void Prov_Device_LL_Destroy(PROV_DEVICE_LL_HANDLE  handle);
+void Prov_Device_LL_Destroy(PROV_DEVICE_LL_HANDLE  MU_C2);
 ```
 
 ## Parameters

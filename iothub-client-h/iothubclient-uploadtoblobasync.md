@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubClient_UploadToB
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,14 +19,7 @@ IoTHubClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_client.h](../iothub-client-h.md)"  
 ```C
-IOTHUB_CLIENT_RESULT IoTHubClient_UploadToBlobAsync(
-  IOTHUB_CLIENT_HANDLE                iotHubClientHandle,
-  const char *                        destinationFileName,
-  const unsigned char *               source,
-  size_t                              size,
-  IOTHUB_CLIENT_FILE_UPLOAD_CALLBACK  iotHubClientFileUploadCallback,
-  void *                              context
-);
+IOTHUB_CLIENT_RESULT IoTHubClient_UploadToBlobAsync(IOTHUB_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

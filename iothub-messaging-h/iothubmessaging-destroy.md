@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessaging_Destro
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Disposes of resources allocated by the IoT Hub Service Client Messaging.
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_messaging.h](../iothub-messaging-h.md)"  
 ```C
-void IoTHubMessaging_Destroy(IOTHUB_MESSAGING_CLIENT_HANDLE  messagingClientHandle);
+void IoTHubMessaging_Destroy(IOTHUB_MESSAGING_CLIENT_HANDLE  MU_C2);
 ```
 
 ## Parameters

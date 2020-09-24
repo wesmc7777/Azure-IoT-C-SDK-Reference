@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_Add() function in 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Adds a key/value pair to the map.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_RESULT Map_Add(
-  MAP_HANDLE    handle,
-  const char *  key,
-  const char *  value
-);
+MAP_RESULT Map_Add(MAP_HANDLE  MU_C2);
 ```
 
 ## Parameters

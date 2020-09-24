@@ -5,7 +5,7 @@ description: "This is the function reference page for the ThreadAPI_Exit() funct
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ This function is called by a thread when the thread exits.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/threadapi.h](../threadapi-h.md)"  
 ```C
-void ThreadAPI_Exit(int  res);
+void ThreadAPI_Exit(int res   MU_C2);
 ```
 
 ## Parameters

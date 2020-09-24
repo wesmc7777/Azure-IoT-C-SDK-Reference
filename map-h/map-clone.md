@@ -5,7 +5,7 @@ description: "This is the function reference page for the Map_Clone() function i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Creates a copy of the map indicated by handle and returns a handle to it.
 
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/map.h](../map-h.md)"  
 ```C
-MAP_HANDLE Map_Clone(MAP_HANDLE  handle);
+MAP_HANDLE Map_Clone(MAP_HANDLE  MU_C2);
 ```
 
 ## Parameters

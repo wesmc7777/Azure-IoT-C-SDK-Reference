@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetPrope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,11 +19,7 @@ Sets a property on a Iothub Message.
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           key,
-  const char *           value
-);
+IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
 ```
 
 ## Parameters
@@ -31,7 +27,7 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
 
 * `key` name of the property to set. Note that when sending messages via the HTTP transport, this value must not contain spaces.
 
-* `value` of the property to set.
+* `value` of the property to set. Note that when sending messages via the HTTP transport, this value must not contain spaces.
 
 **NOTE:** Property names and values must not contain spaces and can only contain ASCII alphanumeric characters, plus {'!', '#', '$', '%, '&', ''', '*', '+', '-', '.', '^', '_', '`', '|', '~'}.
 

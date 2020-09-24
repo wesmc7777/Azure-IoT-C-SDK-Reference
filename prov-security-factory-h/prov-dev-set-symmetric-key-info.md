@@ -5,7 +5,7 @@ description: "This is the function reference page for the prov_dev_set_symmetric
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,9 +17,6 @@ ms.topic: "reference"
 
 \#include "[azure-iot-sdk-c/provisioning_client/inc/azure_prov_client/prov_security_factory.h](../prov-security-factory-h.md)"  
 ```C
-int prov_dev_set_symmetric_key_info(
-  const char *  registration_name,
-  const char *  symmetric_key
-);
+int prov_dev_set_symmetric_key_info(const char *registration_name   MU_C2);
 ```
 

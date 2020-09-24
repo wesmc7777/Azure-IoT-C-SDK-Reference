@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetPrope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/23/2020                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,10 +19,7 @@ Gets a IotHub Message's properties item. No new memory is allocated, the caller 
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
-const char* IoTHubMessage_GetProperty(
-  IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle,
-  const char *           key
-);
+const char* IoTHubMessage_GetProperty(IOTHUB_MESSAGE_HANDLE  MU_C2);
 ```
 
 ## Parameters
