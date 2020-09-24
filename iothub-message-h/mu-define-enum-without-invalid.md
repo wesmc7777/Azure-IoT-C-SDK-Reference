@@ -13,17 +13,21 @@ ms.topic: "reference"
 
 # MU_DEFINE_ENUM_WITHOUT_INVALID()
 
-Enumeration specifying the status of calls to various APIs in this module.
+Enumeration specifying the content type of the a given message.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_client/inc/iothub_message.h](../iothub-message-h.md)"  
 ```C
 MU_DEFINE_ENUM_WITHOUT_INVALID(
-  IOTHUB_MESSAGE_RESULT,
-  IOTHUB_MESSAGE_OK,
-  IOTHUB_MESSAGE_INVALID_ARG,
-  IOTHUB_MESSAGE_INVALID_TYPE,
+  IOTHUBMESSAGE_CONTENT_TYPE,
+  IOTHUBMESSAGE_BYTEARRAY,
+  IOTHUBMESSAGE_STRING,
+  IOTHUBMESSAGE_UNKNOWN
+);
+```
+
+E,
   IOTHUB_MESSAGE_ERROR
 );
 ```

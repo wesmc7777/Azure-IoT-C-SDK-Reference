@@ -176,9 +176,7 @@ Member name                 | Description
 #### MU_IF
 
 ```C
-#define MU_IF \
-        MU_C2, \
-        MU_ISZERO 
+#define MU_IF        MU_ISZERO 
 ```
 
 #### MU_IF0
@@ -230,27 +228,20 @@ Member name                 | Description
 
 ```C
 #define MU_DEFINE_ENUM_WITHOUT_INVALID \
-        MU_C2, \
         MU_FOR_EACH_1, \
-        MU_DEFINE_ENUMERATION_CONSTANT, \
-        MU_C2, \
-        MU_C2 
+        MU_DEFINE_ENUMERATION_CONSTANT 
 ```
 
 #### MU_DEFINE_ENUM
 
 ```C
-#define MU_DEFINE_ENUM \
-        MU_DEFINE_ENUM_WITHOUT_INVALID, \
-        MU_C2 
+#define MU_DEFINE_ENUM        MU_DEFINE_ENUM_WITHOUT_INVALID 
 ```
 
 #### MU_DEFINE_ENUMERATION_CONSTANT_AS_WIDESTRING
 
 ```C
-#define MU_DEFINE_ENUMERATION_CONSTANT_AS_WIDESTRING \
-        MU_C2, \
-        MU_TOSTRING 
+#define MU_DEFINE_ENUMERATION_CONSTANT_AS_WIDESTRING        MU_TOSTRING 
 ```
 
 #### MU_DEFINE_ENUMERATION_CONSTANT_AS_STRING
@@ -263,50 +254,37 @@ Member name                 | Description
 
 ```C
 #define MU_DEFINE_ENUM_STRINGS_WITHOUT_INVALID \
-        MU_C2, \
         MU_COUNT_ARG, \
         MU_FOR_EACH_1, \
         MU_DEFINE_ENUMERATION_CONSTANT_AS_STRING, \
-        MU_C2, \
         MU_COUNT_ARG, \
-        MU_C2, \
-        MU_C2, \
         MU_FAILURE, \
         MU_COUNT_ARG, \
-        MU_C2, \
         MU_FAILURE 
 ```
 
 #### MU_DEFINE_ENUM_STRINGS
 
 ```C
-#define MU_DEFINE_ENUM_STRINGS \
-        MU_DEFINE_ENUM_STRINGS_WITHOUT_INVALID, \
-        MU_C2 
+#define MU_DEFINE_ENUM_STRINGS        MU_DEFINE_ENUM_STRINGS_WITHOUT_INVALID 
 ```
 
 #### MU_DEFINE_LOCAL_ENUM_WITHOUT_INVALID
 
 ```C
 #define MU_DEFINE_LOCAL_ENUM_WITHOUT_INVALID \
-        MU_C2, \
         MU_FOR_EACH_1, \
         MU_DEFINE_ENUMERATION_CONSTANT, \
-        MU_C2, \
         MU_COUNT_ARG, \
         MU_FOR_EACH_1, \
         MU_DEFINE_ENUMERATION_CONSTANT_AS_STRING, \
-        MU_C2, \
-        MU_COUNT_ARG, \
-        MU_C2 
+        MU_COUNT_ARG 
 ```
 
 #### MU_DEFINE_LOCAL_ENUM
 
 ```C
-#define MU_DEFINE_LOCAL_ENUM \
-        MU_DEFINE_LOCAL_ENUM_WITHOUT_INVALID, \
-        MU_C2 
+#define MU_DEFINE_LOCAL_ENUM        MU_DEFINE_LOCAL_ENUM_WITHOUT_INVALID 
 ```
 
 #### MU_ENUM_VALUE_COUNT
@@ -324,13 +302,13 @@ Member name                 | Description
 #### MU_ENUM_TO_STRING
 
 ```C
-#define MU_ENUM_TO_STRING        MU_C2 
+#define MU_ENUM_TO_STRING  enumName##Strings(enumValue) 
 ```
 
 #### MU_STRING_TO_ENUM
 
 ```C
-#define MU_STRING_TO_ENUM        MU_C2 
+#define MU_STRING_TO_ENUM  enumName##_FromString(stringValue, addressOfEnumVariable) 
 ```
 
 #### MU_EMPTY
@@ -363,7 +341,6 @@ Member name                 | Description
 
 ```C
 #define MU_DEFINE_ENUM_2_WITHOUT_INVALID \
-        MU_C2, \
         MU_FOR_EACH_2, \
         MU_DEFINE_ENUMERATION_CONSTANT_2, \
         MU_DECLARE_ENUM_STRINGS_2 
@@ -372,9 +349,7 @@ Member name                 | Description
 #### MU_DEFINE_ENUM_2
 
 ```C
-#define MU_DEFINE_ENUM_2 \
-        MU_DEFINE_ENUM_2_WITHOUT_INVALID, \
-        MU_C2 
+#define MU_DEFINE_ENUM_2        MU_DEFINE_ENUM_2_WITHOUT_INVALID 
 ```
 
 #### MU_DEFINE_ENUM_VALUE_AND_STRING
@@ -388,16 +363,11 @@ Member name                 | Description
 ```C
 #define MU_DEFINE_ENUM_STRINGS_2 \
         ENUM_VALUE_AND_STRING, \
-        MU_C2, \
         MU_DIV2, \
         MU_COUNT_ARG, \
         MU_FOR_EACH_2, \
         MU_DEFINE_ENUM_VALUE_AND_STRING, \
-        MU_C3, \
-        MU_C2, \
-        MU_C2, \
-        MU_C2, \
-        MU_C2 
+        MU_C3 
 ```
 
 #### MU_ENUM_TO_STRING_2
@@ -434,7 +404,6 @@ Member name                 | Description
 
 ```C
 #define MU_DEFINE_STRUCT \
-        MU_C2, \
         MU_FOR_EACH_2, \
         MU_DEFINE_STRUCT_FIELD 
 ```

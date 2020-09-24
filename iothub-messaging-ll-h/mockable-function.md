@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-This API specifies a callback to be used when the device receives the message.
+This function is meant to be called by the user when to set the trusted certificate on the tls connection.
 
 ## Syntax
 
@@ -21,20 +21,24 @@ This API specifies a callback to be used when the device receives the message.
 ```C
 MOCKABLE_FUNCTION(
   IOTHUB_MESSAGING_RESULT,
-  IoTHubMessaging_LL_SetFeedbackMessageCallback,
+  IoTHubMessaging_LL_SetTrustedCert,
   IOTHUB_MESSAGING_HANDLE,
   messagingHandle,
-  IOTHUB_FEEDBACK_MESSAGE_RECEIVED_CALLBACK,
-  feedbackMessageReceivedCallback,
-  void *,
-  userContextCallback
+  const char *,
+  trusted_cert
 );
 ```
 
 ## Parameters
-* `messagingClientHandle` The handle created by a call to the create function. 
+* `messagingHandle` The handle created by a call to the create function. 
 
-* `feedbackMessageReceivedCallback` The callback specified by the user to be used for receiveng confirmation feedback from the deice about the recevied message.
+* `trusted_cert` The trusted certificate that will be set.
+
+## Return Value
+IOTHUB_CLIENT_OK upon success or an error code upon failure.
+
+
+r to be used for receiveng confirmation feedback from the deice about the recevied message.
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 

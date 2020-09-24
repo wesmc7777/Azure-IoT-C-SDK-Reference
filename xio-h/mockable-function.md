@@ -30,8 +30,11 @@ const void *,
 );
 ```
 
-send_complete,
-  void *,
+_context
+);
+```
+
+id *,
   callback_context
 );
 ```
