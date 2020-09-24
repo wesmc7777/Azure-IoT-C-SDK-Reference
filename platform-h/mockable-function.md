@@ -18,12 +18,8 @@ ms.topic: "reference"
 \#include "[azure-iot-sdk-c/c-utility/inc/azure_c_shared_utility/platform.h](../platform-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
-  void,
-  platform_deinit
-);
-```
-
-form_info,
+  STRING_HANDLE,
+  platform_get_platform_info,
   PLATFORM_INFO_OPTION,
   options
 );

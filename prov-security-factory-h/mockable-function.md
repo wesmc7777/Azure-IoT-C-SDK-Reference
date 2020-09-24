@@ -23,11 +23,7 @@ MOCKABLE_FUNCTION(
 );
 ```
 
-e
-);
-```
-
-e,
+stration_name,
   const char *,
   symmetric_key
 );

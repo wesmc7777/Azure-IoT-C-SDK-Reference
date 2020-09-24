@@ -58,8 +58,10 @@ MOCKABLE_FUNCTION(
 ## Parameters
 * `att_mech` The handle of the Attestation Mechanism
 
-he x509 (optional - if not using two cert refs, pass NULL).
+, pass NULL).
 
 ## Return Value
-A non NULL handle representing an Attestation Mechanism using an X509 Attestation with a CA Reference, and NULL on failure.
+A non NULL handle representing an Attestation Mechanism using an X509 Attestation with a signing certificate, and NULL on failure.
+
+a CA Reference, and NULL on failure.
 

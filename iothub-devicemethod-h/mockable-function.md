@@ -13,27 +13,32 @@ ms.topic: "reference"
 
 # MOCKABLE_FUNCTION()
 
-Creates a IoT Hub Service Client DeviceMethod handle for use it in consequent APIs.
+Call a method on device and a module with a given payload.
 
 ## Syntax
 
 \#include "[azure-iot-sdk-c/iothub_service_client/inc/iothub_devicemethod.h](../iothub-devicemethod-h.md)"  
 ```C
 MOCKABLE_FUNCTION(
+  IOTHUB_DEVICE_METHOD_RESULT,
+  IoTHubDeviceMethod_InvokeModule,
   IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE,
-  IoTHubDeviceMethod_Create,
-  IOTHUB_SERVICE_CLIENT_AUTH_HANDLE,
-  serviceClientHandle
-);
-```
-
-## Parameters
-* `serviceClientHandle` Service client handle.
-
-## Return Value
-A non-NULL IOTHUB_SERVICE_CLIENT_DEVICE_METHOD_HANDLE value that is used when invoking other functions for IoT Hub DeviceMethod and NULL on failure.
-
-ze_t *,
+  serviceClientDeviceMethodHandle,
+  const char *,
+  deviceId,
+  const char *,
+  moduleId,
+  const char *,
+  methodName,
+  const char *,
+  methodPayload,
+  unsigned                                    int,
+  timeout,
+  int *,
+  responseStatus,
+  unsigned char **,
+  responsePayload,
+  size_t *,
   responsePayloadSize
 );
 ```
