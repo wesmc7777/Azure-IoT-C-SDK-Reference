@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_edge_trusted_certi
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,13 +15,11 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-
 ## Detailed Description
 
 ## Functions
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[prov_get_edge_trusted_certificates](./prov-edge-trusted-certificates-h/prov-get-edge-trusted-certificates.md)            | 
+[MOCKABLE_FUNCTION](./prov-edge-trusted-certificates-h/mockable-function.md)            | 
 

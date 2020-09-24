@@ -5,7 +5,7 @@ description: "This is the header file reference page for shared_util_options.h i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -108,6 +108,11 @@ const char* const OPTION_CURL_VERBOSE = "CURLOPT_VERBOSE";
 #### OPTION_NET_INT_MAC_ADDRESS
 ```C
 const char* const OPTION_NET_INT_MAC_ADDRESS = "net_interface_mac_address";
+```
+
+#### OPTION_SET_TLS_RENEGOTIATION
+```C
+const char* const OPTION_SET_TLS_RENEGOTIATION = "tls_renegotiation";
 ```
 
 #### OPTION_TLS_VERSION

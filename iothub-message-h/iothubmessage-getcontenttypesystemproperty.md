@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetConte
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_GetContentTypeSystemProperty()
 
-Returns the content-type of the message payload, if defined.
+Returns the content-type of the message payload, if defined. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 
 ## Syntax
 

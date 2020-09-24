@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetConne
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -31,5 +31,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetConnectionModuleId(
 * `connectionModuleId` Pointer to the module ID of connector
 
 ## Return Value
-Returns IOTHUB_MESSAGE_OK if the DiagnosticData was set successfully or an error code otherwise.
+Returns IOTHUB_MESSAGE_OK if the connectionModuleId was set successfully or an error code otherwise.
 

@@ -5,7 +5,7 @@ description: "This is the header file reference page for httpapi.h in the Azure 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,11 +17,11 @@ This module implements the standard HTTP API used by the C IoT client library.
 
 ## Includes
 
-\#include "azure_c_shared_utility/httpheaders.h"  
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "azure_c_shared_utility/buffer_.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include <stddef.h>  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "azure_c_shared_utility/httpheaders.h"  
+\#include "azure_c_shared_utility/buffer_.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -114,6 +114,7 @@ Enumeration specifying the possible return values for the APIs in this module.
 
 ```C
 enum HTTPAPI_RESULT {
+  HTTPAPI_RESULT_INVALID,
   HTTPAPI_OK,
   HTTPAPI_INVALID_ARG,
   HTTPAPI_ERROR,
@@ -142,6 +143,7 @@ Enumeration specifying the HTTP request verbs accepted by the HTTPAPI module.
 
 ```C
 enum HTTPAPI_REQUEST_TYPE {
+  HTTPAPI_REQUEST_TYPE_INVALID,
   HTTPAPI_REQUEST_GET,
   HTTPAPI_REQUEST_POST,
   HTTPAPI_REQUEST_PUT,

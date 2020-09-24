@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_security_factory
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,8 +16,8 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stddef.h>  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_c_shared_utility/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
 \#include "azure_c_shared_utility/buffer_.h"  
 
 ## Detailed Description
@@ -32,6 +32,9 @@ Function Name                  | Description
 [iothub_security_deinit](./iothub-security-factory-h/iothub-security-deinit.md)            | 
 [iothub_security_interface](./iothub-security-factory-h/iothub-security-interface.md)            | 
 [iothub_security_type](./iothub-security-factory-h/iothub-security-type.md)            | 
+[iothub_security_set_symmetric_key_info](./iothub-security-factory-h/iothub-security-set-symmetric-key-info.md)            | 
+[iothub_security_get_symmetric_key](./iothub-security-factory-h/iothub-security-get-symmetric-key.md)            | 
+[iothub_security_get_symm_registration_name](./iothub-security-factory-h/iothub-security-get-symm-registration-name.md)            | 
 
 ## Macro definitions
 

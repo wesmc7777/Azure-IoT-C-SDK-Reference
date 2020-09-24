@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_client_const.h in 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -22,7 +22,19 @@ ms.topic: "reference"
 #### PROV_DEVICE_CLIENT_VERSION
 
 ```C
-#define PROV_DEVICE_CLIENT_VERSION  "1.2.10" 
+#define PROV_DEVICE_CLIENT_VERSION  "1.3.9" 
+```
+
+#### PROV_GET_THROTTLE_TIME
+
+```C
+#define PROV_GET_THROTTLE_TIME  1 
+```
+
+#### MAX_PROV_GET_THROTTLE_TIME
+
+```C
+#define MAX_PROV_GET_THROTTLE_TIME  5*60 
 ```
 
 ## Constants and Variables
@@ -47,8 +59,13 @@ const char* const PROV_UNASSIGNED_STATUS = "unassigned";
 const char* const PROV_DISABLE_STATUS = "disabled";
 ```
 
+#### RETRY_AFTER_KEY_VALUE
+```C
+const char* const RETRY_AFTER_KEY_VALUE = "retry-after";
+```
+
 #### PROV_API_VERSION
 ```C
-const char* const PROV_API_VERSION = "2018-09-01-preview";
+const char* const PROV_API_VERSION = "2019-03-31";
 ```
 

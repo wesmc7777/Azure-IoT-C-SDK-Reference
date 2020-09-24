@@ -5,7 +5,7 @@ description: "This is the header file reference page for tickcounter.h in the Az
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stdint.h>  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 

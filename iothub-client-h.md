@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client.h in the 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,13 +19,15 @@ Extends the IoTHubCLient_LL module with additional features.
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
 \#include "[iothub_client_core_ll.h](iothub-client-core-ll-h.md)"  
 \#include "[iothub_client_core.h](iothub-client-core-h.md)"  
 \#include "[iothub_client_ll.h](iothub-client-ll-h.md)"  
 
 ## Detailed Description
+
+DEPRECATED. New users use [iothub_device_client.h](iothub-device-client-h.md) for IoTHubClient APIs.
 
 IoTHubClient is a module that extends the IoTHubCLient_LL module with 2 features:
 

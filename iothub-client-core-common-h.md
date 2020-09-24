@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client_core_comm
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,8 +15,8 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
 \#include "[iothub_message.h](iothub-message-h.md)"  
 
@@ -209,7 +209,8 @@ Member name                 | Description
         IOTHUB_CLIENT_CONNECTION_RETRY_EXPIRED, \
         IOTHUB_CLIENT_CONNECTION_NO_NETWORK, \
         IOTHUB_CLIENT_CONNECTION_COMMUNICATION_ERROR, \
-        IOTHUB_CLIENT_CONNECTION_OK 
+        IOTHUB_CLIENT_CONNECTION_OK, \
+        IOTHUB_CLIENT_CONNECTION_NO_PING_RESPONSE 
 ```
 
 #### TRANSPORT_TYPE_VALUES
@@ -367,7 +368,8 @@ enum IOTHUB_CLIENT_CONNECTION_STATUS_REASON {
   IOTHUB_CLIENT_CONNECTION_RETRY_EXPIRED,
   IOTHUB_CLIENT_CONNECTION_NO_NETWORK,
   IOTHUB_CLIENT_CONNECTION_COMMUNICATION_ERROR,
-  IOTHUB_CLIENT_CONNECTION_OK
+  IOTHUB_CLIENT_CONNECTION_OK,
+  IOTHUB_CLIENT_CONNECTION_NO_PING_RESPONSE
 }
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -35,7 +35,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetOption(
 
 The options that can be set via this API are:
 
-* **timeout** - the maximum time in milliseconds a communication is allowed to use. value is a pointer to an unsignedint with the timeout value in milliseconds. This is only supported for the HTTP protocol as of now. When the HTTP protocol uses CURL, the meaning of the parameter is *total request time*. When the HTTP protocol uses winhttp, the meaning is the same as the dwSendTimeout and dwReceiveTimeout parameters of the [WinHttpSetTimeouts](https://msdn.microsoft.com/en-us/library/windows/desktop/aa384116(v=vs.85).aspx) API.
+* **timeout** - the maximum time in milliseconds a communication is allowed to use. value is a pointer to an unsignedint with the timeout value in milliseconds. This is only supported for the HTTP protocol as of now. When the HTTP protocol uses CURL, the meaning of the parameter is *total request time*. When the HTTP protocol uses winhttp, the meaning is the same as the dwSendTimeout and dwReceiveTimeout parameters of the [WinHttpSetTimeouts](https://msdn.microsoft.com/library/windows/desktop/aa384116(v=vs.85).aspx) API.
 
 * **CURLOPT_LOW_SPEED_LIMIT** - only available for HTTP protocol and only when CURL is used. It has the same meaning as CURL's option with the same name. value is pointer to a long.
 

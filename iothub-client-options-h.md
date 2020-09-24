@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client_options.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -37,6 +37,16 @@ Member name                 | Description
  password            | 
 
 ## Constants and Variables
+
+#### OPTION_RETRY_INTERVAL_SEC
+```C
+const char* OPTION_RETRY_INTERVAL_SEC = "retry_interval_sec";
+```
+
+#### OPTION_RETRY_MAX_DELAY_SECS
+```C
+const char* OPTION_RETRY_MAX_DELAY_SECS = "retry_max_delay_secs";
+```
 
 #### OPTION_LOG_TRACE
 ```C
@@ -118,6 +128,11 @@ const char* OPTION_BLOB_UPLOAD_TIMEOUT_SECS = "blob_upload_timeout_secs";
 const char* OPTION_PRODUCT_INFO = "product_info";
 ```
 
+#### OPTION_MODEL_ID
+```C
+const char* OPTION_MODEL_ID = "model_id";
+```
+
 #### OPTION_AUTO_URL_ENCODE_DECODE
 ```C
 const char* OPTION_AUTO_URL_ENCODE_DECODE = "auto_url_encode_decode";
@@ -146,5 +161,10 @@ const char* OPTION_EVENT_SEND_TIMEOUT_SECS = "event_send_timeout_secs";
 #### OPTION_DIAGNOSTIC_SAMPLING_PERCENTAGE
 ```C
 const char* OPTION_DIAGNOSTIC_SAMPLING_PERCENTAGE = "diag_sampling_percentage";
+```
+
+#### OPTION_DO_WORK_FREQUENCY_IN_MS
+```C
+const char* OPTION_DO_WORK_FREQUENCY_IN_MS = "do_work_freq_ms";
 ```
 

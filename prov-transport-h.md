@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_transport.h in the
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,11 +15,14 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_c_shared_utility/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
 \#include "[azure_c_shared_utility/shared_util_options.h](shared-util-options-h.md)"  
 \#include "azure_c_shared_utility/buffer_.h"  
+\#include "[azure_prov_client/prov_client_const.h](prov-client-const-h.md)"  
 \#include <stdbool.h>  
+\#include <stdint.h>  
+\#include <stdlib.h>  
 
 ## Detailed Description
 
@@ -31,6 +34,7 @@ Function Name                  | Description
 [TRANSPORT_HSM_TYPE_FromString](./prov-transport-h/transport-hsm-type-fromstring.md)            | 
 [PROV_DEVICE_TRANSPORT_RESULTStrings](./prov-transport-h/prov-device-transport-resultstrings.md)            | 
 [PROV_DEVICE_TRANSPORT_RESULT_FromString](./prov-transport-h/prov-device-transport-result-fromstring.md)            | 
+[parse_retry_after_value](./prov-transport-h/parse-retry-after-value.md)            | 
 
 ## Macro definitions
 

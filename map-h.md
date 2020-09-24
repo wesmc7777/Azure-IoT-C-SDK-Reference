@@ -5,7 +5,7 @@ description: "This is the header file reference page for map.h in the Azure IoT 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,11 +17,11 @@ Map is a module that implements a dictionary of STRING_HANDLE keys to STRING_HAN
 
 ## Includes
 
-\#include "azure_c_shared_utility/macro_utils.h"  
+\#include <stddef.h>  
+\#include "azure_macro_utils/macro_utils.h"  
 \#include "[azure_c_shared_utility/strings.h](strings-h.md)"  
 \#include "azure_c_shared_utility/crt_abstractions.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include <stddef.h>  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -65,6 +65,7 @@ Enumeration specifying the status of calls to various APIs in this module.
 
 ```C
 enum MAP_RESULT {
+  MAP_RESULT_INVALID,
   MAP_OK,
   MAP_ERROR,
   MAP_INVALIDARG,

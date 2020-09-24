@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetPrope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -31,7 +31,9 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
 
 * `key` name of the property to set. Note that when sending messages via the HTTP transport, this value must not contain spaces.
 
-* `value` of the property to set.
+* `value` of the property to set. Note that when sending messages via the HTTP transport, this value must not contain spaces.
+
+**NOTE:** Property names and values must not contain spaces and can only contain ASCII alphanumeric characters, plus {'!', '#', '$', '%, '&', ''', '*', '+', '-', '.', '^', '_', '`', '|', '~'}.
 
 ## Return Value
 An IOTHUB_MESSAGE_RESULT value indicating the result of setting the property.

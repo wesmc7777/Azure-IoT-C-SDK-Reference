@@ -5,7 +5,7 @@ description: "This is the header file reference page for xio.h in the Azure IoT 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,10 +15,10 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[azure_c_shared_utility/optionhandler.h](optionhandler-h.md)"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_c_shared_utility/macro_utils.h"  
 \#include <stddef.h>  
+\#include "[azure_c_shared_utility/optionhandler.h](optionhandler-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
 
 ## Detailed Description
 
@@ -92,6 +92,7 @@ Member name                 | Description
 
 ```C
 enum IO_SEND_RESULT {
+  IO_SEND_RESULT_INVALID,
   IO_SEND_OK,
   IO_SEND_ERROR,
   IO_SEND_CANCELLED
@@ -102,6 +103,7 @@ enum IO_SEND_RESULT {
 
 ```C
 enum IO_OPEN_RESULT {
+  IO_OPEN_RESULT_INVALID,
   IO_OPEN_OK,
   IO_OPEN_ERROR,
   IO_OPEN_CANCELLED

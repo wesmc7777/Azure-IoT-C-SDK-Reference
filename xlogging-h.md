@@ -5,7 +5,7 @@ description: "This is the header file reference page for xlogging.h in the Azure
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,6 +15,8 @@ ms.topic: "reference"
 
 ## Includes
 
+\#include <stdlib.h>  
+\#include "azure_macro_utils/macro_utils.h"  
 \#include "azure_c_shared_utility/agenttime.h"  
 \#include "azure_c_shared_utility/optimize_size.h"  
 \#include <stdio.h>  

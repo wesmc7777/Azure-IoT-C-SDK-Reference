@@ -139,6 +139,10 @@
           - name: platform.h
             href: platform-h.md
             items:
+            - name: PLATFORM_INFO_OPTIONStrings
+              href: platform-h/platform-info-optionstrings.md
+            - name: PLATFORM_INFO_OPTION_FromString
+              href: platform-h/platform-info-option-fromstring.md
             - name: platform_init
               href: platform-h/platform-init.md
             - name: platform_deinit
@@ -268,8 +272,6 @@
               href: tickcounter-h/tickcounter-get-current-ms.md
           - name: tlsio.h
             href: tlsio-h.md
-          - name: umock_c_prod.h
-            href: umock-c-prod-h.md
           - name: uniqueid.h
             href: uniqueid-h.md
             items:
@@ -315,6 +317,16 @@
               href: xlogging-h/xlogging-set-log-function.md
             - name: xlogging_get_log_function
               href: xlogging-h/xlogging-get-log-function.md
+    - name: deps
+      items:
+      - name: umock-c
+        items:
+        - name: inc
+          items:
+          - name: umock_c
+            items:
+            - name: umock_c_prod.h
+              href: umock-c-prod-h.md
     - name: iothub_client
       items:
       - name: inc
@@ -404,6 +416,8 @@
             href: iothub-client-core-h/iothubclientcore-setdevicetwincallback.md
           - name: IoTHubClientCore_SendReportedState
             href: iothub-client-core-h/iothubclientcore-sendreportedstate.md
+          - name: IoTHubClientCore_GetTwinAsync
+            href: iothub-client-core-h/iothubclientcore-gettwinasync.md
           - name: IoTHubClientCore_SetDeviceMethodCallback
             href: iothub-client-core-h/iothubclientcore-setdevicemethodcallback.md
           - name: IoTHubClientCore_SetDeviceMethodCallback_Ex
@@ -512,6 +526,8 @@
             href: iothub-client-core-ll-h/iothubclientcore-ll-setdevicetwincallback.md
           - name: IoTHubClientCore_LL_SendReportedState
             href: iothub-client-core-ll-h/iothubclientcore-ll-sendreportedstate.md
+          - name: IoTHubClientCore_LL_GetTwinAsync
+            href: iothub-client-core-ll-h/iothubclientcore-ll-gettwinasync.md
           - name: IoTHubClientCore_LL_SetDeviceMethodCallback
             href: iothub-client-core-ll-h/iothubclientcore-ll-setdevicemethodcallback.md
           - name: IoTHubClientCore_LL_SetDeviceMethodCallback_Ex
@@ -615,6 +631,8 @@
             href: iothub-device-client-h/iothubdeviceclient-setdevicetwincallback.md
           - name: IoTHubDeviceClient_SendReportedState
             href: iothub-device-client-h/iothubdeviceclient-sendreportedstate.md
+          - name: IoTHubDeviceClient_GetTwinAsync
+            href: iothub-device-client-h/iothubdeviceclient-gettwinasync.md
           - name: IoTHubDeviceClient_SetDeviceMethodCallback
             href: iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md
           - name: IoTHubDeviceClient_DeviceMethodResponse
@@ -658,6 +676,8 @@
             href: iothub-device-client-ll-h/iothubdeviceclient-ll-setdevicetwincallback.md
           - name: IoTHubDeviceClient_LL_SendReportedState
             href: iothub-device-client-ll-h/iothubdeviceclient-ll-sendreportedstate.md
+          - name: IoTHubDeviceClient_LL_GetTwinAsync
+            href: iothub-device-client-ll-h/iothubdeviceclient-ll-gettwinasync.md
           - name: IoTHubDeviceClient_LL_SetDeviceMethodCallback
             href: iothub-device-client-ll-h/iothubdeviceclient-ll-setdevicemethodcallback.md
           - name: IoTHubDeviceClient_LL_DeviceMethodResponse
@@ -729,8 +749,20 @@
             href: iothub-message-h/iothubmessage-setconnectionmoduleid.md
           - name: IoTHubMessage_GetConnectionDeviceId
             href: iothub-message-h/iothubmessage-getconnectiondeviceid.md
+          - name: IoTHubMessage_SetMessageCreationTimeUtcSystemProperty
+            href: iothub-message-h/iothubmessage-setmessagecreationtimeutcsystemproperty.md
+          - name: IoTHubMessage_GetMessageCreationTimeUtcSystemProperty
+            href: iothub-message-h/iothubmessage-getmessagecreationtimeutcsystemproperty.md
+          - name: IoTHubMessage_SetMessageUserIdSystemProperty
+            href: iothub-message-h/iothubmessage-setmessageuseridsystemproperty.md
+          - name: IoTHubMessage_GetMessageUserIdSystemProperty
+            href: iothub-message-h/iothubmessage-getmessageuseridsystemproperty.md
           - name: IoTHubMessage_SetConnectionDeviceId
             href: iothub-message-h/iothubmessage-setconnectiondeviceid.md
+          - name: IoTHubMessage_SetAsSecurityMessage
+            href: iothub-message-h/iothubmessage-setassecuritymessage.md
+          - name: IoTHubMessage_IsSecurityMessage
+            href: iothub-message-h/iothubmessage-issecuritymessage.md
           - name: IoTHubMessage_Destroy
             href: iothub-message-h/iothubmessage-destroy.md
         - name: iothub_module_client.h
@@ -760,6 +792,8 @@
             href: iothub-module-client-h/iothubmoduleclient-setmoduletwincallback.md
           - name: IoTHubModuleClient_SendReportedState
             href: iothub-module-client-h/iothubmoduleclient-sendreportedstate.md
+          - name: IoTHubModuleClient_GetTwinAsync
+            href: iothub-module-client-h/iothubmoduleclient-gettwinasync.md
           - name: IoTHubModuleClient_SetModuleMethodCallback
             href: iothub-module-client-h/iothubmoduleclient-setmodulemethodcallback.md
           - name: IoTHubModuleClient_SendEventToOutputAsync
@@ -795,6 +829,8 @@
             href: iothub-module-client-ll-h/iothubmoduleclient-ll-setmoduletwincallback.md
           - name: IoTHubModuleClient_LL_SendReportedState
             href: iothub-module-client-ll-h/iothubmoduleclient-ll-sendreportedstate.md
+          - name: IoTHubModuleClient_LL_GetTwinAsync
+            href: iothub-module-client-ll-h/iothubmoduleclient-ll-gettwinasync.md
           - name: IoTHubModuleClient_LL_SetModuleMethodCallback
             href: iothub-module-client-ll-h/iothubmoduleclient-ll-setmodulemethodcallback.md
           - name: IoTHubModuleClient_LL_SendEventToOutputAsync
@@ -1015,6 +1051,8 @@
             href: iothub-service-client-auth-h/iothub-device-connection-state-fromstring.md
           - name: IoTHubServiceClientAuth_CreateFromConnectionString
             href: iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md
+          - name: IoTHubServiceClientAuth_CreateFromSharedAccessSignature
+            href: iothub-service-client-auth-h/iothubserviceclientauth-createfromsharedaccesssignature.md
           - name: IoTHubServiceClientAuth_Destroy
             href: iothub-service-client-auth-h/iothubserviceclientauth-destroy.md
     - name: provisioning_client
@@ -1038,6 +1076,12 @@
               href: iothub-security-factory-h/iothub-security-interface.md
             - name: iothub_security_type
               href: iothub-security-factory-h/iothub-security-type.md
+            - name: iothub_security_set_symmetric_key_info
+              href: iothub-security-factory-h/iothub-security-set-symmetric-key-info.md
+            - name: iothub_security_get_symmetric_key
+              href: iothub-security-factory-h/iothub-security-get-symmetric-key.md
+            - name: iothub_security_get_symm_registration_name
+              href: iothub-security-factory-h/iothub-security-get-symm-registration-name.md
           - name: prov_client_const.h
             href: prov-client-const-h.md
           - name: prov_device_client.h
@@ -1053,6 +1097,10 @@
               href: prov-device-client-h/prov-device-setoption.md
             - name: Prov_Device_GetVersionString
               href: prov-device-client-h/prov-device-getversionstring.md
+            - name: Prov_Device_Set_Provisioning_Payload
+              href: prov-device-client-h/prov-device-set-provisioning-payload.md
+            - name: Prov_Device_Get_Provisioning_Payload
+              href: prov-device-client-h/prov-device-get-provisioning-payload.md
           - name: prov_device_ll_client.h
             href: prov-device-ll-client-h.md
             items:
@@ -1076,11 +1124,15 @@
               href: prov-device-ll-client-h/prov-device-ll-setoption.md
             - name: Prov_Device_LL_GetVersionString
               href: prov-device-ll-client-h/prov-device-ll-getversionstring.md
+            - name: Prov_Device_LL_Set_Provisioning_Payload
+              href: prov-device-ll-client-h/prov-device-ll-set-provisioning-payload.md
+            - name: Prov_Device_LL_Get_Provisioning_Payload
+              href: prov-device-ll-client-h/prov-device-ll-get-provisioning-payload.md
           - name: prov_edge_trusted_certificates.h
             href: prov-edge-trusted-certificates-h.md
             items:
-            - name: prov_get_edge_trusted_certificates
-              href: prov-edge-trusted-certificates-h/prov-get-edge-trusted-certificates.md
+            - name: MOCKABLE_FUNCTION
+              href: prov-edge-trusted-certificates-h/mockable-function.md
           - name: prov_security_factory.h
             href: prov-security-factory-h.md
             items:
@@ -1094,6 +1146,12 @@
               href: prov-security-factory-h/prov-dev-security-deinit.md
             - name: prov_dev_security_get_type
               href: prov-security-factory-h/prov-dev-security-get-type.md
+            - name: prov_dev_set_symmetric_key_info
+              href: prov-security-factory-h/prov-dev-set-symmetric-key-info.md
+            - name: prov_dev_get_symmetric_key
+              href: prov-security-factory-h/prov-dev-get-symmetric-key.md
+            - name: prov_dev_get_symm_registration_name
+              href: prov-security-factory-h/prov-dev-get-symm-registration-name.md
           - name: prov_transport.h
             href: prov-transport-h.md
             items:
@@ -1105,6 +1163,8 @@
               href: prov-transport-h/prov-device-transport-resultstrings.md
             - name: PROV_DEVICE_TRANSPORT_RESULT_FromString
               href: prov-transport-h/prov-device-transport-result-fromstring.md
+            - name: parse_retry_after_value
+              href: prov-transport-h/parse-retry-after-value.md
           - name: prov_transport_amqp_client.h
             href: prov-transport-amqp-client-h.md
             items:
@@ -1322,10 +1382,6 @@
           - name: provisioning_sc_shared_helpers.h
             href: provisioning-sc-shared-helpers-h.md
             items:
-            - name: NECESSITYStrings
-              href: provisioning-sc-shared-helpers-h/necessitystrings.md
-            - name: NECESSITY_FromString
-              href: provisioning-sc-shared-helpers-h/necessity-fromstring.md
             - name: mallocAndStrcpy_overwrite
               href: provisioning-sc-shared-helpers-h/mallocandstrcpy-overwrite.md
             - name: copy_json_string_field

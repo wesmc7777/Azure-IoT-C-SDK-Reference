@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_enrollm
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,8 +16,8 @@ ms.topic: "reference"
 ## Includes
 
 \#include "azure_c_shared_utility/agenttime.h"  
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[provisioning_sc_attestation_mechanism.h](provisioning-sc-attestation-mechanism-h.md)"  
 \#include "[provisioning_sc_device_registration_state.h](provisioning-sc-device-registration-state-h.md)"  
 \#include "[provisioning_sc_device_capabilities.h](provisioning-sc-device-capabilities-h.md)"  

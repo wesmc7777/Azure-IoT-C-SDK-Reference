@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_device_client.h 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Extends the IoTHubCLient_LL module with additional features.
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
 \#include "[iothub_client_core_ll.h](iothub-client-core-ll-h.md)"  
 \#include "[iothub_client_core.h](iothub-client-core-h.md)"  
@@ -52,6 +52,7 @@ Function Name                  | Description
 [IoTHubDeviceClient_SetOption](./iothub-device-client-h/iothubdeviceclient-setoption.md)            | This API sets a runtime option identified by parameter optionName to a value pointed to by value. optionName and the data type value is pointing to are specific for every option.
 [IoTHubDeviceClient_SetDeviceTwinCallback](./iothub-device-client-h/iothubdeviceclient-setdevicetwincallback.md)            | This API specifies a callback to be used when the device receives a state update.
 [IoTHubDeviceClient_SendReportedState](./iothub-device-client-h/iothubdeviceclient-sendreportedstate.md)            | This API sends a report of the device's properties and their current values.
+[IoTHubDeviceClient_GetTwinAsync](./iothub-device-client-h/iothubdeviceclient-gettwinasync.md)            | This API provides a way to retrieve the complete device Twin properties on-demand.
 [IoTHubDeviceClient_SetDeviceMethodCallback](./iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md)            | This API sets the callback for async cloud to device method calls.
 [IoTHubDeviceClient_DeviceMethodResponse](./iothub-device-client-h/iothubdeviceclient-devicemethodresponse.md)            | This API responds to an asnyc method callback identified the methodId.
 [IoTHubDeviceClient_UploadToBlobAsync](./iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md)            | IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.

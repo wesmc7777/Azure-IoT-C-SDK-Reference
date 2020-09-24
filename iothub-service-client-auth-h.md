@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_service_client_a
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,8 +17,8 @@ APIs that allow a user (usually a device) to create and destroy a handle for use
 
 ## Includes
 
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -35,6 +35,7 @@ Function Name                  | Description
 [IOTHUB_DEVICE_CONNECTION_STATEStrings](./iothub-service-client-auth-h/iothub-device-connection-statestrings.md)            | 
 [IOTHUB_DEVICE_CONNECTION_STATE_FromString](./iothub-service-client-auth-h/iothub-device-connection-state-fromstring.md)            | 
 [IoTHubServiceClientAuth_CreateFromConnectionString](./iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md)            | Creates a IoT Hub service client handle for use it in consequent APIs.
+[IoTHubServiceClientAuth_CreateFromSharedAccessSignature](./iothub-service-client-auth-h/iothubserviceclientauth-createfromsharedaccesssignature.md)            | Creates a IoT Hub service client handle for use it in consequent APIs.
 [IoTHubServiceClientAuth_Destroy](./iothub-service-client-auth-h/iothubserviceclientauth-destroy.md)            | Disposes of resources allocated by the IoT Hub Service Client.
 
 ## Structures

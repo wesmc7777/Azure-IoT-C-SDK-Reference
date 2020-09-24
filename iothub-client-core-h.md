@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client_core.h in
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -19,7 +19,7 @@ Extends the IoTHubClientCore_LL module with additional features.
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_client_core_ll.h](iothub-client-core-ll-h.md)"  
 
 ## Detailed Description
@@ -49,6 +49,7 @@ Function Name                  | Description
 [IoTHubClientCore_SetOption](./iothub-client-core-h/iothubclientcore-setoption.md)            | 
 [IoTHubClientCore_SetDeviceTwinCallback](./iothub-client-core-h/iothubclientcore-setdevicetwincallback.md)            | 
 [IoTHubClientCore_SendReportedState](./iothub-client-core-h/iothubclientcore-sendreportedstate.md)            | 
+[IoTHubClientCore_GetTwinAsync](./iothub-client-core-h/iothubclientcore-gettwinasync.md)            | 
 [IoTHubClientCore_SetDeviceMethodCallback](./iothub-client-core-h/iothubclientcore-setdevicemethodcallback.md)            | 
 [IoTHubClientCore_SetDeviceMethodCallback_Ex](./iothub-client-core-h/iothubclientcore-setdevicemethodcallback-ex.md)            | 
 [IoTHubClientCore_DeviceMethodResponse](./iothub-client-core-h/iothubclientcore-devicemethodresponse.md)            | 

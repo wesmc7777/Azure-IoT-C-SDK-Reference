@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_shared_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,10 +15,11 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include <stdlib.h>  
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "parson.h"  
+\#include <stdlib.h>  
+\#include <stdbool.h>  
 
 ## Detailed Description
 
@@ -26,8 +27,6 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[NECESSITYStrings](./provisioning-sc-shared-helpers-h/necessitystrings.md)            | 
-[NECESSITY_FromString](./provisioning-sc-shared-helpers-h/necessity-fromstring.md)            | 
 [mallocAndStrcpy_overwrite](./provisioning-sc-shared-helpers-h/mallocandstrcpy-overwrite.md)            | 
 [copy_json_string_field](./provisioning-sc-shared-helpers-h/copy-json-string-field.md)            | 
 [json_serialize_and_set_struct](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct.md)            | 
@@ -35,27 +34,6 @@ Function Name                  | Description
 [json_serialize_and_set_struct_array](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct-array.md)            | 
 [json_deserialize_and_get_struct_array](./provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct-array.md)            | 
 [struct_array_fromJson](./provisioning-sc-shared-helpers-h/struct-array-fromjson.md)            | 
-
-## Macro definitions
-
-#### NECESSITY_VALUES
-
-```C
-#define NECESSITY_VALUES \
-        REQUIRED, \
-        OPTIONAL 
-```
-
-## Enumeration types
-
-#### NECESSITY
-
-```C
-enum NECESSITY {
-  REQUIRED,
-  OPTIONAL
-}
-```
 
 ## Type definitions
 

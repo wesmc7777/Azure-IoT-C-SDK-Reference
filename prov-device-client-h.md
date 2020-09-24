@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_device_client.h in
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -20,8 +20,8 @@ Extends the Prov_Device_LL module with additional features.
 \#include <stddef.h>  
 \#include <stdint.h>  
 \#include "[prov_device_ll_client.h](prov-device-ll-client-h.md)"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
-\#include "azure_c_shared_utility/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
 ## Detailed Description
@@ -41,6 +41,8 @@ Function Name                  | Description
 [Prov_Device_Register_Device](./prov-device-client-h/prov-device-register-device.md)            | 
 [Prov_Device_SetOption](./prov-device-client-h/prov-device-setoption.md)            | 
 [Prov_Device_GetVersionString](./prov-device-client-h/prov-device-getversionstring.md)            | 
+[Prov_Device_Set_Provisioning_Payload](./prov-device-client-h/prov-device-set-provisioning-payload.md)            | Sets the Provisioning Data that is sent to the Provisioning service.
+[Prov_Device_Get_Provisioning_Payload](./prov-device-client-h/prov-device-get-provisioning-payload.md)            | Retrieves the Provisioning Data that is sent from the Provisioning service.
 
 ## Macro definitions
 

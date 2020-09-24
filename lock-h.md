@@ -5,7 +5,7 @@ description: "This is the header file reference page for lock.h in the Azure IoT
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,8 +17,8 @@ A minimalistic platform agnostic lock abstraction for thread synchronization.
 
 ## Includes
 
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -53,6 +53,7 @@ Enumeration specifying the lock status.
 
 ```C
 enum LOCK_RESULT {
+  LOCK_RESULT_INVALID,
   LOCK_OK,
   LOCK_ERROR
 }

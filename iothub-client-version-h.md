@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client_version.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,7 +17,7 @@ Functions for managing the client SDK version.
 
 ## Includes
 
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -32,6 +32,6 @@ Function Name                  | Description
 #### IOTHUB_SDK_VERSION
 
 ```C
-#define IOTHUB_SDK_VERSION  "1.2.10" 
+#define IOTHUB_SDK_VERSION  "1.3.9" 
 ```
 

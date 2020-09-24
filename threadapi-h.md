@@ -5,7 +5,7 @@ description: "This is the header file reference page for threadapi.h in the Azur
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/24/2018                    
+ms.date: 09/24/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,8 +17,8 @@ This module implements support for creating new threads, terminating threads and
 
 ## Includes
 
-\#include "azure_c_shared_utility/macro_utils.h"  
-\#include "[azure_c_shared_utility/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "azure_macro_utils/macro_utils.h"  
+\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 
 ## Detailed Description
 
@@ -53,6 +53,7 @@ Enumeration specifying the possible return values for the APIs in this module.
 
 ```C
 enum THREADAPI_RESULT {
+  THREADAPI_RESULT_INVALID,
   THREADAPI_OK,
   THREADAPI_INVALID_ARG,
   THREADAPI_NO_MEMORY,
