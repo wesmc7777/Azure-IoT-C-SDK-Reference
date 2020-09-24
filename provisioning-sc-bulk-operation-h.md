@@ -29,10 +29,11 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-bulk-operation-h/mu-define-enum-without-invalid.md)            | 
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-bulk-operation-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-bulk-operation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-bulk-operation-h/mockable-function.md)            | 
+[PROVISIONING_BULK_OPERATION_MODEStrings](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-modestrings.md)            | 
+[PROVISIONING_BULK_OPERATION_MODE_FromString](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-mode-fromstring.md)            | 
+[PROVISIONING_BULK_OPERATION_TYPEStrings](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-typestrings.md)            | 
+[PROVISIONING_BULK_OPERATION_TYPE_FromString](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-type-fromstring.md)            | 
+[bulkOperationResult_free](./provisioning-sc-bulk-operation-h/bulkoperationresult-free.md)            | 
 
 ## Structures
 
@@ -104,15 +105,37 @@ Member name                 | Description
 #### PROVISIONING_BULK_OPERATION_MODE_VALUES
 
 ```C
-#define PROVISIONING_BULK_OPERATION_MODE_VALUES  BULK_OP_CREATE, \
-BULK_OP_UPDATE, \
-BULK_OP_UPDATE_IF_MATCH_ETAG, \
-BULK_OP_DELETE 
+#define PROVISIONING_BULK_OPERATION_MODE_VALUES \
+        BULK_OP_CREATE, \
+        BULK_OP_UPDATE, \
+        BULK_OP_UPDATE_IF_MATCH_ETAG, \
+        BULK_OP_DELETE 
 ```
 
 #### PROVISIONING_BULK_OPERATION_TYPE_VALUES
 
 ```C
-#define PROVISIONING_BULK_OPERATION_TYPE_VALUES  BULK_OP_INDIVIDUAL_ENROLLMENT 
+#define PROVISIONING_BULK_OPERATION_TYPE_VALUES        BULK_OP_INDIVIDUAL_ENROLLMENT 
+```
+
+## Enumeration types
+
+#### PROVISIONING_BULK_OPERATION_MODE
+
+```C
+enum PROVISIONING_BULK_OPERATION_MODE {
+  BULK_OP_CREATE,
+  BULK_OP_UPDATE,
+  BULK_OP_UPDATE_IF_MATCH_ETAG,
+  BULK_OP_DELETE
+}
+```
+
+#### PROVISIONING_BULK_OPERATION_TYPE
+
+```C
+enum PROVISIONING_BULK_OPERATION_TYPE {
+  BULK_OP_INDIVIDUAL_ENROLLMENT
+}
 ```
 

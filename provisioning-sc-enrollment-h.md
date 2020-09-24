@@ -30,52 +30,63 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-enrollment-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | Creates an Individual Enrollment handle with a TPM Attestation for use in consequent APIs.
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | Destroys an Individual Enrollment handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | Creates an Enrollment Group handle with an X509 Attestation for use in consequent APIs.
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | Destorys an Enrollment Group handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-enrollment-h/mockable-function.md)            | 
+[PROVISIONING_STATUSStrings](./provisioning-sc-enrollment-h/provisioning-statusstrings.md)            | 
+[PROVISIONING_STATUS_FromString](./provisioning-sc-enrollment-h/provisioning-status-fromstring.md)            | 
+[individualEnrollment_create](./provisioning-sc-enrollment-h/individualenrollment-create.md)            | Creates an Individual Enrollment handle with a TPM Attestation for use in consequent APIs.
+[individualEnrollment_destroy](./provisioning-sc-enrollment-h/individualenrollment-destroy.md)            | Destroys an Individual Enrollment handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
+[enrollmentGroup_create](./provisioning-sc-enrollment-h/enrollmentgroup-create.md)            | Creates an Enrollment Group handle with an X509 Attestation for use in consequent APIs.
+[enrollmentGroup_destroy](./provisioning-sc-enrollment-h/enrollmentgroup-destroy.md)            | Destorys an Enrollment Group handle, freeing all associated memory. Please note that this also includes the attestation mechanism that was given in the constructor.
+[individualEnrollment_getAttestationMechanism](./provisioning-sc-enrollment-h/individualenrollment-getattestationmechanism.md)            | 
+[individualEnrollment_setAttestationMechanism](./provisioning-sc-enrollment-h/individualenrollment-setattestationmechanism.md)            | 
+[individualEnrollment_getInitialTwin](./provisioning-sc-enrollment-h/individualenrollment-getinitialtwin.md)            | 
+[individualEnrollment_setInitialTwin](./provisioning-sc-enrollment-h/individualenrollment-setinitialtwin.md)            | 
+[individualEnrollment_getDeviceCapabilities](./provisioning-sc-enrollment-h/individualenrollment-getdevicecapabilities.md)            | 
+[individualEnrollment_setDeviceCapabilities](./provisioning-sc-enrollment-h/individualenrollment-setdevicecapabilities.md)            | 
+[individualEnrollment_getDeviceRegistrationState](./provisioning-sc-enrollment-h/individualenrollment-getdeviceregistrationstate.md)            | 
+[individualEnrollment_getRegistrationId](./provisioning-sc-enrollment-h/individualenrollment-getregistrationid.md)            | 
+[individualEnrollment_getIotHubHostName](./provisioning-sc-enrollment-h/individualenrollment-getiothubhostname.md)            | 
+[individualEnrollment_getDeviceId](./provisioning-sc-enrollment-h/individualenrollment-getdeviceid.md)            | 
+[individualEnrollment_setDeviceId](./provisioning-sc-enrollment-h/individualenrollment-setdeviceid.md)            | 
+[individualEnrollment_getEtag](./provisioning-sc-enrollment-h/individualenrollment-getetag.md)            | 
+[individualEnrollment_setEtag](./provisioning-sc-enrollment-h/individualenrollment-setetag.md)            | 
+[individualEnrollment_getProvisioningStatus](./provisioning-sc-enrollment-h/individualenrollment-getprovisioningstatus.md)            | 
+[individualEnrollment_setProvisioningStatus](./provisioning-sc-enrollment-h/individualenrollment-setprovisioningstatus.md)            | 
+[individualEnrollment_getCreatedDateTime](./provisioning-sc-enrollment-h/individualenrollment-getcreateddatetime.md)            | 
+[individualEnrollment_getUpdatedDateTime](./provisioning-sc-enrollment-h/individualenrollment-getupdateddatetime.md)            | 
+[enrollmentGroup_getAttestationMechanism](./provisioning-sc-enrollment-h/enrollmentgroup-getattestationmechanism.md)            | 
+[enrollmentGroup_setAttestationMechanism](./provisioning-sc-enrollment-h/enrollmentgroup-setattestationmechanism.md)            | 
+[enrollmentGroup_getInitialTwin](./provisioning-sc-enrollment-h/enrollmentgroup-getinitialtwin.md)            | 
+[enrollmentGroup_setInitialTwin](./provisioning-sc-enrollment-h/enrollmentgroup-setinitialtwin.md)            | 
+[enrollmentGroup_getGroupId](./provisioning-sc-enrollment-h/enrollmentgroup-getgroupid.md)            | 
+[enrollmentGroup_getIotHubHostName](./provisioning-sc-enrollment-h/enrollmentgroup-getiothubhostname.md)            | 
+[enrollmentGroup_getEtag](./provisioning-sc-enrollment-h/enrollmentgroup-getetag.md)            | 
+[enrollmentGroup_setEtag](./provisioning-sc-enrollment-h/enrollmentgroup-setetag.md)            | 
+[enrollmentGroup_getProvisioningStatus](./provisioning-sc-enrollment-h/enrollmentgroup-getprovisioningstatus.md)            | 
+[enrollmentGroup_setProvisioningStatus](./provisioning-sc-enrollment-h/enrollmentgroup-setprovisioningstatus.md)            | 
+[enrollmentGroup_getCreatedDateTime](./provisioning-sc-enrollment-h/enrollmentgroup-getcreateddatetime.md)            | 
+[enrollmentGroup_getUpdatedDateTime](./provisioning-sc-enrollment-h/enrollmentgroup-getupdateddatetime.md)            | 
 
 ## Macro definitions
 
 #### PROVISIONING_STATUS_VALUES
 
 ```C
-#define PROVISIONING_STATUS_VALUES  PROVISIONING_STATUS_NONE, \
+#define PROVISIONING_STATUS_VALUES \
+        PROVISIONING_STATUS_NONE, \
         PROVISIONING_STATUS_ENABLED, \
-        PROVISIONING_STATUS_DISABLED \ 
+        PROVISIONING_STATUS_DISABLED 
+```
+
+## Enumeration types
+
+#### PROVISIONING_STATUS
+
+```C
+enum PROVISIONING_STATUS {
+  PROVISIONING_STATUS_NONE,
+  PROVISIONING_STATUS_ENABLED,
+  PROVISIONING_STATUS_DISABLED
+}
 ```
 
 ## Type definitions

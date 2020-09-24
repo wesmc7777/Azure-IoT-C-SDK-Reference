@@ -26,21 +26,39 @@ This module implements support for creating new threads, terminating threads and
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM](./threadapi-h/mu-define-enum.md)            | Enumeration specifying the possible return values for the APIs in this module.
-[MOCKABLE_FUNCTION](./threadapi-h/mockable-function.md)            | Creates a thread with the entry point specified by the func argument.
-[MOCKABLE_FUNCTION](./threadapi-h/mockable-function.md)            | Blocks the calling thread by waiting on the thread identified by the threadHandle argument to complete.
-[MOCKABLE_FUNCTION](./threadapi-h/mockable-function.md)            | This function is called by a thread when the thread exits.
-[MOCKABLE_FUNCTION](./threadapi-h/mockable-function.md)            | Sleeps the current thread for the given number of milliseconds.
+[THREADAPI_RESULTStrings](./threadapi-h/threadapi-resultstrings.md)            | 
+[THREADAPI_RESULT_FromString](./threadapi-h/threadapi-result-fromstring.md)            | 
+[ThreadAPI_Create](./threadapi-h/threadapi-create.md)            | Creates a thread with the entry point specified by the func argument.
+[ThreadAPI_Join](./threadapi-h/threadapi-join.md)            | Blocks the calling thread by waiting on the thread identified by the threadHandle argument to complete.
+[ThreadAPI_Exit](./threadapi-h/threadapi-exit.md)            | This function is called by a thread when the thread exits.
+[ThreadAPI_Sleep](./threadapi-h/threadapi-sleep.md)            | Sleeps the current thread for the given number of milliseconds.
 
 ## Macro definitions
 
 #### THREADAPI_RESULT_VALUES
 
 ```C
-#define THREADAPI_RESULT_VALUES  THREADAPI_OK,               \
-    THREADAPI_INVALID_ARG,      \
-    THREADAPI_NO_MEMORY,        \
-    THREADAPI_ERROR 
+#define THREADAPI_RESULT_VALUES \
+        THREADAPI_OK, \
+        THREADAPI_INVALID_ARG, \
+        THREADAPI_NO_MEMORY, \
+        THREADAPI_ERROR 
+```
+
+## Enumeration types
+
+#### THREADAPI_RESULT
+
+Enumeration specifying the possible return values for the APIs in this module. 
+
+```C
+enum THREADAPI_RESULT {
+  THREADAPI_RESULT_INVALID,
+  THREADAPI_OK,
+  THREADAPI_INVALID_ARG,
+  THREADAPI_NO_MEMORY,
+  THREADAPI_ERROR
+}
 ```
 
 ## Type definitions

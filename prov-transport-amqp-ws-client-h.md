@@ -27,5 +27,5 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./prov-transport-amqp-ws-client-h/mockable-function.md)            | 
+[Prov_Device_AMQP_WS_Protocol](./prov-transport-amqp-ws-client-h/prov-device-amqp-ws-protocol.md)            | 
 

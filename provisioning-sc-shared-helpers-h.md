@@ -27,12 +27,13 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[mallocAndStrcpy_overwrite](./provisioning-sc-shared-helpers-h/mallocandstrcpy-overwrite.md)            | 
+[copy_json_string_field](./provisioning-sc-shared-helpers-h/copy-json-string-field.md)            | 
+[json_serialize_and_set_struct](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct.md)            | 
+[json_deserialize_and_get_struct](./provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct.md)            | 
+[json_serialize_and_set_struct_array](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct-array.md)            | 
+[json_deserialize_and_get_struct_array](./provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct-array.md)            | 
+[struct_array_fromJson](./provisioning-sc-shared-helpers-h/struct-array-fromjson.md)            | 
 
 ## Type definitions
 

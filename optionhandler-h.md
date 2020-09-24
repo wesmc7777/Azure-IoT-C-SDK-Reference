@@ -24,20 +24,35 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./optionhandler-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./optionhandler-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./optionhandler-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./optionhandler-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./optionhandler-h/mockable-function.md)            | 
+[OPTIONHANDLER_RESULTStrings](./optionhandler-h/optionhandler-resultstrings.md)            | 
+[OPTIONHANDLER_RESULT_FromString](./optionhandler-h/optionhandler-result-fromstring.md)            | 
+[OptionHandler_Create](./optionhandler-h/optionhandler-create.md)            | 
+[OptionHandler_Clone](./optionhandler-h/optionhandler-clone.md)            | 
+[OptionHandler_AddOption](./optionhandler-h/optionhandler-addoption.md)            | 
+[OptionHandler_FeedOptions](./optionhandler-h/optionhandler-feedoptions.md)            | 
+[OptionHandler_Destroy](./optionhandler-h/optionhandler-destroy.md)            | 
 
 ## Macro definitions
 
 #### OPTIONHANDLER_RESULT_VALUES
 
 ```C
-#define OPTIONHANDLER_RESULT_VALUES  OPTIONHANDLER_OK, \
-    OPTIONHANDLER_ERROR, \
-    OPTIONHANDLER_INVALIDARG 
+#define OPTIONHANDLER_RESULT_VALUES \
+        OPTIONHANDLER_OK, \
+        OPTIONHANDLER_ERROR, \
+        OPTIONHANDLER_INVALIDARG 
+```
+
+## Enumeration types
+
+#### OPTIONHANDLER_RESULT
+
+```C
+enum OPTIONHANDLER_RESULT {
+  OPTIONHANDLER_OK,
+  OPTIONHANDLER_ERROR,
+  OPTIONHANDLER_INVALIDARG
+}
 ```
 
 ## Type definitions

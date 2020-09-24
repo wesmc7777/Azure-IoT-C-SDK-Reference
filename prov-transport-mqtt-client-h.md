@@ -27,5 +27,5 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./prov-transport-mqtt-client-h/mockable-function.md)            | 
+[Prov_Device_MQTT_Protocol](./prov-transport-mqtt-client-h/prov-device-mqtt-protocol.md)            | 
 

@@ -26,24 +26,40 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-security-factory-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-security-factory-h/mockable-function.md)            | 
+[IOTHUB_SECURITY_TYPEStrings](./iothub-security-factory-h/iothub-security-typestrings.md)            | 
+[IOTHUB_SECURITY_TYPE_FromString](./iothub-security-factory-h/iothub-security-type-fromstring.md)            | 
+[iothub_security_init](./iothub-security-factory-h/iothub-security-init.md)            | 
+[iothub_security_deinit](./iothub-security-factory-h/iothub-security-deinit.md)            | 
+[iothub_security_interface](./iothub-security-factory-h/iothub-security-interface.md)            | 
+[iothub_security_type](./iothub-security-factory-h/iothub-security-type.md)            | 
+[iothub_security_set_symmetric_key_info](./iothub-security-factory-h/iothub-security-set-symmetric-key-info.md)            | 
+[iothub_security_get_symmetric_key](./iothub-security-factory-h/iothub-security-get-symmetric-key.md)            | 
+[iothub_security_get_symm_registration_name](./iothub-security-factory-h/iothub-security-get-symm-registration-name.md)            | 
 
 ## Macro definitions
 
 #### IOTHUB_SECURITY_TYPE_VALUES
 
 ```C
-#define IOTHUB_SECURITY_TYPE_VALUES  IOTHUB_SECURITY_TYPE_UNKNOWN,   \
-    IOTHUB_SECURITY_TYPE_SAS,       \
-    IOTHUB_SECURITY_TYPE_X509,      \
-    IOTHUB_SECURITY_TYPE_HTTP_EDGE, \
-    IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY 
+#define IOTHUB_SECURITY_TYPE_VALUES \
+        IOTHUB_SECURITY_TYPE_UNKNOWN, \
+        IOTHUB_SECURITY_TYPE_SAS, \
+        IOTHUB_SECURITY_TYPE_X509, \
+        IOTHUB_SECURITY_TYPE_HTTP_EDGE, \
+        IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY 
+```
+
+## Enumeration types
+
+#### IOTHUB_SECURITY_TYPE
+
+```C
+enum IOTHUB_SECURITY_TYPE {
+  IOTHUB_SECURITY_TYPE_UNKNOWN,
+  IOTHUB_SECURITY_TYPE_SAS,
+  IOTHUB_SECURITY_TYPE_X509,
+  IOTHUB_SECURITY_TYPE_HTTP_EDGE,
+  IOTHUB_SECURITY_TYPE_SYMMETRIC_KEY
+}
 ```
 

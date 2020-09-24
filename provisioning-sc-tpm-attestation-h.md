@@ -25,11 +25,7 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
+[tpmAttestation_getEndorsementKey](./provisioning-sc-tpm-attestation-h/tpmattestation-getendorsementkey.md)            | 
 
 ## Type definitions
 

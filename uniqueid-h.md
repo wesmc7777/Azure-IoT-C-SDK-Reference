@@ -25,15 +25,31 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./uniqueid-h/mockable-function.md)            | 
+[UNIQUEID_RESULTStrings](./uniqueid-h/uniqueid-resultstrings.md)            | 
+[UNIQUEID_RESULT_FromString](./uniqueid-h/uniqueid-result-fromstring.md)            | 
+[UniqueId_Generate](./uniqueid-h/uniqueid-generate.md)            | 
 
 ## Macro definitions
 
 #### UNIQUEID_RESULT_VALUES
 
 ```C
-#define UNIQUEID_RESULT_VALUES  UNIQUEID_OK,                  \
-    UNIQUEID_INVALID_ARG,         \
-    UNIQUEID_ERROR 
+#define UNIQUEID_RESULT_VALUES \
+        UNIQUEID_OK, \
+        UNIQUEID_INVALID_ARG, \
+        UNIQUEID_ERROR 
+```
+
+## Enumeration types
+
+#### UNIQUEID_RESULT
+
+```C
+enum UNIQUEID_RESULT {
+  UNIQUEID_RESULT_INVALID,
+  UNIQUEID_OK,
+  UNIQUEID_INVALID_ARG,
+  UNIQUEID_ERROR
+}
 ```
 

@@ -24,21 +24,36 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-devicemethod-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./iothub-devicemethod-h/mockable-function.md)            | Creates a IoT Hub Service Client DeviceMethod handle for use it in consequent APIs.
-[MOCKABLE_FUNCTION](./iothub-devicemethod-h/mockable-function.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceMethod_Create.
-[MOCKABLE_FUNCTION](./iothub-devicemethod-h/mockable-function.md)            | Call a method on device with a given payload.
-[MOCKABLE_FUNCTION](./iothub-devicemethod-h/mockable-function.md)            | Call a method on device and a module with a given payload.
+[IOTHUB_DEVICE_METHOD_RESULTStrings](./iothub-devicemethod-h/iothub-device-method-resultstrings.md)            | 
+[IOTHUB_DEVICE_METHOD_RESULT_FromString](./iothub-devicemethod-h/iothub-device-method-result-fromstring.md)            | 
+[IoTHubDeviceMethod_Create](./iothub-devicemethod-h/iothubdevicemethod-create.md)            | Creates a IoT Hub Service Client DeviceMethod handle for use it in consequent APIs.
+[IoTHubDeviceMethod_Destroy](./iothub-devicemethod-h/iothubdevicemethod-destroy.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceMethod_Create.
+[IoTHubDeviceMethod_Invoke](./iothub-devicemethod-h/iothubdevicemethod-invoke.md)            | Call a method on device with a given payload.
+[IoTHubDeviceMethod_InvokeModule](./iothub-devicemethod-h/iothubdevicemethod-invokemodule.md)            | Call a method on device and a module with a given payload.
 
 ## Macro definitions
 
 #### IOTHUB_DEVICE_METHOD_RESULT_VALUES
 
 ```C
-#define IOTHUB_DEVICE_METHOD_RESULT_VALUES  IOTHUB_DEVICE_METHOD_OK,                   \
-    IOTHUB_DEVICE_METHOD_INVALID_ARG,          \
-    IOTHUB_DEVICE_METHOD_ERROR,                \
-    IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR         \ 
+#define IOTHUB_DEVICE_METHOD_RESULT_VALUES \
+        IOTHUB_DEVICE_METHOD_OK, \
+        IOTHUB_DEVICE_METHOD_INVALID_ARG, \
+        IOTHUB_DEVICE_METHOD_ERROR, \
+        IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR 
+```
+
+## Enumeration types
+
+#### IOTHUB_DEVICE_METHOD_RESULT
+
+```C
+enum IOTHUB_DEVICE_METHOD_RESULT {
+  IOTHUB_DEVICE_METHOD_OK,
+  IOTHUB_DEVICE_METHOD_INVALID_ARG,
+  IOTHUB_DEVICE_METHOD_ERROR,
+  IOTHUB_DEVICE_METHOD_HTTPAPI_ERROR
+}
 ```
 
 ## Type definitions

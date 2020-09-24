@@ -25,9 +25,9 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
+[IoTHubTransport_Create](./iothub-transport-ll-h/iothubtransport-create.md)            | 
+[IoTHubTransport_Destroy](./iothub-transport-ll-h/iothubtransport-destroy.md)            | 
+[IoTHubTransport_GetLLTransport](./iothub-transport-ll-h/iothubtransport-getlltransport.md)            | 
 
 ## Type definitions
 

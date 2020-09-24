@@ -24,17 +24,17 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./singlylinkedlist-h/mockable-function.md)            | 
+[singlylinkedlist_create](./singlylinkedlist-h/singlylinkedlist-create.md)            | 
+[singlylinkedlist_destroy](./singlylinkedlist-h/singlylinkedlist-destroy.md)            | 
+[singlylinkedlist_add](./singlylinkedlist-h/singlylinkedlist-add.md)            | 
+[singlylinkedlist_add_head](./singlylinkedlist-h/singlylinkedlist-add-head.md)            | 
+[singlylinkedlist_remove](./singlylinkedlist-h/singlylinkedlist-remove.md)            | 
+[singlylinkedlist_get_head_item](./singlylinkedlist-h/singlylinkedlist-get-head-item.md)            | 
+[singlylinkedlist_get_next_item](./singlylinkedlist-h/singlylinkedlist-get-next-item.md)            | 
+[singlylinkedlist_find](./singlylinkedlist-h/singlylinkedlist-find.md)            | 
+[singlylinkedlist_item_get_value](./singlylinkedlist-h/singlylinkedlist-item-get-value.md)            | 
+[singlylinkedlist_remove_if](./singlylinkedlist-h/singlylinkedlist-remove-if.md)            | 
+[singlylinkedlist_foreach](./singlylinkedlist-h/singlylinkedlist-foreach.md)            | 
 
 ## Type definitions
 

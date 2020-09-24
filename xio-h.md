@@ -26,16 +26,18 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM](./xio-h/mu-define-enum.md)            | 
-[MU_DEFINE_ENUM](./xio-h/mu-define-enum.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./xio-h/mockable-function.md)            | 
+[IO_SEND_RESULTStrings](./xio-h/io-send-resultstrings.md)            | 
+[IO_SEND_RESULT_FromString](./xio-h/io-send-result-fromstring.md)            | 
+[IO_OPEN_RESULTStrings](./xio-h/io-open-resultstrings.md)            | 
+[IO_OPEN_RESULT_FromString](./xio-h/io-open-result-fromstring.md)            | 
+[xio_create](./xio-h/xio-create.md)            | 
+[xio_destroy](./xio-h/xio-destroy.md)            | 
+[xio_open](./xio-h/xio-open.md)            | 
+[xio_close](./xio-h/xio-close.md)            | 
+[xio_send](./xio-h/xio-send.md)            | 
+[xio_dowork](./xio-h/xio-dowork.md)            | 
+[xio_setoption](./xio-h/xio-setoption.md)            | 
+[xio_retrieveoptions](./xio-h/xio-retrieveoptions.md)            | 
 
 ## Structures
 
@@ -69,17 +71,43 @@ Member name                 | Description
 #### IO_SEND_RESULT_VALUES
 
 ```C
-#define IO_SEND_RESULT_VALUES  IO_SEND_OK, \
-    IO_SEND_ERROR, \
-    IO_SEND_CANCELLED 
+#define IO_SEND_RESULT_VALUES \
+        IO_SEND_OK, \
+        IO_SEND_ERROR, \
+        IO_SEND_CANCELLED 
 ```
 
 #### IO_OPEN_RESULT_VALUES
 
 ```C
-#define IO_OPEN_RESULT_VALUES  IO_OPEN_OK, \
-    IO_OPEN_ERROR, \
-    IO_OPEN_CANCELLED 
+#define IO_OPEN_RESULT_VALUES \
+        IO_OPEN_OK, \
+        IO_OPEN_ERROR, \
+        IO_OPEN_CANCELLED 
+```
+
+## Enumeration types
+
+#### IO_SEND_RESULT
+
+```C
+enum IO_SEND_RESULT {
+  IO_SEND_RESULT_INVALID,
+  IO_SEND_OK,
+  IO_SEND_ERROR,
+  IO_SEND_CANCELLED
+}
+```
+
+#### IO_OPEN_RESULT
+
+```C
+enum IO_OPEN_RESULT {
+  IO_OPEN_RESULT_INVALID,
+  IO_OPEN_OK,
+  IO_OPEN_ERROR,
+  IO_OPEN_CANCELLED
+}
 ```
 
 ## Type definitions

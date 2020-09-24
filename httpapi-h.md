@@ -31,15 +31,17 @@ For example, on the Windows platform the HTTP API code uses WinHTTP and for Linu
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM](./httpapi-h/mu-define-enum.md)            | Enumeration specifying the possible return values for the APIs in this module.
-[MU_DEFINE_ENUM](./httpapi-h/mu-define-enum.md)            | Enumeration specifying the HTTP request verbs accepted by the HTTPAPI module.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Global initialization for the HTTP API component.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Free resources allocated in ::HTTPAPI_Init.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Creates an HTTPS connection to the host specified by the hostName parameter.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Closes a connection created with ::HTTPAPI_CreateConnection.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Sends the HTTP request to the host and handles the response for the HTTP call.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
-[MOCKABLE_FUNCTION](./httpapi-h/mockable-function.md)            | Clones the option named optionName bearing the value value into the pointer savedValue.
+[HTTPAPI_RESULTStrings](./httpapi-h/httpapi-resultstrings.md)            | 
+[HTTPAPI_RESULT_FromString](./httpapi-h/httpapi-result-fromstring.md)            | 
+[HTTPAPI_REQUEST_TYPEStrings](./httpapi-h/httpapi-request-typestrings.md)            | 
+[HTTPAPI_REQUEST_TYPE_FromString](./httpapi-h/httpapi-request-type-fromstring.md)            | 
+[HTTPAPI_Init](./httpapi-h/httpapi-init.md)            | Global initialization for the HTTP API component.
+[HTTPAPI_Deinit](./httpapi-h/httpapi-deinit.md)            | Free resources allocated in [HTTPAPI_Init](httpapi-h/httpapi-init.md).
+[HTTPAPI_CreateConnection](./httpapi-h/httpapi-createconnection.md)            | Creates an HTTPS connection to the host specified by the hostName parameter.
+[HTTPAPI_CloseConnection](./httpapi-h/httpapi-closeconnection.md)            | Closes a connection created with [HTTPAPI_CreateConnection](httpapi-h/httpapi-createconnection.md).
+[HTTPAPI_ExecuteRequest](./httpapi-h/httpapi-executerequest.md)            | Sends the HTTP request to the host and handles the response for the HTTP call.
+[HTTPAPI_SetOption](./httpapi-h/httpapi-setoption.md)            | Sets the option named optionName bearing the value value for the HTTP_HANDLE handle.
+[HTTPAPI_CloneOption](./httpapi-h/httpapi-cloneoption.md)            | Clones the option named optionName bearing the value value into the pointer savedValue.
 
 ## Macro definitions
 
@@ -52,36 +54,38 @@ Function Name                  | Description
 #### HTTPAPI_RESULT_VALUES
 
 ```C
-#define HTTPAPI_RESULT_VALUES  HTTPAPI_OK,                                  \
-HTTPAPI_INVALID_ARG,                         \
-HTTPAPI_ERROR,                               \
-HTTPAPI_OPEN_REQUEST_FAILED,                 \
-HTTPAPI_SET_OPTION_FAILED,                   \
-HTTPAPI_SEND_REQUEST_FAILED,                 \
-HTTPAPI_RECEIVE_RESPONSE_FAILED,             \
-HTTPAPI_QUERY_HEADERS_FAILED,                \
-HTTPAPI_QUERY_DATA_AVAILABLE_FAILED,         \
-HTTPAPI_READ_DATA_FAILED,                    \
-HTTPAPI_ALREADY_INIT,                        \
-HTTPAPI_NOT_INIT,                            \
-HTTPAPI_HTTP_HEADERS_FAILED,                 \
-HTTPAPI_STRING_PROCESSING_ERROR,             \
-HTTPAPI_ALLOC_FAILED,                        \
-HTTPAPI_INIT_FAILED,                         \
-HTTPAPI_INSUFFICIENT_RESPONSE_BUFFER,        \
-HTTPAPI_SET_X509_FAILURE,                    \
-HTTPAPI_SET_TIMEOUTS_FAILED                  \ 
+#define HTTPAPI_RESULT_VALUES \
+        HTTPAPI_OK, \
+        HTTPAPI_INVALID_ARG, \
+        HTTPAPI_ERROR, \
+        HTTPAPI_OPEN_REQUEST_FAILED, \
+        HTTPAPI_SET_OPTION_FAILED, \
+        HTTPAPI_SEND_REQUEST_FAILED, \
+        HTTPAPI_RECEIVE_RESPONSE_FAILED, \
+        HTTPAPI_QUERY_HEADERS_FAILED, \
+        HTTPAPI_QUERY_DATA_AVAILABLE_FAILED, \
+        HTTPAPI_READ_DATA_FAILED, \
+        HTTPAPI_ALREADY_INIT, \
+        HTTPAPI_NOT_INIT, \
+        HTTPAPI_HTTP_HEADERS_FAILED, \
+        HTTPAPI_STRING_PROCESSING_ERROR, \
+        HTTPAPI_ALLOC_FAILED, \
+        HTTPAPI_INIT_FAILED, \
+        HTTPAPI_INSUFFICIENT_RESPONSE_BUFFER, \
+        HTTPAPI_SET_X509_FAILURE, \
+        HTTPAPI_SET_TIMEOUTS_FAILED 
 ```
 
 #### HTTPAPI_REQUEST_TYPE_VALUES
 
 ```C
-#define HTTPAPI_REQUEST_TYPE_VALUES  HTTPAPI_REQUEST_GET,            \
-    HTTPAPI_REQUEST_POST,           \
-    HTTPAPI_REQUEST_PUT,            \
-    HTTPAPI_REQUEST_DELETE,         \
-    HTTPAPI_REQUEST_PATCH,          \
-    HTTPAPI_REQUEST_HEAD            \ 
+#define HTTPAPI_REQUEST_TYPE_VALUES \
+        HTTPAPI_REQUEST_GET, \
+        HTTPAPI_REQUEST_POST, \
+        HTTPAPI_REQUEST_PUT, \
+        HTTPAPI_REQUEST_DELETE, \
+        HTTPAPI_REQUEST_PATCH, \
+        HTTPAPI_REQUEST_HEAD 
 ```
 
 #### MAX_HOSTNAME_LEN
@@ -100,6 +104,53 @@ HTTPAPI_SET_TIMEOUTS_FAILED                  \
 
 ```C
 #define MAX_PASSWORD_LEN  65 
+```
+
+## Enumeration types
+
+#### HTTPAPI_RESULT
+
+Enumeration specifying the possible return values for the APIs in this module. 
+
+```C
+enum HTTPAPI_RESULT {
+  HTTPAPI_RESULT_INVALID,
+  HTTPAPI_OK,
+  HTTPAPI_INVALID_ARG,
+  HTTPAPI_ERROR,
+  HTTPAPI_OPEN_REQUEST_FAILED,
+  HTTPAPI_SET_OPTION_FAILED,
+  HTTPAPI_SEND_REQUEST_FAILED,
+  HTTPAPI_RECEIVE_RESPONSE_FAILED,
+  HTTPAPI_QUERY_HEADERS_FAILED,
+  HTTPAPI_QUERY_DATA_AVAILABLE_FAILED,
+  HTTPAPI_READ_DATA_FAILED,
+  HTTPAPI_ALREADY_INIT,
+  HTTPAPI_NOT_INIT,
+  HTTPAPI_HTTP_HEADERS_FAILED,
+  HTTPAPI_STRING_PROCESSING_ERROR,
+  HTTPAPI_ALLOC_FAILED,
+  HTTPAPI_INIT_FAILED,
+  HTTPAPI_INSUFFICIENT_RESPONSE_BUFFER,
+  HTTPAPI_SET_X509_FAILURE,
+  HTTPAPI_SET_TIMEOUTS_FAILED
+}
+```
+
+#### HTTPAPI_REQUEST_TYPE
+
+Enumeration specifying the HTTP request verbs accepted by the HTTPAPI module. 
+
+```C
+enum HTTPAPI_REQUEST_TYPE {
+  HTTPAPI_REQUEST_TYPE_INVALID,
+  HTTPAPI_REQUEST_GET,
+  HTTPAPI_REQUEST_POST,
+  HTTPAPI_REQUEST_PUT,
+  HTTPAPI_REQUEST_DELETE,
+  HTTPAPI_REQUEST_PATCH,
+  HTTPAPI_REQUEST_HEAD
+}
 ```
 
 ## Type definitions

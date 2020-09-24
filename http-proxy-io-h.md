@@ -24,7 +24,7 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./http-proxy-io-h/mockable-function.md)            | 
+[http_proxy_io_get_interface_description](./http-proxy-io-h/http-proxy-io-get-interface-description.md)            | 
 
 ## Structures
 

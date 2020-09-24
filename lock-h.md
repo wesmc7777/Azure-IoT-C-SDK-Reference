@@ -28,19 +28,35 @@ The Lock component is implemented in order to achieve thread synchronization, as
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM](./lock-h/mu-define-enum.md)            | Enumeration specifying the lock status.
-[MOCKABLE_FUNCTION](./lock-h/mockable-function.md)            | This API creates and returns a valid lock handle.
-[MOCKABLE_FUNCTION](./lock-h/mockable-function.md)            | Acquires a lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
-[MOCKABLE_FUNCTION](./lock-h/mockable-function.md)            | Releases the lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
-[MOCKABLE_FUNCTION](./lock-h/mockable-function.md)            | The lock instance is destroyed.
+[LOCK_RESULTStrings](./lock-h/lock-resultstrings.md)            | 
+[LOCK_RESULT_FromString](./lock-h/lock-result-fromstring.md)            | 
+[Lock_Init](./lock-h/lock-init.md)            | This API creates and returns a valid lock handle.
+[Lock](./lock-h/lock.md)            | Acquires a lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
+[Unlock](./lock-h/unlock.md)            | Releases the lock on the given lock handle. Uses platform specific mutex primitives in its implementation.
+[Lock_Deinit](./lock-h/lock-deinit.md)            | The lock instance is destroyed.
 
 ## Macro definitions
 
 #### LOCK_RESULT_VALUES
 
 ```C
-#define LOCK_RESULT_VALUES  LOCK_OK, \
-    LOCK_ERROR \ 
+#define LOCK_RESULT_VALUES \
+        LOCK_OK, \
+        LOCK_ERROR 
+```
+
+## Enumeration types
+
+#### LOCK_RESULT
+
+Enumeration specifying the lock status. 
+
+```C
+enum LOCK_RESULT {
+  LOCK_RESULT_INVALID,
+  LOCK_OK,
+  LOCK_ERROR
+}
 ```
 
 ## Type definitions

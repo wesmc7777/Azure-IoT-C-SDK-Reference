@@ -24,14 +24,14 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./gballoc-h/mockable-function.md)            | 
+[gballoc_init](./gballoc-h/gballoc-init.md)            | 
+[gballoc_deinit](./gballoc-h/gballoc-deinit.md)            | 
+[gballoc_malloc](./gballoc-h/gballoc-malloc.md)            | 
+[gballoc_calloc](./gballoc-h/gballoc-calloc.md)            | 
+[gballoc_realloc](./gballoc-h/gballoc-realloc.md)            | 
+[gballoc_free](./gballoc-h/gballoc-free.md)            | 
+[gballoc_getMaximumMemoryUsed](./gballoc-h/gballoc-getmaximummemoryused.md)            | 
+[gballoc_getCurrentMemoryUsed](./gballoc-h/gballoc-getcurrentmemoryused.md)            | 
+[gballoc_getAllocationCount](./gballoc-h/gballoc-getallocationcount.md)            | 
+[gballoc_resetMetrics](./gballoc-h/gballoc-resetmetrics.md)            | 
 

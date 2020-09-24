@@ -27,13 +27,13 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Serializes an Individual Enrollment into a JSON String.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Deserializes a JSON String representation of an Individual Enrollment.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Serializes an Enrollment Group into a JSON String.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Deserializes a JSON String representation of an Enrollment Group.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Deserializes a JSON String representation of a Device Registration State.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Serializes a Bulk Operation into a JSON String.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Deserializes a JSON String representation of a Bulk Operation Result.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Serializes a Query Specification into a JSON String.
-[MOCKABLE_FUNCTION](./provisioning-sc-models-serializer-h/mockable-function.md)            | Deserializes a JSON String representation of a Query Response.
+[individualEnrollment_serializeToJson](./provisioning-sc-models-serializer-h/individualenrollment-serializetojson.md)            | Serializes an Individual Enrollment into a JSON String.
+[individualEnrollment_deserializeFromJson](./provisioning-sc-models-serializer-h/individualenrollment-deserializefromjson.md)            | Deserializes a JSON String representation of an Individual Enrollment.
+[enrollmentGroup_serializeToJson](./provisioning-sc-models-serializer-h/enrollmentgroup-serializetojson.md)            | Serializes an Enrollment Group into a JSON String.
+[enrollmentGroup_deserializeFromJson](./provisioning-sc-models-serializer-h/enrollmentgroup-deserializefromjson.md)            | Deserializes a JSON String representation of an Enrollment Group.
+[deviceRegistrationState_deserializeFromJson](./provisioning-sc-models-serializer-h/deviceregistrationstate-deserializefromjson.md)            | Deserializes a JSON String representation of a Device Registration State.
+[bulkOperation_serializeToJson](./provisioning-sc-models-serializer-h/bulkoperation-serializetojson.md)            | Serializes a Bulk Operation into a JSON String.
+[bulkOperationResult_deserializeFromJson](./provisioning-sc-models-serializer-h/bulkoperationresult-deserializefromjson.md)            | Deserializes a JSON String representation of a Bulk Operation Result.
+[querySpecification_serializeToJson](./provisioning-sc-models-serializer-h/queryspecification-serializetojson.md)            | Serializes a Query Specification into a JSON String.
+[queryResponse_deserializeFromJson](./provisioning-sc-models-serializer-h/queryresponse-deserializefromjson.md)            | Deserializes a JSON String representation of a Query Response.
 

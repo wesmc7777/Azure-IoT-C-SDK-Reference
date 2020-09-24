@@ -25,7 +25,7 @@ Functions for managing the service client SDK version.
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-sc-version-h/mockable-function.md)            | Returns a pointer to a null terminated string containing the current IoT Hub Service Client SDK version.
+[IoTHubServiceClient_GetVersionString](./iothub-sc-version-h/iothubserviceclient-getversionstring.md)            | Returns a pointer to a null terminated string containing the current IoT Hub Service Client SDK version.
 
 ## Macro definitions
 

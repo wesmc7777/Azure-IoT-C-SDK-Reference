@@ -27,5 +27,5 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./prov-transport-http-client-h/mockable-function.md)            | 
+[Prov_Device_HTTP_Protocol](./prov-transport-http-client-h/prov-device-http-protocol.md)            | 
 

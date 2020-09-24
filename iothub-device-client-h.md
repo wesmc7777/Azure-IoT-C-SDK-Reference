@@ -37,26 +37,26 @@ IoTHubClient is a module that extends the IoTHubCLient_LL module with 2 features
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Disposes of resources allocated by the IoT Hub client. This is a blocking call.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Asynchronous call to send the message specified by eventMessageHandle.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This function returns the current sending status for IoTHubClient.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This function returns in the out parameter lastMessageReceiveTime what was the value of the time function when the last message was received at the client.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API sets a runtime option identified by parameter optionName to a value pointed to by value. optionName and the data type value is pointing to are specific for every option.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API specifies a callback to be used when the device receives a state update.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API sends a report of the device's properties and their current values.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API provides a way to retrieve the complete device Twin properties on-demand.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API sets the callback for async cloud to device method calls.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | This API responds to an asnyc method callback identified the methodId.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.
-[MOCKABLE_FUNCTION](./iothub-device-client-h/mockable-function.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
+[IoTHubDeviceClient_CreateFromConnectionString](./iothub-device-client-h/iothubdeviceclient-createfromconnectionstring.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
+[IoTHubDeviceClient_Create](./iothub-device-client-h/iothubdeviceclient-create.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
+[IoTHubDeviceClient_CreateWithTransport](./iothub-device-client-h/iothubdeviceclient-createwithtransport.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
+[IoTHubDeviceClient_CreateFromDeviceAuth](./iothub-device-client-h/iothubdeviceclient-createfromdeviceauth.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
+[IoTHubDeviceClient_Destroy](./iothub-device-client-h/iothubdeviceclient-destroy.md)            | Disposes of resources allocated by the IoT Hub client. This is a blocking call.
+[IoTHubDeviceClient_SendEventAsync](./iothub-device-client-h/iothubdeviceclient-sendeventasync.md)            | Asynchronous call to send the message specified by eventMessageHandle.
+[IoTHubDeviceClient_GetSendStatus](./iothub-device-client-h/iothubdeviceclient-getsendstatus.md)            | This function returns the current sending status for IoTHubClient.
+[IoTHubDeviceClient_SetMessageCallback](./iothub-device-client-h/iothubdeviceclient-setmessagecallback.md)            | Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.
+[IoTHubDeviceClient_SetConnectionStatusCallback](./iothub-device-client-h/iothubdeviceclient-setconnectionstatuscallback.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
+[IoTHubDeviceClient_SetRetryPolicy](./iothub-device-client-h/iothubdeviceclient-setretrypolicy.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
+[IoTHubDeviceClient_GetRetryPolicy](./iothub-device-client-h/iothubdeviceclient-getretrypolicy.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
+[IoTHubDeviceClient_GetLastMessageReceiveTime](./iothub-device-client-h/iothubdeviceclient-getlastmessagereceivetime.md)            | This function returns in the out parameter lastMessageReceiveTime what was the value of the time function when the last message was received at the client.
+[IoTHubDeviceClient_SetOption](./iothub-device-client-h/iothubdeviceclient-setoption.md)            | This API sets a runtime option identified by parameter optionName to a value pointed to by value. optionName and the data type value is pointing to are specific for every option.
+[IoTHubDeviceClient_SetDeviceTwinCallback](./iothub-device-client-h/iothubdeviceclient-setdevicetwincallback.md)            | This API specifies a callback to be used when the device receives a state update.
+[IoTHubDeviceClient_SendReportedState](./iothub-device-client-h/iothubdeviceclient-sendreportedstate.md)            | This API sends a report of the device's properties and their current values.
+[IoTHubDeviceClient_GetTwinAsync](./iothub-device-client-h/iothubdeviceclient-gettwinasync.md)            | This API provides a way to retrieve the complete device Twin properties on-demand.
+[IoTHubDeviceClient_SetDeviceMethodCallback](./iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md)            | This API sets the callback for async cloud to device method calls.
+[IoTHubDeviceClient_DeviceMethodResponse](./iothub-device-client-h/iothubdeviceclient-devicemethodresponse.md)            | This API responds to an asnyc method callback identified the methodId.
+[IoTHubDeviceClient_UploadToBlobAsync](./iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md)            | IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.
+[IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync](./iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
 
 ## Macro definitions
 

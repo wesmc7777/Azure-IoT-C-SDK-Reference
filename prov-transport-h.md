@@ -30,8 +30,10 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./prov-transport-h/mu-define-enum-without-invalid.md)            | 
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./prov-transport-h/mu-define-enum-without-invalid.md)            | 
+[TRANSPORT_HSM_TYPEStrings](./prov-transport-h/transport-hsm-typestrings.md)            | 
+[TRANSPORT_HSM_TYPE_FromString](./prov-transport-h/transport-hsm-type-fromstring.md)            | 
+[PROV_DEVICE_TRANSPORT_RESULTStrings](./prov-transport-h/prov-device-transport-resultstrings.md)            | 
+[PROV_DEVICE_TRANSPORT_RESULT_FromString](./prov-transport-h/prov-device-transport-result-fromstring.md)            | 
 [parse_retry_after_value](./prov-transport-h/parse-retry-after-value.md)            | 
 
 ## Macro definitions
@@ -39,17 +41,41 @@ Function Name                  | Description
 #### TRANSPORT_HSM_TYPE_VALUES
 
 ```C
-#define TRANSPORT_HSM_TYPE_VALUES  TRANSPORT_HSM_TYPE_TPM,         \
-    TRANSPORT_HSM_TYPE_X509,        \
-    TRANSPORT_HSM_TYPE_SYMM_KEY 
+#define TRANSPORT_HSM_TYPE_VALUES \
+        TRANSPORT_HSM_TYPE_TPM, \
+        TRANSPORT_HSM_TYPE_X509, \
+        TRANSPORT_HSM_TYPE_SYMM_KEY 
 ```
 
 #### PROV_DEVICE_TRANSPORT_RESULT_VALUES
 
 ```C
-#define PROV_DEVICE_TRANSPORT_RESULT_VALUES  PROV_DEVICE_TRANSPORT_RESULT_OK,            \
-    PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,  \
-    PROV_DEVICE_TRANSPORT_RESULT_ERROR 
+#define PROV_DEVICE_TRANSPORT_RESULT_VALUES \
+        PROV_DEVICE_TRANSPORT_RESULT_OK, \
+        PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED, \
+        PROV_DEVICE_TRANSPORT_RESULT_ERROR 
+```
+
+## Enumeration types
+
+#### TRANSPORT_HSM_TYPE
+
+```C
+enum TRANSPORT_HSM_TYPE {
+  TRANSPORT_HSM_TYPE_TPM,
+  TRANSPORT_HSM_TYPE_X509,
+  TRANSPORT_HSM_TYPE_SYMM_KEY
+}
+```
+
+#### PROV_DEVICE_TRANSPORT_RESULT
+
+```C
+enum PROV_DEVICE_TRANSPORT_RESULT {
+  PROV_DEVICE_TRANSPORT_RESULT_OK,
+  PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,
+  PROV_DEVICE_TRANSPORT_RESULT_ERROR
+}
 ```
 
 ## Type definitions

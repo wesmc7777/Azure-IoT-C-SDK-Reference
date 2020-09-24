@@ -26,14 +26,14 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./socketio-h/mockable-function.md)            | 
+[socketio_create](./socketio-h/socketio-create.md)            | 
+[socketio_destroy](./socketio-h/socketio-destroy.md)            | 
+[socketio_open](./socketio-h/socketio-open.md)            | 
+[socketio_close](./socketio-h/socketio-close.md)            | 
+[socketio_send](./socketio-h/socketio-send.md)            | 
+[socketio_dowork](./socketio-h/socketio-dowork.md)            | 
+[socketio_setoption](./socketio-h/socketio-setoption.md)            | 
+[socketio_get_interface_description](./socketio-h/socketio-get-interface-description.md)            | 
 
 ## Structures
 

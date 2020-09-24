@@ -34,29 +34,29 @@ IoTHubClientCore is a module that extends the IoTHubClientCore_LL module with 2 
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-h/mockable-function.md)            | 
+[IoTHubClientCore_CreateFromConnectionString](./iothub-client-core-h/iothubclientcore-createfromconnectionstring.md)            | 
+[IoTHubClientCore_Create](./iothub-client-core-h/iothubclientcore-create.md)            | 
+[IoTHubClientCore_CreateWithTransport](./iothub-client-core-h/iothubclientcore-createwithtransport.md)            | 
+[IoTHubClientCore_CreateFromDeviceAuth](./iothub-client-core-h/iothubclientcore-createfromdeviceauth.md)            | 
+[IoTHubClientCore_Destroy](./iothub-client-core-h/iothubclientcore-destroy.md)            | 
+[IoTHubClientCore_SendEventAsync](./iothub-client-core-h/iothubclientcore-sendeventasync.md)            | 
+[IoTHubClientCore_GetSendStatus](./iothub-client-core-h/iothubclientcore-getsendstatus.md)            | 
+[IoTHubClientCore_SetMessageCallback](./iothub-client-core-h/iothubclientcore-setmessagecallback.md)            | 
+[IoTHubClientCore_SetConnectionStatusCallback](./iothub-client-core-h/iothubclientcore-setconnectionstatuscallback.md)            | 
+[IoTHubClientCore_SetRetryPolicy](./iothub-client-core-h/iothubclientcore-setretrypolicy.md)            | 
+[IoTHubClientCore_GetRetryPolicy](./iothub-client-core-h/iothubclientcore-getretrypolicy.md)            | 
+[IoTHubClientCore_GetLastMessageReceiveTime](./iothub-client-core-h/iothubclientcore-getlastmessagereceivetime.md)            | 
+[IoTHubClientCore_SetOption](./iothub-client-core-h/iothubclientcore-setoption.md)            | 
+[IoTHubClientCore_SetDeviceTwinCallback](./iothub-client-core-h/iothubclientcore-setdevicetwincallback.md)            | 
+[IoTHubClientCore_SendReportedState](./iothub-client-core-h/iothubclientcore-sendreportedstate.md)            | 
+[IoTHubClientCore_GetTwinAsync](./iothub-client-core-h/iothubclientcore-gettwinasync.md)            | 
+[IoTHubClientCore_SetDeviceMethodCallback](./iothub-client-core-h/iothubclientcore-setdevicemethodcallback.md)            | 
+[IoTHubClientCore_SetDeviceMethodCallback_Ex](./iothub-client-core-h/iothubclientcore-setdevicemethodcallback-ex.md)            | 
+[IoTHubClientCore_DeviceMethodResponse](./iothub-client-core-h/iothubclientcore-devicemethodresponse.md)            | 
+[IoTHubClientCore_UploadToBlobAsync](./iothub-client-core-h/iothubclientcore-uploadtoblobasync.md)            | 
+[IoTHubClientCore_UploadMultipleBlocksToBlobAsync](./iothub-client-core-h/iothubclientcore-uploadmultipleblockstoblobasync.md)            | 
+[IoTHubClientCore_SendEventToOutputAsync](./iothub-client-core-h/iothubclientcore-sendeventtooutputasync.md)            | 
+[IoTHubClientCore_SetInputMessageCallback](./iothub-client-core-h/iothubclientcore-setinputmessagecallback.md)            | 
 
 ## Macro definitions
 

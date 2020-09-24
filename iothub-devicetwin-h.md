@@ -28,23 +28,38 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-devicetwin-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Creates a IoT Hub Service Client DeviceTwin handle for use it in consequent APIs.
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceTwin_Create.
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Retrieves the given device's twin info.
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Updates (partial update) the given device's twin info.
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Retrieves the given module's twin info.
-[MOCKABLE_FUNCTION](./iothub-devicetwin-h/mockable-function.md)            | Updates (partial update) the given module's twin info.
+[IOTHUB_DEVICE_TWIN_RESULTStrings](./iothub-devicetwin-h/iothub-device-twin-resultstrings.md)            | 
+[IOTHUB_DEVICE_TWIN_RESULT_FromString](./iothub-devicetwin-h/iothub-device-twin-result-fromstring.md)            | 
+[IoTHubDeviceTwin_Create](./iothub-devicetwin-h/iothubdevicetwin-create.md)            | Creates a IoT Hub Service Client DeviceTwin handle for use it in consequent APIs.
+[IoTHubDeviceTwin_Destroy](./iothub-devicetwin-h/iothubdevicetwin-destroy.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceTwin_Create.
+[IoTHubDeviceTwin_GetTwin](./iothub-devicetwin-h/iothubdevicetwin-gettwin.md)            | Retrieves the given device's twin info.
+[IoTHubDeviceTwin_UpdateTwin](./iothub-devicetwin-h/iothubdevicetwin-updatetwin.md)            | Updates (partial update) the given device's twin info.
+[IoTHubDeviceTwin_GetModuleTwin](./iothub-devicetwin-h/iothubdevicetwin-getmoduletwin.md)            | Retrieves the given module's twin info.
+[IoTHubDeviceTwin_UpdateModuleTwin](./iothub-devicetwin-h/iothubdevicetwin-updatemoduletwin.md)            | Updates (partial update) the given module's twin info.
 
 ## Macro definitions
 
 #### IOTHUB_DEVICE_TWIN_RESULT_VALUES
 
 ```C
-#define IOTHUB_DEVICE_TWIN_RESULT_VALUES  IOTHUB_DEVICE_TWIN_OK,                   \
-    IOTHUB_DEVICE_TWIN_INVALID_ARG,          \
-    IOTHUB_DEVICE_TWIN_ERROR,                \
-    IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR         \ 
+#define IOTHUB_DEVICE_TWIN_RESULT_VALUES \
+        IOTHUB_DEVICE_TWIN_OK, \
+        IOTHUB_DEVICE_TWIN_INVALID_ARG, \
+        IOTHUB_DEVICE_TWIN_ERROR, \
+        IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR 
+```
+
+## Enumeration types
+
+#### IOTHUB_DEVICE_TWIN_RESULT
+
+```C
+enum IOTHUB_DEVICE_TWIN_RESULT {
+  IOTHUB_DEVICE_TWIN_OK,
+  IOTHUB_DEVICE_TWIN_INVALID_ARG,
+  IOTHUB_DEVICE_TWIN_ERROR,
+  IOTHUB_DEVICE_TWIN_HTTPAPI_ERROR
+}
 ```
 
 ## Type definitions

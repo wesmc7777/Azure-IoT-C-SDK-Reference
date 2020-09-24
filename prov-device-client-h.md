@@ -36,13 +36,13 @@ Prov_Device is a module that extends the Prov_Device_LL module with 2 features:
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | Sets the Provisioning Data that is sent to the Provisioning service.
-[MOCKABLE_FUNCTION](./prov-device-client-h/mockable-function.md)            | Retrieves the Provisioning Data that is sent from the Provisioning service.
+[Prov_Device_Create](./prov-device-client-h/prov-device-create.md)            | 
+[Prov_Device_Destroy](./prov-device-client-h/prov-device-destroy.md)            | 
+[Prov_Device_Register_Device](./prov-device-client-h/prov-device-register-device.md)            | 
+[Prov_Device_SetOption](./prov-device-client-h/prov-device-setoption.md)            | 
+[Prov_Device_GetVersionString](./prov-device-client-h/prov-device-getversionstring.md)            | 
+[Prov_Device_Set_Provisioning_Payload](./prov-device-client-h/prov-device-set-provisioning-payload.md)            | Sets the Provisioning Data that is sent to the Provisioning service.
+[Prov_Device_Get_Provisioning_Payload](./prov-device-client-h/prov-device-get-provisioning-payload.md)            | Retrieves the Provisioning Data that is sent from the Provisioning service.
 
 ## Macro definitions
 

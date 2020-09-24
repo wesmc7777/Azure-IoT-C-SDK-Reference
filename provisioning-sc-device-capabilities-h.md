@@ -25,12 +25,10 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | Creates a Device Capabilities handle that can be used in consequent APIs, with all fields initialized to "false".
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | Destroys a Device Capabilities handle, freeing all associated memory. Please note that if the Device Capabilities are attached to an Enrollment, this will remove it.
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
+[deviceCapabilities_create](./provisioning-sc-device-capabilities-h/devicecapabilities-create.md)            | Creates a Device Capabilities handle that can be used in consequent APIs, with all fields initialized to "false".
+[deviceCapabilities_destroy](./provisioning-sc-device-capabilities-h/devicecapabilities-destroy.md)            | Destroys a Device Capabilities handle, freeing all associated memory. Please note that if the Device Capabilities are attached to an Enrollment, this will remove it.
+[deviceCapabilities_isIotEdgeCapable](./provisioning-sc-device-capabilities-h/devicecapabilities-isiotedgecapable.md)            | 
+[deviceCapabilities_setIotEdgeCapable](./provisioning-sc-device-capabilities-h/devicecapabilities-setiotedgecapable.md)            | 
 
 ## Type definitions
 

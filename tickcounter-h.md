@@ -24,9 +24,9 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./tickcounter-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./tickcounter-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./tickcounter-h/mockable-function.md)            | 
+[tickcounter_create](./tickcounter-h/tickcounter-create.md)            | 
+[tickcounter_destroy](./tickcounter-h/tickcounter-destroy.md)            | 
+[tickcounter_get_current_ms](./tickcounter-h/tickcounter-get-current-ms.md)            | 
 
 ## Type definitions
 

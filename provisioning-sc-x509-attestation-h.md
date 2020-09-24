@@ -25,31 +25,43 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-x509-attestation-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-x509-attestation-h/mockable-function.md)            | 
+[X509_CERTIFICATE_TYPEStrings](./provisioning-sc-x509-attestation-h/x509-certificate-typestrings.md)            | 
+[X509_CERTIFICATE_TYPE_FromString](./provisioning-sc-x509-attestation-h/x509-certificate-type-fromstring.md)            | 
+[x509Attestation_getCertificateType](./provisioning-sc-x509-attestation-h/x509attestation-getcertificatetype.md)            | 
+[x509Attestation_getPrimaryCertificate](./provisioning-sc-x509-attestation-h/x509attestation-getprimarycertificate.md)            | 
+[x509Attestation_getSecondaryCertificate](./provisioning-sc-x509-attestation-h/x509attestation-getsecondarycertificate.md)            | 
+[x509Certificate_getSubjectName](./provisioning-sc-x509-attestation-h/x509certificate-getsubjectname.md)            | 
+[x509Certificate_getSha1Thumbprint](./provisioning-sc-x509-attestation-h/x509certificate-getsha1thumbprint.md)            | 
+[x509Certificate_getSha256Thumbprint](./provisioning-sc-x509-attestation-h/x509certificate-getsha256thumbprint.md)            | 
+[x509Certificate_getIssuerName](./provisioning-sc-x509-attestation-h/x509certificate-getissuername.md)            | 
+[x509Certificate_getNotBeforeUtc](./provisioning-sc-x509-attestation-h/x509certificate-getnotbeforeutc.md)            | 
+[x509Certificate_getNotAfterUtc](./provisioning-sc-x509-attestation-h/x509certificate-getnotafterutc.md)            | 
+[x509Certificate_getSerialNumber](./provisioning-sc-x509-attestation-h/x509certificate-getserialnumber.md)            | 
+[x509Certificate_getVersion](./provisioning-sc-x509-attestation-h/x509certificate-getversion.md)            | 
 
 ## Macro definitions
 
 #### X509_CERTIFICATE_TYPE_VALUES
 
 ```C
-#define X509_CERTIFICATE_TYPE_VALUES  X509_CERTIFICATE_TYPE_NONE, \
-            X509_CERTIFICATE_TYPE_CLIENT, \
-            X509_CERTIFICATE_TYPE_SIGNING, \
-            X509_CERTIFICATE_TYPE_CA_REFERENCES \ 
+#define X509_CERTIFICATE_TYPE_VALUES \
+        X509_CERTIFICATE_TYPE_NONE, \
+        X509_CERTIFICATE_TYPE_CLIENT, \
+        X509_CERTIFICATE_TYPE_SIGNING, \
+        X509_CERTIFICATE_TYPE_CA_REFERENCES 
+```
+
+## Enumeration types
+
+#### X509_CERTIFICATE_TYPE
+
+```C
+enum X509_CERTIFICATE_TYPE {
+  X509_CERTIFICATE_TYPE_NONE,
+  X509_CERTIFICATE_TYPE_CLIENT,
+  X509_CERTIFICATE_TYPE_SIGNING,
+  X509_CERTIFICATE_TYPE_CA_REFERENCES
+}
 ```
 
 ## Type definitions

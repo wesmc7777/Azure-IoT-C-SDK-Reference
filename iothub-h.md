@@ -23,6 +23,6 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-h/mockable-function.md)            | IoTHubClient_Init Initializes the IoTHub Client System.
-[MOCKABLE_FUNCTION](./iothub-h/mockable-function.md)            | IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init function call.
+[IoTHub_Init](./iothub-h/iothub-init.md)            | IoTHubClient_Init Initializes the IoTHub Client System.
+[IoTHub_Deinit](./iothub-h/iothub-deinit.md)            | IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init function call.
 

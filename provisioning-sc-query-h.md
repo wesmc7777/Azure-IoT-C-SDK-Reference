@@ -27,9 +27,9 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-query-h/mu-define-enum-without-invalid.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-query-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./provisioning-sc-query-h/mockable-function.md)            | 
+[PROVISIONING_QUERY_TYPEStrings](./provisioning-sc-query-h/provisioning-query-typestrings.md)            | 
+[PROVISIONING_QUERY_TYPE_FromString](./provisioning-sc-query-h/provisioning-query-type-fromstring.md)            | 
+[queryResponse_free](./provisioning-sc-query-h/queryresponse-free.md)            | 
 
 ## Structures
 
@@ -95,9 +95,23 @@ Member name                 | Description
 #### PROVISIONING_QUERY_TYPE_VALUES
 
 ```C
-#define PROVISIONING_QUERY_TYPE_VALUES  QUERY_TYPE_INVALID, \
-    QUERY_TYPE_INDIVIDUAL_ENROLLMENT, \
-    QUERY_TYPE_ENROLLMENT_GROUP, \
-    QUERY_TYPE_DEVICE_REGISTRATION_STATE 
+#define PROVISIONING_QUERY_TYPE_VALUES \
+        QUERY_TYPE_INVALID, \
+        QUERY_TYPE_INDIVIDUAL_ENROLLMENT, \
+        QUERY_TYPE_ENROLLMENT_GROUP, \
+        QUERY_TYPE_DEVICE_REGISTRATION_STATE 
+```
+
+## Enumeration types
+
+#### PROVISIONING_QUERY_TYPE
+
+```C
+enum PROVISIONING_QUERY_TYPE {
+  QUERY_TYPE_INVALID,
+  QUERY_TYPE_INDIVIDUAL_ENROLLMENT,
+  QUERY_TYPE_ENROLLMENT_GROUP,
+  QUERY_TYPE_DEVICE_REGISTRATION_STATE
+}
 ```
 

@@ -32,31 +32,31 @@ This API surface contains a set of APIs that allows the user to interact with th
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
-[MOCKABLE_FUNCTION](./iothub-client-core-ll-h/mockable-function.md)            | 
+[IoTHubClientCore_LL_CreateFromConnectionString](./iothub-client-core-ll-h/iothubclientcore-ll-createfromconnectionstring.md)            | 
+[IoTHubClientCore_LL_Create](./iothub-client-core-ll-h/iothubclientcore-ll-create.md)            | 
+[IoTHubClientCore_LL_CreateWithTransport](./iothub-client-core-ll-h/iothubclientcore-ll-createwithtransport.md)            | 
+[IoTHubClientCore_LL_CreateFromDeviceAuth](./iothub-client-core-ll-h/iothubclientcore-ll-createfromdeviceauth.md)            | 
+[IoTHubClientCore_LL_Destroy](./iothub-client-core-ll-h/iothubclientcore-ll-destroy.md)            | 
+[IoTHubClientCore_LL_SendEventAsync](./iothub-client-core-ll-h/iothubclientcore-ll-sendeventasync.md)            | 
+[IoTHubClientCore_LL_GetSendStatus](./iothub-client-core-ll-h/iothubclientcore-ll-getsendstatus.md)            | 
+[IoTHubClientCore_LL_SetMessageCallback](./iothub-client-core-ll-h/iothubclientcore-ll-setmessagecallback.md)            | 
+[IoTHubClientCore_LL_SetConnectionStatusCallback](./iothub-client-core-ll-h/iothubclientcore-ll-setconnectionstatuscallback.md)            | 
+[IoTHubClientCore_LL_SetRetryPolicy](./iothub-client-core-ll-h/iothubclientcore-ll-setretrypolicy.md)            | 
+[IoTHubClientCore_LL_GetRetryPolicy](./iothub-client-core-ll-h/iothubclientcore-ll-getretrypolicy.md)            | 
+[IoTHubClientCore_LL_GetLastMessageReceiveTime](./iothub-client-core-ll-h/iothubclientcore-ll-getlastmessagereceivetime.md)            | 
+[IoTHubClientCore_LL_DoWork](./iothub-client-core-ll-h/iothubclientcore-ll-dowork.md)            | 
+[IoTHubClientCore_LL_SetOption](./iothub-client-core-ll-h/iothubclientcore-ll-setoption.md)            | 
+[IoTHubClientCore_LL_SetDeviceTwinCallback](./iothub-client-core-ll-h/iothubclientcore-ll-setdevicetwincallback.md)            | 
+[IoTHubClientCore_LL_SendReportedState](./iothub-client-core-ll-h/iothubclientcore-ll-sendreportedstate.md)            | 
+[IoTHubClientCore_LL_GetTwinAsync](./iothub-client-core-ll-h/iothubclientcore-ll-gettwinasync.md)            | 
+[IoTHubClientCore_LL_SetDeviceMethodCallback](./iothub-client-core-ll-h/iothubclientcore-ll-setdevicemethodcallback.md)            | 
+[IoTHubClientCore_LL_SetDeviceMethodCallback_Ex](./iothub-client-core-ll-h/iothubclientcore-ll-setdevicemethodcallback-ex.md)            | 
+[IoTHubClientCore_LL_DeviceMethodResponse](./iothub-client-core-ll-h/iothubclientcore-ll-devicemethodresponse.md)            | 
+[IoTHubClientCore_LL_SendEventToOutputAsync](./iothub-client-core-ll-h/iothubclientcore-ll-sendeventtooutputasync.md)            | 
+[IoTHubClientCore_LL_SetInputMessageCallback](./iothub-client-core-ll-h/iothubclientcore-ll-setinputmessagecallback.md)            | 
+[IoTHubClientCore_LL_UploadToBlob](./iothub-client-core-ll-h/iothubclientcore-ll-uploadtoblob.md)            | 
+[IoTHubClientCore_LL_UploadMultipleBlocksToBlob](./iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblob.md)            | 
+[IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx](./iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblobex.md)            | 
 
 ## Type definitions
 
