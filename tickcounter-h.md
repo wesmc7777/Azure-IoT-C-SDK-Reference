@@ -5,7 +5,7 @@ description: "This is the header file reference page for tickcounter.h in the Az
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/24/2020                    
+ms.date: 10/01/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        

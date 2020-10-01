@@ -383,55 +383,6 @@
             href: iothub-client-h/iothubclient-uploadmultipleblockstoblobasync.md
           - name: IoTHubClient_UploadMultipleBlocksToBlobAsyncEx
             href: iothub-client-h/iothubclient-uploadmultipleblockstoblobasyncex.md
-        - name: iothub_client_core.h
-          href: iothub-client-core-h.md
-          items:
-          - name: IoTHubClientCore_CreateFromConnectionString
-            href: iothub-client-core-h/iothubclientcore-createfromconnectionstring.md
-          - name: IoTHubClientCore_Create
-            href: iothub-client-core-h/iothubclientcore-create.md
-          - name: IoTHubClientCore_CreateWithTransport
-            href: iothub-client-core-h/iothubclientcore-createwithtransport.md
-          - name: IoTHubClientCore_CreateFromDeviceAuth
-            href: iothub-client-core-h/iothubclientcore-createfromdeviceauth.md
-          - name: IoTHubClientCore_Destroy
-            href: iothub-client-core-h/iothubclientcore-destroy.md
-          - name: IoTHubClientCore_SendEventAsync
-            href: iothub-client-core-h/iothubclientcore-sendeventasync.md
-          - name: IoTHubClientCore_GetSendStatus
-            href: iothub-client-core-h/iothubclientcore-getsendstatus.md
-          - name: IoTHubClientCore_SetMessageCallback
-            href: iothub-client-core-h/iothubclientcore-setmessagecallback.md
-          - name: IoTHubClientCore_SetConnectionStatusCallback
-            href: iothub-client-core-h/iothubclientcore-setconnectionstatuscallback.md
-          - name: IoTHubClientCore_SetRetryPolicy
-            href: iothub-client-core-h/iothubclientcore-setretrypolicy.md
-          - name: IoTHubClientCore_GetRetryPolicy
-            href: iothub-client-core-h/iothubclientcore-getretrypolicy.md
-          - name: IoTHubClientCore_GetLastMessageReceiveTime
-            href: iothub-client-core-h/iothubclientcore-getlastmessagereceivetime.md
-          - name: IoTHubClientCore_SetOption
-            href: iothub-client-core-h/iothubclientcore-setoption.md
-          - name: IoTHubClientCore_SetDeviceTwinCallback
-            href: iothub-client-core-h/iothubclientcore-setdevicetwincallback.md
-          - name: IoTHubClientCore_SendReportedState
-            href: iothub-client-core-h/iothubclientcore-sendreportedstate.md
-          - name: IoTHubClientCore_GetTwinAsync
-            href: iothub-client-core-h/iothubclientcore-gettwinasync.md
-          - name: IoTHubClientCore_SetDeviceMethodCallback
-            href: iothub-client-core-h/iothubclientcore-setdevicemethodcallback.md
-          - name: IoTHubClientCore_SetDeviceMethodCallback_Ex
-            href: iothub-client-core-h/iothubclientcore-setdevicemethodcallback-ex.md
-          - name: IoTHubClientCore_DeviceMethodResponse
-            href: iothub-client-core-h/iothubclientcore-devicemethodresponse.md
-          - name: IoTHubClientCore_UploadToBlobAsync
-            href: iothub-client-core-h/iothubclientcore-uploadtoblobasync.md
-          - name: IoTHubClientCore_UploadMultipleBlocksToBlobAsync
-            href: iothub-client-core-h/iothubclientcore-uploadmultipleblockstoblobasync.md
-          - name: IoTHubClientCore_SendEventToOutputAsync
-            href: iothub-client-core-h/iothubclientcore-sendeventtooutputasync.md
-          - name: IoTHubClientCore_SetInputMessageCallback
-            href: iothub-client-core-h/iothubclientcore-setinputmessagecallback.md
         - name: iothub_client_core_common.h
           href: iothub-client-core-common-h.md
           items:
@@ -491,59 +442,6 @@
             href: iothub-client-core-common-h/iothub-client-file-upload-get-data-resultstrings.md
           - name: IOTHUB_CLIENT_FILE_UPLOAD_GET_DATA_RESULT_FromString
             href: iothub-client-core-common-h/iothub-client-file-upload-get-data-result-fromstring.md
-        - name: iothub_client_core_ll.h
-          href: iothub-client-core-ll-h.md
-          items:
-          - name: IoTHubClientCore_LL_CreateFromConnectionString
-            href: iothub-client-core-ll-h/iothubclientcore-ll-createfromconnectionstring.md
-          - name: IoTHubClientCore_LL_Create
-            href: iothub-client-core-ll-h/iothubclientcore-ll-create.md
-          - name: IoTHubClientCore_LL_CreateWithTransport
-            href: iothub-client-core-ll-h/iothubclientcore-ll-createwithtransport.md
-          - name: IoTHubClientCore_LL_CreateFromDeviceAuth
-            href: iothub-client-core-ll-h/iothubclientcore-ll-createfromdeviceauth.md
-          - name: IoTHubClientCore_LL_Destroy
-            href: iothub-client-core-ll-h/iothubclientcore-ll-destroy.md
-          - name: IoTHubClientCore_LL_SendEventAsync
-            href: iothub-client-core-ll-h/iothubclientcore-ll-sendeventasync.md
-          - name: IoTHubClientCore_LL_GetSendStatus
-            href: iothub-client-core-ll-h/iothubclientcore-ll-getsendstatus.md
-          - name: IoTHubClientCore_LL_SetMessageCallback
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setmessagecallback.md
-          - name: IoTHubClientCore_LL_SetConnectionStatusCallback
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setconnectionstatuscallback.md
-          - name: IoTHubClientCore_LL_SetRetryPolicy
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setretrypolicy.md
-          - name: IoTHubClientCore_LL_GetRetryPolicy
-            href: iothub-client-core-ll-h/iothubclientcore-ll-getretrypolicy.md
-          - name: IoTHubClientCore_LL_GetLastMessageReceiveTime
-            href: iothub-client-core-ll-h/iothubclientcore-ll-getlastmessagereceivetime.md
-          - name: IoTHubClientCore_LL_DoWork
-            href: iothub-client-core-ll-h/iothubclientcore-ll-dowork.md
-          - name: IoTHubClientCore_LL_SetOption
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setoption.md
-          - name: IoTHubClientCore_LL_SetDeviceTwinCallback
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setdevicetwincallback.md
-          - name: IoTHubClientCore_LL_SendReportedState
-            href: iothub-client-core-ll-h/iothubclientcore-ll-sendreportedstate.md
-          - name: IoTHubClientCore_LL_GetTwinAsync
-            href: iothub-client-core-ll-h/iothubclientcore-ll-gettwinasync.md
-          - name: IoTHubClientCore_LL_SetDeviceMethodCallback
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setdevicemethodcallback.md
-          - name: IoTHubClientCore_LL_SetDeviceMethodCallback_Ex
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setdevicemethodcallback-ex.md
-          - name: IoTHubClientCore_LL_DeviceMethodResponse
-            href: iothub-client-core-ll-h/iothubclientcore-ll-devicemethodresponse.md
-          - name: IoTHubClientCore_LL_SendEventToOutputAsync
-            href: iothub-client-core-ll-h/iothubclientcore-ll-sendeventtooutputasync.md
-          - name: IoTHubClientCore_LL_SetInputMessageCallback
-            href: iothub-client-core-ll-h/iothubclientcore-ll-setinputmessagecallback.md
-          - name: IoTHubClientCore_LL_UploadToBlob
-            href: iothub-client-core-ll-h/iothubclientcore-ll-uploadtoblob.md
-          - name: IoTHubClientCore_LL_UploadMultipleBlocksToBlob
-            href: iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblob.md
-          - name: IoTHubClientCore_LL_UploadMultipleBlocksToBlobEx
-            href: iothub-client-core-ll-h/iothubclientcore-ll-uploadmultipleblockstoblobex.md
         - name: iothub_client_ll.h
           href: iothub-client-ll-h.md
           items:
@@ -593,11 +491,6 @@
             href: iothub-client-ll-h/iothubclient-ll-uploadmultipleblockstoblobex.md
         - name: iothub_client_options.h
           href: iothub-client-options-h.md
-        - name: iothub_client_version.h
-          href: iothub-client-version-h.md
-          items:
-          - name: IoTHubClient_GetVersionString
-            href: iothub-client-version-h/iothubclient-getversionstring.md
         - name: iothub_device_client.h
           href: iothub-device-client-h.md
           items:
