@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_device_client_ll
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/24/2020                    
+ms.date: 10/01/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -22,7 +22,7 @@ APIs that allow a user (usually a device) to communicate with an Azure IoTHub.
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "[iothub_transport_ll.h](iothub-transport-ll-h.md)"  
-\#include "[iothub_client_core_ll.h](iothub-client-core-ll-h.md)"  
+\#include "iothub_client_core_ll.h"  
 
 ## Detailed Description
 

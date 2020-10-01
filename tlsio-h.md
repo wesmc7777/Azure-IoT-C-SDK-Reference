@@ -5,7 +5,7 @@ description: "This is the header file reference page for tlsio.h in the Azure Io
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 09/24/2020                    
+ms.date: 10/01/2020                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
