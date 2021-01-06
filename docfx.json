@@ -43,7 +43,8 @@
       "brand": "azure",
       "uhfHeaderId": "azure",
       "feedback_system": "GitHub",
-      "feedback_github_repo": "MicrosoftDocs/Azure-IoT-C-SDK-Reference"     
+      "feedback_github_repo": "MicrosoftDocs/Azure-IoT-C-SDK-Reference",
+      "searchScope": ["IoT","IoT Plug and Play","Azure IoT Edge","Azure Digital Twins","Azure IoT DPS","Azure IoT Hub"]
     },
     "fileMetadata": {},
     "template": [],
