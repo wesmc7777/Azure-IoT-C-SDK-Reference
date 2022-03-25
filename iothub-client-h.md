@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client.h in the 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # iothub_client.h 
 
-Extends the IoTHubCLient_LL module with additional features.
+Extends the IoTHubClient_LL with additional features.
 
 ## Includes
 
@@ -42,27 +42,27 @@ IoTHubClient is a module that extends the IoTHubCLient_LL module with 2 features
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IoTHubClient_CreateFromConnectionString](./iothub-client-h/iothubclient-createfromconnectionstring.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
-[IoTHubClient_Create](./iothub-client-h/iothubclient-create.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
-[IoTHubClient_CreateWithTransport](./iothub-client-h/iothubclient-createwithtransport.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
-[IoTHubClient_CreateFromDeviceAuth](./iothub-client-h/iothubclient-createfromdeviceauth.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
-[IoTHubClient_Destroy](./iothub-client-h/iothubclient-destroy.md)            | Disposes of resources allocated by the IoT Hub client. This is a blocking call.
-[IoTHubClient_SendEventAsync](./iothub-client-h/iothubclient-sendeventasync.md)            | Asynchronous call to send the message specified by eventMessageHandle.
-[IoTHubClient_GetSendStatus](./iothub-client-h/iothubclient-getsendstatus.md)            | This function returns the current sending status for IoTHubClient.
-[IoTHubClient_SetMessageCallback](./iothub-client-h/iothubclient-setmessagecallback.md)            | Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.
-[IoTHubClient_SetConnectionStatusCallback](./iothub-client-h/iothubclient-setconnectionstatuscallback.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[IoTHubClient_SetRetryPolicy](./iothub-client-h/iothubclient-setretrypolicy.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[IoTHubClient_GetRetryPolicy](./iothub-client-h/iothubclient-getretrypolicy.md)            | Sets up the connection status callback to be invoked representing the status of the connection to IOT Hub. This is a blocking call.
-[IoTHubClient_GetLastMessageReceiveTime](./iothub-client-h/iothubclient-getlastmessagereceivetime.md)            | This function returns in the out parameter lastMessageReceiveTime what was the value of the time function when the last message was received at the client.
-[IoTHubClient_SetOption](./iothub-client-h/iothubclient-setoption.md)            | This API sets a runtime option identified by parameter optionName to a value pointed to by value. optionName and the data type value is pointing to are specific for every option.
-[IoTHubClient_SetDeviceTwinCallback](./iothub-client-h/iothubclient-setdevicetwincallback.md)            | This API specifies a call back to be used when the device receives a state update.
-[IoTHubClient_SendReportedState](./iothub-client-h/iothubclient-sendreportedstate.md)            | This API sends a report of the device's properties and their current values.
-[IoTHubClient_SetDeviceMethodCallback](./iothub-client-h/iothubclient-setdevicemethodcallback.md)            | This API sets callback for cloud to device method call.
-[IoTHubClient_SetDeviceMethodCallback_Ex](./iothub-client-h/iothubclient-setdevicemethodcallback-ex.md)            | This API sets callback for async cloud to device method call.
-[IoTHubClient_DeviceMethodResponse](./iothub-client-h/iothubclient-devicemethodresponse.md)            | This API responses to a asnyc method callback identified the methodId.
-[IoTHubClient_UploadToBlobAsync](./iothub-client-h/iothubclient-uploadtoblobasync.md)            | IoTHubClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.
-[IoTHubClient_UploadMultipleBlocksToBlobAsync](./iothub-client-h/iothubclient-uploadmultipleblockstoblobasync.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
-[IoTHubClient_UploadMultipleBlocksToBlobAsyncEx](./iothub-client-h/iothubclient-uploadmultipleblockstoblobasyncex.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
+[IoTHubClient_CreateFromConnectionString](./iothub-client-h/iothubclient-createfromconnectionstring.md)            | > Deprecated: IoTHubClient_CreateFromConnectionString is deprecated. Use [IoTHubDeviceClient_CreateFromConnectionString()](iothub-device-client-h/iothubdeviceclient-createfromconnectionstring.md) instead.
+[IoTHubClient_Create](./iothub-client-h/iothubclient-create.md)            | > Deprecated: IoTHubClient_Create is deprecated. Use [IoTHubDeviceClient_Create()](iothub-device-client-h/iothubdeviceclient-create.md) instead.
+[IoTHubClient_CreateWithTransport](./iothub-client-h/iothubclient-createwithtransport.md)            | > Deprecated: IoTHubClient_CreateWithTransport is deprecated. Use [IoTHubDeviceClient_CreateWithTransport()](iothub-device-client-h/iothubdeviceclient-createwithtransport.md) instead.
+[IoTHubClient_CreateFromDeviceAuth](./iothub-client-h/iothubclient-createfromdeviceauth.md)            | > Deprecated: IoTHubClient_CreateFromDeviceAuth is deprecated. Use [IoTHubDeviceClient_CreateFromDeviceAuth()](iothub-device-client-h/iothubdeviceclient-createfromdeviceauth.md) instead.
+[IoTHubClient_Destroy](./iothub-client-h/iothubclient-destroy.md)            | > Deprecated: IoTHubClient_Destroy is deprecated. Use [IoTHubDeviceClient_Destroy()](iothub-device-client-h/iothubdeviceclient-destroy.md) instead.
+[IoTHubClient_SendEventAsync](./iothub-client-h/iothubclient-sendeventasync.md)            | > Deprecated: IoTHubClient_SendEventAsync is deprecated. Use [IoTHubDeviceClient_SendEventAsync()](iothub-device-client-h/iothubdeviceclient-sendeventasync.md) instead.
+[IoTHubClient_GetSendStatus](./iothub-client-h/iothubclient-getsendstatus.md)            | > Deprecated: IoTHubClient_GetSendStatus is deprecated. Use [IoTHubDeviceClient_GetSendStatus()](iothub-device-client-h/iothubdeviceclient-getsendstatus.md) instead.
+[IoTHubClient_SetMessageCallback](./iothub-client-h/iothubclient-setmessagecallback.md)            | > Deprecated: IoTHubClient_SetMessageCallback is deprecated. Use [IoTHubDeviceClient_SetMessageCallback()](iothub-device-client-h/iothubdeviceclient-setmessagecallback.md) instead.
+[IoTHubClient_SetConnectionStatusCallback](./iothub-client-h/iothubclient-setconnectionstatuscallback.md)            | > Deprecated: IoTHubClient_SetConnectionStatusCallback is deprecated. Use [IoTHubDeviceClient_SetConnectionStatusCallback()](iothub-device-client-h/iothubdeviceclient-setconnectionstatuscallback.md) instead.
+[IoTHubClient_SetRetryPolicy](./iothub-client-h/iothubclient-setretrypolicy.md)            | > Deprecated: IoTHubClient_SetRetryPolicy is deprecated. Use [IoTHubDeviceClient_SetRetryPolicy()](iothub-device-client-h/iothubdeviceclient-setretrypolicy.md) instead.
+[IoTHubClient_GetRetryPolicy](./iothub-client-h/iothubclient-getretrypolicy.md)            | > Deprecated: IoTHubClient_GetRetryPolicy is deprecated. Use [IoTHubDeviceClient_GetRetryPolicy()](iothub-device-client-h/iothubdeviceclient-getretrypolicy.md) instead.
+[IoTHubClient_GetLastMessageReceiveTime](./iothub-client-h/iothubclient-getlastmessagereceivetime.md)            | > Deprecated: IoTHubClient_GetLastMessageReceiveTime is deprecated. Use [IoTHubDeviceClient_GetLastMessageReceiveTime()](iothub-device-client-h/iothubdeviceclient-getlastmessagereceivetime.md) instead.
+[IoTHubClient_SetOption](./iothub-client-h/iothubclient-setoption.md)            | > Deprecated: IoTHubClient_SetOption is deprecated. Use [IoTHubDeviceClient_SetOption()](iothub-device-client-h/iothubdeviceclient-setoption.md) instead.
+[IoTHubClient_SetDeviceTwinCallback](./iothub-client-h/iothubclient-setdevicetwincallback.md)            | > Deprecated: IoTHubClient_SetDeviceTwinCallback is deprecated. Use [IoTHubDeviceClient_SetDeviceTwinCallback()](iothub-device-client-h/iothubdeviceclient-setdevicetwincallback.md) instead.
+[IoTHubClient_SendReportedState](./iothub-client-h/iothubclient-sendreportedstate.md)            | > Deprecated: IoTHubClient_SendReportedState is deprecated. Use [IoTHubDeviceClient_SendReportedState()](iothub-device-client-h/iothubdeviceclient-sendreportedstate.md) instead.
+[IoTHubClient_SetDeviceMethodCallback](./iothub-client-h/iothubclient-setdevicemethodcallback.md)            | > Deprecated: IoTHubClient_SetDeviceMethodCallback is deprecated. Use [IoTHubDeviceClient_SetDeviceMethodCallback()](iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md) instead.
+[IoTHubClient_SetDeviceMethodCallback_Ex](./iothub-client-h/iothubclient-setdevicemethodcallback-ex.md)            | > Deprecated: IoTHubClient_SetDeviceMethodCallback_Ex is deprecated. Use [IoTHubDeviceClient_SetDeviceMethodCallback()](iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md) instead.
+[IoTHubClient_DeviceMethodResponse](./iothub-client-h/iothubclient-devicemethodresponse.md)            | > Deprecated: IoTHubClient_DeviceMethodResponse is deprecated. Use [IoTHubDeviceClient_SetDeviceMethodCallback()](iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md) instead.
+[IoTHubClient_UploadToBlobAsync](./iothub-client-h/iothubclient-uploadtoblobasync.md)            | > Deprecated: IoTHubClient_UploadToBlobAsync is deprecated. Use [IoTHubDeviceClient_UploadToBlobAsync()](iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md) instead.
+[IoTHubClient_UploadMultipleBlocksToBlobAsync](./iothub-client-h/iothubclient-uploadmultipleblockstoblobasync.md)            | > Deprecated: IoTHubClient_UploadMultipleBlocksToBlobAsync is deprecated. Use [IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync()](iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md) instead.
+[IoTHubClient_UploadMultipleBlocksToBlobAsyncEx](./iothub-client-h/iothubclient-uploadmultipleblockstoblobasyncex.md)            | > Deprecated: IoTHubClient_UploadMultipleBlocksToBlobAsyncEx is deprecated. Use [IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync()](iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md) instead.
 
 ## Macro definitions
 
@@ -79,4 +79,6 @@ Function Name                  | Description
 ```C
 typedef IOTHUB_CLIENT_CORE_HANDLE IOTHUB_CLIENT_HANDLE;
 ```
+
+> Deprecated: IOTHUB_CLIENT_HANDLE is deprecated. Use [IOTHUB_DEVICE_CLIENT_HANDLE](iothub-device-client-h.md#iothub_device_client_handle) instead. 
 

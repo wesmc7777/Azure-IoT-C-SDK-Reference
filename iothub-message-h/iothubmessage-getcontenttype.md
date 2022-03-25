@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetConte
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -29,5 +29,5 @@ IOTHUBMESSAGE_CONTENT_TYPE IoTHubMessage_GetContentType(IOTHUB_MESSAGE_HANDLE  i
 This function retrieves the standardized type of the payload, which indicates if iotHubMessageHandle was created using a String or a Byte Array.
 
 ## Return Value
-An IOTHUBMESSAGE_CONTENT_TYPE value.
+An [IOTHUBMESSAGE_CONTENT_TYPE](../iothub-message-h.md#iothubmessage_content_type) value.
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -29,7 +29,7 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceTwinCallback(
 ## Parameters
 * `iotHubClientHandle` The handle created by a call to the create function. 
 
-* `deviceTwinCallback` The callback specified by the device client to be used for updating the desired state. The callback will be called in response to a request send by the IoTHub services. The payload will be passed to the callback, along with two version numbers:
+* `deviceTwinCallback` The callback specified by the device client to be used for updating the desired state. The callback will be called in response to a request send by the IoT Hub services. The payload will be passed to the callback, along with two version numbers:
 
 * Desired:
 
@@ -37,7 +37,7 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_SetDeviceTwinCallback(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_Destroy](../iothub-device-client-h/iothubdeviceclient-destroy.md) function from within any callback.
+: Do not call [IoTHubDeviceClient_Destroy()](../iothub-device-client-h/iothubdeviceclient-destroy.md) from inside your application's callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

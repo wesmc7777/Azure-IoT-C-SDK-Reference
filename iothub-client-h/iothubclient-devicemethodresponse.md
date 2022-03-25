@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_DeviceMet
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_DeviceMethodResponse()
-
-This API responses to a asnyc method callback identified the methodId.
 
 ## Syntax
 
@@ -28,17 +26,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_DeviceMethodResponse(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `methodId` The methodId of the Device Method callback. 
-
-* `response` The response data for the method callback. 
-
-* `response_size` The size of the response data buffer. 
-
-* `status_response` The status response of the method callback.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_DeviceMethodResponse is deprecated. Use [IoTHubDeviceClient_SetDeviceMethodCallback()](../iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md) instead.
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubDeviceClient_LL_CreateFromDeviceAuth()
 
-Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
+Creates a IoT Hub client for communication with an existing IoT Hub using the device auth.
 
 ## Syntax
 
@@ -27,14 +27,12 @@ IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateFromDeviceAuth(
 ```
 
 ## Parameters
-* `iothub_uri` Pointer to an ioThub hostname received in the registration process 
+* `iothub_uri` Pointer to an IoT Hub hostname received in the registration process 
 
 * `device_id` Pointer to the device Id of the device 
-
-* `device_auth_handle` A device auth handle used to generate the connection string 
 
 * `protocol` Function pointer for protocol implementation
 
 ## Return Value
-A non-NULL IOTHUB_DEVICE_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+A non-NULL [IOTHUB_DEVICE_CLIENT_LL_HANDLE](../iothub-device-client-ll-h.md#iothub_device_client_ll_handle) value that is used when invoking other functions for IoT Hub client and NULL on failure.
 

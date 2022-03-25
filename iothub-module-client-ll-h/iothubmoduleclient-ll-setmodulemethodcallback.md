@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -29,7 +29,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_LL_SetModuleMethodCallback(
 ## Parameters
 * `iotHubModuleClientHandle` The handle created by a call to the create function. 
 
-* `moduleMethodCallback` The callback which will be called by IoTHub. 
+* `moduleMethodCallback` The callback which will be called by IoT Hub. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 

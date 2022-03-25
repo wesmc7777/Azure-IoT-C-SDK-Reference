@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetConte
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -31,5 +31,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetContentEncodingSystemProperty(
 * `contentEncoding` String defining the encoding of the payload (e.g., utf-8).
 
 ## Return Value
-An IOTHUB_MESSAGE_RESULT value.
+An [IOTHUB_MESSAGE_RESULT](../iothub-message-h.md#iothub_message_result) value.
 

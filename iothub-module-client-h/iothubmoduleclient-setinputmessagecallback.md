@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Set
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubModuleClient_SetInputMessageCallback()
 
-This API sets callback for method call that is directed to specified 'inputName' queue (e.g. messages from IoTHubClient_SendEventToOutputAsync)
+This API sets callback for method call that is directed to specified 'inputName' queue (e.g. messages from IoTHubModuleClient_SendEventToOutputAsync)
 
 ## Syntax
 
@@ -32,7 +32,7 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SetInputMessageCallback(
 
 * `inputName` The name of the queue to listen on for this moduleMethodCallback/userContextCallback. 
 
-* `eventHandlerCallback` The callback which will be called by IoTHub. 
+* `eventHandlerCallback` The callback which will be called by IoT Hub. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 

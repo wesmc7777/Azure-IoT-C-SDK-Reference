@@ -5,7 +5,7 @@ description: "This is the header file reference page for tickcounter.h in the Az
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -33,7 +33,7 @@ Function Name                  | Description
 #### tickcounter_ms_t
 
 ```C
-typedef uint_fast32_t tickcounter_ms_t;
+typedef uint_fast64_t tickcounter_ms_t;
 ```
 
 #### TICK_COUNTER_HANDLE

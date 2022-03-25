@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_Deinit() funct
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -21,4 +21,6 @@ Free resources allocated in [HTTPAPI_Init](../httpapi-h/httpapi-init.md).
 ```C
 void HTTPAPI_Deinit(void);
 ```
+
+> Deprecated: Applications should not directly invoke this function. They should use httpapiex.h instead.
 

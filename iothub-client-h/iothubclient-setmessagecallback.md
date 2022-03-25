@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_SetMessag
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_SetMessageCallback()
-
-Sets up the message callback to be invoked when IoT Hub issues a message to the device. This is a blocking call.
 
 ## Syntax
 
@@ -26,15 +24,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_SetMessageCallback(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `messageCallback` The callback specified by the device for receiving messages from IoT Hub. 
-
-* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
-
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_Destroy](../iothub-client-h/iothubclient-destroy.md) function from within any callback.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_SetMessageCallback is deprecated. Use [IoTHubDeviceClient_SetMessageCallback()](../iothub-device-client-h/iothubdeviceclient-setmessagecallback.md) instead.
 

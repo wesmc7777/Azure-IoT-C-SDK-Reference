@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_Upload
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_UploadMultipleBlocksToBlobEx()
-
-This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
 
 ## Syntax
 
@@ -27,15 +25,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_UploadMultipleBlocksToBlobEx(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `destinationFileName` name of the file. 
-
-* `getDataCallbackEx` A callback to be invoked to acquire the file chunks to be uploaded, as well as to indicate the status of the upload of the previous block. 
-
-* `context` Any data provided by the user to serve as context on getDataCallback.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_LL_UploadMultipleBlocksToBlobEx is deprecated. Use [IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob()](../iothub-device-client-ll-h/iothubdeviceclient-ll-uploadmultipleblockstoblob.md) instead.
 

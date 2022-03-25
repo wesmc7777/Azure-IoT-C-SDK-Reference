@@ -5,7 +5,7 @@ description: "This is the header file reference page for shared_util_options.h i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -38,6 +38,17 @@ Member name                 | Description
  username            | 
  password            | 
 
+## Enumeration types
+
+#### OPTION_OPENSSL_KEY_TYPE
+
+```C
+enum OPTION_OPENSSL_KEY_TYPE {
+  KEY_TYPE_DEFAULT,
+  KEY_TYPE_ENGINE
+}
+```
+
 ## Constants and Variables
 
 #### OPTION_HTTP_PROXY
@@ -58,6 +69,16 @@ const char* const OPTION_TRUSTED_CERT = "TrustedCerts";
 #### OPTION_OPENSSL_CIPHER_SUITE
 ```C
 const char* const OPTION_OPENSSL_CIPHER_SUITE = "CipherSuite";
+```
+
+#### OPTION_OPENSSL_ENGINE
+```C
+const char* const OPTION_OPENSSL_ENGINE = "Engine";
+```
+
+#### OPTION_OPENSSL_PRIVATE_KEY_TYPE
+```C
+const char* const OPTION_OPENSSL_PRIVATE_KEY_TYPE = "x509PrivatekeyType";
 ```
 
 #### SU_OPTION_X509_CERT
@@ -103,6 +124,11 @@ const char* const OPTION_CURL_FORBID_REUSE = "CURLOPT_FORBID_REUSE";
 #### OPTION_CURL_VERBOSE
 ```C
 const char* const OPTION_CURL_VERBOSE = "CURLOPT_VERBOSE";
+```
+
+#### OPTION_CURL_INTERFACE
+```C
+const char* const OPTION_CURL_INTERFACE = "CURLOPT_INTERFACE";
 ```
 
 #### OPTION_NET_INT_MAC_ADDRESS

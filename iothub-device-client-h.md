@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_device_client.h 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # iothub_device_client.h 
 
-Extends the IoTHubCLient_LL module with additional features.
+Extends the IoTHubDeviceClient_LL with additional features.
 
 ## Includes
 
@@ -27,9 +27,9 @@ Extends the IoTHubCLient_LL module with additional features.
 
 ## Detailed Description
 
-IoTHubClient is a module that extends the IoTHubCLient_LL module with 2 features:
+IoTHubDeviceClient extends the IoTHubDeviceClient_LL with 2 features:
 
-* scheduling the work for the IoTHubCLient from a thread, so that the user does not need to create their own thread
+* scheduling the work for the IoTHubDeviceClient from a thread, so that the user does not need to create their own thread
 
 * thread-safe APIs
 
@@ -40,7 +40,7 @@ Function Name                  | Description
 [IoTHubDeviceClient_CreateFromConnectionString](./iothub-device-client-h/iothubdeviceclient-createfromconnectionstring.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified connection string parameter.
 [IoTHubDeviceClient_Create](./iothub-device-client-h/iothubdeviceclient-create.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
 [IoTHubDeviceClient_CreateWithTransport](./iothub-device-client-h/iothubdeviceclient-createwithtransport.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
-[IoTHubDeviceClient_CreateFromDeviceAuth](./iothub-device-client-h/iothubdeviceclient-createfromdeviceauth.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the device auth module.
+[IoTHubDeviceClient_CreateFromDeviceAuth](./iothub-device-client-h/iothubdeviceclient-createfromdeviceauth.md)            | Creates a IoT Hub client for communication with an existing IoT Hub using the device auth.
 [IoTHubDeviceClient_Destroy](./iothub-device-client-h/iothubdeviceclient-destroy.md)            | Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 [IoTHubDeviceClient_SendEventAsync](./iothub-device-client-h/iothubdeviceclient-sendeventasync.md)            | Asynchronous call to send the message specified by eventMessageHandle.
 [IoTHubDeviceClient_GetSendStatus](./iothub-device-client-h/iothubdeviceclient-getsendstatus.md)            | This function returns the current sending status for IoTHubClient.
@@ -57,6 +57,7 @@ Function Name                  | Description
 [IoTHubDeviceClient_DeviceMethodResponse](./iothub-device-client-h/iothubdeviceclient-devicemethodresponse.md)            | This API responds to an asnyc method callback identified the methodId.
 [IoTHubDeviceClient_UploadToBlobAsync](./iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md)            | IoTHubDeviceClient_UploadToBlobAsync uploads data from memory to a file in Azure Blob Storage.
 [IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync](./iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md)            | Uploads a file to a Blob storage in chunks, fed through the callback function provided by the user.
+[IoTHubDeviceClient_SendMessageDisposition](./iothub-device-client-h/iothubdeviceclient-sendmessagedisposition.md)            | This API sends an acknowledgement to Azure IoT Hub that a cloud-to-device message has been received and frees resources associated with the message.
 
 ## Macro definitions
 
@@ -70,7 +71,13 @@ Function Name                  | Description
 
 #### IOTHUB_DEVICE_CLIENT_HANDLE
 
+Handle corresponding to a convenience layer device client instance. 
+
 ```C
 typedef IOTHUB_CLIENT_CORE_HANDLE IOTHUB_DEVICE_CLIENT_HANDLE;
 ```
+
+**Remarks**:
+
+See [https://github.com/Azure/azure-iot-sdk-c/blob/main/doc/threading_notes.md](https://github.com/Azure/azure-iot-sdk-c/blob/main/doc/threading_notes.md) for more details about convenience layer versus lower layer (LL) threading models. 
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetPrope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_SetProperty()
 
-Sets a property on a Iothub Message.
+Sets a property on a IoT Hub message.
 
 ## Syntax
 
@@ -36,5 +36,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
 **NOTE:** The accepted character sets for the key name and value parameters are dependent on different factors, such as the protocol being used. For more information on the character sets accepted by Azure IoT Hub, see [Create and read IoT Hub messages](https://docs.microsoft.com/azure/iot-hub/iot-hub-devguide-messages-construct).
 
 ## Return Value
-An IOTHUB_MESSAGE_RESULT value indicating the result of setting the property.
+An [IOTHUB_MESSAGE_RESULT](../iothub-message-h.md#iothub_message_result) value indicating the result of setting the property.
 

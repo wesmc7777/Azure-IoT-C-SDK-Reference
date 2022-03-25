@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Cre
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -40,5 +40,5 @@ HostName=[IoT Hub name goes here].[IoT Hub suffix goes here, e.g., private.azure
 ```
 
 ## Return Value
-A non-NULL IOTHUB_MODULE_CLIENT_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+A non-NULL [IOTHUB_MODULE_CLIENT_HANDLE](../iothub-module-client-h.md#iothub_module_client_handle) value that is used when invoking other functions for IoT Hub client and NULL on failure.
 

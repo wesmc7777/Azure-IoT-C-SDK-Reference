@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -31,13 +31,15 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendReportedState(
 ## Parameters
 * `iotHubClientHandle` The handle created by a call to the create function. 
 
-* `reportedState` The current device property values to be 'reported' to the IoTHub. 
+* `reportedState` The current device property values to be 'reported' to the IoT Hub. 
+
+* `size` Number of bytes in reportedState. 
 
 * `reportedStateCallback` The callback specified by the device client to be called with the result of the transaction. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) function from within any callback.
+: Do not call [IoTHubDeviceClient_LL_Destroy()](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) or [IoTHubDeviceClient_LL_DoWork()](../iothub-device-client-ll-h/iothubdeviceclient-ll-dowork.md) from inside your application's callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

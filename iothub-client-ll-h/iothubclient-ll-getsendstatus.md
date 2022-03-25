@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_GetSen
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_GetSendStatus()
-
-This function returns the current sending status for IoTHubClient.
 
 ## Syntax
 
@@ -25,11 +23,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_GetSendStatus(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `iotHubClientStatus` The sending state is populated at the address pointed at by this parameter. The value will be set to IOTHUBCLIENT_SENDSTATUS_IDLE if there is currently no item to be sent and IOTHUBCLIENT_SENDSTATUS_BUSY if there are.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_LL_GetSendStatus is deprecated. UseDevice [IoTHubClient_LL_GetSendStatus()](../iothub-client-ll-h/iothubclient-ll-getsendstatus.md) instead.
 

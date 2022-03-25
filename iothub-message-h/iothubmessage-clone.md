@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_Clone() 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -26,5 +26,5 @@ IOTHUB_MESSAGE_HANDLE IoTHubMessage_Clone(IOTHUB_MESSAGE_HANDLE  iotHubMessageHa
 * `iotHubMessageHandle` Handle to the message that is to be cloned.
 
 ## Return Value
-A valid IOTHUB_MESSAGE_HANDLE if the message was successfully cloned or NULL in case an error occurs.
+A valid [IOTHUB_MESSAGE_HANDLE](../iothub-message-h.md#iothub_message_handle) if the message was successfully cloned or NULL in case an error occurs.
 

@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_Create
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_CreateWithTransport()
-
-Creates a IoT Hub client for communication with an existing IoT Hub using an existing transport.
 
 ## Syntax
 
@@ -22,11 +20,5 @@ Creates a IoT Hub client for communication with an existing IoT Hub using an exi
 IOTHUB_CLIENT_LL_HANDLE IoTHubClient_LL_CreateWithTransport(const   config);
 ```
 
-## Parameters
-* `config` Pointer to an [IOTHUB_CLIENT_DEVICE_CONFIG](../iothub-client-core-common-h.md#iothub_client_device_config) structure
-
-The API *allows* sharing of a connection across multiple devices. This is a blocking call.
-
-## Return Value
-A non-NULL IOTHUB_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+> Deprecated: IoTHubClient_LL_CreateWithTransport is deprecated. Use [IoTHubDeviceClient_LL_CreateWithTransport()](../iothub-device-client-ll-h/iothubdeviceclient-ll-createwithtransport.md) instead.
 

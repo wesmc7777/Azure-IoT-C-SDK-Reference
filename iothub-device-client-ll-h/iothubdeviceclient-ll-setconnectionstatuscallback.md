@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -33,7 +33,10 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SetConnectionStatusCallback(
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) function from within any callback.
+: Do not call [IoTHubDeviceClient_LL_Destroy()](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) or [IoTHubDeviceClient_LL_DoWork()](../iothub-device-client-ll-h/iothubdeviceclient-ll-dowork.md) from inside your application's callback.
+
+## Remarks
+Callback specified will not receive connection status change notifications for upload connections created with [IoTHubDeviceClient_LL_UploadToBlob()](../iothub-device-client-ll-h/iothubdeviceclient-ll-uploadtoblob.md) or [IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob()](../iothub-device-client-ll-h/iothubdeviceclient-ll-uploadmultipleblockstoblob.md).
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

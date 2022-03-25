@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetPrope
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_GetProperty()
 
-Gets a IotHub Message's properties item. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
+Gets a IoT Hub message's properties item. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 
 ## Syntax
 

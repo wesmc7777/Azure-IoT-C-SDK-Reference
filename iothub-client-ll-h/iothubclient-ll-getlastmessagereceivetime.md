@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_GetLas
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_GetLastMessageReceiveTime()
-
-This function returns in the out parameter lastMessageReceiveTime what was the value of the time function when the last message was received at the client.
 
 ## Syntax
 
@@ -25,11 +23,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_GetLastMessageReceiveTime(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `lastMessageReceiveTime` Out parameter containing the value of time function when the last message was received.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_LL_GetLastMessageReceiveTime is deprecated. Use [IoTHubDeviceClient_LL_GetLastMessageReceiveTime()](../iothub-device-client-ll-h/iothubdeviceclient-ll-getlastmessagereceivetime.md) instead.
 

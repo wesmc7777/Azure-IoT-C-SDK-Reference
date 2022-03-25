@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob()
 
-This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/.
+This API uploads to Azure Storage the content provided block by block by getDataCallback under the blob name devicename/destinationFileName.
 
 ## Syntax
 
@@ -35,6 +35,8 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob(
 * `getDataCallbackEx` A callback to be invoked to acquire the file chunks to be uploaded, as well as to indicate the status of the upload of the previous block. 
 
 * `context` Any data provided by the user to serve as context on getDataCallback.
+
+Other _LL_ functions such as [IoTHubDeviceClient_LL_SendEventAsync()](../iothub-device-client-ll-h/iothubdeviceclient-ll-sendeventasync.md) queue work to be performed later and do not block. IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob will block however until the upload is completed or fails, which may take a while.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

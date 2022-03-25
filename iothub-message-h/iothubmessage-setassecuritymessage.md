@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_SetAsSec
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_SetAsSecurityMessage()
 
-Marks a IoTHub message as a security message. CAUTION: Security messages are special messages not easily accessable by the user.
+Marks a IoT Hub message as a security message. CAUTION: security messages are special messages not easily accessable by the user.
 
 ## Syntax
 
@@ -26,5 +26,5 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetAsSecurityMessage(IOTHUB_MESSAGE_HANDLE  
 * `iotHubMessageHandle` Handle to the message.
 
 ## Return Value
-Returns IOTHUB_MESSAGE_OK if the Security Message was set successfully or an error code otherwise.
+Returns IOTHUB_MESSAGE_OK if the security message was set successfully or an error code otherwise.
 

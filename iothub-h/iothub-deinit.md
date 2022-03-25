@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHub_Deinit() functi
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -21,4 +21,11 @@ IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init functio
 ```C
 void IoTHub_Deinit(void);
 ```
+
+## Remarks
+This should be called when using IoT Hub client library, including the device provisioning client.
+
+This function should be called once per process, not per-thread.
+
+Close all IoT Hub and provisioning client handles prior to invoking this.
 

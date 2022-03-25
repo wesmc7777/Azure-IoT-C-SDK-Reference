@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_IsSecuri
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_IsSecurityMessage()
 
-returns if this message is a IoTHub security message or not
+returns if this message is a IoT Hub security message or not
 
 ## Syntax
 
@@ -26,5 +26,5 @@ bool IoTHubMessage_IsSecurityMessage(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandle)
 * `iotHubMessageHandle` Handle to the message.
 
 ## Return Value
-Returns true if the Message is a security message false otherwise.
+Returns true if the message is a security message false otherwise.
 

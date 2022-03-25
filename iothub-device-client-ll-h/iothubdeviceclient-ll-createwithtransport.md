@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -28,5 +28,5 @@ IOTHUB_DEVICE_CLIENT_LL_HANDLE IoTHubDeviceClient_LL_CreateWithTransport(const  
 The API *allows* sharing of a connection across multiple devices. This is a blocking call.
 
 ## Return Value
-A non-NULL IOTHUB_DEVICE_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+A non-NULL [IOTHUB_DEVICE_CLIENT_LL_HANDLE](../iothub-device-client-ll-h.md#iothub_device_client_ll_handle) value that is used when invoking other functions for IoT Hub client and NULL on failure.
 

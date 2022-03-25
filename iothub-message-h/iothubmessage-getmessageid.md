@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubMessage_GetMessa
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubMessage_GetMessageId()
 
-Gets the MessageId from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
+Gets the messageId from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 
 ## Syntax
 
@@ -26,5 +26,5 @@ const char* IoTHubMessage_GetMessageId(IOTHUB_MESSAGE_HANDLE  iotHubMessageHandl
 * `iotHubMessageHandle` Handle to the message.
 
 ## Return Value
-A const char* pointing to the Message Id.
+A const char* pointing to the messageId.
 

@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_device_client.h in
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -22,6 +22,7 @@ Extends the Prov_Device_LL module with additional features.
 \#include "[prov_device_ll_client.h](prov-device-ll-client-h.md)"  
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "azure_macro_utils/macro_utils.h"  
+\#include "azure_c_shared_utility/const_defines.h"  
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
 ## Detailed Description
@@ -58,5 +59,12 @@ Function Name                  | Description
 
 ```C
 typedef struct PROV_DEVICE_INSTANCE_TAG* PROV_DEVICE_HANDLE;
+```
+
+## Constants and Variables
+
+#### PROV_OPTION_DO_WORK_FREQUENCY_IN_MS
+```C
+const char* const PROV_OPTION_DO_WORK_FREQUENCY_IN_MS = "do_work_freq_ms";
 ```
 

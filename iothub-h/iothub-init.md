@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHub_Init() function
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHub_Init()
 
-IoTHubClient_Init Initializes the IoTHub Client System.
+IoTHubClient_Init Initializes the IoT Hub Client System.
 
 ## Syntax
 
@@ -21,6 +21,11 @@ IoTHubClient_Init Initializes the IoTHub Client System.
 ```C
 int IoTHub_Init(void);
 ```
+
+## Remarks
+This must be called before using any functionality from the IoT Hub client library, including the device provisioning client.
+
+IoTHubClient_Init should be called once per process, not per-thread.
 
 ## Return Value
 int zero upon success, any other value upon failure.

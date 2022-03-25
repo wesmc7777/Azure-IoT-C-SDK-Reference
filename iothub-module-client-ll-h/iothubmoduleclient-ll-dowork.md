@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # IoTHubModuleClient_LL_DoWork()
 
-This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubClient.
+This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubModuleClient.
 
 ## Syntax
 
@@ -25,5 +25,7 @@ void IoTHubModuleClient_LL_DoWork(IOTHUB_MODULE_CLIENT_LL_HANDLE  iotHubModuleCl
 ## Parameters
 * `iotHubModuleClientHandle` The handle created by a call to the create function.
 
-All IoTHubClient interactions (in regards to network traffic and/or user level callbacks) are the effect of calling this function and they take place synchronously inside _DoWork.
+All IoTHubModuleClient interactions (in regards to network traffic and/or user level callbacks) are the effect of calling this function and they take place synchronously inside _DoWork.
+
+Do not call this function from inside any application callbacks from this SDK, e.g. your IOTHUB_CLIENT_EVENT_CONFIRMATION_CALLBACK handler.
 

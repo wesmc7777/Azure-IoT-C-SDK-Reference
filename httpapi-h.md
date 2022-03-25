@@ -5,7 +5,7 @@ description: "This is the header file reference page for httpapi.h in the Azure 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,7 +13,7 @@ ms.topic: "reference"
 
 # httpapi.h 
 
-This module implements the standard HTTP API used by the C IoT client library.
+Deprecated module implements the standard HTTP API used by the C IoT client library.
 
 ## Includes
 
@@ -25,7 +25,14 @@ This module implements the standard HTTP API used by the C IoT client library.
 
 ## Detailed Description
 
+> Deprecated: Applications should not directly use this header file. They should use httpapiex.h instead.
+
 For example, on the Windows platform the HTTP API code uses WinHTTP and for Linux it uses curl and so forth. HTTPAPI must support HTTPs (HTTP+SSL).
+
+## Remarks
+This header file is deprecated in the sense that applications should not directly invoke it. It remains the contract that instantiations of the HTTP clients on various platforms (e.g. curl and WinHTTP) are implemented to.
+
+Applications should not directly invoke functions in this header because this layer does not follow the standard allocation/copying rules of the rest of the SDK. When passed a memory buffer, this layer points directly to the memory and does not make a copy or use reference counting. This means there can be a crash if the caller free()'s the data but this layer needs it. The httpapiex.h layer follows the conventions throughout the rest of the SDK and is therefore safer and less likely to cause unexpected problems for callers.
 
 ## Functions
 

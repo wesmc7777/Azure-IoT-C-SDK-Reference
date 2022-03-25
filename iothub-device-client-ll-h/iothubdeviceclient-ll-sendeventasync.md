@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubDeviceClient_LL_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -32,11 +32,12 @@ IOTHUB_CLIENT_RESULT IoTHubDeviceClient_LL_SendEventAsync(
 
 * `eventMessageHandle` The handle to an IoT Hub message. 
 
-* `eventConfirmationCallback` The callback specified by the device for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubDeviceClient_LL_SendEventAsync](../iothub-device-client-ll-h/iothubdeviceclient-ll-sendeventasync.md) function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
+* `eventConfirmationCallback` The callback specified by the device for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the IoTHubDeviceClient_LL_SendEventAsync function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubDeviceClient_LL_Destroy](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) function from within any callback. 
+: Do not call [IoTHubDeviceClient_LL_Destroy()](../iothub-device-client-ll-h/iothubdeviceclient-ll-destroy.md) or [IoTHubDeviceClient_LL_DoWork()](../iothub-device-client-ll-h/iothubdeviceclient-ll-dowork.md) from inside your application's callback.
+
 ## Remarks
 The IOTHUB_MESSAGE_HANDLE instance provided as argument is copied by the function, so this argument can be destroyed by the calling application right after IoTHubDeviceClient_LL_SendEventAsync returns. The copy of eventMessageHandle is later destroyed by the iothub client when the message is effectively sent, if a failure sending it occurs, or if the client is destroyed. 
 

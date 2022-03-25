@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_DoWork
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_DoWork()
-
-This function is meant to be called by the user when work (sending/receiving) can be done by the IoTHubClient.
 
 ## Syntax
 
@@ -22,8 +20,5 @@ This function is meant to be called by the user when work (sending/receiving) ca
 void IoTHubClient_LL_DoWork(IOTHUB_CLIENT_LL_HANDLE  iotHubClientHandle);
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function.
-
-All IoTHubClient interactions (in regards to network traffic and/or user level callbacks) are the effect of calling this function and they take place synchronously inside _DoWork.
+> Deprecated: IoTHubClient_LL_DoWork is deprecateDeviced. Use [IoTHubDeviceClient_LL_DoWork()](../iothub-device-client-ll-h/iothubdeviceclient-ll-dowork.md) instead.
 

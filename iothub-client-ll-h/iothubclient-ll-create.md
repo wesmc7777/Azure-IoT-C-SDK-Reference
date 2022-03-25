@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_Create
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_Create()
-
-Creates a IoT Hub client for communication with an existing IoT Hub using the specified parameters.
 
 ## Syntax
 
@@ -22,11 +20,5 @@ Creates a IoT Hub client for communication with an existing IoT Hub using the sp
 IOTHUB_CLIENT_LL_HANDLE IoTHubClient_LL_Create(const   config);
 ```
 
-## Parameters
-* `config` Pointer to an [IOTHUB_CLIENT_CONFIG](../iothub-client-core-common-h.md#iothub_client_config) structure
-
-The API does not allow sharing of a connection across multiple devices. This is a blocking call.
-
-## Return Value
-A non-NULL IOTHUB_CLIENT_LL_HANDLE value that is used when invoking other functions for IoT Hub client and NULL on failure.
+> Deprecated: IoTHubClient_LL_Create is deprecated. Use [IoTHubDeviceClient_LL_Create()](../iothub-device-client-ll-h/iothubdeviceclient-ll-create.md) instead.
 

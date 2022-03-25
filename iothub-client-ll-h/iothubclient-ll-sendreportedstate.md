@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_LL_SendRe
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_LL_SendReportedState()
-
-This API sneds a report of the device's properties and their current values.
 
 ## Syntax
 
@@ -28,17 +26,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_LL_SendReportedState(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `reportedState` The current device property values to be 'reported' to the IoTHub. 
-
-* `reportedStateCallback` The callback specified by the device client to be called with the result of the transaction. 
-
-* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
-
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_LL_Destroy](../iothub-client-ll-h/iothubclient-ll-destroy.md) function from within any callback.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_LL_SendReportedState is deprecated. Use [IoTHubDeviceClient_LL_SendReportedState()](../iothub-device-client-ll-h/iothubdeviceclient-ll-sendreportedstate.md) instead.
 

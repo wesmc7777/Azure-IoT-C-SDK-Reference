@@ -5,7 +5,7 @@ description: "This is the function reference page for the IO_OPEN_RESULTStrings(
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        

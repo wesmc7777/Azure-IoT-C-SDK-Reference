@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_client_options.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -35,6 +35,32 @@ Member name                 | Description
  host_address            | 
  username            | 
  password            | 
+
+## Macro definitions
+
+#### OPTION_X509_CERT_DEF
+
+```C
+#define OPTION_X509_CERT_DEF
+```
+
+#### OPTION_X509_PRIVATE_KEY_DEF
+
+```C
+#define OPTION_X509_PRIVATE_KEY_DEF
+```
+
+#### DEVICE_MULTIPLEXING_FAULTY_DEVICE_RATIO_RECONNECTION_THRESHOLD
+
+```C
+#define DEVICE_MULTIPLEXING_FAULTY_DEVICE_RATIO_RECONNECTION_THRESHOLD  0 
+```
+
+#### DEVICE_FAILURE_COUNT_RECONNECTION_THRESHOLD
+
+```C
+#define DEVICE_FAILURE_COUNT_RECONNECTION_THRESHOLD  5 
+```
 
 ## Constants and Variables
 
@@ -123,9 +149,19 @@ const char* OPTION_MESSAGE_TIMEOUT = "messageTimeout";
 const char* OPTION_BLOB_UPLOAD_TIMEOUT_SECS = "blob_upload_timeout_secs";
 ```
 
+#### OPTION_NETWORK_INTERFACE_UPLOAD_TO_BLOB
+```C
+const char* const OPTION_NETWORK_INTERFACE_UPLOAD_TO_BLOB = "network_interface_upload_to_blob";
+```
+
 #### OPTION_PRODUCT_INFO
 ```C
 const char* OPTION_PRODUCT_INFO = "product_info";
+```
+
+#### OPTION_BLOB_UPLOAD_TLS_RENEGOTIATION
+```C
+const char* OPTION_BLOB_UPLOAD_TLS_RENEGOTIATION = "blob_upload_tls_renegotiation";
 ```
 
 #### OPTION_MODEL_ID

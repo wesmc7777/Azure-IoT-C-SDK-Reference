@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_Init() functio
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -21,6 +21,8 @@ Global initialization for the HTTP API component.
 ```C
 HTTPAPI_RESULT HTTPAPI_Init(void);
 ```
+
+> Deprecated: Applications should not directly invoke this function. They should use httpapiex.h instead.
 
 Platform specific implementations are expected to initialize the underlying HTTP API stacks.
 

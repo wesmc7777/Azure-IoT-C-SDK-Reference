@@ -5,7 +5,7 @@ description: "This is the header file reference page for tlsio.h in the Azure Io
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,6 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
+\#include <stdbool.h>  
 \#include "[xio.h](xio-h.md)"  
 
 ## Detailed Description
@@ -28,7 +29,8 @@ struct TLSIO_CONFIG {
   const char *                        hostname,
   int                                 port,
   const  IO_INTERFACE_DESCRIPTION  *  underlying_io_interface,
-  void *                              underlying_io_parameters
+  void *                              underlying_io_parameters,
+  bool                                invoke_on_send_complete_callback_for_fragments
 };
 ```
 Member name                 | Description                                
@@ -37,4 +39,5 @@ Member name                 | Description
  port            | 
  underlying_io_interface            | 
  underlying_io_parameters            | 
+ invoke_on_send_complete_callback_for_fragments            | 
 

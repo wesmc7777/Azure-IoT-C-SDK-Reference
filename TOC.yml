@@ -402,22 +402,10 @@
             href: iothub-client-core-common-h/iothub-client-statusstrings.md
           - name: IOTHUB_CLIENT_STATUS_FromString
             href: iothub-client-core-common-h/iothub-client-status-fromstring.md
-          - name: IOTHUB_IDENTITY_TYPEStrings
-            href: iothub-client-core-common-h/iothub-identity-typestrings.md
-          - name: IOTHUB_IDENTITY_TYPE_FromString
-            href: iothub-client-core-common-h/iothub-identity-type-fromstring.md
-          - name: IOTHUB_PROCESS_ITEM_RESULTStrings
-            href: iothub-client-core-common-h/iothub-process-item-resultstrings.md
-          - name: IOTHUB_PROCESS_ITEM_RESULT_FromString
-            href: iothub-client-core-common-h/iothub-process-item-result-fromstring.md
           - name: IOTHUBMESSAGE_DISPOSITION_RESULTStrings
             href: iothub-client-core-common-h/iothubmessage-disposition-resultstrings.md
           - name: IOTHUBMESSAGE_DISPOSITION_RESULT_FromString
             href: iothub-client-core-common-h/iothubmessage-disposition-result-fromstring.md
-          - name: IOTHUB_CLIENT_IOTHUB_METHOD_STATUSStrings
-            href: iothub-client-core-common-h/iothub-client-iothub-method-statusstrings.md
-          - name: IOTHUB_CLIENT_IOTHUB_METHOD_STATUS_FromString
-            href: iothub-client-core-common-h/iothub-client-iothub-method-status-fromstring.md
           - name: IOTHUB_CLIENT_CONFIRMATION_RESULTStrings
             href: iothub-client-core-common-h/iothub-client-confirmation-resultstrings.md
           - name: IOTHUB_CLIENT_CONFIRMATION_RESULT_FromString
@@ -430,10 +418,6 @@
             href: iothub-client-core-common-h/iothub-client-connection-status-reasonstrings.md
           - name: IOTHUB_CLIENT_CONNECTION_STATUS_REASON_FromString
             href: iothub-client-core-common-h/iothub-client-connection-status-reason-fromstring.md
-          - name: TRANSPORT_TYPEStrings
-            href: iothub-client-core-common-h/transport-typestrings.md
-          - name: TRANSPORT_TYPE_FromString
-            href: iothub-client-core-common-h/transport-type-fromstring.md
           - name: DEVICE_TWIN_UPDATE_STATEStrings
             href: iothub-client-core-common-h/device-twin-update-statestrings.md
           - name: DEVICE_TWIN_UPDATE_STATE_FromString
@@ -491,6 +475,11 @@
             href: iothub-client-ll-h/iothubclient-ll-uploadmultipleblockstoblobex.md
         - name: iothub_client_options.h
           href: iothub-client-options-h.md
+        - name: iothub_client_version.h
+          href: iothub-client-version-h.md
+          items:
+          - name: IoTHubClient_GetVersionString
+            href: iothub-client-version-h/iothubclient-getversionstring.md
         - name: iothub_device_client.h
           href: iothub-device-client-h.md
           items:
@@ -534,6 +523,8 @@
             href: iothub-device-client-h/iothubdeviceclient-uploadtoblobasync.md
           - name: IoTHubDeviceClient_UploadMultipleBlocksToBlobAsync
             href: iothub-device-client-h/iothubdeviceclient-uploadmultipleblockstoblobasync.md
+          - name: IoTHubDeviceClient_SendMessageDisposition
+            href: iothub-device-client-h/iothubdeviceclient-sendmessagedisposition.md
         - name: iothub_device_client_ll.h
           href: iothub-device-client-ll-h.md
           items:
@@ -579,6 +570,8 @@
             href: iothub-device-client-ll-h/iothubdeviceclient-ll-uploadtoblob.md
           - name: IoTHubDeviceClient_LL_UploadMultipleBlocksToBlob
             href: iothub-device-client-ll-h/iothubdeviceclient-ll-uploadmultipleblockstoblob.md
+          - name: IoTHubDeviceClient_LL_SendMessageDisposition
+            href: iothub-device-client-ll-h/iothubdeviceclient-ll-sendmessagedisposition.md
         - name: iothub_message.h
           href: iothub-message-h.md
           items:
@@ -693,6 +686,8 @@
             href: iothub-module-client-h/iothubmoduleclient-sendeventtooutputasync.md
           - name: IoTHubModuleClient_SetInputMessageCallback
             href: iothub-module-client-h/iothubmoduleclient-setinputmessagecallback.md
+          - name: IoTHubModuleClient_SendMessageDisposition
+            href: iothub-module-client-h/iothubmoduleclient-sendmessagedisposition.md
         - name: iothub_module_client_ll.h
           href: iothub-module-client-ll-h.md
           items:
@@ -730,6 +725,8 @@
             href: iothub-module-client-ll-h/iothubmoduleclient-ll-sendeventtooutputasync.md
           - name: IoTHubModuleClient_LL_SetInputMessageCallback
             href: iothub-module-client-ll-h/iothubmoduleclient-ll-setinputmessagecallback.md
+          - name: IoTHubModuleClient_LL_SendMessageDisposition
+            href: iothub-module-client-ll-h/iothubmoduleclient-ll-sendmessagedisposition.md
         - name: iothub_transport_ll.h
           href: iothub-transport-ll-h.md
           items:
@@ -764,190 +761,6 @@
           items:
           - name: MQTT_WebSocket_Protocol
             href: iothubtransportmqtt-websockets-h/mqtt-websocket-protocol.md
-    - name: iothub_service_client
-      items:
-      - name: inc
-        items:
-        - name: iothub_deviceconfiguration.h
-          href: iothub-deviceconfiguration-h.md
-          items:
-          - name: IOTHUB_DEVICE_CONFIGURATION_RESULTStrings
-            href: iothub-deviceconfiguration-h/iothub-device-configuration-resultstrings.md
-          - name: IOTHUB_DEVICE_CONFIGURATION_RESULT_FromString
-            href: iothub-deviceconfiguration-h/iothub-device-configuration-result-fromstring.md
-          - name: IOTHUB_DEVICECONFIGURATION_REQUEST_MODEStrings
-            href: iothub-deviceconfiguration-h/iothub-deviceconfiguration-request-modestrings.md
-          - name: IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_FromString
-            href: iothub-deviceconfiguration-h/iothub-deviceconfiguration-request-mode-fromstring.md
-          - name: IoTHubDeviceConfiguration_Create
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-create.md
-          - name: IoTHubDeviceConfiguration_Destroy
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-destroy.md
-          - name: IoTHubDeviceConfiguration_GetConfigurations
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-getconfigurations.md
-          - name: IoTHubDeviceConfiguration_GetConfiguration
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-getconfiguration.md
-          - name: IoTHubDeviceConfiguration_AddConfiguration
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-addconfiguration.md
-          - name: IoTHubDeviceConfiguration_UpdateConfiguration
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-updateconfiguration.md
-          - name: IoTHubDeviceConfiguration_DeleteConfiguration
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-deleteconfiguration.md
-          - name: IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md
-          - name: IoTHubDeviceConfiguration_FreeConfigurationMembers
-            href: iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md
-        - name: iothub_devicemethod.h
-          href: iothub-devicemethod-h.md
-          items:
-          - name: IOTHUB_DEVICE_METHOD_RESULTStrings
-            href: iothub-devicemethod-h/iothub-device-method-resultstrings.md
-          - name: IOTHUB_DEVICE_METHOD_RESULT_FromString
-            href: iothub-devicemethod-h/iothub-device-method-result-fromstring.md
-          - name: IoTHubDeviceMethod_Create
-            href: iothub-devicemethod-h/iothubdevicemethod-create.md
-          - name: IoTHubDeviceMethod_Destroy
-            href: iothub-devicemethod-h/iothubdevicemethod-destroy.md
-          - name: IoTHubDeviceMethod_Invoke
-            href: iothub-devicemethod-h/iothubdevicemethod-invoke.md
-          - name: IoTHubDeviceMethod_InvokeModule
-            href: iothub-devicemethod-h/iothubdevicemethod-invokemodule.md
-        - name: iothub_devicetwin.h
-          href: iothub-devicetwin-h.md
-          items:
-          - name: IOTHUB_DEVICE_TWIN_RESULTStrings
-            href: iothub-devicetwin-h/iothub-device-twin-resultstrings.md
-          - name: IOTHUB_DEVICE_TWIN_RESULT_FromString
-            href: iothub-devicetwin-h/iothub-device-twin-result-fromstring.md
-          - name: IoTHubDeviceTwin_Create
-            href: iothub-devicetwin-h/iothubdevicetwin-create.md
-          - name: IoTHubDeviceTwin_Destroy
-            href: iothub-devicetwin-h/iothubdevicetwin-destroy.md
-          - name: IoTHubDeviceTwin_GetTwin
-            href: iothub-devicetwin-h/iothubdevicetwin-gettwin.md
-          - name: IoTHubDeviceTwin_UpdateTwin
-            href: iothub-devicetwin-h/iothubdevicetwin-updatetwin.md
-          - name: IoTHubDeviceTwin_GetModuleTwin
-            href: iothub-devicetwin-h/iothubdevicetwin-getmoduletwin.md
-          - name: IoTHubDeviceTwin_UpdateModuleTwin
-            href: iothub-devicetwin-h/iothubdevicetwin-updatemoduletwin.md
-        - name: iothub_messaging.h
-          href: iothub-messaging-h.md
-          items:
-          - name: IoTHubMessaging_Create
-            href: iothub-messaging-h/iothubmessaging-create.md
-          - name: IoTHubMessaging_Destroy
-            href: iothub-messaging-h/iothubmessaging-destroy.md
-          - name: IoTHubMessaging_Open
-            href: iothub-messaging-h/iothubmessaging-open.md
-          - name: IoTHubMessaging_Close
-            href: iothub-messaging-h/iothubmessaging-close.md
-          - name: IoTHubMessaging_SendAsync
-            href: iothub-messaging-h/iothubmessaging-sendasync.md
-          - name: IoTHubMessaging_SetFeedbackMessageCallback
-            href: iothub-messaging-h/iothubmessaging-setfeedbackmessagecallback.md
-          - name: IoTHubMessaging_SetTrustedCert
-            href: iothub-messaging-h/iothubmessaging-settrustedcert.md
-        - name: iothub_messaging_ll.h
-          href: iothub-messaging-ll-h.md
-          items:
-          - name: IOTHUB_FEEDBACK_STATUS_CODEStrings
-            href: iothub-messaging-ll-h/iothub-feedback-status-codestrings.md
-          - name: IOTHUB_FEEDBACK_STATUS_CODE_FromString
-            href: iothub-messaging-ll-h/iothub-feedback-status-code-fromstring.md
-          - name: IOTHUB_MESSAGE_SEND_STATEStrings
-            href: iothub-messaging-ll-h/iothub-message-send-statestrings.md
-          - name: IOTHUB_MESSAGE_SEND_STATE_FromString
-            href: iothub-messaging-ll-h/iothub-message-send-state-fromstring.md
-          - name: IOTHUB_MESSAGING_RESULTStrings
-            href: iothub-messaging-ll-h/iothub-messaging-resultstrings.md
-          - name: IOTHUB_MESSAGING_RESULT_FromString
-            href: iothub-messaging-ll-h/iothub-messaging-result-fromstring.md
-          - name: IoTHubMessaging_LL_Create
-            href: iothub-messaging-ll-h/iothubmessaging-ll-create.md
-          - name: IoTHubMessaging_LL_Destroy
-            href: iothub-messaging-ll-h/iothubmessaging-ll-destroy.md
-          - name: IoTHubMessaging_LL_Open
-            href: iothub-messaging-ll-h/iothubmessaging-ll-open.md
-          - name: IoTHubMessaging_LL_Close
-            href: iothub-messaging-ll-h/iothubmessaging-ll-close.md
-          - name: IoTHubMessaging_LL_Send
-            href: iothub-messaging-ll-h/iothubmessaging-ll-send.md
-          - name: IoTHubMessaging_LL_SetFeedbackMessageCallback
-            href: iothub-messaging-ll-h/iothubmessaging-ll-setfeedbackmessagecallback.md
-          - name: IoTHubMessaging_LL_DoWork
-            href: iothub-messaging-ll-h/iothubmessaging-ll-dowork.md
-          - name: IoTHubMessaging_LL_SetTrustedCert
-            href: iothub-messaging-ll-h/iothubmessaging-ll-settrustedcert.md
-        - name: iothub_registrymanager.h
-          href: iothub-registrymanager-h.md
-          items:
-          - name: IOTHUB_REGISTRYMANAGER_RESULTStrings
-            href: iothub-registrymanager-h/iothub-registrymanager-resultstrings.md
-          - name: IOTHUB_REGISTRYMANAGER_RESULT_FromString
-            href: iothub-registrymanager-h/iothub-registrymanager-result-fromstring.md
-          - name: IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings
-            href: iothub-registrymanager-h/iothub-registrymanager-auth-methodstrings.md
-          - name: IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString
-            href: iothub-registrymanager-h/iothub-registrymanager-auth-method-fromstring.md
-          - name: IoTHubRegistryManager_FreeDeviceExMembers
-            href: iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md
-          - name: IoTHubRegistryManager_FreeModuleMembers
-            href: iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md
-          - name: IoTHubRegistryManager_Create
-            href: iothub-registrymanager-h/iothubregistrymanager-create.md
-          - name: IoTHubRegistryManager_Destroy
-            href: iothub-registrymanager-h/iothubregistrymanager-destroy.md
-          - name: IoTHubRegistryManager_CreateDevice_Ex
-            href: iothub-registrymanager-h/iothubregistrymanager-createdevice-ex.md
-          - name: IoTHubRegistryManager_GetDevice_Ex
-            href: iothub-registrymanager-h/iothubregistrymanager-getdevice-ex.md
-          - name: IoTHubRegistryManager_UpdateDevice_Ex
-            href: iothub-registrymanager-h/iothubregistrymanager-updatedevice-ex.md
-          - name: IoTHubRegistryManager_DeleteDevice
-            href: iothub-registrymanager-h/iothubregistrymanager-deletedevice.md
-          - name: IoTHubRegistryManager_GetStatistics
-            href: iothub-registrymanager-h/iothubregistrymanager-getstatistics.md
-          - name: IoTHubRegistryManager_CreateModule
-            href: iothub-registrymanager-h/iothubregistrymanager-createmodule.md
-          - name: IoTHubRegistryManager_GetModule
-            href: iothub-registrymanager-h/iothubregistrymanager-getmodule.md
-          - name: IoTHubRegistryManager_UpdateModule
-            href: iothub-registrymanager-h/iothubregistrymanager-updatemodule.md
-          - name: IoTHubRegistryManager_DeleteModule
-            href: iothub-registrymanager-h/iothubregistrymanager-deletemodule.md
-          - name: IoTHubRegistryManager_GetModuleList
-            href: iothub-registrymanager-h/iothubregistrymanager-getmodulelist.md
-          - name: IoTHubRegistryManager_CreateDevice
-            href: iothub-registrymanager-h/iothubregistrymanager-createdevice.md
-          - name: IoTHubRegistryManager_GetDevice
-            href: iothub-registrymanager-h/iothubregistrymanager-getdevice.md
-          - name: IoTHubRegistryManager_UpdateDevice
-            href: iothub-registrymanager-h/iothubregistrymanager-updatedevice.md
-          - name: IoTHubRegistryManager_GetDeviceList
-            href: iothub-registrymanager-h/iothubregistrymanager-getdevicelist.md
-        - name: iothub_sc_version.h
-          href: iothub-sc-version-h.md
-          items:
-          - name: IoTHubServiceClient_GetVersionString
-            href: iothub-sc-version-h/iothubserviceclient-getversionstring.md
-        - name: iothub_service_client_auth.h
-          href: iothub-service-client-auth-h.md
-          items:
-          - name: IOTHUB_DEVICE_STATUSStrings
-            href: iothub-service-client-auth-h/iothub-device-statusstrings.md
-          - name: IOTHUB_DEVICE_STATUS_FromString
-            href: iothub-service-client-auth-h/iothub-device-status-fromstring.md
-          - name: IOTHUB_DEVICE_CONNECTION_STATEStrings
-            href: iothub-service-client-auth-h/iothub-device-connection-statestrings.md
-          - name: IOTHUB_DEVICE_CONNECTION_STATE_FromString
-            href: iothub-service-client-auth-h/iothub-device-connection-state-fromstring.md
-          - name: IoTHubServiceClientAuth_CreateFromConnectionString
-            href: iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md
-          - name: IoTHubServiceClientAuth_CreateFromSharedAccessSignature
-            href: iothub-service-client-auth-h/iothubserviceclientauth-createfromsharedaccesssignature.md
-          - name: IoTHubServiceClientAuth_Destroy
-            href: iothub-service-client-auth-h/iothubserviceclientauth-destroy.md
     - name: provisioning_client
       items:
       - name: inc
@@ -1021,11 +834,6 @@
               href: prov-device-ll-client-h/prov-device-ll-set-provisioning-payload.md
             - name: Prov_Device_LL_Get_Provisioning_Payload
               href: prov-device-ll-client-h/prov-device-ll-get-provisioning-payload.md
-          - name: prov_edge_trusted_certificates.h
-            href: prov-edge-trusted-certificates-h.md
-            items:
-            - name: MOCKABLE_FUNCTION
-              href: prov-edge-trusted-certificates-h/mockable-function.md
           - name: prov_security_factory.h
             href: prov-security-factory-h.md
             items:
@@ -1083,305 +891,3 @@
             items:
             - name: Prov_Device_MQTT_WS_Protocol
               href: prov-transport-mqtt-ws-client-h/prov-device-mqtt-ws-protocol.md
-    - name: provisioning_service_client
-      items:
-      - name: inc
-        items:
-        - name: prov_service_client
-          items:
-          - name: provisioning_sc_attestation_mechanism.h
-            href: provisioning-sc-attestation-mechanism-h.md
-            items:
-            - name: ATTESTATION_TYPEStrings
-              href: provisioning-sc-attestation-mechanism-h/attestation-typestrings.md
-            - name: ATTESTATION_TYPE_FromString
-              href: provisioning-sc-attestation-mechanism-h/attestation-type-fromstring.md
-            - name: attestationMechanism_createWithTpm
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-createwithtpm.md
-            - name: attestationMechanism_createWithX509ClientCert
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-createwithx509clientcert.md
-            - name: attestationMechanism_createWithX509SigningCert
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-createwithx509signingcert.md
-            - name: attestationMechanism_createWithX509CAReference
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-createwithx509careference.md
-            - name: attestationMechanism_destroy
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-destroy.md
-            - name: attestationMechanism_isValidForIndividualEnrollment
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-isvalidforindividualenrollment.md
-            - name: attestationMechanism_isValidForEnrollmentGroup
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-isvalidforenrollmentgroup.md
-            - name: attestationMechanism_getType
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-gettype.md
-            - name: attestationMechanism_getTpmAttestation
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-gettpmattestation.md
-            - name: attestationMechanism_getX509Attestation
-              href: provisioning-sc-attestation-mechanism-h/attestationmechanism-getx509attestation.md
-          - name: provisioning_sc_bulk_operation.h
-            href: provisioning-sc-bulk-operation-h.md
-            items:
-            - name: PROVISIONING_BULK_OPERATION_MODEStrings
-              href: provisioning-sc-bulk-operation-h/provisioning-bulk-operation-modestrings.md
-            - name: PROVISIONING_BULK_OPERATION_MODE_FromString
-              href: provisioning-sc-bulk-operation-h/provisioning-bulk-operation-mode-fromstring.md
-            - name: PROVISIONING_BULK_OPERATION_TYPEStrings
-              href: provisioning-sc-bulk-operation-h/provisioning-bulk-operation-typestrings.md
-            - name: PROVISIONING_BULK_OPERATION_TYPE_FromString
-              href: provisioning-sc-bulk-operation-h/provisioning-bulk-operation-type-fromstring.md
-            - name: bulkOperationResult_free
-              href: provisioning-sc-bulk-operation-h/bulkoperationresult-free.md
-          - name: provisioning_sc_device_capabilities.h
-            href: provisioning-sc-device-capabilities-h.md
-            items:
-            - name: deviceCapabilities_create
-              href: provisioning-sc-device-capabilities-h/devicecapabilities-create.md
-            - name: deviceCapabilities_destroy
-              href: provisioning-sc-device-capabilities-h/devicecapabilities-destroy.md
-            - name: deviceCapabilities_isIotEdgeCapable
-              href: provisioning-sc-device-capabilities-h/devicecapabilities-isiotedgecapable.md
-            - name: deviceCapabilities_setIotEdgeCapable
-              href: provisioning-sc-device-capabilities-h/devicecapabilities-setiotedgecapable.md
-          - name: provisioning_sc_device_registration_state.h
-            href: provisioning-sc-device-registration-state-h.md
-            items:
-            - name: REGISTRATION_STATUSStrings
-              href: provisioning-sc-device-registration-state-h/registration-statusstrings.md
-            - name: REGISTRATION_STATUS_FromString
-              href: provisioning-sc-device-registration-state-h/registration-status-fromstring.md
-            - name: deviceRegistrationState_getRegistrationId
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getregistrationid.md
-            - name: deviceRegistrationState_getCreatedDateTime
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getcreateddatetime.md
-            - name: deviceRegistrationState_getDeviceId
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getdeviceid.md
-            - name: deviceRegistrationState_getRegistrationStatus
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getregistrationstatus.md
-            - name: deviceRegistrationState_getUpdatedDateTime
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getupdateddatetime.md
-            - name: deviceRegistrationState_getErrorCode
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-geterrorcode.md
-            - name: deviceRegistrationState_getErrorMessage
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-geterrormessage.md
-            - name: deviceRegistrationState_getEtag
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-getetag.md
-            - name: deviceRegistrationState_destroy
-              href: provisioning-sc-device-registration-state-h/deviceregistrationstate-destroy.md
-          - name: provisioning_sc_enrollment.h
-            href: provisioning-sc-enrollment-h.md
-            items:
-            - name: PROVISIONING_STATUSStrings
-              href: provisioning-sc-enrollment-h/provisioning-statusstrings.md
-            - name: PROVISIONING_STATUS_FromString
-              href: provisioning-sc-enrollment-h/provisioning-status-fromstring.md
-            - name: individualEnrollment_create
-              href: provisioning-sc-enrollment-h/individualenrollment-create.md
-            - name: individualEnrollment_destroy
-              href: provisioning-sc-enrollment-h/individualenrollment-destroy.md
-            - name: enrollmentGroup_create
-              href: provisioning-sc-enrollment-h/enrollmentgroup-create.md
-            - name: enrollmentGroup_destroy
-              href: provisioning-sc-enrollment-h/enrollmentgroup-destroy.md
-            - name: individualEnrollment_getAttestationMechanism
-              href: provisioning-sc-enrollment-h/individualenrollment-getattestationmechanism.md
-            - name: individualEnrollment_setAttestationMechanism
-              href: provisioning-sc-enrollment-h/individualenrollment-setattestationmechanism.md
-            - name: individualEnrollment_getInitialTwin
-              href: provisioning-sc-enrollment-h/individualenrollment-getinitialtwin.md
-            - name: individualEnrollment_setInitialTwin
-              href: provisioning-sc-enrollment-h/individualenrollment-setinitialtwin.md
-            - name: individualEnrollment_getDeviceCapabilities
-              href: provisioning-sc-enrollment-h/individualenrollment-getdevicecapabilities.md
-            - name: individualEnrollment_setDeviceCapabilities
-              href: provisioning-sc-enrollment-h/individualenrollment-setdevicecapabilities.md
-            - name: individualEnrollment_getDeviceRegistrationState
-              href: provisioning-sc-enrollment-h/individualenrollment-getdeviceregistrationstate.md
-            - name: individualEnrollment_getRegistrationId
-              href: provisioning-sc-enrollment-h/individualenrollment-getregistrationid.md
-            - name: individualEnrollment_getIotHubHostName
-              href: provisioning-sc-enrollment-h/individualenrollment-getiothubhostname.md
-            - name: individualEnrollment_getDeviceId
-              href: provisioning-sc-enrollment-h/individualenrollment-getdeviceid.md
-            - name: individualEnrollment_setDeviceId
-              href: provisioning-sc-enrollment-h/individualenrollment-setdeviceid.md
-            - name: individualEnrollment_getEtag
-              href: provisioning-sc-enrollment-h/individualenrollment-getetag.md
-            - name: individualEnrollment_setEtag
-              href: provisioning-sc-enrollment-h/individualenrollment-setetag.md
-            - name: individualEnrollment_getProvisioningStatus
-              href: provisioning-sc-enrollment-h/individualenrollment-getprovisioningstatus.md
-            - name: individualEnrollment_setProvisioningStatus
-              href: provisioning-sc-enrollment-h/individualenrollment-setprovisioningstatus.md
-            - name: individualEnrollment_getCreatedDateTime
-              href: provisioning-sc-enrollment-h/individualenrollment-getcreateddatetime.md
-            - name: individualEnrollment_getUpdatedDateTime
-              href: provisioning-sc-enrollment-h/individualenrollment-getupdateddatetime.md
-            - name: enrollmentGroup_getAttestationMechanism
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getattestationmechanism.md
-            - name: enrollmentGroup_setAttestationMechanism
-              href: provisioning-sc-enrollment-h/enrollmentgroup-setattestationmechanism.md
-            - name: enrollmentGroup_getInitialTwin
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getinitialtwin.md
-            - name: enrollmentGroup_setInitialTwin
-              href: provisioning-sc-enrollment-h/enrollmentgroup-setinitialtwin.md
-            - name: enrollmentGroup_getGroupId
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getgroupid.md
-            - name: enrollmentGroup_getIotHubHostName
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getiothubhostname.md
-            - name: enrollmentGroup_getEtag
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getetag.md
-            - name: enrollmentGroup_setEtag
-              href: provisioning-sc-enrollment-h/enrollmentgroup-setetag.md
-            - name: enrollmentGroup_getProvisioningStatus
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getprovisioningstatus.md
-            - name: enrollmentGroup_setProvisioningStatus
-              href: provisioning-sc-enrollment-h/enrollmentgroup-setprovisioningstatus.md
-            - name: enrollmentGroup_getCreatedDateTime
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getcreateddatetime.md
-            - name: enrollmentGroup_getUpdatedDateTime
-              href: provisioning-sc-enrollment-h/enrollmentgroup-getupdateddatetime.md
-          - name: provisioning_sc_json_const.h
-            href: provisioning-sc-json-const-h.md
-          - name: provisioning_sc_models.h
-            href: provisioning-sc-models-h.md
-          - name: provisioning_sc_models_serializer.h
-            href: provisioning-sc-models-serializer-h.md
-            items:
-            - name: individualEnrollment_serializeToJson
-              href: provisioning-sc-models-serializer-h/individualenrollment-serializetojson.md
-            - name: individualEnrollment_deserializeFromJson
-              href: provisioning-sc-models-serializer-h/individualenrollment-deserializefromjson.md
-            - name: enrollmentGroup_serializeToJson
-              href: provisioning-sc-models-serializer-h/enrollmentgroup-serializetojson.md
-            - name: enrollmentGroup_deserializeFromJson
-              href: provisioning-sc-models-serializer-h/enrollmentgroup-deserializefromjson.md
-            - name: deviceRegistrationState_deserializeFromJson
-              href: provisioning-sc-models-serializer-h/deviceregistrationstate-deserializefromjson.md
-            - name: bulkOperation_serializeToJson
-              href: provisioning-sc-models-serializer-h/bulkoperation-serializetojson.md
-            - name: bulkOperationResult_deserializeFromJson
-              href: provisioning-sc-models-serializer-h/bulkoperationresult-deserializefromjson.md
-            - name: querySpecification_serializeToJson
-              href: provisioning-sc-models-serializer-h/queryspecification-serializetojson.md
-            - name: queryResponse_deserializeFromJson
-              href: provisioning-sc-models-serializer-h/queryresponse-deserializefromjson.md
-          - name: provisioning_sc_query.h
-            href: provisioning-sc-query-h.md
-            items:
-            - name: PROVISIONING_QUERY_TYPEStrings
-              href: provisioning-sc-query-h/provisioning-query-typestrings.md
-            - name: PROVISIONING_QUERY_TYPE_FromString
-              href: provisioning-sc-query-h/provisioning-query-type-fromstring.md
-            - name: queryResponse_free
-              href: provisioning-sc-query-h/queryresponse-free.md
-          - name: provisioning_sc_shared_helpers.h
-            href: provisioning-sc-shared-helpers-h.md
-            items:
-            - name: mallocAndStrcpy_overwrite
-              href: provisioning-sc-shared-helpers-h/mallocandstrcpy-overwrite.md
-            - name: copy_json_string_field
-              href: provisioning-sc-shared-helpers-h/copy-json-string-field.md
-            - name: json_serialize_and_set_struct
-              href: provisioning-sc-shared-helpers-h/json-serialize-and-set-struct.md
-            - name: json_deserialize_and_get_struct
-              href: provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct.md
-            - name: json_serialize_and_set_struct_array
-              href: provisioning-sc-shared-helpers-h/json-serialize-and-set-struct-array.md
-            - name: json_deserialize_and_get_struct_array
-              href: provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct-array.md
-            - name: struct_array_fromJson
-              href: provisioning-sc-shared-helpers-h/struct-array-fromjson.md
-          - name: provisioning_sc_tpm_attestation.h
-            href: provisioning-sc-tpm-attestation-h.md
-            items:
-            - name: tpmAttestation_getEndorsementKey
-              href: provisioning-sc-tpm-attestation-h/tpmattestation-getendorsementkey.md
-          - name: provisioning_sc_twin.h
-            href: provisioning-sc-twin-h.md
-            items:
-            - name: initialTwin_create
-              href: provisioning-sc-twin-h/initialtwin-create.md
-            - name: initialTwin_destroy
-              href: provisioning-sc-twin-h/initialtwin-destroy.md
-            - name: initialTwin_getTags
-              href: provisioning-sc-twin-h/initialtwin-gettags.md
-            - name: initialTwin_setTags
-              href: provisioning-sc-twin-h/initialtwin-settags.md
-            - name: initialTwin_getDesiredProperties
-              href: provisioning-sc-twin-h/initialtwin-getdesiredproperties.md
-            - name: initialTwin_setDesiredProperties
-              href: provisioning-sc-twin-h/initialtwin-setdesiredproperties.md
-          - name: provisioning_sc_x509_attestation.h
-            href: provisioning-sc-x509-attestation-h.md
-            items:
-            - name: X509_CERTIFICATE_TYPEStrings
-              href: provisioning-sc-x509-attestation-h/x509-certificate-typestrings.md
-            - name: X509_CERTIFICATE_TYPE_FromString
-              href: provisioning-sc-x509-attestation-h/x509-certificate-type-fromstring.md
-            - name: x509Attestation_getCertificateType
-              href: provisioning-sc-x509-attestation-h/x509attestation-getcertificatetype.md
-            - name: x509Attestation_getPrimaryCertificate
-              href: provisioning-sc-x509-attestation-h/x509attestation-getprimarycertificate.md
-            - name: x509Attestation_getSecondaryCertificate
-              href: provisioning-sc-x509-attestation-h/x509attestation-getsecondarycertificate.md
-            - name: x509Certificate_getSubjectName
-              href: provisioning-sc-x509-attestation-h/x509certificate-getsubjectname.md
-            - name: x509Certificate_getSha1Thumbprint
-              href: provisioning-sc-x509-attestation-h/x509certificate-getsha1thumbprint.md
-            - name: x509Certificate_getSha256Thumbprint
-              href: provisioning-sc-x509-attestation-h/x509certificate-getsha256thumbprint.md
-            - name: x509Certificate_getIssuerName
-              href: provisioning-sc-x509-attestation-h/x509certificate-getissuername.md
-            - name: x509Certificate_getNotBeforeUtc
-              href: provisioning-sc-x509-attestation-h/x509certificate-getnotbeforeutc.md
-            - name: x509Certificate_getNotAfterUtc
-              href: provisioning-sc-x509-attestation-h/x509certificate-getnotafterutc.md
-            - name: x509Certificate_getSerialNumber
-              href: provisioning-sc-x509-attestation-h/x509certificate-getserialnumber.md
-            - name: x509Certificate_getVersion
-              href: provisioning-sc-x509-attestation-h/x509certificate-getversion.md
-          - name: provisioning_service_client.h
-            href: provisioning-service-client-h.md
-            items:
-            - name: TRACING_STATUSStrings
-              href: provisioning-service-client-h/tracing-statusstrings.md
-            - name: TRACING_STATUS_FromString
-              href: provisioning-service-client-h/tracing-status-fromstring.md
-            - name: prov_sc_create_from_connection_string
-              href: provisioning-service-client-h/prov-sc-create-from-connection-string.md
-            - name: prov_sc_destroy
-              href: provisioning-service-client-h/prov-sc-destroy.md
-            - name: prov_sc_set_trace
-              href: provisioning-service-client-h/prov-sc-set-trace.md
-            - name: prov_sc_set_certificate
-              href: provisioning-service-client-h/prov-sc-set-certificate.md
-            - name: prov_sc_set_proxy
-              href: provisioning-service-client-h/prov-sc-set-proxy.md
-            - name: prov_sc_create_or_update_individual_enrollment
-              href: provisioning-service-client-h/prov-sc-create-or-update-individual-enrollment.md
-            - name: prov_sc_delete_individual_enrollment
-              href: provisioning-service-client-h/prov-sc-delete-individual-enrollment.md
-            - name: prov_sc_delete_individual_enrollment_by_param
-              href: provisioning-service-client-h/prov-sc-delete-individual-enrollment-by-param.md
-            - name: prov_sc_get_individual_enrollment
-              href: provisioning-service-client-h/prov-sc-get-individual-enrollment.md
-            - name: prov_sc_query_individual_enrollment
-              href: provisioning-service-client-h/prov-sc-query-individual-enrollment.md
-            - name: prov_sc_run_individual_enrollment_bulk_operation
-              href: provisioning-service-client-h/prov-sc-run-individual-enrollment-bulk-operation.md
-            - name: prov_sc_create_or_update_enrollment_group
-              href: provisioning-service-client-h/prov-sc-create-or-update-enrollment-group.md
-            - name: prov_sc_delete_enrollment_group
-              href: provisioning-service-client-h/prov-sc-delete-enrollment-group.md
-            - name: prov_sc_delete_enrollment_group_by_param
-              href: provisioning-service-client-h/prov-sc-delete-enrollment-group-by-param.md
-            - name: prov_sc_get_enrollment_group
-              href: provisioning-service-client-h/prov-sc-get-enrollment-group.md
-            - name: prov_sc_query_enrollment_group
-              href: provisioning-service-client-h/prov-sc-query-enrollment-group.md
-            - name: prov_sc_delete_device_registration_state
-              href: provisioning-service-client-h/prov-sc-delete-device-registration-state.md
-            - name: prov_sc_delete_device_registration_state_by_param
-              href: provisioning-service-client-h/prov-sc-delete-device-registration-state-by-param.md
-            - name: prov_sc_get_device_registration_state
-              href: provisioning-service-client-h/prov-sc-get-device-registration-state.md
-            - name: prov_sc_query_device_registration_state
-              href: provisioning-service-client-h/prov-sc-query-device-registration-state.md

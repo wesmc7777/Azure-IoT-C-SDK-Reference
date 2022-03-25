@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_SetDevice
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_SetDeviceMethodCallback_Ex()
-
-This API sets callback for async cloud to device method call.
 
 ## Syntax
 
@@ -26,13 +24,5 @@ IOTHUB_CLIENT_RESULT IoTHubClient_SetDeviceMethodCallback_Ex(
 );
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function. 
-
-* `inboundDeviceMethodCallback` The callback which will be called by IoTHub. 
-
-* `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
-
-## Return Value
-IOTHUB_CLIENT_OK upon success or an error code upon failure.
+> Deprecated: IoTHubClient_SetDeviceMethodCallback_Ex is deprecated. Use [IoTHubDeviceClient_SetDeviceMethodCallback()](../iothub-device-client-h/iothubdeviceclient-setdevicemethodcallback.md) instead.
 

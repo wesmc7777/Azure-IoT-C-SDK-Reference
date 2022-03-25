@@ -5,13 +5,15 @@ description: "This is the header file reference page for iothub.h in the Azure I
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # iothub.h 
+
+Global initialization and deinitialization routines for all IoT Hub client operations.
 
 ## Includes
 
@@ -23,6 +25,6 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IoTHub_Init](./iothub-h/iothub-init.md)            | IoTHubClient_Init Initializes the IoTHub Client System.
+[IoTHub_Init](./iothub-h/iothub-init.md)            | IoTHubClient_Init Initializes the IoT Hub Client System.
 [IoTHub_Deinit](./iothub-h/iothub-deinit.md)            | IoTHubClient_Deinit Frees resources initialized in the IoTHubClient_Init function call.
 

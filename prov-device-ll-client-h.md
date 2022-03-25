@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_device_ll_client.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -13,10 +13,13 @@ ms.topic: "reference"
 
 # prov_device_ll_client.h 
 
+Low level provisioning client.
+
 ## Includes
 
 \#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
 \#include "azure_macro_utils/macro_utils.h"  
+\#include "azure_c_shared_utility/const_defines.h"  
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
 ## Detailed Description
@@ -70,6 +73,18 @@ Function Name                  | Description
         PROV_DEVICE_REG_STATUS_ASSIGNED, \
         PROV_DEVICE_REG_STATUS_ERROR, \
         PROV_DEVICE_REG_HUB_NOT_SPECIFIED 
+```
+
+#### OPTION_X509_CERT_DEF
+
+```C
+#define OPTION_X509_CERT_DEF
+```
+
+#### OPTION_X509_PRIVATE_KEY_DEF
+
+```C
+#define OPTION_X509_PRIVATE_KEY_DEF
 ```
 
 ## Enumeration types
@@ -159,5 +174,15 @@ const char* const PROV_OPTION_LOG_TRACE = "logtrace";
 #### PROV_OPTION_TIMEOUT
 ```C
 const char* const PROV_OPTION_TIMEOUT = "provisioning_timeout";
+```
+
+#### OPTION_X509_CERT
+```C
+const char* OPTION_X509_CERT = "x509certificate";
+```
+
+#### OPTION_X509_PRIVATE_KEY
+```C
+const char* OPTION_X509_PRIVATE_KEY = "x509privatekey";
 ```
 

@@ -5,7 +5,7 @@ description: "This is the function reference page for the IoTHubModuleClient_Sen
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -35,11 +35,11 @@ IOTHUB_CLIENT_RESULT IoTHubModuleClient_SendEventToOutputAsync(
 
 * `outputName` The name of the queue to send the message to. 
 
-* `eventConfirmationCallback` The callback specified by the module for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the [IoTHubClient_SendEventAsync](../iothub-client-h/iothubclient-sendeventasync.md) function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
+* `eventConfirmationCallback` The callback specified by the module for receiving confirmation of the delivery of the IoT Hub message. This callback can be expected to invoke the IoTHubModuleClient_SendEventAsync function for the same message in an attempt to retry sending a failing message. The user can specify a NULL value here to indicate that no callback is required. 
 
 * `userContextCallback` User specified context that will be provided to the callback. This can be NULL.
 
-**NOTE:** The application behavior is undefined if the user calls the [IoTHubClient_Destroy](../iothub-client-h/iothubclient-destroy.md) function from within any callback.
+: Do not call [IoTHubModuleClient_Destroy()](../iothub-module-client-h/iothubmoduleclient-destroy.md) from inside your application's callback.
 
 ## Return Value
 IOTHUB_CLIENT_OK upon success or an error code upon failure.

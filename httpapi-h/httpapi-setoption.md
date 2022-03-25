@@ -5,7 +5,7 @@ description: "This is the function reference page for the HTTPAPI_SetOption() fu
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -25,6 +25,8 @@ HTTPAPI_RESULT HTTPAPI_SetOption(
   const void *  value
 );
 ```
+
+> Deprecated: Applications should not directly invoke this function. They should use httpapiex.h instead.
 
 ## Parameters
 * `handle` The handle to the HTTP connection created via [HTTPAPI_CreateConnection](../httpapi-h/httpapi-createconnection.md). 

@@ -5,15 +5,13 @@ description: "This is the function reference page for the IoTHubClient_Destroy()
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
 ---                            
 
 # IoTHubClient_Destroy()
-
-Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 
 ## Syntax
 
@@ -22,6 +20,5 @@ Disposes of resources allocated by the IoT Hub client. This is a blocking call.
 void IoTHubClient_Destroy(IOTHUB_CLIENT_HANDLE  iotHubClientHandle);
 ```
 
-## Parameters
-* `iotHubClientHandle` The handle created by a call to the create function.
+> Deprecated: IoTHubClient_Destroy is deprecated. Use [IoTHubDeviceClient_Destroy()](../iothub-device-client-h/iothubdeviceclient-destroy.md) instead.
 

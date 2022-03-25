@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_message.h in the
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -43,10 +43,10 @@ Function Name                  | Description
 [IoTHubMessage_SetContentEncodingSystemProperty](./iothub-message-h/iothubmessage-setcontentencodingsystemproperty.md)            | Sets the content-encoding of the message payload, as per supported values on RFC 2616.
 [IoTHubMessage_GetContentEncodingSystemProperty](./iothub-message-h/iothubmessage-getcontentencodingsystemproperty.md)            | Returns the content-encoding of the message payload, if defined. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 [IoTHubMessage_Properties](./iothub-message-h/iothubmessage-properties.md)            | Gets a handle to the message's properties map. Note that when sending messages via the HTTP transport, the key names in the map must not contain spaces.
-[IoTHubMessage_SetProperty](./iothub-message-h/iothubmessage-setproperty.md)            | Sets a property on a Iothub Message.
-[IoTHubMessage_GetProperty](./iothub-message-h/iothubmessage-getproperty.md)            | Gets a IotHub Message's properties item. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
-[IoTHubMessage_GetMessageId](./iothub-message-h/iothubmessage-getmessageid.md)            | Gets the MessageId from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
-[IoTHubMessage_SetMessageId](./iothub-message-h/iothubmessage-setmessageid.md)            | Sets the MessageId for the IOTHUB_MESSAGE_HANDLE.
+[IoTHubMessage_SetProperty](./iothub-message-h/iothubmessage-setproperty.md)            | Sets a property on a IoT Hub message.
+[IoTHubMessage_GetProperty](./iothub-message-h/iothubmessage-getproperty.md)            | Gets a IoT Hub message's properties item. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
+[IoTHubMessage_GetMessageId](./iothub-message-h/iothubmessage-getmessageid.md)            | Gets the messageId from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
+[IoTHubMessage_SetMessageId](./iothub-message-h/iothubmessage-setmessageid.md)            | Sets the messageId for the IOTHUB_MESSAGE_HANDLE.
 [IoTHubMessage_GetCorrelationId](./iothub-message-h/iothubmessage-getcorrelationid.md)            | Gets the CorrelationId from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 [IoTHubMessage_SetCorrelationId](./iothub-message-h/iothubmessage-setcorrelationid.md)            | Sets the CorrelationId for the IOTHUB_MESSAGE_HANDLE.
 [IoTHubMessage_GetDiagnosticPropertyData](./iothub-message-h/iothubmessage-getdiagnosticpropertydata.md)            | Gets the DiagnosticData from the IOTHUB_MESSAGE_HANDLE. CAUTION: SDK user should not call it directly, it is for internal use only.
@@ -63,8 +63,8 @@ Function Name                  | Description
 [IoTHubMessage_SetMessageUserIdSystemProperty](./iothub-message-h/iothubmessage-setmessageuseridsystemproperty.md)            | Sets the message user id. CAUTION: SDK user should not call it directly, it is for internal use only.
 [IoTHubMessage_GetMessageUserIdSystemProperty](./iothub-message-h/iothubmessage-getmessageuseridsystemproperty.md)            | Gets the message user id from the IOTHUB_MESSAGE_HANDLE. No new memory is allocated, the caller is not responsible for freeing the memory. The memory is valid until IoTHubMessage_Destroy is called on the message.
 [IoTHubMessage_SetConnectionDeviceId](./iothub-message-h/iothubmessage-setconnectiondeviceid.md)            | Sets connection device Id. CAUTION: SDK user should not call it directly, it is for internal use only.
-[IoTHubMessage_SetAsSecurityMessage](./iothub-message-h/iothubmessage-setassecuritymessage.md)            | Marks a IoTHub message as a security message. CAUTION: Security messages are special messages not easily accessable by the user.
-[IoTHubMessage_IsSecurityMessage](./iothub-message-h/iothubmessage-issecuritymessage.md)            | returns if this message is a IoTHub security message or not
+[IoTHubMessage_SetAsSecurityMessage](./iothub-message-h/iothubmessage-setassecuritymessage.md)            | Marks a IoT Hub message as a security message. CAUTION: security messages are special messages not easily accessable by the user.
+[IoTHubMessage_IsSecurityMessage](./iothub-message-h/iothubmessage-issecuritymessage.md)            | returns if this message is a IoT Hub security message or not
 [IoTHubMessage_Destroy](./iothub-message-h/iothubmessage-destroy.md)            | Frees all resources associated with the given message handle.
 
 ## Structures
@@ -122,7 +122,7 @@ enum IOTHUB_MESSAGE_RESULT {
 
 #### IOTHUBMESSAGE_CONTENT_TYPE
 
-Enumeration specifying the content type of the a given message. 
+Enumeration specifying the content type of a given message. 
 
 ```C
 enum IOTHUBMESSAGE_CONTENT_TYPE {
@@ -135,6 +135,8 @@ enum IOTHUBMESSAGE_CONTENT_TYPE {
 ## Type definitions
 
 #### IOTHUB_MESSAGE_HANDLE
+
+Handle representing an IoT Hub message. 
 
 ```C
 typedef struct IOTHUB_MESSAGE_HANDLE_DATA_TAG* IOTHUB_MESSAGE_HANDLE;
