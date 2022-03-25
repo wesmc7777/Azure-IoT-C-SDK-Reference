@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_registrymanager.
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,10 +16,10 @@ ms.topic: "reference"
 ## Includes
 
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_c_shared_utility/crt_abstractions.h"  
-\#include "[azure_c_shared_utility/singlylinkedlist.h](singlylinkedlist-h.md)"  
-\#include "[azure_c_shared_utility/map.h](map-h.md)"  
+\#include "azure_c_shared_utility/singlylinkedlist.h"  
+\#include "azure_c_shared_utility/map.h"  
 \#include "[iothub_service_client_auth.h](iothub-service-client-auth-h.md)"  
 
 ## Detailed Description
@@ -28,10 +28,8 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IOTHUB_REGISTRYMANAGER_RESULTStrings](./iothub-registrymanager-h/iothub-registrymanager-resultstrings.md)            | 
-[IOTHUB_REGISTRYMANAGER_RESULT_FromString](./iothub-registrymanager-h/iothub-registrymanager-result-fromstring.md)            | 
-[IOTHUB_REGISTRYMANAGER_AUTH_METHODStrings](./iothub-registrymanager-h/iothub-registrymanager-auth-methodstrings.md)            | 
-[IOTHUB_REGISTRYMANAGER_AUTH_METHOD_FromString](./iothub-registrymanager-h/iothub-registrymanager-auth-method-fromstring.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-registrymanager-h/mu-define-enum-without-invalid.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-registrymanager-h/mu-define-enum-without-invalid.md)            | 
 [IoTHubRegistryManager_FreeDeviceExMembers](./iothub-registrymanager-h/iothubregistrymanager-freedeviceexmembers.md)            | Free members of the [IOTHUB_DEVICE_EX](iothub-registrymanager-h.md#iothub_device_ex) structure (NOT the structure itself)
 [IoTHubRegistryManager_FreeModuleMembers](./iothub-registrymanager-h/iothubregistrymanager-freemodulemembers.md)            | Free members of the [IOTHUB_MODULE](iothub-registrymanager-h.md#iothub_module) structure (NOT the structure itself)
 [IoTHubRegistryManager_Create](./iothub-registrymanager-h/iothubregistrymanager-create.md)            | Creates a IoT Hub Registry Manager handle for use it in consequent APIs.
@@ -353,28 +351,26 @@ Member name                 | Description
 #### IOTHUB_REGISTRYMANAGER_RESULT_VALUES
 
 ```C
-#define IOTHUB_REGISTRYMANAGER_RESULT_VALUES \
-        IOTHUB_REGISTRYMANAGER_OK, \
-        IOTHUB_REGISTRYMANAGER_INVALID_ARG, \
-        IOTHUB_REGISTRYMANAGER_ERROR, \
-        IOTHUB_REGISTRYMANAGER_JSON_ERROR, \
-        IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR, \
-        IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR, \
-        IOTHUB_REGISTRYMANAGER_DEVICE_EXIST, \
-        IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST, \
-        IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET, \
-        IOTHUB_REGISTRYMANAGER_INVALID_VERSION 
+#define IOTHUB_REGISTRYMANAGER_RESULT_VALUES  IOTHUB_REGISTRYMANAGER_OK,                      \
+    IOTHUB_REGISTRYMANAGER_INVALID_ARG,             \
+    IOTHUB_REGISTRYMANAGER_ERROR,                   \
+    IOTHUB_REGISTRYMANAGER_JSON_ERROR,              \
+    IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR,           \
+    IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR,       \
+    IOTHUB_REGISTRYMANAGER_DEVICE_EXIST,            \
+    IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST,        \
+    IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET,        \
+    IOTHUB_REGISTRYMANAGER_INVALID_VERSION          \ 
 ```
 
 #### IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES
 
 ```C
-#define IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES \
-        IOTHUB_REGISTRYMANAGER_AUTH_SPK, \
-        IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT, \
-        IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY, \
-        IOTHUB_REGISTRYMANAGER_AUTH_NONE, \
-        IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN 
+#define IOTHUB_REGISTRYMANAGER_AUTH_METHOD_VALUES  IOTHUB_REGISTRYMANAGER_AUTH_SPK,                        \
+    IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT,            \
+    IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY, \
+    IOTHUB_REGISTRYMANAGER_AUTH_NONE,                       \
+    IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN                     \ 
 ```
 
 #### IOTHUB_DEVICE_EX_VERSION_1
@@ -411,37 +407,6 @@ Member name                 | Description
 
 ```C
 #define IOTHUB_REGISTRY_MODULE_UPDATE_VERSION_1  1 
-```
-
-## Enumeration types
-
-#### IOTHUB_REGISTRYMANAGER_RESULT
-
-```C
-enum IOTHUB_REGISTRYMANAGER_RESULT {
-  IOTHUB_REGISTRYMANAGER_OK,
-  IOTHUB_REGISTRYMANAGER_INVALID_ARG,
-  IOTHUB_REGISTRYMANAGER_ERROR,
-  IOTHUB_REGISTRYMANAGER_JSON_ERROR,
-  IOTHUB_REGISTRYMANAGER_HTTPAPI_ERROR,
-  IOTHUB_REGISTRYMANAGER_HTTP_STATUS_ERROR,
-  IOTHUB_REGISTRYMANAGER_DEVICE_EXIST,
-  IOTHUB_REGISTRYMANAGER_DEVICE_NOT_EXIST,
-  IOTHUB_REGISTRYMANAGER_CALLBACK_NOT_SET,
-  IOTHUB_REGISTRYMANAGER_INVALID_VERSION
-}
-```
-
-#### IOTHUB_REGISTRYMANAGER_AUTH_METHOD
-
-```C
-enum IOTHUB_REGISTRYMANAGER_AUTH_METHOD {
-  IOTHUB_REGISTRYMANAGER_AUTH_SPK,
-  IOTHUB_REGISTRYMANAGER_AUTH_X509_THUMBPRINT,
-  IOTHUB_REGISTRYMANAGER_AUTH_X509_CERTIFICATE_AUTHORITY,
-  IOTHUB_REGISTRYMANAGER_AUTH_NONE,
-  IOTHUB_REGISTRYMANAGER_AUTH_UNKNOWN
-}
 ```
 
 ## Type definitions

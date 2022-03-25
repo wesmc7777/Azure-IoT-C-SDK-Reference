@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_security_factory.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stddef.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 
 ## Detailed Description
@@ -25,39 +25,23 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[SECURE_DEVICE_TYPEStrings](./prov-security-factory-h/secure-device-typestrings.md)            | 
-[SECURE_DEVICE_TYPE_FromString](./prov-security-factory-h/secure-device-type-fromstring.md)            | 
-[prov_dev_security_init](./prov-security-factory-h/prov-dev-security-init.md)            | 
-[prov_dev_security_deinit](./prov-security-factory-h/prov-dev-security-deinit.md)            | 
-[prov_dev_security_get_type](./prov-security-factory-h/prov-dev-security-get-type.md)            | 
-[prov_dev_set_symmetric_key_info](./prov-security-factory-h/prov-dev-set-symmetric-key-info.md)            | 
-[prov_dev_get_symmetric_key](./prov-security-factory-h/prov-dev-get-symmetric-key.md)            | 
-[prov_dev_get_symm_registration_name](./prov-security-factory-h/prov-dev-get-symm-registration-name.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./prov-security-factory-h/mu-define-enum-without-invalid.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./prov-security-factory-h/mockable-function.md)            | 
 
 ## Macro definitions
 
 #### SECURE_DEVICE_TYPE_VALUES
 
 ```C
-#define SECURE_DEVICE_TYPE_VALUES \
-        SECURE_DEVICE_TYPE_UNKNOWN, \
-        SECURE_DEVICE_TYPE_TPM, \
-        SECURE_DEVICE_TYPE_X509, \
-        SECURE_DEVICE_TYPE_HTTP_EDGE, \
-        SECURE_DEVICE_TYPE_SYMMETRIC_KEY 
-```
-
-## Enumeration types
-
-#### SECURE_DEVICE_TYPE
-
-```C
-enum SECURE_DEVICE_TYPE {
-  SECURE_DEVICE_TYPE_UNKNOWN,
-  SECURE_DEVICE_TYPE_TPM,
-  SECURE_DEVICE_TYPE_X509,
-  SECURE_DEVICE_TYPE_HTTP_EDGE,
-  SECURE_DEVICE_TYPE_SYMMETRIC_KEY
-}
+#define SECURE_DEVICE_TYPE_VALUES  SECURE_DEVICE_TYPE_UNKNOWN,   \
+    SECURE_DEVICE_TYPE_TPM,       \
+    SECURE_DEVICE_TYPE_X509,      \
+    SECURE_DEVICE_TYPE_HTTP_EDGE, \
+    SECURE_DEVICE_TYPE_SYMMETRIC_KEY 
 ```
 

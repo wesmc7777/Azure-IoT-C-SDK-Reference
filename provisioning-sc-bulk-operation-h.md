@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_bulk_op
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,7 +18,7 @@ ms.topic: "reference"
 \#include <stdlib.h>  
 \#include <stdint.h>  
 \#include <stdbool.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[provisioning_sc_models.h](provisioning-sc-models-h.md)"  
 \#include "parson.h"  
@@ -29,11 +29,10 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[PROVISIONING_BULK_OPERATION_MODEStrings](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-modestrings.md)            | 
-[PROVISIONING_BULK_OPERATION_MODE_FromString](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-mode-fromstring.md)            | 
-[PROVISIONING_BULK_OPERATION_TYPEStrings](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-typestrings.md)            | 
-[PROVISIONING_BULK_OPERATION_TYPE_FromString](./provisioning-sc-bulk-operation-h/provisioning-bulk-operation-type-fromstring.md)            | 
-[bulkOperationResult_free](./provisioning-sc-bulk-operation-h/bulkoperationresult-free.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-bulk-operation-h/mu-define-enum-without-invalid.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-bulk-operation-h/mu-define-enum-without-invalid.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-bulk-operation-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-bulk-operation-h/mockable-function.md)            | 
 
 ## Structures
 
@@ -105,37 +104,15 @@ Member name                 | Description
 #### PROVISIONING_BULK_OPERATION_MODE_VALUES
 
 ```C
-#define PROVISIONING_BULK_OPERATION_MODE_VALUES \
-        BULK_OP_CREATE, \
-        BULK_OP_UPDATE, \
-        BULK_OP_UPDATE_IF_MATCH_ETAG, \
-        BULK_OP_DELETE 
+#define PROVISIONING_BULK_OPERATION_MODE_VALUES  BULK_OP_CREATE, \
+BULK_OP_UPDATE, \
+BULK_OP_UPDATE_IF_MATCH_ETAG, \
+BULK_OP_DELETE 
 ```
 
 #### PROVISIONING_BULK_OPERATION_TYPE_VALUES
 
 ```C
-#define PROVISIONING_BULK_OPERATION_TYPE_VALUES        BULK_OP_INDIVIDUAL_ENROLLMENT 
-```
-
-## Enumeration types
-
-#### PROVISIONING_BULK_OPERATION_MODE
-
-```C
-enum PROVISIONING_BULK_OPERATION_MODE {
-  BULK_OP_CREATE,
-  BULK_OP_UPDATE,
-  BULK_OP_UPDATE_IF_MATCH_ETAG,
-  BULK_OP_DELETE
-}
-```
-
-#### PROVISIONING_BULK_OPERATION_TYPE
-
-```C
-enum PROVISIONING_BULK_OPERATION_TYPE {
-  BULK_OP_INDIVIDUAL_ENROLLMENT
-}
+#define PROVISIONING_BULK_OPERATION_TYPE_VALUES  BULK_OP_INDIVIDUAL_ENROLLMENT 
 ```
 

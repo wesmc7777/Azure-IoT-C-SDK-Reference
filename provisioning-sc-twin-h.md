@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_twin.h 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "parson.h"  
 
@@ -25,12 +25,14 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[initialTwin_create](./provisioning-sc-twin-h/initialtwin-create.md)            | Creates an Initial Twin handle for use in consequent APIs.
-[initialTwin_destroy](./provisioning-sc-twin-h/initialtwin-destroy.md)            | Destroys an Initial Twin handle, freeing all associated memory. Please note that this will also cause any Enrollment that the Initial Twin has been attached to to have unexpected behvaiours. Do not use this function unless the Initial Twin is unattached.
-[initialTwin_getTags](./provisioning-sc-twin-h/initialtwin-gettags.md)            | 
-[initialTwin_setTags](./provisioning-sc-twin-h/initialtwin-settags.md)            | 
-[initialTwin_getDesiredProperties](./provisioning-sc-twin-h/initialtwin-getdesiredproperties.md)            | 
-[initialTwin_setDesiredProperties](./provisioning-sc-twin-h/initialtwin-setdesiredproperties.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | Creates an Initial Twin handle for use in consequent APIs.
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | Destroys an Initial Twin handle, freeing all associated memory. Please note that this will also cause any Enrollment that the Initial Twin has been attached to to have unexpected behvaiours. Do not use this function unless the Initial Twin is unattached.
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-twin-h/mockable-function.md)            | 
 
 ## Type definitions
 

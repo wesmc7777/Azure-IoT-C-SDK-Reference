@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_client_const.h in 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -22,7 +22,7 @@ ms.topic: "reference"
 #### PROV_DEVICE_CLIENT_VERSION
 
 ```C
-#define PROV_DEVICE_CLIENT_VERSION  "1.3.9" 
+#define PROV_DEVICE_CLIENT_VERSION  "1.9.0" 
 ```
 
 #### PROV_GET_THROTTLE_TIME

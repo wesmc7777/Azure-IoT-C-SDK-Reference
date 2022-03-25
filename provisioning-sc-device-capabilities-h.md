@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_device_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stdbool.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "parson.h"  
 
 ## Detailed Description
@@ -25,10 +25,12 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[deviceCapabilities_create](./provisioning-sc-device-capabilities-h/devicecapabilities-create.md)            | Creates a Device Capabilities handle that can be used in consequent APIs, with all fields initialized to "false".
-[deviceCapabilities_destroy](./provisioning-sc-device-capabilities-h/devicecapabilities-destroy.md)            | Destroys a Device Capabilities handle, freeing all associated memory. Please note that if the Device Capabilities are attached to an Enrollment, this will remove it.
-[deviceCapabilities_isIotEdgeCapable](./provisioning-sc-device-capabilities-h/devicecapabilities-isiotedgecapable.md)            | 
-[deviceCapabilities_setIotEdgeCapable](./provisioning-sc-device-capabilities-h/devicecapabilities-setiotedgecapable.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | Creates a Device Capabilities handle that can be used in consequent APIs, with all fields initialized to "false".
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | Destroys a Device Capabilities handle, freeing all associated memory. Please note that if the Device Capabilities are attached to an Enrollment, this will remove it.
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-device-capabilities-h/mockable-function.md)            | 
 
 ## Type definitions
 

@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_query.h
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include <stdlib.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[provisioning_sc_models.h](provisioning-sc-models-h.md)"  
 \#include "parson.h"  
@@ -27,9 +27,9 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[PROVISIONING_QUERY_TYPEStrings](./provisioning-sc-query-h/provisioning-query-typestrings.md)            | 
-[PROVISIONING_QUERY_TYPE_FromString](./provisioning-sc-query-h/provisioning-query-type-fromstring.md)            | 
-[queryResponse_free](./provisioning-sc-query-h/queryresponse-free.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./provisioning-sc-query-h/mu-define-enum-without-invalid.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-query-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-query-h/mockable-function.md)            | 
 
 ## Structures
 
@@ -95,23 +95,9 @@ Member name                 | Description
 #### PROVISIONING_QUERY_TYPE_VALUES
 
 ```C
-#define PROVISIONING_QUERY_TYPE_VALUES \
-        QUERY_TYPE_INVALID, \
-        QUERY_TYPE_INDIVIDUAL_ENROLLMENT, \
-        QUERY_TYPE_ENROLLMENT_GROUP, \
-        QUERY_TYPE_DEVICE_REGISTRATION_STATE 
-```
-
-## Enumeration types
-
-#### PROVISIONING_QUERY_TYPE
-
-```C
-enum PROVISIONING_QUERY_TYPE {
-  QUERY_TYPE_INVALID,
-  QUERY_TYPE_INDIVIDUAL_ENROLLMENT,
-  QUERY_TYPE_ENROLLMENT_GROUP,
-  QUERY_TYPE_DEVICE_REGISTRATION_STATE
-}
+#define PROVISIONING_QUERY_TYPE_VALUES  QUERY_TYPE_INVALID, \
+    QUERY_TYPE_INDIVIDUAL_ENROLLMENT, \
+    QUERY_TYPE_ENROLLMENT_GROUP, \
+    QUERY_TYPE_DEVICE_REGISTRATION_STATE 
 ```
 

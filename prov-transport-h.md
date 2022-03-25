@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_transport.h in the
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,9 +15,9 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "[azure_c_shared_utility/shared_util_options.h](shared-util-options-h.md)"  
+\#include "azure_c_shared_utility/shared_util_options.h"  
 \#include "azure_c_shared_utility/buffer_.h"  
 \#include "[azure_prov_client/prov_client_const.h](prov-client-const-h.md)"  
 \#include <stdbool.h>  
@@ -30,10 +30,8 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[TRANSPORT_HSM_TYPEStrings](./prov-transport-h/transport-hsm-typestrings.md)            | 
-[TRANSPORT_HSM_TYPE_FromString](./prov-transport-h/transport-hsm-type-fromstring.md)            | 
-[PROV_DEVICE_TRANSPORT_RESULTStrings](./prov-transport-h/prov-device-transport-resultstrings.md)            | 
-[PROV_DEVICE_TRANSPORT_RESULT_FromString](./prov-transport-h/prov-device-transport-result-fromstring.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./prov-transport-h/mu-define-enum-without-invalid.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./prov-transport-h/mu-define-enum-without-invalid.md)            | 
 [parse_retry_after_value](./prov-transport-h/parse-retry-after-value.md)            | 
 
 ## Macro definitions
@@ -41,41 +39,17 @@ Function Name                  | Description
 #### TRANSPORT_HSM_TYPE_VALUES
 
 ```C
-#define TRANSPORT_HSM_TYPE_VALUES \
-        TRANSPORT_HSM_TYPE_TPM, \
-        TRANSPORT_HSM_TYPE_X509, \
-        TRANSPORT_HSM_TYPE_SYMM_KEY 
+#define TRANSPORT_HSM_TYPE_VALUES  TRANSPORT_HSM_TYPE_TPM,         \
+    TRANSPORT_HSM_TYPE_X509,        \
+    TRANSPORT_HSM_TYPE_SYMM_KEY 
 ```
 
 #### PROV_DEVICE_TRANSPORT_RESULT_VALUES
 
 ```C
-#define PROV_DEVICE_TRANSPORT_RESULT_VALUES \
-        PROV_DEVICE_TRANSPORT_RESULT_OK, \
-        PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED, \
-        PROV_DEVICE_TRANSPORT_RESULT_ERROR 
-```
-
-## Enumeration types
-
-#### TRANSPORT_HSM_TYPE
-
-```C
-enum TRANSPORT_HSM_TYPE {
-  TRANSPORT_HSM_TYPE_TPM,
-  TRANSPORT_HSM_TYPE_X509,
-  TRANSPORT_HSM_TYPE_SYMM_KEY
-}
-```
-
-#### PROV_DEVICE_TRANSPORT_RESULT
-
-```C
-enum PROV_DEVICE_TRANSPORT_RESULT {
-  PROV_DEVICE_TRANSPORT_RESULT_OK,
-  PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,
-  PROV_DEVICE_TRANSPORT_RESULT_ERROR
-}
+#define PROV_DEVICE_TRANSPORT_RESULT_VALUES  PROV_DEVICE_TRANSPORT_RESULT_OK,            \
+    PROV_DEVICE_TRANSPORT_RESULT_UNAUTHORIZED,  \
+    PROV_DEVICE_TRANSPORT_RESULT_ERROR 
 ```
 
 ## Type definitions

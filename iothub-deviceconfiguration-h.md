@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_deviceconfigurat
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,10 +16,10 @@ ms.topic: "reference"
 ## Includes
 
 \#include "azure_c_shared_utility/crt_abstractions.h"  
-\#include "[azure_c_shared_utility/singlylinkedlist.h](singlylinkedlist-h.md)"  
+\#include "azure_c_shared_utility/singlylinkedlist.h"  
 \#include <time.h>  
 \#include "[iothub_service_client_auth.h](iothub-service-client-auth-h.md)"  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 
 ## Detailed Description
 
@@ -27,18 +27,16 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IOTHUB_DEVICE_CONFIGURATION_RESULTStrings](./iothub-deviceconfiguration-h/iothub-device-configuration-resultstrings.md)            | 
-[IOTHUB_DEVICE_CONFIGURATION_RESULT_FromString](./iothub-deviceconfiguration-h/iothub-device-configuration-result-fromstring.md)            | 
-[IOTHUB_DEVICECONFIGURATION_REQUEST_MODEStrings](./iothub-deviceconfiguration-h/iothub-deviceconfiguration-request-modestrings.md)            | 
-[IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_FromString](./iothub-deviceconfiguration-h/iothub-deviceconfiguration-request-mode-fromstring.md)            | 
-[IoTHubDeviceConfiguration_Create](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-create.md)            | Creates a IoT Hub Service Client DeviceConfiguration handle for use it in consequent APIs.
-[IoTHubDeviceConfiguration_Destroy](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-destroy.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceConfiguration_Create.
-[IoTHubDeviceConfiguration_GetConfigurations](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-getconfigurations.md)            | Retrieves the Configuration info for multiple configurations from IoT Hub.
-[IoTHubDeviceConfiguration_GetConfiguration](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-getconfiguration.md)            | Retrieves the Configuration info for specified configurationId from IoT Hub.
-[IoTHubDeviceConfiguration_AddConfiguration](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-addconfiguration.md)            | Adds the Configuration info to IoT Hub.
-[IoTHubDeviceConfiguration_UpdateConfiguration](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-updateconfiguration.md)            | Updates the given Configuration in IoT Hub.
-[IoTHubDeviceConfiguration_DeleteConfiguration](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-deleteconfiguration.md)            | Deletes the given Configuration from IoT Hub.
-[IoTHubDeviceConfiguration_ApplyConfigurationContentToDeviceOrModule](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-applyconfigurationcontenttodeviceormodule.md)            | Deletes the given Configuration from IoT Hub.
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-deviceconfiguration-h/mu-define-enum-without-invalid.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-deviceconfiguration-h/mu-define-enum-without-invalid.md)            | 
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Creates a IoT Hub Service Client DeviceConfiguration handle for use it in consequent APIs.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Disposes of resources allocated by the IoT Hub IoTHubDeviceConfiguration_Create.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Retrieves the Configuration info for multiple configurations from IoT Hub.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Retrieves the Configuration info for specified configurationId from IoT Hub.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Adds the Configuration info to IoT Hub.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Updates the given Configuration in IoT Hub.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Deletes the given Configuration from IoT Hub.
+[MOCKABLE_FUNCTION](./iothub-deviceconfiguration-h/mockable-function.md)            | Deletes the given Configuration from IoT Hub.
 [IoTHubDeviceConfiguration_FreeConfigurationMembers](./iothub-deviceconfiguration-h/iothubdeviceconfiguration-freeconfigurationmembers.md)            | Free members of the [IOTHUB_DEVICE_CONFIGURATION](iothub-deviceconfiguration-h.md#iothub_device_configuration) structure (NOT the structure itself)
 
 ## Structures
@@ -161,27 +159,25 @@ Member name                 | Description
 #### IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES
 
 ```C
-#define IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES \
-        IOTHUB_DEVICE_CONFIGURATION_OK, \
-        IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG, \
-        IOTHUB_DEVICE_CONFIGURATION_ERROR, \
-        IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR, \
-        IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR, \
-        IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR, \
-        IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST, \
-        IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST 
+#define IOTHUB_DEVICE_CONFIGURATION_RESULT_VALUES  IOTHUB_DEVICE_CONFIGURATION_OK,                      \
+    IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG,             \
+    IOTHUB_DEVICE_CONFIGURATION_ERROR,                   \
+    IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR,           \
+    IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR,              \
+    IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR,     \
+    IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST, \
+    IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST      \ 
 ```
 
 #### IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES
 
 ```C
-#define IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST, \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_GET, \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_ADD, \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE, \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE, \
-        IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT 
+#define IOTHUB_DEVICECONFIGURATION_REQUEST_MODE_VALUES  IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST,                    \
+    IOTHUB_DEVICECONFIGURATION_REQUEST_GET,                         \
+    IOTHUB_DEVICECONFIGURATION_REQUEST_ADD,                         \
+    IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE,                      \
+    IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE,                      \
+    IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT 
 ```
 
 #### IOTHUB_DEVICE_CONFIGURATION_SCHEMA_VERSION_1
@@ -200,36 +196,6 @@ Member name                 | Description
 
 ```C
 #define IOTHUB_DEVICE_CONFIGURATION_ADD_VERSION_1  1 
-```
-
-## Enumeration types
-
-#### IOTHUB_DEVICE_CONFIGURATION_RESULT
-
-```C
-enum IOTHUB_DEVICE_CONFIGURATION_RESULT {
-  IOTHUB_DEVICE_CONFIGURATION_OK,
-  IOTHUB_DEVICE_CONFIGURATION_INVALID_ARG,
-  IOTHUB_DEVICE_CONFIGURATION_ERROR,
-  IOTHUB_DEVICE_CONFIGURATION_HTTPAPI_ERROR,
-  IOTHUB_DEVICE_CONFIGURATION_JSON_ERROR,
-  IOTHUB_DEVICE_CONFIGURATION_OUT_OF_MEMORY_ERROR,
-  IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_NOT_EXIST,
-  IOTHUB_DEVICE_CONFIGURATION_CONFIGURATION_EXIST
-}
-```
-
-#### IOTHUB_DEVICECONFIGURATION_REQUEST_MODE
-
-```C
-enum IOTHUB_DEVICECONFIGURATION_REQUEST_MODE {
-  IOTHUB_DEVICECONFIGURATION_REQUEST_GET_LIST,
-  IOTHUB_DEVICECONFIGURATION_REQUEST_GET,
-  IOTHUB_DEVICECONFIGURATION_REQUEST_ADD,
-  IOTHUB_DEVICECONFIGURATION_REQUEST_UPDATE,
-  IOTHUB_DEVICECONFIGURATION_REQUEST_DELETE,
-  IOTHUB_DEVICECONFIGURATION_REQUEST_APPLY_CONFIGURATION_CONTENT
-}
 ```
 
 ## Type definitions

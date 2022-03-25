@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_sc_version.h in 
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,7 +17,7 @@ Functions for managing the service client SDK version.
 
 ## Includes
 
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 
 ## Detailed Description
 
@@ -25,7 +25,7 @@ Functions for managing the service client SDK version.
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IoTHubServiceClient_GetVersionString](./iothub-sc-version-h/iothubserviceclient-getversionstring.md)            | Returns a pointer to a null terminated string containing the current IoT Hub Service Client SDK version.
+[MOCKABLE_FUNCTION](./iothub-sc-version-h/mockable-function.md)            | Returns a pointer to a null terminated string containing the current IoT Hub Service Client SDK version.
 
 ## Macro definitions
 

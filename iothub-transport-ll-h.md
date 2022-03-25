@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_transport_ll.h i
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,7 +17,7 @@ ms.topic: "reference"
 
 \#include <stddef.h>  
 \#include <stdint.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 
 ## Detailed Description
 
@@ -25,9 +25,9 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IoTHubTransport_Create](./iothub-transport-ll-h/iothubtransport-create.md)            | 
-[IoTHubTransport_Destroy](./iothub-transport-ll-h/iothubtransport-destroy.md)            | 
-[IoTHubTransport_GetLLTransport](./iothub-transport-ll-h/iothubtransport-getlltransport.md)            | 
+[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./iothub-transport-ll-h/mockable-function.md)            | 
 
 ## Type definitions
 

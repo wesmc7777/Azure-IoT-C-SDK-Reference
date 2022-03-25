@@ -5,7 +5,7 @@ description: "This is the header file reference page for iothub_service_client_a
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -18,7 +18,7 @@ APIs that allow a user (usually a device) to create and destroy a handle for use
 ## Includes
 
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 
 ## Detailed Description
 
@@ -30,10 +30,8 @@ User will store the handle and use it as input parameter in consequent APIs. Whe
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[IOTHUB_DEVICE_STATUSStrings](./iothub-service-client-auth-h/iothub-device-statusstrings.md)            | 
-[IOTHUB_DEVICE_STATUS_FromString](./iothub-service-client-auth-h/iothub-device-status-fromstring.md)            | 
-[IOTHUB_DEVICE_CONNECTION_STATEStrings](./iothub-service-client-auth-h/iothub-device-connection-statestrings.md)            | 
-[IOTHUB_DEVICE_CONNECTION_STATE_FromString](./iothub-service-client-auth-h/iothub-device-connection-state-fromstring.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-service-client-auth-h/mu-define-enum-without-invalid.md)            | 
+[MU_DEFINE_ENUM_WITHOUT_INVALID](./iothub-service-client-auth-h/mu-define-enum-without-invalid.md)            | 
 [IoTHubServiceClientAuth_CreateFromConnectionString](./iothub-service-client-auth-h/iothubserviceclientauth-createfromconnectionstring.md)            | Creates a IoT Hub service client handle for use it in consequent APIs.
 [IoTHubServiceClientAuth_CreateFromSharedAccessSignature](./iothub-service-client-auth-h/iothubserviceclientauth-createfromsharedaccesssignature.md)            | Creates a IoT Hub service client handle for use it in consequent APIs.
 [IoTHubServiceClientAuth_Destroy](./iothub-service-client-auth-h/iothubserviceclientauth-destroy.md)            | Disposes of resources allocated by the IoT Hub Service Client.
@@ -68,37 +66,15 @@ Member name                 | Description
 #### IOTHUB_DEVICE_STATUS_VALUES
 
 ```C
-#define IOTHUB_DEVICE_STATUS_VALUES \
-        IOTHUB_DEVICE_STATUS_ENABLED, \
-        IOTHUB_DEVICE_STATUS_DISABLED 
+#define IOTHUB_DEVICE_STATUS_VALUES  IOTHUB_DEVICE_STATUS_ENABLED,         \
+    IOTHUB_DEVICE_STATUS_DISABLED         \ 
 ```
 
 #### IOTHUB_DEVICE_CONNECTION_STATE_VALUES
 
 ```C
-#define IOTHUB_DEVICE_CONNECTION_STATE_VALUES \
-        IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED, \
-        IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED 
-```
-
-## Enumeration types
-
-#### IOTHUB_DEVICE_STATUS
-
-```C
-enum IOTHUB_DEVICE_STATUS {
-  IOTHUB_DEVICE_STATUS_ENABLED,
-  IOTHUB_DEVICE_STATUS_DISABLED
-}
-```
-
-#### IOTHUB_DEVICE_CONNECTION_STATE
-
-```C
-enum IOTHUB_DEVICE_CONNECTION_STATE {
-  IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED,
-  IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED
-}
+#define IOTHUB_DEVICE_CONNECTION_STATE_VALUES  IOTHUB_DEVICE_CONNECTION_STATE_CONNECTED,         \
+    IOTHUB_DEVICE_CONNECTION_STATE_DISCONNECTED       \ 
 ```
 
 ## Type definitions

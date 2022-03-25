@@ -5,7 +5,7 @@ description: "This is the header file reference page for prov_transport_mqtt_ws_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -17,7 +17,7 @@ ms.topic: "reference"
 
 \#include <stdint.h>  
 \#include <stddef.h>  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "[azure_prov_client/prov_transport.h](prov-transport-h.md)"  
 
@@ -27,5 +27,5 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[Prov_Device_MQTT_WS_Protocol](./prov-transport-mqtt-ws-client-h/prov-device-mqtt-ws-protocol.md)            | 
+[MOCKABLE_FUNCTION](./prov-transport-mqtt-ws-client-h/mockable-function.md)            | 
 

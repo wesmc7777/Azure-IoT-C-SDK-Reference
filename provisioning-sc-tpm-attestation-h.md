@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_tpm_att
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -15,7 +15,7 @@ ms.topic: "reference"
 
 ## Includes
 
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "azure_macro_utils/macro_utils.h"  
 \#include "parson.h"  
 
@@ -25,7 +25,11 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[tpmAttestation_getEndorsementKey](./provisioning-sc-tpm-attestation-h/tpmattestation-getendorsementkey.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-tpm-attestation-h/mockable-function.md)            | 
 
 ## Type definitions
 

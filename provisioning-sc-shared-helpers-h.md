@@ -5,7 +5,7 @@ description: "This is the header file reference page for provisioning_sc_shared_
 manager: timlt                 
 author: wesmc7777              
 ms.author: wesmc               
-ms.date: 10/01/2020                    
+ms.date: 03/25/2022                    
 ms.service: "iot-hub"             
 ms.custom: ""                
 ms.topic: "reference"        
@@ -16,7 +16,7 @@ ms.topic: "reference"
 ## Includes
 
 \#include "azure_macro_utils/macro_utils.h"  
-\#include "[umock_c/umock_c_prod.h](umock-c-prod-h.md)"  
+\#include "umock_c/umock_c_prod.h"  
 \#include "parson.h"  
 \#include <stdlib.h>  
 \#include <stdbool.h>  
@@ -27,13 +27,12 @@ ms.topic: "reference"
 
 Function Name                  | Description                                
 --------------------------------|---------------------------------------------
-[mallocAndStrcpy_overwrite](./provisioning-sc-shared-helpers-h/mallocandstrcpy-overwrite.md)            | 
-[copy_json_string_field](./provisioning-sc-shared-helpers-h/copy-json-string-field.md)            | 
-[json_serialize_and_set_struct](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct.md)            | 
-[json_deserialize_and_get_struct](./provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct.md)            | 
-[json_serialize_and_set_struct_array](./provisioning-sc-shared-helpers-h/json-serialize-and-set-struct-array.md)            | 
-[json_deserialize_and_get_struct_array](./provisioning-sc-shared-helpers-h/json-deserialize-and-get-struct-array.md)            | 
-[struct_array_fromJson](./provisioning-sc-shared-helpers-h/struct-array-fromjson.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
+[MOCKABLE_FUNCTION](./provisioning-sc-shared-helpers-h/mockable-function.md)            | 
 
 ## Type definitions
 
