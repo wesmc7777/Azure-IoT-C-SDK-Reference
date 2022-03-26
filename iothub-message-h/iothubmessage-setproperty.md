@@ -33,7 +33,7 @@ IOTHUB_MESSAGE_RESULT IoTHubMessage_SetProperty(
 
 * `value` of the property to set.
 
-**NOTE:** The accepted character sets for the key name and value parameters are dependent on different factors, such as the protocol being used. For more information on the character sets accepted by Azure IoT Hub, see [Create and read IoT Hub messages](../iot-hub-devguide-messages-construct).
+**NOTE:** The accepted character sets for the key name and value parameters are dependent on different factors, such as the protocol being used. For more information on the character sets accepted by Azure IoT Hub, see [Create and read IoT Hub messages](../../iot-hub-devguide-messages-construct).
 
 ## Return Value
 An [IOTHUB_MESSAGE_RESULT](../iothub-message-h.md#iothub_message_result) value indicating the result of setting the property.
