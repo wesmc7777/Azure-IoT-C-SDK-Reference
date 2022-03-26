@@ -39,7 +39,7 @@ To meet the wide range of device requirements in the Internet of Things space, t
 
 ## Supported platforms
 
-For information on the platforms supported by the Azure IoT SDK, please see the [Azure IoT SDKs platform support page](https://docs.microsoft.com/azure/iot-hub/iot-hub-device-sdk-platform-support) in our main documentation set.
+For information on the platforms supported by the Azure IoT SDK, please see the [Azure IoT SDKs platform support page](../iot-hub-device-sdk-platform-support) in our main documentation set.
 
 ## The library code
 
